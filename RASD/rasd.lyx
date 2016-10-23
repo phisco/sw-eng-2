@@ -171,6 +171,24 @@ Goals
 \end_layout
 
 \begin_layout Subsection
+Idea of the implementation
+\end_layout
+
+\begin_layout Standard
+A server will provide business logic and databases, sending dynamic web
+ pages to the web app and anwering the queries coming from the mobile app.
+\end_layout
+
+\begin_layout Standard
+In particular the server and the web app will be implemented in JEE with
+ a SQL relational database.
+ The mobile app will be compatible with both Android and iOS.
+ However other mobile platforms will be able to access services through
+ web browser via the web app, that will have a mobile theme.
+ 
+\end_layout
+
+\begin_layout Subsection
 Etc
 \end_layout
 
