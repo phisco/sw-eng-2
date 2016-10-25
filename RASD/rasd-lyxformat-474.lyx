@@ -1,9 +1,7 @@
-#LyX 2.2 created this file. For more info see http://www.lyx.org/
-\lyxformat 508
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
-\save_transient_properties true
-\origin unavailable
 \textclass scrartcl
 \begin_preamble
 \usepackage{microtype}
@@ -15,16 +13,16 @@
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman "lmodern" "default"
-\font_sans "lmss" "default"
-\font_typewriter "lmtt" "default"
-\font_math "auto" "auto"
+\font_roman lmodern
+\font_sans lmss
+\font_typewriter lmtt
+\font_math auto
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100 100
-\font_tt_scale 100 100
+\font_sf_scale 100
+\font_tt_scale 100
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -169,112 +167,7 @@ Actors
 \end_layout
 
 \begin_layout Subsection
-Abbreviations, Definitions and Acronyms
-\end_layout
-
-\begin_layout Itemize
-Gn: the n-th Goal
-\end_layout
-
-\begin_layout Itemize
-Visitor: anyone visiting the website without being logged in
-\end_layout
-
-\begin_layout Itemize
-User: anyone who registered on the website
-\end_layout
-
-\begin_layout Subsection
 Goals
-\end_layout
-
-\begin_layout Standard
-List of goals for project PowerEnJoy:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
-G1
-\end_layout
-
-\end_inset
-
- Allow visitors to sign up
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
-G2
-\end_layout
-
-\end_inset
-
-Show updated information on available cars
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
-G3
-\end_layout
-
-\end_inset
-
-Allow Users to unlock a car
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
-G4
-\end_layout
-
-\end_inset
-
-Allow Users to reserve a car
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
-G5
-\end_layout
-
-\end_inset
-
-Reward well-behaved users 
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
-G6
-\end_layout
-
-\end_inset
-
-Allow System Administrator(s) to update informations
 \end_layout
 
 \begin_layout Subsection
