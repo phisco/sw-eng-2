@@ -184,6 +184,10 @@ Gn: the n-th Goal
 An: the n-th assumption
 \end_layout
 
+\begin_layout Itemize
+Rn: the n-th Requirement
+\end_layout
+
 \begin_layout Subsubsection
 Acronyms
 \end_layout
@@ -387,7 +391,21 @@ A6
 
 \end_inset
 
+The Licence Office (Motorizzazione Civile) allows for automated check of
+ Licence Numbers, also providing checks for Name and Surname (at least).
+\end_layout
 
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+A7
+\end_layout
+
+\end_inset
+
+Foreign Licences are not allowed OR Are allowed <– TO BE CHECKED
 \end_layout
 
 \begin_layout Subsection
@@ -424,8 +442,100 @@ Functional Requirements
 G1: Allow visitors to sign up
 \end_layout
 
-\begin_layout Itemize
-Bla bla
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+R1
+\end_layout
+
+\end_inset
+
+A valid email is required during the registration
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+R2
+\end_layout
+
+\end_inset
+
+Invalid emails are all addresses that are either already in use or not well
+ formed
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+R3
+\end_layout
+
+\end_inset
+
+A valid DL is required
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+R4
+\end_layout
+
+\end_inset
+
+The DL is valid if all the fields match the user's informations and the
+ Licence Office confirms that the Licence Number, the Name and the Surname
+ are correct.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+R5
+\end_layout
+
+\end_inset
+
+Foreign DL must be verified by an Operator (OR they are not allowed????
+ See A7)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+R6
+\end_layout
+
+\end_inset
+
+If some of the provided information is incorrect, the registration is rejected
+ and the user is prompted to fix the issue(s)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+R7
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
