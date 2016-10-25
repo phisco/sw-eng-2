@@ -173,7 +173,11 @@ Abbreviations, Definitions and Acronyms
 \end_layout
 
 \begin_layout Itemize
-[Gn]: the n-th Goal
+Gn: the n-th Goal
+\end_layout
+
+\begin_layout Itemize
+An: the n-th assumption
 \end_layout
 
 \begin_layout Itemize
@@ -209,7 +213,7 @@ G1
 
 \end_inset
 
-Goal 1
+ Allow visitors to sign up
 \end_layout
 
 \begin_layout Enumerate
@@ -222,27 +226,102 @@ G2
 
 \end_inset
 
-Goal2
+Show updated information on available cars
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-[G1] Allow visitors to sign up
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+G3
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-[G2] Show updated information on available cars
+\end_inset
+
+Allow Users to unlock a car
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-[G3] Allow Users to unlock a car
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+G4
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-[G4] Allow Users to reserve a car
+\end_inset
+
+Allow Users to reserve a car
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+G5
+\end_layout
+
+\end_inset
+
+Reward well-behaved users 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+G6
+\end_layout
+
+\end_inset
+
+Allow System Administrator(s) to update informations
+\end_layout
+
+\begin_layout Subsection
+Assumptions
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+A1
+\end_layout
+
+\end_inset
+
+There is a System Administrator that manages the website and the app
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+A2
+\end_layout
+
+\end_inset
+
+The Sysadmin can add cars to the system and manage them
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+A3
+\end_layout
+
+\end_inset
+
+There are operators that can recover cars 
 \end_layout
 
 \begin_layout Subsection
