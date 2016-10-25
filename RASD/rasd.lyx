@@ -172,6 +172,10 @@ Actors
 Abbreviations, Definitions and Acronyms
 \end_layout
 
+\begin_layout Subsubsection
+Abbreviations:
+\end_layout
+
 \begin_layout Itemize
 Gn: the n-th Goal
 \end_layout
@@ -180,12 +184,20 @@ Gn: the n-th Goal
 An: the n-th assumption
 \end_layout
 
+\begin_layout Subsubsection
+Acronyms
+\end_layout
+
 \begin_layout Itemize
 CC: Credit Card
 \end_layout
 
 \begin_layout Itemize
 DL: Driving Licence
+\end_layout
+
+\begin_layout Subsubsection
+Definitions
 \end_layout
 
 \begin_layout Itemize
@@ -409,7 +421,7 @@ Functional Requirements
 \end_layout
 
 \begin_layout Subsubsection
-G1
+G1: Allow visitors to sign up
 \end_layout
 
 \begin_layout Itemize

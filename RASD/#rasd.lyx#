@@ -172,6 +172,10 @@ Actors
 Abbreviations, Definitions and Acronyms
 \end_layout
 
+\begin_layout Subsubsection
+Abbreviations:
+\end_layout
+
 \begin_layout Itemize
 Gn: the n-th Goal
 \end_layout
@@ -181,11 +185,23 @@ An: the n-th assumption
 \end_layout
 
 \begin_layout Itemize
+CC: Credit Card
+\end_layout
+
+\begin_layout Itemize
+DL: Driving Licence
+\end_layout
+
+\begin_layout Itemize
 Visitor: anyone visiting the website without being logged in
 \end_layout
 
 \begin_layout Itemize
 User: anyone who registered on the website
+\end_layout
+
+\begin_layout Itemize
+Active User: a User whose informations (CC, DL) have been verified
 \end_layout
 
 \begin_layout Subsection
@@ -239,7 +255,7 @@ G3
 
 \end_inset
 
-Allow Users to unlock a car
+Allow Users to unlock a car 
 \end_layout
 
 \begin_layout Enumerate
@@ -321,7 +337,49 @@ A3
 
 \end_inset
 
-There are operators that can recover cars 
+There are operators that can recover cars
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+A4
+\end_layout
+
+\end_inset
+
+Only Active Users can use the service
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+A5
+\end_layout
+
+\end_inset
+
+Every car has a unique code (different from the licence number) that is
+ visible from the outside.
+ This number is used to ensure that a User is near a Car if he tries to
+ unlock it and no GPS data is available.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+A6
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -344,6 +402,22 @@ In particular the server and the web app will be implemented in JEE with
 
 \begin_layout Subsection
 Etc
+\end_layout
+
+\begin_layout Section
+Specific Requirements
+\end_layout
+
+\begin_layout Subsection
+Functional Requirements
+\end_layout
+
+\begin_layout Subsubsection
+G1: Allow visitors to sign up
+\end_layout
+
+\begin_layout Itemize
+Bla bla
 \end_layout
 
 \end_body

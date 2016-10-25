@@ -400,5 +400,21 @@ In particular the server and the web app will be implemented in JEE with
 Etc
 \end_layout
 
+\begin_layout Section
+Specific Requirements
+\end_layout
+
+\begin_layout Subsection
+Functional Requirements
+\end_layout
+
+\begin_layout Subsubsection
+G1
+\end_layout
+
+\begin_layout Itemize
+Bla bla
+\end_layout
+
 \end_body
 \end_document
