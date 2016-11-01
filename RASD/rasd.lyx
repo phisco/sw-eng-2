@@ -102,7 +102,7 @@ Politecnico di Milano, A.Y.
 \end_inset
 
 M.Sc.
- programme in Computer Science and Engineering
+ Degree Programme in Computer Science and Engineering
 \begin_inset Newline newline
 \end_inset
 
@@ -169,7 +169,7 @@ Purpose
 \end_layout
 
 \begin_layout Standard
-List of goals for project PowerEnJoy:
+PowerEnJoy should provide these functionalities:
 \end_layout
 
 \begin_layout Standard
@@ -202,7 +202,7 @@ G2
 
 \end_inset
 
-Show updated information on available cars
+Show updated informations on available cars
 \end_layout
 
 \begin_layout Enumerate
@@ -215,7 +215,7 @@ G3
 
 \end_inset
 
-Allow Users to unlock a car 
+Allow Users to reserve a car 
 \end_layout
 
 \begin_layout Enumerate
@@ -228,7 +228,7 @@ G4
 
 \end_inset
 
-Allow Users to reserve a car
+Allow Users to unlock a car
 \end_layout
 
 \begin_layout Enumerate
@@ -333,6 +333,12 @@ Product funcions
 User characteristics
 \end_layout
 
+\begin_layout Standard
+Everyone with a mobile phone can download and install the app and everyone
+ with an internet connection can access the web app but only visitors with
+ a valid DL can create an account.
+\end_layout
+
 \begin_layout Subsection
 Constraints
 \end_layout
@@ -351,7 +357,7 @@ A1
 
 \end_inset
 
-There is a System Administrator that manages the website and the app
+There is a System Administrator that manages the website and the app.
 \end_layout
 
 \begin_layout Enumerate
@@ -364,7 +370,7 @@ A2
 
 \end_inset
 
-The Sysadmin can add cars to the system and manage them
+The SysAdmin can add cars to the system and manage them.
 \end_layout
 
 \begin_layout Enumerate
@@ -377,7 +383,7 @@ A3
 
 \end_inset
 
-There are operators that can recover cars
+There are operators that can recover cars.
 \end_layout
 
 \begin_layout Enumerate
@@ -390,7 +396,7 @@ A4
 
 \end_inset
 
-Only Active Users can use the service
+Only Active Users can use the service.
 \end_layout
 
 \begin_layout Enumerate
@@ -433,7 +439,7 @@ A7
 
 \end_inset
 
-Foreign Licences are not allowed OR Are allowed <– TO BE CHECKED
+Foreign Licences are allowed.
 \end_layout
 
 \begin_layout Subsection
@@ -468,6 +474,10 @@ Specific Requirements
 \end_layout
 
 \begin_layout Subsection
+External Inteface Requirements
+\end_layout
+
+\begin_layout Subsection
 Functional Requirements
 \end_layout
 
@@ -485,7 +495,7 @@ R1
 
 \end_inset
 
-A valid email is required during the registration
+A valid email is required during the registration.
 \end_layout
 
 \begin_layout Enumerate
@@ -499,7 +509,7 @@ R2
 \end_inset
 
 Invalid emails are all addresses that are either already in use or not well
- formed
+ formed.
 \end_layout
 
 \begin_layout Enumerate
@@ -512,7 +522,7 @@ R3
 
 \end_inset
 
-A valid DL is required
+A valid DL is required.
 \end_layout
 
 \begin_layout Enumerate
@@ -540,8 +550,7 @@ R5
 
 \end_inset
 
-Foreign DL must be verified by an Operator (OR they are not allowed????
- See A7)
+Foreign DL must be verified by an Operator.
 \end_layout
 
 \begin_layout Enumerate
@@ -555,7 +564,11 @@ R6
 \end_inset
 
 If some of the provided information is incorrect, the registration is rejected
- and the user is prompted to fix the issue(s)
+ and the user is prompted to fix the issue(s).
+\end_layout
+
+\begin_layout Subsubsection
+G2: Show updated informations on available cars
 \end_layout
 
 \begin_layout Enumerate
@@ -568,7 +581,59 @@ R7
 
 \end_inset
 
+The list of available cars always includes only cars that are parked and
+ not reserved and is shown on a map in the location where it is actually
+ parked.
+\end_layout
 
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+R8
+\end_layout
+
+\end_inset
+
+If a car is reserved is tagged on the map as 
+\begin_inset Quotes eld
+\end_inset
+
+reserved
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+R9
+\end_layout
+
+\end_inset
+
+For every car is displayed the remaining percentage of the battery.
+\end_layout
+
+\begin_layout Subsubsection
+G3: Allow Users to reserve a car
+\end_layout
+
+\begin_layout Subsubsection
+G4: Allow Users to unlock a car
+\end_layout
+
+\begin_layout Subsubsection
+G5: Reward well-behaved users
+\end_layout
+
+\begin_layout Subsubsection
+G6: Allow System Administrator(s) to update informations
 \end_layout
 
 \end_body
