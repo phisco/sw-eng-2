@@ -165,59 +165,7 @@ bonus-malus
 \end_layout
 
 \begin_layout Subsection
-Actors
-\end_layout
-
-\begin_layout Subsection
-Abbreviations, Definitions and Acronyms
-\end_layout
-
-\begin_layout Subsubsection
-Abbreviations:
-\end_layout
-
-\begin_layout Itemize
-Gn: the n-th Goal
-\end_layout
-
-\begin_layout Itemize
-An: the n-th assumption
-\end_layout
-
-\begin_layout Itemize
-Rn: the n-th Requirement
-\end_layout
-
-\begin_layout Subsubsection
-Acronyms
-\end_layout
-
-\begin_layout Itemize
-CC: Credit Card
-\end_layout
-
-\begin_layout Itemize
-DL: Driving Licence
-\end_layout
-
-\begin_layout Subsubsection
-Definitions
-\end_layout
-
-\begin_layout Itemize
-Visitor: anyone visiting the website without being logged in
-\end_layout
-
-\begin_layout Itemize
-User: anyone who registered on the website
-\end_layout
-
-\begin_layout Itemize
-Active User: a User whose informations (CC, DL) have been verified
-\end_layout
-
-\begin_layout Subsection
-Goals
+Purpose
 \end_layout
 
 \begin_layout Standard
@@ -310,7 +258,87 @@ Allow System Administrator(s) to update informations
 \end_layout
 
 \begin_layout Subsection
-Assumptions
+Scope
+\end_layout
+
+\begin_layout Subsection
+Abbreviations, Definitions and Acronyms
+\end_layout
+
+\begin_layout Subsubsection
+Abbreviations:
+\end_layout
+
+\begin_layout Itemize
+Gn: the n-th Goal
+\end_layout
+
+\begin_layout Itemize
+An: the n-th assumption
+\end_layout
+
+\begin_layout Itemize
+Rn: the n-th Requirement
+\end_layout
+
+\begin_layout Subsubsection
+Acronyms
+\end_layout
+
+\begin_layout Itemize
+CC: Credit Card
+\end_layout
+
+\begin_layout Itemize
+DL: Driving Licence
+\end_layout
+
+\begin_layout Subsubsection
+Definitions
+\end_layout
+
+\begin_layout Itemize
+Visitor: anyone visiting the website without being logged in
+\end_layout
+
+\begin_layout Itemize
+User: anyone who registered on the website
+\end_layout
+
+\begin_layout Itemize
+Active User: a User whose informations (CC, DL) have been verified
+\end_layout
+
+\begin_layout Subsection
+Reference documents
+\end_layout
+
+\begin_layout Subsection
+Overview
+\end_layout
+
+\begin_layout Section
+Overall Description
+\end_layout
+
+\begin_layout Subsection
+Product perspective
+\end_layout
+
+\begin_layout Subsection
+Product funcions
+\end_layout
+
+\begin_layout Subsection
+User characteristics
+\end_layout
+
+\begin_layout Subsection
+Constraints
+\end_layout
+
+\begin_layout Subsection
+Assunptions and Dependencies
 \end_layout
 
 \begin_layout Enumerate
@@ -410,6 +438,16 @@ Foreign Licences are not allowed OR Are allowed <– TO BE CHECKED
 
 \begin_layout Subsection
 Idea of the implementation
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+probabilmente da rimuovere
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -423,11 +461,6 @@ In particular the server and the web app will be implemented in JEE with
  The mobile app will be compatible with both Android and iOS.
  However other mobile platforms will be able to access services through
  web browser via the web app, that will have a mobile theme.
- 
-\end_layout
-
-\begin_layout Subsection
-Etc
 \end_layout
 
 \begin_layout Section
