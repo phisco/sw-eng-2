@@ -202,7 +202,7 @@ G2
 
 \end_inset
 
-Shows updated informations on available cars.
+Allow visitors to log in.
 \end_layout
 
 \begin_layout Enumerate
@@ -215,7 +215,7 @@ G3
 
 \end_inset
 
-Allows Users to reserve a car.
+Shows updated informations on available cars.
 \end_layout
 
 \begin_layout Enumerate
@@ -228,7 +228,7 @@ G4
 
 \end_inset
 
-Allows Users to unlock a car.
+Allows Active Users to reserve a car.
 \end_layout
 
 \begin_layout Enumerate
@@ -241,7 +241,7 @@ G5
 
 \end_inset
 
-Computes the fare.
+Allows Active Users to unlock a car.
 \end_layout
 
 \begin_layout Enumerate
@@ -254,7 +254,7 @@ G6
 
 \end_inset
 
-Rewards well-behaved users.
+Computes the fare.
 \end_layout
 
 \begin_layout Enumerate
@@ -263,6 +263,19 @@ status open
 
 \begin_layout Plain Layout
 G7
+\end_layout
+
+\end_inset
+
+Rewards well-behaved users.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+G8
 \end_layout
 
 \end_inset
@@ -390,7 +403,8 @@ A1
 
 \end_inset
 
-There is a System Administrator that manages the website and the app.
+There is at least one System Administrator that manages the website and
+ the app.
 \end_layout
 
 \begin_layout Enumerate
@@ -403,7 +417,8 @@ A2
 
 \end_inset
 
-The SysAdmin can add cars to the system and manage them.
+The System Administrator can add and remove cars from the system and manage
+ their status if needed.
 \end_layout
 
 \begin_layout Enumerate
@@ -601,7 +616,11 @@ If some of the provided information is incorrect, the registration is rejected
 \end_layout
 
 \begin_layout Subsubsection
-G2: Shows updated informations on available cars
+G2: Allow visitors to log in
+\end_layout
+
+\begin_layout Subsubsection
+G3: Shows updated informations on available cars
 \end_layout
 
 \begin_layout Enumerate
@@ -668,7 +687,7 @@ Users can apply filters to show only cars within a certain distance from
 \end_layout
 
 \begin_layout Subsubsection
-G3: Allows Users to reserve a car
+G4: Allows Users to reserve a car
 \end_layout
 
 \begin_layout Enumerate
@@ -725,7 +744,7 @@ Only available cars can be reserved.
 \end_layout
 
 \begin_layout Subsubsection
-G4: Allows Users to unlock a car
+G5: Allows Users to unlock a car
 \end_layout
 
 \begin_layout Enumerate
@@ -769,15 +788,15 @@ The car is unlocked only after the user is acknowledged.
 \end_layout
 
 \begin_layout Subsubsection
-G5: Computes the fare
+G6: Computes the fare
 \end_layout
 
 \begin_layout Subsubsection
-G6: Rewards well-behaved users
+G7: Rewards well-behaved users
 \end_layout
 
 \begin_layout Subsubsection
-G7: Allows System Administrator(s) to update informations
+G8: Allows System Administrator(s) to update informations
 \end_layout
 
 \end_body
