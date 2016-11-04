@@ -10,6 +10,9 @@
 \addtokomafont{disposition}{\rmfamily}
 \end_preamble
 \use_default_options false
+\begin_modules
+enumitem
+\end_modules
 \maintain_unincluded_children false
 \language american
 \language_package default
@@ -554,84 +557,57 @@ Functional Requirements
 G1: Allows visitors to sign up
 \end_layout
 
-\begin_layout Enumerate
-\begin_inset Argument item:1
+\begin_layout Standard
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-R1
+
+
+\backslash
+renewcommand{
+\backslash
+labelenumi}{R
+\backslash
+arabic{enumi}.}
 \end_layout
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
 A valid email is required during the registration.
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
-R2
-\end_layout
-
-\end_inset
-
 Invalid emails are all addresses that are either already in use or not well
  formed.
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
-R3
-\end_layout
-
-\end_inset
-
 A valid DL is required.
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
-R4
-\end_layout
-
-\end_inset
-
 The DL is valid if all the fields match the user's informations and the
  Licence Office confirms that the Licence Number, the Name and the Surname
  are correct.
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
-R5
-\end_layout
-
-\end_inset
-
 Foreign DL must be verified by an Operator.
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
-R6
-\end_layout
-
-\end_inset
-
 If some of the provided information is incorrect, the registration is rejected
  and the user is prompted to fix the issue(s).
 \end_layout
@@ -645,30 +621,12 @@ G3: Shows updated informations on available cars
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
-R7
-\end_layout
-
-\end_inset
-
 The list of available cars always includes only cars that are parked and
  not reserved and is shown on a map in the location where it is actually
  parked.
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
-R8
-\end_layout
-
-\end_inset
-
 If a car is reserved is tagged on the map as 
 \begin_inset Quotes eld
 \end_inset
@@ -681,28 +639,10 @@ reserved
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
-R9
-\end_layout
-
-\end_inset
-
 For every car is displayed the remaining percentage of the battery.
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
-R10
-\end_layout
-
-\end_inset
-
 Users can apply filters to show only cars within a certain distance from
  a specified location or with a minimum percentage of battery left.
 \end_layout
@@ -712,55 +652,19 @@ G4: Allows Users to reserve a car
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
-R11
-\end_layout
-
-\end_inset
-
 Only Active Users can reserve cars.
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
-R12
-\end_layout
-
-\end_inset
-
 Cars can be reserved for up to one hour before the unlocking.
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
-R13
-\end_layout
-
-\end_inset
-
 If a reserved car is not unlocked in one hour the reservation expires and
  the user pays a fine of 1€.
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
-R14
-\end_layout
-
-\end_inset
-
 Only available cars can be reserved.
 \end_layout
 
@@ -769,42 +673,15 @@ G5: Allows Users to unlock a car
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
-R15
-\end_layout
-
-\end_inset
-
 A car can be unlocked only by the user who has reserved it.
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
-R16
-\end_layout
-
-\end_inset
-
 There exists a physical mechanism of acknowledgment between the car and
  the user.
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
-R17
-\end_layout
-
-\end_inset
-
 The car is unlocked only after the user is acknowledged.
 \end_layout
 
@@ -818,6 +695,26 @@ G7: Rewards well-behaved users
 
 \begin_layout Subsubsection
 G8: Allows System Administrator(s) to update informations
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+labelenumi}{
+\backslash
+arabic{enumi}.}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
