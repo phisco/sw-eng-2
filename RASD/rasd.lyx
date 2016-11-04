@@ -74,6 +74,7 @@ enumitem
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
+\listings_params "basicstyle={\ttfamily},columns=fullflexible"
 \tracking_changes false
 \output_changes false
 \html_math_output 0
@@ -639,70 +640,38 @@ labelenumi}{R
 arabic{enumi}}  
 \end_layout
 
-\begin_layout Plain Layout
-
-
-\backslash
-begin{enumerate}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-item A valid email is required during the registration.
-   
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-item A valid DL is required.
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-item Invalid emails are all addresses that are either already in use or
- not well formed.
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-item The DL is valid if all the fields match the user's informations and
- the Licence Office confirms that the Licence Number, the Name and the Surname
- are correct.
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-item Foreign DL must be verified by an Operator.
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-item If some of the provided information is incorrect, the registration
- is rejected and the user is prompted to fix the issue(s).
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{enumerate}
-\end_layout
-
 \end_inset
 
 
+\end_layout
+
+\begin_layout Enumerate
+A valid email is required during the registration.
+   
+\end_layout
+
+\begin_layout Enumerate
+A valid DL is required.
+\end_layout
+
+\begin_layout Enumerate
+Invalid emails are all addresses that are either already in use or not well
+ formed.
+\end_layout
+
+\begin_layout Enumerate
+The DL is valid if all the fields match the user's informations and the
+ Licence Office confirms that the Licence Number, the Name and the Surname
+ are correct.
+\end_layout
+
+\begin_layout Enumerate
+Foreign DL must be verified by an Operator.
+\end_layout
+
+\begin_layout Enumerate
+If some of the provided information is incorrect, the registration is rejected
+ and the user is prompted to fix the issue(s).
 \end_layout
 
 \begin_layout Standard
@@ -716,215 +685,117 @@ end{enumerate}
 G2: Allow visitors to log in
 \end_layout
 
-\begin_layout Standard
-\begin_inset ERT
-status open
+\begin_layout Enumerate
+\begin_inset Argument 1
+status collapsed
 
 \begin_layout Plain Layout
-
-
-\backslash
-begin{enumerate}[resume]
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-item A previously registered email is required.
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-item The password chosen during the registration of the submitted email
- has to be inserted in order to log in.
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-item Visitors submitting incorrect email and/or password shall not be allowed
- to log in.
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{enumerate}  
+resume
 \end_layout
 
 \end_inset
 
+A previously registered email is required.
+\end_layout
 
+\begin_layout Enumerate
+The password chosen during the registration of the submitted email has to
+ be inserted in order to log in.
+\end_layout
+
+\begin_layout Enumerate
+Visitors submitting incorrect email and/or password shall not be allowed
+ to log in.
 \end_layout
 
 \begin_layout Subsubsection
 G3: Shows updated information on available cars
 \end_layout
 
-\begin_layout Standard
-\begin_inset ERT
-status open
+\begin_layout Enumerate
+\begin_inset Argument 1
+status collapsed
 
 \begin_layout Plain Layout
-
-
-\backslash
-begin{enumerate}[resume]   
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-item The list of available cars always includes only cars that are parked
- and not reserved and is shown on a map in the location where it is actually
- parked.
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-item If a car is reserved is tagged on the map as reserved.
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-item For every car is displayed the remaining percentage of the battery.
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-item Users can apply filters to show only cars within a certain distance
- from a specified location or with a minimum percentage of battery left.
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{enumerate}
+resume
 \end_layout
 
 \end_inset
 
+The list of available cars always includes only cars that are parked and
+ not reserved and is shown on a map in the location where it is actually
+ parked.
+\end_layout
 
+\begin_layout Enumerate
+If a car is reserved is tagged on the map as reserved.
+\end_layout
+
+\begin_layout Enumerate
+For every car is displayed the remaining percentage of the battery.
+\end_layout
+
+\begin_layout Enumerate
+Users can apply filters to show only cars within a certain distance from
+ a specified location or with a minimum percentage of battery left.
 \end_layout
 
 \begin_layout Subsubsection
 G4: Allows Users to reserve a car
 \end_layout
 
-\begin_layout Standard
-\begin_inset ERT
-status open
+\begin_layout Enumerate
+\begin_inset Argument 1
+status collapsed
 
 \begin_layout Plain Layout
-
-
-\backslash
-begin{enumerate}[resume]
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-item Only Active Users can reserve cars.
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-item Cars can be reserved for up to one hour before the unlocking.
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-item If a reserved car is not unlocked in one hour the reservation expires
- and the user pays a fine of 1
-\backslash
-geneuro.
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-item Only available cars can be reserved.
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{enumerate}  
+resume
 \end_layout
 
 \end_inset
 
+Only Active Users can reserve cars.
+\end_layout
 
+\begin_layout Enumerate
+Cars can be reserved for up to one hour before the unlocking.
+\end_layout
+
+\begin_layout Enumerate
+If a reserved car is not unlocked in one hour the reservation expires and
+ the user pays a fine of 1
+\backslash
+geneuro.
+\end_layout
+
+\begin_layout Enumerate
+Only available cars can be reserved.
 \end_layout
 
 \begin_layout Subsubsection
 G5: Allows Users to unlock a car
 \end_layout
 
-\begin_layout Standard
-\begin_inset ERT
-status open
+\begin_layout Enumerate
+\begin_inset Argument 1
+status collapsed
 
 \begin_layout Plain Layout
-
-
-\backslash
-begin{enumerate}[resume]
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-item A car can be unlocked only by the user who has reserved it.
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-item There exists a physical mechanism of acknowledgment between the car
- and the user.
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-item The car is unlocked only after the user is acknowledged.
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{enumerate}  
+resume
 \end_layout
 
 \end_inset
 
+A car can be unlocked only by the user who has reserved it.
+\end_layout
 
+\begin_layout Enumerate
+There exists a physical mechanism of acknowledgment between the car and
+ the user.
+\end_layout
+
+\begin_layout Enumerate
+The car is unlocked only after the user is acknowledged.
 \end_layout
 
 \begin_layout Subsubsection
@@ -969,6 +840,360 @@ Scenarios
 
 \begin_layout Subsubsection
 Scenario 1: 
+\end_layout
+
+\begin_layout Subsection
+Alloy modelization and analysis
+\end_layout
+
+\begin_layout Subsubsection
+Source code
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status collapsed
+
+\begin_layout Plain Layout
+
+open util/boolean
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+sig Car {
+\end_layout
+
+\begin_layout Plain Layout
+
+	coordinate: one Coordinate,
+\end_layout
+
+\begin_layout Plain Layout
+
+	battery: one Int,
+\end_layout
+
+\begin_layout Plain Layout
+
+	inUse: one Bool,
+\end_layout
+
+\begin_layout Plain Layout
+
+	reserved: one Bool,
+\end_layout
+
+\begin_layout Plain Layout
+
+	user: lone User
+\end_layout
+
+\begin_layout Plain Layout
+
+} {
+\end_layout
+
+\begin_layout Plain Layout
+
+	battery >= 0
+\end_layout
+
+\begin_layout Plain Layout
+
+	battery <= 100
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+sig Coordinate {}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+sig User {
+\end_layout
+
+\begin_layout Plain Layout
+
+	email: one Email,
+\end_layout
+
+\begin_layout Plain Layout
+
+	carInUse: lone Car,
+\end_layout
+
+\begin_layout Plain Layout
+
+	carReserved: lone Car
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+fact SimmetryBetweenDriverAndCar1 {
+\end_layout
+
+\begin_layout Plain Layout
+
+	all u:User | #u.carReserved=1 => u.carReserved.user=u
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+fact SimmetryBetweenDriverAndCar2 {
+\end_layout
+
+\begin_layout Plain Layout
+
+	all u:User | #u.carInUse=1 => u.carInUse.user=u
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+fact SimmetryBetweenDriverAndCar3 {
+\end_layout
+
+\begin_layout Plain Layout
+
+	all c:Car | #c.user=1 and c.inUse.isTrue => c.user.carInUse=c
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+fact SimmetryBetweenDriverAndCar4 {
+\end_layout
+
+\begin_layout Plain Layout
+
+	all c:Car | #c.user=1 and c.reserved.isTrue => c.user.carReserved=c
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+fact InUseAndReservedSemantics {
+\end_layout
+
+\begin_layout Plain Layout
+
+	all c:Car | (#c.user=1 => (c.inUse.isTrue or c.reserved.isTrue))
+\end_layout
+
+\begin_layout Plain Layout
+
+		and (c.reserved.isTrue <=> #c.user.carReserved=1)
+\end_layout
+
+\begin_layout Plain Layout
+
+		and (c.inUse.isTrue <=> #c.user.carInUse=1)
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+fact ReservationAndUseAreMutuallyExclusiveWrtCars {
+\end_layout
+
+\begin_layout Plain Layout
+
+	all c:Car | (c.reserved.isTrue => c.inUse.isFalse) 
+\end_layout
+
+\begin_layout Plain Layout
+
+		and (c.inUse.isTrue => c.reserved.isFalse)
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+fact ReservationAndUseAreMutuallyExclusiveWrtUsers {
+\end_layout
+
+\begin_layout Plain Layout
+
+	all u:User | (#u.carInUse=1 => #u.carReserved=0) 
+\end_layout
+
+\begin_layout Plain Layout
+
+		and (#u.carReserved=1 => #u.carInUse=0)
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+sig Email {}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+fact OneUserPerEmail {
+\end_layout
+
+\begin_layout Plain Layout
+
+	all u1, u2: User | u1!=u2 => u1.email != u2.email
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+pred show {}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+assert BijectionBetweenUserAndEmail {
+\end_layout
+
+\begin_layout Plain Layout
+
+	all u1, u2: User | u1=u2 <=> u1.email = u2.email
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+run show for 1 Coordinate, 2 Car, 2 Email, 2 User, 1 Int
+\end_layout
+
+\begin_layout Plain Layout
+
+check BijectionBetweenUserAndEmail
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Results
+\end_layout
+
+\begin_layout Subsubsection
+Models generated
 \end_layout
 
 \end_body
