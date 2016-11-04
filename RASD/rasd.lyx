@@ -169,6 +169,79 @@ Purpose
 \end_layout
 
 \begin_layout Standard
+This document is the Requirement Analysis and Specification Document (RASD).
+ Its main objective is to accurately describe the systems, in terms of both
+ functional and non-functional requirements.
+ Moreover it focuses on modeling the system taking into account the customer's
+ needs, as well as showing the constraints and limits that must be imposed
+ and the most relevant use cases.
+ This document is targeted to anyone who has to contribute to PowerEnjoy
+ since developers will use it to check the requirements that need to be
+ implemented and it may be used as a contract (or part of it) between the
+ deveploper and the customer.
+\end_layout
+
+\begin_layout Subsection
+Scope
+\end_layout
+
+\begin_layout Subsection
+Abbreviations, Definitions and Acronyms
+\end_layout
+
+\begin_layout Subsubsection
+Abbreviations:
+\end_layout
+
+\begin_layout Itemize
+Gn: the n-th Goal
+\end_layout
+
+\begin_layout Itemize
+An: the n-th assumption
+\end_layout
+
+\begin_layout Itemize
+Rn: the n-th Requirement
+\end_layout
+
+\begin_layout Subsubsection
+Acronyms
+\end_layout
+
+\begin_layout Itemize
+CC: Credit Card
+\end_layout
+
+\begin_layout Itemize
+DL: Driving Licence
+\end_layout
+
+\begin_layout Subsubsection
+Definitions
+\end_layout
+
+\begin_layout Itemize
+Visitor: anyone visiting the website without being logged in
+\end_layout
+
+\begin_layout Itemize
+User: anyone who registered on the website
+\end_layout
+
+\begin_layout Itemize
+Active User: a User whose informations (CC, DL) have been verified
+\end_layout
+
+\begin_layout Subsection
+Actors
+\end_layout
+
+\begin_layout Subsection
+Goals
+\end_layout
+
+\begin_layout Standard
 PowerEnJoy should provide these functionalities:
 \end_layout
 
@@ -281,58 +354,6 @@ G8
 \end_inset
 
 Allows System Administrator(s) to update informations.
-\end_layout
-
-\begin_layout Subsection
-Scope
-\end_layout
-
-\begin_layout Subsection
-Abbreviations, Definitions and Acronyms
-\end_layout
-
-\begin_layout Subsubsection
-Abbreviations:
-\end_layout
-
-\begin_layout Itemize
-Gn: the n-th Goal
-\end_layout
-
-\begin_layout Itemize
-An: the n-th assumption
-\end_layout
-
-\begin_layout Itemize
-Rn: the n-th Requirement
-\end_layout
-
-\begin_layout Subsubsection
-Acronyms
-\end_layout
-
-\begin_layout Itemize
-CC: Credit Card
-\end_layout
-
-\begin_layout Itemize
-DL: Driving Licence
-\end_layout
-
-\begin_layout Subsubsection
-Definitions
-\end_layout
-
-\begin_layout Itemize
-Visitor: anyone visiting the website without being logged in
-\end_layout
-
-\begin_layout Itemize
-User: anyone who registered on the website
-\end_layout
-
-\begin_layout Itemize
-Active User: a User whose informations (CC, DL) have been verified
 \end_layout
 
 \begin_layout Subsection
@@ -804,11 +825,7 @@ Scenarios
 \end_layout
 
 \begin_layout Subsubsection
-Scenario 1
-\end_layout
-
-\begin_layout Standard
-
+Scenario 1: Alan needs to go to the cinema
 \end_layout
 
 \end_body
