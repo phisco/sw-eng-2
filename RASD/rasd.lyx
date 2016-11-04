@@ -7,6 +7,7 @@
 \textclass scrartcl
 \begin_preamble
 \usepackage{microtype}
+\usepackage{eurosym}
 \addtokomafont{disposition}{\rmfamily}
 \end_preamble
 \use_default_options false
@@ -569,7 +570,68 @@ renewcommand{
 \backslash
 labelenumi}{R
 \backslash
-arabic{enumi}.}
+arabic{enumi}}  
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{enumerate}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item A valid email is required during the registration.
+   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item A valid DL is required.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item Invalid emails are all addresses that are either already in use or
+ not well formed.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item The DL is valid if all the fields match the user's informations and
+ the Licence Office confirms that the Licence Number, the Name and the Surname
+ are correct.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item Foreign DL must be verified by an Operator.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item If some of the provided information is incorrect, the registration
+ is rejected and the user is prompted to fix the issue(s).
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{enumerate}
 \end_layout
 
 \end_inset
@@ -584,34 +646,6 @@ arabic{enumi}.}
 
 \end_layout
 
-\begin_layout Enumerate
-A valid email is required during the registration.
-\end_layout
-
-\begin_layout Enumerate
-Invalid emails are all addresses that are either already in use or not well
- formed.
-\end_layout
-
-\begin_layout Enumerate
-A valid DL is required.
-\end_layout
-
-\begin_layout Enumerate
-The DL is valid if all the fields match the user's informations and the
- Licence Office confirms that the Licence Number, the Name and the Surname
- are correct.
-\end_layout
-
-\begin_layout Enumerate
-Foreign DL must be verified by an Operator.
-\end_layout
-
-\begin_layout Enumerate
-If some of the provided information is incorrect, the registration is rejected
- and the user is prompted to fix the issue(s).
-\end_layout
-
 \begin_layout Subsubsection
 G2: Allow visitors to log in
 \end_layout
@@ -620,69 +654,165 @@ G2: Allow visitors to log in
 G3: Shows updated informations on available cars
 \end_layout
 
-\begin_layout Enumerate
-The list of available cars always includes only cars that are parked and
- not reserved and is shown on a map in the location where it is actually
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{enumerate}[resume]   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item The list of available cars always includes only cars that are parked
+ and not reserved and is shown on a map in the location where it is actually
  parked.
 \end_layout
 
-\begin_layout Enumerate
-If a car is reserved is tagged on the map as 
-\begin_inset Quotes eld
-\end_inset
+\begin_layout Plain Layout
 
-reserved
-\begin_inset Quotes erd
-\end_inset
 
-.
+\backslash
+item If a car is reserved is tagged on the map as reserved.
 \end_layout
 
-\begin_layout Enumerate
-For every car is displayed the remaining percentage of the battery.
+\begin_layout Plain Layout
+
+
+\backslash
+item For every car is displayed the remaining percentage of the battery.
 \end_layout
 
-\begin_layout Enumerate
-Users can apply filters to show only cars within a certain distance from
- a specified location or with a minimum percentage of battery left.
+\begin_layout Plain Layout
+
+
+\backslash
+item Users can apply filters to show only cars within a certain distance
+ from a specified location or with a minimum percentage of battery left.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{enumerate}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
 G4: Allows Users to reserve a car
 \end_layout
 
-\begin_layout Enumerate
-Only Active Users can reserve cars.
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{enumerate}[resume]
 \end_layout
 
-\begin_layout Enumerate
-Cars can be reserved for up to one hour before the unlocking.
+\begin_layout Plain Layout
+
+
+\backslash
+item Only Active Users can reserve cars.
 \end_layout
 
-\begin_layout Enumerate
-If a reserved car is not unlocked in one hour the reservation expires and
- the user pays a fine of 1€.
+\begin_layout Plain Layout
+
+
+\backslash
+item Cars can be reserved for up to one hour before the unlocking.
 \end_layout
 
-\begin_layout Enumerate
-Only available cars can be reserved.
+\begin_layout Plain Layout
+
+
+\backslash
+item If a reserved car is not unlocked in one hour the reservation expires
+ and the user pays a fine of 1
+\backslash
+geneuro.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item Only available cars can be reserved.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{enumerate}  
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
 G5: Allows Users to unlock a car
 \end_layout
 
-\begin_layout Enumerate
-A car can be unlocked only by the user who has reserved it.
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{enumerate}[resume]
 \end_layout
 
-\begin_layout Enumerate
-There exists a physical mechanism of acknowledgment between the car and
- the user.
+\begin_layout Plain Layout
+
+
+\backslash
+item A car can be unlocked only by the user who has reserved it.
 \end_layout
 
-\begin_layout Enumerate
-The car is unlocked only after the user is acknowledged.
+\begin_layout Plain Layout
+
+
+\backslash
+item There exists a physical mechanism of acknowledgment between the car
+ and the user.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item The car is unlocked only after the user is acknowledged.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{enumerate}  
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
