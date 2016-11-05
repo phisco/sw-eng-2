@@ -8,7 +8,7 @@ sig Car {
 	user: lone User
 } {
 	battery >= 0
-	battery <= 100
+	battery =< 100
 }
 
 sig Coordinate {}
@@ -53,15 +53,61 @@ fact ReservationAndUseAreMutuallyExclusiveWrtUsers {
 
 sig Email {}
 
-fact OneUserPerEmail {
+fact OneUserPerEmail {//da fare solo nello statico
 	all u1, u2: User | u1!=u2 => u1.email != u2.email
+}
+
+sig PowerStation {
+	capacity: one Int,
+	coordinate: one Coordinate,
+	carParked: set Car,
+	numberParked: one Int
+} {
+	numberParked=#carParked
+	numberParked=<capacity
+	capacity>0
+	all c:Car | c in carParked => c.inUse.isFalse
+}
+
+fact EachPowerStationIsInADifferentPlace {//da fare solo nello statico
+	all p1, p2: PowerStation | p1!=p2 => p1.coordinate!=p2.coordinate
+}
+
+fact CarAtPowerStationHaveItsCoordinate {
+	all c:Car, p:PowerStation | c in p.carParked => c.coordinate=p.coordinate
 }
 
 pred show {}
 
-assert BijectionBetweenUserAndEmail {
-	all u1, u2: User | u1=u2 <=> u1.email = u2.email
+pred reservedToInUse (c,c':Car, u,u':User) {
+	c.reserved.isTrue
+	c'.inUse.isTrue
+	c.user=u
+	c'.user=u'
+	c.coordinate=c'.coordinate
+	c.battery=c'.battery
+	u.carReserved=c
+	u'.carInUse=c'
+	//one p3:PowerStation | c in p3.carParked per trovare modello significativo
+	//u.email=u'.email
+	//da scommentare separando gli ambiti statico e dinamico
+	unplugCar[c]
 }
 
-run show for 1 Coordinate, 2 Car, 2 Email, 2 User, 1 Int
+pred unplugCar (c:Car) {
+	all p:PowerStation | c in p.carParked => one p2:PowerStation | (
+		p2.carParked=p.carParked-c and
+		p.capacity=p2.capacity and
+		//p.coordinate=p'.coordinate and    
+		//da scommentare separando gli ambiti statico e dinamico
+		p.numberParked=plus[p2.numberParked,1]
+	)
+}
+
+assert BijectionBetweenUserAndEmail {
+	all u1,u2:User | u1=u2 <=> u1.email=u2.email
+}
+
+run show for 2 Coordinate, 2 Car, 2 Email, 2 User, 2 Int, 1 PowerStation
+run reservedToInUse for 3 but 2 Int
 check BijectionBetweenUserAndEmail
