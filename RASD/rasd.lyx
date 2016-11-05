@@ -222,6 +222,10 @@ CC: Credit Card
 DL: Driving Licence
 \end_layout
 
+\begin_layout Itemize
+AU: Active User
+\end_layout
+
 \begin_layout Subsubsection
 Definitions
 \end_layout
@@ -334,6 +338,10 @@ Apply predetermined discounts to a user following determined behavior.
 
 \begin_layout Enumerate
 Allows System Administrator(s) to update system's information.
+\end_layout
+
+\begin_layout Enumerate
+Ensure that the fare is paid.
 \end_layout
 
 \begin_layout Standard
@@ -857,7 +865,7 @@ If the engine was never ignited the fare is calculated as explained in 3.2.5
 status open
 
 \begin_layout Plain Layout
-4th requirement - Add reference to exact requirement in a 
+ref to 4th requirement - Add reference to exact requirement in a 
 \begin_inset Quotes eld
 \end_inset
 
@@ -879,6 +887,45 @@ G7: Rewards well-behaved users
 
 \begin_layout Subsubsection
 G8: Allows System Administrator(s) to update information
+\end_layout
+
+\begin_layout Subsubsection
+G9: Ensure that the fare is paid
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+resume
+\end_layout
+
+\end_inset
+
+As soon as the rental is ended, use the payment method provided by the AU
+ to pay the fare.
+\end_layout
+
+\begin_layout Enumerate
+If the provided method is invalid (e.g.
+ expired or empty CC), notify the user and prevent him from booking cars
+ until the pending fare is paid.
+\end_layout
+
+\begin_layout Enumerate
+Allow users to insert new payment methods to pay pending fares.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Forse superfluo, l'idea è evitare con certezza di non bloccargli al 100%
+ l'account 
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
