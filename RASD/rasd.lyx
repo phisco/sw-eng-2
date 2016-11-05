@@ -577,18 +577,6 @@ The licence Office (Motorizzazione Civile) allows for automated check of
 Foreign licences are allowed, but will be checked personally by an operator.
 \end_layout
 
-\begin_layout Enumerate
-If a user unlocks the car without igniting the engine, the systems starts
- charging the regular price after the pick up time (one hour from the reservatio
-n) expires.
-\end_layout
-
-\begin_layout Enumerate
-If a user does not ignite the car after 15 minutes of having entered the
- car, the systems prompts the user to confirm he is fine.
- If no answer is received, an operator checks the car.
-\end_layout
-
 \begin_layout Standard
 \begin_inset ERT
 status open
@@ -813,6 +801,18 @@ There exists a physical mechanism of acknowledgment between the car and
 
 \begin_layout Enumerate
 The car is unlocked only after the user is acknowledged.
+\end_layout
+
+\begin_layout Enumerate
+If a user unlocks the car without igniting the engine, the systems starts
+ charging the regular price after the pick up time (one hour from the reservatio
+n) expires.
+\end_layout
+
+\begin_layout Enumerate
+If a user does not ignite the car after 15 minutes of having entered the
+ car, the systems prompts the user to confirm he is fine.
+ If no answer is received, an operator checks the car.
 \end_layout
 
 \begin_layout Subsubsection
