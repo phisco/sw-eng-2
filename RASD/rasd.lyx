@@ -280,108 +280,76 @@ PowerEnJoy should provide these functionalities:
 
 \end_layout
 
-\begin_layout Enumerate
-\begin_inset Argument item:1
+\begin_layout Standard
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-G1
+
+
+\backslash
+renewcommand{
+\backslash
+labelenumi}{G
+\backslash
+arabic{enumi})}  
 \end_layout
 
 \end_inset
 
- Allows visitors to sign up.
+
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
-G2
+Allows visitors to sign up.
 \end_layout
 
-\end_inset
-
+\begin_layout Enumerate
 Allows visitors to log in.
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
-G3
-\end_layout
-
-\end_inset
-
 Shows updated information on available cars.
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
-G4
-\end_layout
-
-\end_inset
-
 Allows Active Users to reserve a car.
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
-G5
-\end_layout
-
-\end_inset
-
 Allows Active Users to unlock a car.
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
-G6
-\end_layout
-
-\end_inset
-
 Computes the fare.
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
-G7
-\end_layout
-
-\end_inset
-
 Apply predetermined discounts to a user following determined behavior.
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Argument item:1
+Allows System Administrator(s) to update system's information.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-G8
+
+
+\backslash
+renewcommand{
+\backslash
+labelenumi}{
+\backslash
+arabic{enumi}.}
 \end_layout
 
 \end_inset
 
-Allows System Administrator(s) to update system's information.
+
 \end_layout
 
 \begin_layout Subsection
@@ -507,70 +475,45 @@ Constraints
 Assumptions and Dependencies
 \end_layout
 
-\begin_layout Enumerate
-\begin_inset Argument item:1
+\begin_layout Standard
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-A1
+
+
+\backslash
+renewcommand{
+\backslash
+labelenumi}{A
+\backslash
+arabic{enumi})}  
 \end_layout
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Enumerate
 There is at least one System Administrator that manages the website and
  the app.
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
-A2
-\end_layout
-
-\end_inset
-
 The System Administrator can add and remove cars from the system and manage
  their status if needed.
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
-A3
-\end_layout
-
-\end_inset
-
 There are operators that can recover cars.
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
-A4
-\end_layout
-
-\end_inset
-
 Only Active Users can use the service.
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
-A5
-\end_layout
-
-\end_inset
-
 Every car has a unique code (different from the licence number) that is
  visible from the outside.
  This number is used to ensure that a User is near a Car if he tries to
@@ -578,30 +521,32 @@ Every car has a unique code (different from the licence number) that is
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
-A6
-\end_layout
-
-\end_inset
-
 The licence Office (Motorizzazione Civile) allows for automated check of
  Licence Numbers, also providing checks for Name and Surname (at least).
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Argument item:1
+Foreign licences are allowed, but will be checked personally by an operator.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-A7
+
+
+\backslash
+renewcommand{
+\backslash
+labelenumi}{
+\backslash
+arabic{enumi}.}
 \end_layout
 
 \end_inset
 
-Foreign licences are allowed, but will be checked personally by an operator.
+
 \end_layout
 
 \begin_layout Subsection
@@ -659,7 +604,7 @@ renewcommand{
 \backslash
 labelenumi}{R
 \backslash
-arabic{enumi}}  
+arabic{enumi})}  
 \end_layout
 
 \end_inset
@@ -865,7 +810,7 @@ Source code
 \begin_layout Standard
 \begin_inset listings
 inline false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
