@@ -453,22 +453,40 @@ Overall Description
 Product perspective
 \end_layout
 
+\begin_layout Standard
+The future product will consist of a mobile application and a web interface
+ for costumers and an internal interface for the system administrator(s).
+ A mobile phone with the app installed will be necessary in order to unlock
+ the reserved cars, whereas it will be possible to reserve cars through
+ both the mobile application and the web interface, after logging in.
+\end_layout
+
 \begin_layout Subsection
 Product functions
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Major functions
+Major functions (maybe not necessary, add some more functions to 2.1)
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+User characteristics 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Maybe useless because of 1.4
 \end_layout
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Subsection
-User characteristics
 \end_layout
 
 \begin_layout Standard
@@ -479,6 +497,10 @@ Everyone with a mobile phone can download and install the app and everyone
 
 \begin_layout Subsection
 Constraints
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout Subsection
@@ -579,7 +601,7 @@ A7
 
 \end_inset
 
-Foreign licences are allowed.
+Foreign licences are allowed, but will be checked personally by an operator.
 \end_layout
 
 \begin_layout Subsection
@@ -660,9 +682,8 @@ Invalid emails are all addresses that are either already in use or not well
 \end_layout
 
 \begin_layout Enumerate
-The DL is valid if all the fields match the user's informations and the
- Licence Office confirms that the Licence Number, the Name and the Surname
- are correct.
+The DL is valid if all the fields match the user's information and the Licence
+ Office confirms that the Licence Number, the Name and the Surname are correct.
 \end_layout
 
 \begin_layout Enumerate
@@ -672,13 +693,6 @@ Foreign DL must be verified by an Operator.
 \begin_layout Enumerate
 If some of the provided information is incorrect, the registration is rejected
  and the user is prompted to fix the issue(s).
-\end_layout
-
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsubsection
