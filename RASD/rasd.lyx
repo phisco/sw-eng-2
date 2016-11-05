@@ -492,7 +492,7 @@ The following are mandatory requisites for the hardware in order to access
 \end_layout
 
 \begin_layout Itemize
-Mobile app
+Mobile app:
 \end_layout
 
 \begin_deeper
@@ -510,12 +510,12 @@ enough storage space to install the package
 
 \end_deeper
 \begin_layout Itemize
-Web app
+Web app:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-Moder
+modern web browser
 \end_layout
 
 \end_deeper
