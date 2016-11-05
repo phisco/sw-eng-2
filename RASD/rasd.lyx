@@ -467,6 +467,54 @@ Everyone with a mobile phone can download and install the app and everyone
 Constraints
 \end_layout
 
+\begin_layout Subsubsection
+Regulatory policies
+\end_layout
+
+\begin_layout Standard
+The system must require users the permission to access their position data
+ and has to manage sensible data (position, phone number, email, DL, CC)
+ respecting the privacy laws in force in the current country where the system
+ will be deployed.
+\end_layout
+
+\begin_layout Subsubsection
+Hardware limitations
+\end_layout
+
+\begin_layout Standard
+The following are mandatory requisites for the hardware in order to access
+ the system via the different interfaces: 
+\end_layout
+
+\begin_layout Itemize
+Mobile app
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+data connection
+\end_layout
+
+\begin_layout Itemize
+positioning services (GPS, Cell-ID, Wi-Fi)
+\end_layout
+
+\begin_layout Itemize
+enough storage space to install the package
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Web app
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Moder
+\end_layout
+
+\end_deeper
 \begin_layout Standard
 
 \end_layout
