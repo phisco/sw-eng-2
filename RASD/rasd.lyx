@@ -777,9 +777,7 @@ Cars can be reserved for up to one hour before the unlocking.
 
 \begin_layout Enumerate
 If a reserved car is not unlocked in one hour the reservation expires and
- the user pays a fine of 1
-\backslash
-geneuro.
+ the user pays a fine of 1€.
 \end_layout
 
 \begin_layout Enumerate
