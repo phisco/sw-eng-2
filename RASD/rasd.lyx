@@ -980,7 +980,7 @@ Users with unsuccessful pending fare shall not be allowed to book cars.
 \end_layout
 
 \begin_layout Enumerate
-Allow users to insert new payment methods to pay pending fares.
+Allow users to insert new payment methods.
 \begin_inset Note Note
 status open
 
@@ -992,6 +992,15 @@ Forse superfluo, l'idea è evitare con certezza di non bloccargli al 100%
 \end_inset
 
 
+\end_layout
+
+\begin_layout Enumerate
+Allow users to specify the main payment method.
+\end_layout
+
+\begin_layout Enumerate
+Periodically try to charge pending fare through the specified main payment
+ method.
 \end_layout
 
 \begin_layout Standard
