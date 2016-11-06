@@ -1032,6 +1032,23 @@ Scenarios
 \end_layout
 
 \begin_layout Subsubsection
+Use case diagram:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Use case diagram goes here
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
 Scenario 1: 
 \end_layout
 
