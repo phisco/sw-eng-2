@@ -190,6 +190,33 @@ This document is the Requirement Analysis and Specification Document (RASD).
 Scope
 \end_layout
 
+\begin_layout Standard
+The aim of the project is to create a brand new system that allows customers
+ to access the car sharing service offered by PowerEnJoy.
+ The system will let the customers register and then login, managing the
+ sensible data submitted during the registration and checking automatically
+ or via an operator these data.
+ The system will allow logged customers to reserve available cars both via
+ web or mobile app, access the cars once they reach them via mobile app
+ using positioning data and then compute and apply the fare once they park
+ them in predetermined 
+\begin_inset Quotes eld
+\end_inset
+
+safe zones
+\begin_inset Quotes erd
+\end_inset
+
+, applying discounts depending on whether or not they followed some good
+ practices.
+ The system will give an interface to the system administrator in order
+ to manage the cars' pool, accessing their status and position and will
+ also notify an operator when a car needs to be moved from where it has
+ been parked.
+ In the event of an accident an operator will be notified and will reach
+ the damaged car, taking care it and reporting the car's status to the system.
+\end_layout
+
 \begin_layout Subsection
 Abbreviations, Definitions and Acronyms
 \end_layout
