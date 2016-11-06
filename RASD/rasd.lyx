@@ -523,7 +523,11 @@ Web app:
 
 \begin_deeper
 \begin_layout Itemize
-modern web browser
+web browser
+\end_layout
+
+\begin_layout Itemize
+internet connection
 \end_layout
 
 \end_deeper
@@ -590,8 +594,17 @@ Foreign licences are allowed, but will be checked personally by an operator.
 \end_layout
 
 \begin_layout Enumerate
-An active user can reserve up to one car at any given time (not clear from
- specification).
+An active user can reserve up to one car at any given time 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+(not clear from specification).
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
