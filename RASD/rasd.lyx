@@ -36,7 +36,16 @@ enumitem
 \index_command default
 \paperfontsize 11
 \spacing single
-\use_hyperref false
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
 \papersize a4paper
 \use_geometry false
 \use_package amsmath 1
@@ -452,8 +461,15 @@ An overall description of the whole document (what it is about?)
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
-Overall Description
+Overall description
 \end_layout
 
 \begin_layout Subsection
@@ -681,6 +697,13 @@ In particular the server and the web app will be implemented in JEE with
  web browser via the web app, that will have a mobile theme.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Specific Requirements
 \end_layout
@@ -882,7 +905,7 @@ G6: Computes the fare
 
 \begin_layout Enumerate
 \begin_inset Argument 1
-status collapsed
+status open
 
 \begin_layout Plain Layout
 resume
@@ -949,8 +972,11 @@ As soon as the rental is ended, use the payment method provided by the AU
 
 \begin_layout Enumerate
 If the provided method is invalid (e.g.
- expired or empty CC), notify the user and prevent him from booking cars
- until the pending fare is paid.
+ expired or empty CC), notify the user.
+\end_layout
+
+\begin_layout Enumerate
+Users with unsuccessful pending fare shall not be allowed to book cars.
 \end_layout
 
 \begin_layout Enumerate
