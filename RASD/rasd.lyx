@@ -36,7 +36,16 @@ enumitem
 \index_command default
 \paperfontsize 11
 \spacing single
-\use_hyperref false
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
 \papersize a4paper
 \use_geometry false
 \use_package amsmath 1
@@ -188,6 +197,33 @@ This document is the Requirement Analysis and Specification Document (RASD).
 
 \begin_layout Subsection
 Scope
+\end_layout
+
+\begin_layout Standard
+The aim of the project is to create a brand new system that allows customers
+ to access the car sharing service offered by PowerEnJoy.
+ The system will let the customers register and then login, managing the
+ sensible data submitted during the registration and checking automatically
+ or via an operator these data.
+ The system will allow logged customers to reserve available cars both via
+ web or mobile app, access the cars once they reach them via mobile app
+ using positioning data and then compute and apply the fare once they park
+ them in predetermined 
+\begin_inset Quotes eld
+\end_inset
+
+safe zones
+\begin_inset Quotes erd
+\end_inset
+
+, applying discounts depending on whether or not they followed some good
+ practices.
+ The system will give an interface to the system administrator in order
+ to manage the cars' pool, accessing their status and position and will
+ also notify an operator when a car needs to be moved from where it has
+ been parked.
+ In the event of an accident an operator will be notified and will reach
+ the damaged car, taking care it and reporting the car's status to the system.
 \end_layout
 
 \begin_layout Subsection
@@ -425,8 +461,15 @@ An overall description of the whole document (what it is about?)
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
-Overall Description
+Overall description
 \end_layout
 
 \begin_layout Subsection
@@ -523,7 +566,11 @@ Web app:
 
 \begin_deeper
 \begin_layout Itemize
-modern web browser
+web browser
+\end_layout
+
+\begin_layout Itemize
+internet connection
 \end_layout
 
 \end_deeper
@@ -590,8 +637,17 @@ Foreign licences are allowed, but will be checked personally by an operator.
 \end_layout
 
 \begin_layout Enumerate
-An active user can reserve up to one car at any given time (not clear from
- specification).
+An active user can reserve up to one car at any given time 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+(not clear from specification).
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -639,6 +695,13 @@ In particular the server and the web app will be implemented in JEE with
  The mobile app will be compatible with both Android and iOS.
  However other mobile platforms will be able to access services through
  web browser via the web app, that will have a mobile theme.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -842,7 +905,7 @@ G6: Computes the fare
 
 \begin_layout Enumerate
 \begin_inset Argument 1
-status collapsed
+status open
 
 \begin_layout Plain Layout
 resume
@@ -909,12 +972,15 @@ As soon as the rental is ended, use the payment method provided by the AU
 
 \begin_layout Enumerate
 If the provided method is invalid (e.g.
- expired or empty CC), notify the user and prevent him from booking cars
- until the pending fare is paid.
+ expired or empty CC), notify the user.
 \end_layout
 
 \begin_layout Enumerate
-Allow users to insert new payment methods to pay pending fares.
+Users with unsuccessful pending fare shall not be allowed to book cars.
+\end_layout
+
+\begin_layout Enumerate
+Allow users to insert new payment methods.
 \begin_inset Note Note
 status open
 
@@ -926,6 +992,15 @@ Forse superfluo, l'idea è evitare con certezza di non bloccargli al 100%
 \end_inset
 
 
+\end_layout
+
+\begin_layout Enumerate
+Allow users to specify the main payment method.
+\end_layout
+
+\begin_layout Enumerate
+Periodically try to charge pending fare through the specified main payment
+ method.
 \end_layout
 
 \begin_layout Standard
