@@ -345,42 +345,104 @@ arabic{enumi})}
 \end_layout
 
 \begin_layout Enumerate
+\SpecialChar ligaturebreak
+
+\begin_inset CommandInset label
+LatexCommand label
+name "G-signUp"
+
+\end_inset
+
 Allows visitors to sign up.
 \end_layout
 
 \begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-logIn"
+
+\end_inset
+
 Allows visitors to log in.
 \end_layout
 
 \begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-updatedInfoOnCars"
+
+\end_inset
+
 Shows updated information on available cars.
 \end_layout
 
 \begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-activeCanReserve"
+
+\end_inset
+
 Allows Active Users to reserve a car.
 \end_layout
 
 \begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-activeCanUnlock"
+
+\end_inset
+
 Allows Active Users to unlock a car.
 \end_layout
 
 \begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-computeFare"
+
+\end_inset
+
 Computes the fare.
 \end_layout
 
 \begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-applyDiscount"
+
+\end_inset
+
 Apply predetermined discounts to a user following determined behavior.
 \end_layout
 
 \begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-sysadminCanUpdate"
+
+\end_inset
+
 Allows System Administrator(s) to update system's information.
 \end_layout
 
 \begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-ensureFarePaid"
+
+\end_inset
+
 Ensure that the fare is paid.
 \end_layout
 
 \begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-driverCanMoneySave"
+
+\end_inset
+
 Allow the driver to choose the money saving option and get near their destionati
 on
 \end_layout
@@ -731,7 +793,14 @@ Functional Requirements
 \end_layout
 
 \begin_layout Subsubsection
-G1: Allows visitors to sign up
+G
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "G-signUp"
+
+\end_inset
+
+: Allows visitors to sign up
 \end_layout
 
 \begin_layout Standard
@@ -1045,6 +1114,21 @@ The systems suggests a charging station that is near the user's destionation
 
 \begin_layout Enumerate
 The suggested station must have at least a free plug to be suggested.
+\end_layout
+
+\begin_layout Enumerate
+The suggested station must allow for a uniform distribution of cars in the
+ city.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Should it be better written?
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
