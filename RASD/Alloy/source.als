@@ -72,6 +72,7 @@ fact CarCanBePluggedToOnlyOneStationAtOnce {
 pred showStatic {
 	eachPowerStationIsInADifferentPlace
 	oneUserPerEmail
+	all u1,u2:User | u1=u2 <=> u1.email=u2.email
 }
 
 pred reservedToInUse (c,c':Car, u,u':User) {
@@ -113,11 +114,39 @@ pred plugCar (c':Car) {
 	)
 }
 
-assert BijectionBetweenUserAndEmail {
-	all u1,u2:User | u1=u2 <=> u1.email=u2.email
+pred reserveCar (c,c':Car, u,u':User) {
+	#c.user=0
+	c.inUse.isFalse
+	c.reserved.isFalse
+	#u.carReserved=0
+	#u.carInUse=0
+	c'.user=u'
+	c'.reserved.isTrue
+	c'.inUse.isFalse
+	c.coordinate=c'.coordinate
+	c.battery=c'.battery
+	u'.carReserved=c'
+	#u.carInUse=0
+	u.email=u'.email
+	powerStationEvolution[c,c']
+	powerStationEvolution[c',c]
+}
+
+pred powerStationEvolution (c,c':Car) {
+		all p:PowerStation | (c in p.carParked => (one p':PowerStation | (
+		p'.carParked = p.carParked - c + c' and
+		p.capacity=p'.capacity and
+		p.coordinate=p'.coordinate and    
+		p.numberParked=p'.numberParked )
+	))
+}
+
+pred deleteReservation (c,c':Car, u,u':User) {
+	reserveCar[c',c,u',u]
 }
 
 run showStatic for 2 Coordinate, 2 Car, 2 Email, 2 User, 2 Int, 1 PowerStation
 run reservedToInUse for 1 Coordinate, 2 User, 2 Car, 1 Email, 2 PowerStation, 2 Int
 run finishTripAndPlugIfPossible for 2 Coordinate, 1 User, 2 Car, 1 Email, 2 PowerStation, 2 Int
-check BijectionBetweenUserAndEmail
+run reserveCar for 2 Coordinate, 2 User, 2 Email, 2 Car, 2 PowerStation, 2 Int
+run deleteReservation for 2 Coordinate, 2 User, 2 Email, 2 Car, 2 PowerStation, 2 Int
