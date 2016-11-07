@@ -888,6 +888,12 @@ The car is unlocked only after the user is acknowledged.
 \end_layout
 
 \begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G5-NoIgnition"
+
+\end_inset
+
 If a user unlocks the car without igniting the engine, the systems starts
  charging the regular price after the pick up time (one hour from the reservatio
 n) expires.
@@ -922,26 +928,14 @@ The computed fare is based on how many minutes have passed since the engine
 \end_layout
 
 \begin_layout Enumerate
-If the engine was never ignited the fare is calculated as explained in 3.2.5
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-ref to 4th requirement - Add reference to exact requirement in a 
-\begin_inset Quotes eld
-\end_inset
-
-dynamic
-\begin_inset Quotes erd
-\end_inset
-
- way if possible
-\end_layout
+If the engine was never ignited the fare is calculated as explained in R
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "G5-NoIgnition"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Subsubsection
