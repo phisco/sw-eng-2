@@ -331,7 +331,7 @@ PowerEnJoy should provide these functionalities:
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -397,7 +397,7 @@ Allow the user to park the rented car, stopping the money charging, only
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -599,7 +599,7 @@ Assumptions and Dependencies
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -658,6 +658,7 @@ status open
 
 \begin_layout Plain Layout
 (not clear from specification).
+ (In alloy l'ho assunto e cambiarlo sarebbe un casino)
 \end_layout
 
 \end_inset
@@ -676,7 +677,7 @@ Every car is connected to the internet and can change the displayed information
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -746,7 +747,7 @@ G1: Allows visitors to sign up
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -935,7 +936,7 @@ G6: Computes the fare
 
 \begin_layout Enumerate
 \begin_inset Argument 1
-status open
+status collapsed
 
 \begin_layout Plain Layout
 resume
@@ -1151,6 +1152,7 @@ Use case diagram goes here
 
 \begin_layout Standard
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status open
@@ -1205,354 +1207,43 @@ money saving option
 Alloy modelization and analysis
 \end_layout
 
-\begin_layout Subsubsection
-Source code
+\begin_layout Standard
+Part of the requirements have been formalized in the Alloy language.
+ In this way it is simpler to design and implement a consistent product.
 \end_layout
 
 \begin_layout Standard
-\begin_inset listings
-inline false
-status open
-
-\begin_layout Plain Layout
-
-open util/boolean
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-sig Car {
-\end_layout
-
-\begin_layout Plain Layout
-
-	coordinate: one Coordinate,
-\end_layout
-
-\begin_layout Plain Layout
-
-	battery: one Int,
-\end_layout
-
-\begin_layout Plain Layout
-
-	inUse: one Bool,
-\end_layout
-
-\begin_layout Plain Layout
-
-	reserved: one Bool,
-\end_layout
-
-\begin_layout Plain Layout
-
-	user: lone User
-\end_layout
-
-\begin_layout Plain Layout
-
-} {
-\end_layout
-
-\begin_layout Plain Layout
-
-	battery >= 0
-\end_layout
-
-\begin_layout Plain Layout
-
-	battery <= 100
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-sig Coordinate {}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-sig User {
-\end_layout
-
-\begin_layout Plain Layout
-
-	email: one Email,
-\end_layout
-
-\begin_layout Plain Layout
-
-	carInUse: lone Car,
-\end_layout
-
-\begin_layout Plain Layout
-
-	carReserved: lone Car
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-fact SimmetryBetweenDriverAndCar1 {
-\end_layout
-
-\begin_layout Plain Layout
-
-	all u:User | #u.carReserved=1 => u.carReserved.user=u
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-fact SimmetryBetweenDriverAndCar2 {
-\end_layout
-
-\begin_layout Plain Layout
-
-	all u:User | #u.carInUse=1 => u.carInUse.user=u
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-fact SimmetryBetweenDriverAndCar3 {
-\end_layout
-
-\begin_layout Plain Layout
-
-	all c:Car | #c.user=1 and c.inUse.isTrue => c.user.carInUse=c
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\begin_layout Plain Layout
-
+There are two types of models: static and dynamical ones.
+ In particular static ones represent a snapshot of our world at a certain
+ time while dynamical models represent the evolution of the system from
+ one state to another one.
 \end_layout
 
-\begin_layout Plain Layout
-
-fact SimmetryBetweenDriverAndCar4 {
-\end_layout
-
-\begin_layout Plain Layout
-
-	all c:Car | #c.user=1 and c.reserved.isTrue => c.user.carReserved=c
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-fact InUseAndReservedSemantics {
-\end_layout
-
-\begin_layout Plain Layout
-
-	all c:Car | (#c.user=1 => (c.inUse.isTrue or c.reserved.isTrue))
-\end_layout
-
-\begin_layout Plain Layout
-
-		and (c.reserved.isTrue <=> #c.user.carReserved=1)
-\end_layout
-
-\begin_layout Plain Layout
-
-		and (c.inUse.isTrue <=> #c.user.carInUse=1)
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-fact ReservationAndUseAreMutuallyExclusiveWrtCars {
-\end_layout
-
-\begin_layout Plain Layout
-
-	all c:Car | (c.reserved.isTrue => c.inUse.isFalse) 
-\end_layout
-
-\begin_layout Plain Layout
-
-		and (c.inUse.isTrue => c.reserved.isFalse)
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-fact ReservationAndUseAreMutuallyExclusiveWrtUsers {
-\end_layout
-
-\begin_layout Plain Layout
-
-	all u:User | (#u.carInUse=1 => #u.carReserved=0) 
+\begin_layout Subsubsection
+Static analysis
 \end_layout
 
-\begin_layout Plain Layout
-
-		and (#u.carReserved=1 => #u.carInUse=0)
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-sig Email {}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-fact OneUserPerEmail {
-\end_layout
-
-\begin_layout Plain Layout
-
-	all u1, u2: User | u1!=u2 => u1.email != u2.email
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\begin_layout Plain Layout
-
+\begin_layout Subsubsection
+Dynamical analysis
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-pred show {}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-assert BijectionBetweenUserAndEmail {
-\end_layout
-
-\begin_layout Plain Layout
-
-	all u1, u2: User | u1=u2 <=> u1.email = u2.email
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\begin_layout Plain Layout
-
+\begin_layout Subsubsection
+Consistency results
 \end_layout
-
-\begin_layout Plain Layout
 
-run show for 1 Coordinate, 2 Car, 2 Email, 2 User, 1 Int
+\begin_layout Section
+\start_of_appendix
+Alloy source code
 \end_layout
 
-\begin_layout Plain Layout
-
-check BijectionBetweenUserAndEmail
-\end_layout
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand lstinputlisting
+filename "Alloy/source.als"
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Subsubsection
-Results
-\end_layout
-
-\begin_layout Subsubsection
-Models generated
 \end_layout
 
 \end_body
