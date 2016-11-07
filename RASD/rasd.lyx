@@ -380,6 +380,11 @@ Allows System Administrator(s) to update system's information.
 Ensure that the fare is paid.
 \end_layout
 
+\begin_layout Enumerate
+Allow the driver to choose the money saving option and get near their destionati
+on
+\end_layout
+
 \begin_layout Standard
 \begin_inset ERT
 status open
@@ -940,6 +945,16 @@ reference "G5-NoIgnition"
 
 \begin_layout Subsubsection
 G7: Rewards well-behaved users
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+It is maybe implicit in making the user pay the right fare ????
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -997,6 +1012,25 @@ Periodically try to charge pending fare through the specified main payment
  method.
 \end_layout
 
+\begin_layout Subsubsection
+G10: Allow the driver to choose the money saving option and get near their
+ destionation
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+resume
+\end_layout
+
+\end_inset
+
+The systems suggests a charging station that is within a radius chosen by
+ the user 
+\end_layout
+
 \begin_layout Standard
 \begin_inset ERT
 status open
@@ -1043,7 +1077,22 @@ Use case diagram goes here
 \end_layout
 
 \begin_layout Subsubsection
-Scenario 1: 
+Carlo needs to go to the train station: 
+\end_layout
+
+\begin_layout Standard
+Carlo needs to go to the railway station but wants to minimize his costs
+ since he's leaving for a thirty days InterRail.
+ For this reason he picks two of his friends up and activates the 
+\begin_inset Quotes eld
+\end_inset
+
+money saving option
+\begin_inset Quotes erd
+\end_inset
+
+ in the car.
+ The navigation system
 \end_layout
 
 \begin_layout Subsection
