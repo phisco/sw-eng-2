@@ -863,7 +863,14 @@ If some of the provided information is incorrect, the registration is rejected
 \end_layout
 
 \begin_layout Subsubsection
-G2: Allow visitors to log in
+G
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "G-logIn"
+
+\end_inset
+
+: Allow visitors to log in
 \end_layout
 
 \begin_layout Enumerate
@@ -890,7 +897,14 @@ Visitors submitting incorrect email and/or password shall not be allowed
 \end_layout
 
 \begin_layout Subsubsection
-G3: Shows updated information on available cars
+G
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "G-updatedInfoOnCars"
+
+\end_inset
+
+: Shows updated information on available cars
 \end_layout
 
 \begin_layout Enumerate
@@ -1270,6 +1284,16 @@ Usecase Diagram
 
 \begin_layout Subsubsection
 Carlo needs to go to the train station: 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TO BE CONTINUED
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1285,6 +1309,36 @@ money saving option
 
  in the car.
  The navigation system
+\end_layout
+
+\begin_layout Subsubsection
+Jack wants to register
+\end_layout
+
+\begin_layout Standard
+Jack is an Erasmus student who just came into town.
+ Knowing that he may need a car from time to time he decides to register
+ on the website immediately in order to be able to use PowerEnjoy whenever
+ he needs it.
+ He registers on the website, providing his personal details as well as
+ a valid email.
+ He mistakenly inserts his email with a quotation mark instead of an at
+ sign.
+ The registration page notifies him and he fixes the mistake.
+ He then confirms his email address by opening the email he received.
+ Having done this he is considered a 
+\begin_inset Quotes eld
+\end_inset
+
+Registered User
+\begin_inset Quotes erd
+\end_inset
+
+ by the system, but he still needs to input his DL and payment method.
+ Being a foreigner he provides an image of both sides of his DL as well
+ as his Credit Card details.
+ He then waits for the confirmation, since an Operator must check it.
+ Once his Licence is confirmed he can book cars and use the system.
 \end_layout
 
 \begin_layout Subsection
