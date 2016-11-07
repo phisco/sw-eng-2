@@ -267,16 +267,21 @@ Definitions
 \end_layout
 
 \begin_layout Itemize
-Visitor: person that may not be registered to the system or not logged in
+Visitor: person that may not be registered to the system or not logged in.
 \end_layout
 
 \begin_layout Itemize
 User: a registered and logged in Visitor, that may be still waiting for
- his information to be verified
+ his information to be verified.
 \end_layout
 
 \begin_layout Itemize
-Active User: a User whose data (CC, DL) have been verified
+Active User: a User whose data (CC, DL) have been verified.
+\end_layout
+
+\begin_layout Itemize
+Safe Zone: predefined zones where parking is allowed, parking is forbidden
+ in any other zone.
 \end_layout
 
 \begin_layout Subsection
@@ -382,7 +387,12 @@ Ensure that the fare is paid.
 
 \begin_layout Enumerate
 Allow the driver to choose the money saving option and get near their destionati
-on
+on.
+\end_layout
+
+\begin_layout Enumerate
+Allow the user to park the rented car, stopping the money charging, only
+ in a safe zone.
 \end_layout
 
 \begin_layout Standard
@@ -967,7 +977,7 @@ G9: Ensure that the fare is paid
 
 \begin_layout Enumerate
 \begin_inset Argument 1
-status collapsed
+status open
 
 \begin_layout Plain Layout
 resume
@@ -1029,6 +1039,28 @@ resume
 
 The systems suggests a charging station that is within a radius chosen by
  the user 
+\end_layout
+
+\begin_layout Subsubsection
+G11: Allow the user to park the rented car
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+resume
+\end_layout
+
+\end_inset
+
+Parking shall be allowed only in safe zones.
+\end_layout
+
+\begin_layout Enumerate
+The system shall not charge the user after the car has been parked and the
+ user has not exited the car.
 \end_layout
 
 \begin_layout Standard
