@@ -665,6 +665,15 @@ status open
 
 \end_layout
 
+\begin_layout Enumerate
+Every car has a screen 
+\end_layout
+
+\begin_layout Enumerate
+Every car is connected to the internet and can change the displayed information
+ can be remotely updated by the system.
+\end_layout
+
 \begin_layout Standard
 \begin_inset ERT
 status open
@@ -953,6 +962,10 @@ reference "G5-NoIgnition"
 .
 \end_layout
 
+\begin_layout Enumerate
+The computed fare is shown real-time on the car's screen.
+\end_layout
+
 \begin_layout Subsubsection
 G7: Rewards well-behaved users
 \begin_inset Note Note
@@ -1023,8 +1036,7 @@ Periodically try to charge pending fare through the specified main payment
 \end_layout
 
 \begin_layout Subsubsection
-G10: Allow the driver to choose the money saving option and get near their
- destionation
+G10: Allow the driver to choose the money saving option
 \end_layout
 
 \begin_layout Enumerate
@@ -1037,8 +1049,27 @@ resume
 
 \end_inset
 
-The systems suggests a charging station that is within a radius chosen by
- the user 
+The systems suggests a charging station that is near the user's destionation
+ (within a user-selctable radius).
+\end_layout
+
+\begin_layout Enumerate
+The suggested station must have at least a free plug to be suggested.
+\end_layout
+
+\begin_layout Enumerate
+If the User doesn't park in the suggested station he won't be punished.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Since it's a suggestion? I assumed it...
+ ?
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
