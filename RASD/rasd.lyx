@@ -1091,7 +1091,17 @@ Parking shall be allowed only in safe zones.
 
 \begin_layout Enumerate
 The system shall not charge the user after the car has been parked and the
- user has not exited the car.
+ user has exited the car.
+\end_layout
+
+\begin_layout Enumerate
+The system shall lock the car, if parked in a safe area and the user has
+ exited the car.
+\end_layout
+
+\begin_layout Enumerate
+The system shall be able to recognize whether or not there is a user inside
+ the car.
 \end_layout
 
 \begin_layout Standard
