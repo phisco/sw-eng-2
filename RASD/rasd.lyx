@@ -450,6 +450,7 @@ name "G-driverCanMoneySave"
 
 Allow the driver to choose the money saving option and get near their destionati
 on.
+
 \end_layout
 
 \begin_layout Enumerate
@@ -1050,13 +1051,44 @@ reference "G5-NoIgnition"
 The computed fare is shown real-time on the car's screen.
 \end_layout
 
-\begin_layout Subsubsection
-G7: Rewards well-behaved users
+\begin_layout Enumerate
+The system shall be able to apply predetermined discounts to users following
+ some predetermined behavior.
+\end_layout
+
+\begin_layout Enumerate
+The system shall be able to know the number of passengers into a specific
+ rented car.
+\end_layout
+
+\begin_layout Enumerate
+The system shall be able to know the battery percentage of a specific car
+ in any moment.
+\end_layout
+
+\begin_layout Enumerate
+The system shall be able to locate a car and know whether or not it is plugged
+ at one of the predetermined parking areas.
+\end_layout
+
+\begin_layout Enumerate
+The system shall be able to measure the distance of a specific car the nearest
+ power grid station.
+\end_layout
+
+\begin_layout Enumerate
+The system shall be able to notify an Operator in order to send him charge
+ a specific car.
+\end_layout
+
+\begin_layout Enumerate
+The system shall know if a user selected the money saving option.
+ 
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-It is maybe implicit in making the user pay the right fare ????
+maybe not, included in 8
 \end_layout
 
 \end_inset
@@ -1065,11 +1097,35 @@ It is maybe implicit in making the user pay the right fare ????
 \end_layout
 
 \begin_layout Subsubsection
-G8: Allows System Administrator(s) to update information
+G7: Allows System Administrator(s) to update information
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+resume
+\end_layout
+
+\end_inset
+
+The system shall allow a System Administrator to be granted of the necessary
+ permission in order to access the cars data, status and position.
+\end_layout
+
+\begin_layout Enumerate
+The system shall present an Interface for the System Administrator in order
+ to access with the necessary permission.
+\end_layout
+
+\begin_layout Enumerate
+Anyone else except for those granted with these permissions shall be able
+ to access sensible data regarding the cars.
 \end_layout
 
 \begin_layout Subsubsection
-G9: Ensure that the fare is paid
+G8: Ensure that the fare is paid
 \end_layout
 
 \begin_layout Enumerate
@@ -1098,7 +1154,7 @@ Users with unsuccessful pending fare shall not be allowed to book cars.
 \begin_layout Enumerate
 Allow users to insert new payment methods.
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Forse superfluo, l'idea è evitare con certezza di non bloccargli al 100%
@@ -1120,7 +1176,7 @@ Periodically try to charge pending fare through the specified main payment
 \end_layout
 
 \begin_layout Subsubsection
-G10: Allow the driver to choose the money saving option
+G9: Allow the driver to choose the money saving option
 \end_layout
 
 \begin_layout Enumerate
@@ -1172,7 +1228,7 @@ Since it's a suggestion? I assumed it...
 \end_layout
 
 \begin_layout Subsubsection
-G11: Allow the user to park the rented car
+G10: Allow the user to park the car the user rented 
 \end_layout
 
 \begin_layout Enumerate
