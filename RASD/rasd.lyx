@@ -240,7 +240,7 @@ Gn: the n-th Goal
 \end_layout
 
 \begin_layout Itemize
-An: the n-th assumption
+An: the n-th Assumption
 \end_layout
 
 \begin_layout Itemize
@@ -1219,7 +1219,7 @@ Users with unsuccessful pending fare shall not be allowed to book cars.
 \begin_layout Enumerate
 Allow users to insert new payment methods.
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Forse superfluo, l'idea è evitare con certezza di non bloccargli al 100%
