@@ -399,7 +399,7 @@ name "G-activeCanUnlock"
 
 \end_inset
 
-Allow Active Users to unlock a car.
+ Allow Active Users to unlock the car reserved
 \end_layout
 
 \begin_layout Enumerate
@@ -992,7 +992,7 @@ reference "G-activeCanUnlock"
 
 \end_inset
 
-: Allow Users to unlock a car
+: Allow Active Users to unlock the car reserved
 \end_layout
 
 \begin_layout Enumerate
@@ -1774,12 +1774,12 @@ reference "G-activeCanUnlock"
 
 \end_inset
 
- Allow Active Users to reserve a car
+ Allow Active Users to unlock the car reserved
 \end_layout
 
 \begin_layout Itemize
-Entry conditions : the user shall have reserved a car and his reservation
- shall not be already expired
+Entry conditions : The user shall have reserved a car and his reservation
+ shall not be already expired.
 \end_layout
 
 \begin_layout Itemize
@@ -1788,7 +1788,7 @@ Flow of events :
 
 \begin_deeper
 \begin_layout Enumerate
-Opens PowerEnJoy web page or mobile app.
+Opens PowerEnJoy mobile app.
 \end_layout
 
 \begin_layout Enumerate
@@ -1800,16 +1800,19 @@ Clicks on the current reservation.
 \end_layout
 
 \begin_layout Enumerate
-He will be asked whether or not he want to delete his reservation.
+He will be asked whether or not he want to unlock the car.
 \end_layout
 
 \begin_layout Enumerate
-Chooses to delete his reservation.
+Chooses to unlock the car he reserved.
 \end_layout
 
 \begin_layout Enumerate
-The reservation is deleted and the user is redirected to his reservations
- page.
+The car is unlocked.
+\end_layout
+
+\begin_layout Enumerate
+The user can enter the car and ignite the car.
 \end_layout
 
 \begin_layout Standard
@@ -1821,8 +1824,7 @@ The reservation is deleted and the user is redirected to his reservations
 
 \end_deeper
 \begin_layout Itemize
-Output conditions : the user has reserved a car and has an hour to reach
- the car
+Output conditions : the user has unlocked the car and can now use it.
 \end_layout
 
 \begin_layout Itemize
