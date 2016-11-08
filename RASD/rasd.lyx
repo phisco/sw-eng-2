@@ -450,7 +450,6 @@ name "G-driverCanMoneySave"
 
 Allow the driver to choose the money saving option and get near their destionati
 on.
-
 \end_layout
 
 \begin_layout Enumerate
@@ -954,7 +953,8 @@ Only Active Users can reserve cars.
 \end_layout
 
 \begin_layout Enumerate
-Cars can be reserved for up to one hour before the unlocking.
+Cars can be reserved by a specific user for up to one hour before being
+ unlocked.
 \end_layout
 
 \begin_layout Enumerate
@@ -968,6 +968,16 @@ Only available cars can be reserved.
 
 \begin_layout Enumerate
 If an active user is already using a car he cannot reserve another one.
+\end_layout
+
+\begin_layout Enumerate
+The system shall provide the user the possibility to delete his pending
+ reservation.
+\end_layout
+
+\begin_layout Enumerate
+The deletion of a reservation shall be allowed only before the reserved
+ car has been unlocked.
 \end_layout
 
 \begin_layout Subsubsection
