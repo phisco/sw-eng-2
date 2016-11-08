@@ -350,42 +350,104 @@ arabic{enumi})}
 \end_layout
 
 \begin_layout Enumerate
+\SpecialChar ligaturebreak
+
+\begin_inset CommandInset label
+LatexCommand label
+name "G-signUp"
+
+\end_inset
+
 Allows visitors to sign up.
 \end_layout
 
 \begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-logIn"
+
+\end_inset
+
 Allows visitors to log in.
 \end_layout
 
 \begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-updatedInfoOnCars"
+
+\end_inset
+
 Shows updated information on available cars.
 \end_layout
 
 \begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-activeCanReserve"
+
+\end_inset
+
 Allows Active Users to reserve a car.
 \end_layout
 
 \begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-activeCanUnlock"
+
+\end_inset
+
 Allows Active Users to unlock a car.
 \end_layout
 
 \begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-computeFare"
+
+\end_inset
+
 Computes the fare.
 \end_layout
 
 \begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-applyDiscount"
+
+\end_inset
+
 Apply predetermined discounts to a user following determined behavior.
 \end_layout
 
 \begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-sysadminCanUpdate"
+
+\end_inset
+
 Allows System Administrator(s) to update system's information.
 \end_layout
 
 \begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-ensureFarePaid"
+
+\end_inset
+
 Ensure that the fare is paid.
 \end_layout
 
 \begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-driverCanMoneySave"
+
+\end_inset
+
 Allow the driver to choose the money saving option and get near their destionati
 on.
 \end_layout
@@ -742,7 +804,14 @@ Functional Requirements
 \end_layout
 
 \begin_layout Subsubsection
-G1: Allows visitors to sign up
+G
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "G-signUp"
+
+\end_inset
+
+: Allows visitors to sign up
 \end_layout
 
 \begin_layout Standard
@@ -794,7 +863,14 @@ If some of the provided information is incorrect, the registration is rejected
 \end_layout
 
 \begin_layout Subsubsection
-G2: Allow visitors to log in
+G
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "G-logIn"
+
+\end_inset
+
+: Allow visitors to log in
 \end_layout
 
 \begin_layout Enumerate
@@ -821,7 +897,14 @@ Visitors submitting incorrect email and/or password shall not be allowed
 \end_layout
 
 \begin_layout Subsubsection
-G3: Shows updated information on available cars
+G
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "G-updatedInfoOnCars"
+
+\end_inset
+
+: Shows updated information on available cars
 \end_layout
 
 \begin_layout Enumerate
@@ -870,7 +953,8 @@ Only Active Users can reserve cars.
 \end_layout
 
 \begin_layout Enumerate
-Cars can be reserved for up to one hour before the unlocking.
+Cars can be reserved by a specific user for up to one hour before being
+ unlocked.
 \end_layout
 
 \begin_layout Enumerate
@@ -884,6 +968,16 @@ Only available cars can be reserved.
 
 \begin_layout Enumerate
 If an active user is already using a car he cannot reserve another one.
+\end_layout
+
+\begin_layout Enumerate
+The system shall provide the user the possibility to delete his pending
+ reservation.
+\end_layout
+
+\begin_layout Enumerate
+The deletion of a reservation shall be allowed only before the reserved
+ car has been unlocked.
 \end_layout
 
 \begin_layout Subsubsection
@@ -967,13 +1061,44 @@ reference "G5-NoIgnition"
 The computed fare is shown real-time on the car's screen.
 \end_layout
 
-\begin_layout Subsubsection
-G7: Rewards well-behaved users
+\begin_layout Enumerate
+The system shall be able to apply predetermined discounts to users following
+ some predetermined behavior.
+\end_layout
+
+\begin_layout Enumerate
+The system shall be able to know the number of passengers into a specific
+ rented car.
+\end_layout
+
+\begin_layout Enumerate
+The system shall be able to know the battery percentage of a specific car
+ in any moment.
+\end_layout
+
+\begin_layout Enumerate
+The system shall be able to locate a car and know whether or not it is plugged
+ at one of the predetermined parking areas.
+\end_layout
+
+\begin_layout Enumerate
+The system shall be able to measure the distance of a specific car the nearest
+ power grid station.
+\end_layout
+
+\begin_layout Enumerate
+The system shall be able to notify an Operator in order to send him charge
+ a specific car.
+\end_layout
+
+\begin_layout Enumerate
+The system shall know if a user selected the money saving option.
+ 
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-It is maybe implicit in making the user pay the right fare ????
+maybe not, included in 8
 \end_layout
 
 \end_inset
@@ -982,11 +1107,35 @@ It is maybe implicit in making the user pay the right fare ????
 \end_layout
 
 \begin_layout Subsubsection
-G8: Allows System Administrator(s) to update information
+G7: Allows System Administrator(s) to update information
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+resume
+\end_layout
+
+\end_inset
+
+The system shall allow a System Administrator to be granted of the necessary
+ permission in order to access the cars data, status and position.
+\end_layout
+
+\begin_layout Enumerate
+The system shall present an Interface for the System Administrator in order
+ to access with the necessary permission.
+\end_layout
+
+\begin_layout Enumerate
+Anyone else except for those granted with these permissions shall be able
+ to access sensible data regarding the cars.
 \end_layout
 
 \begin_layout Subsubsection
-G9: Ensure that the fare is paid
+G8: Ensure that the fare is paid
 \end_layout
 
 \begin_layout Enumerate
@@ -1015,7 +1164,7 @@ Users with unsuccessful pending fare shall not be allowed to book cars.
 \begin_layout Enumerate
 Allow users to insert new payment methods.
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Forse superfluo, l'idea è evitare con certezza di non bloccargli al 100%
@@ -1037,7 +1186,7 @@ Periodically try to charge pending fare through the specified main payment
 \end_layout
 
 \begin_layout Subsubsection
-G10: Allow the driver to choose the money saving option
+G9: Allow the driver to choose the money saving option
 \end_layout
 
 \begin_layout Enumerate
@@ -1059,6 +1208,21 @@ The suggested station must have at least a free plug to be suggested.
 \end_layout
 
 \begin_layout Enumerate
+The suggested station must allow for a uniform distribution of cars in the
+ city.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Should it be better written?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
 If the User doesn't park in the suggested station he won't be punished.
 \begin_inset Note Note
 status open
@@ -1074,7 +1238,7 @@ Since it's a suggestion? I assumed it...
 \end_layout
 
 \begin_layout Subsubsection
-G11: Allow the user to park the rented car
+G10: Allow the user to park the car the user rented 
 \end_layout
 
 \begin_layout Enumerate
@@ -1186,6 +1350,16 @@ Usecase Diagram
 
 \begin_layout Subsubsection
 Carlo needs to go to the train station: 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TO BE CONTINUED
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1201,6 +1375,36 @@ money saving option
 
  in the car.
  The navigation system
+\end_layout
+
+\begin_layout Subsubsection
+Jack wants to register
+\end_layout
+
+\begin_layout Standard
+Jack is an Erasmus student who just came into town.
+ Knowing that he may need a car from time to time he decides to register
+ on the website immediately in order to be able to use PowerEnjoy whenever
+ he needs it.
+ He registers on the website, providing his personal details as well as
+ a valid email.
+ He mistakenly inserts his email with a quotation mark instead of an at
+ sign.
+ The registration page notifies him and he fixes the mistake.
+ He then confirms his email address by opening the email he received.
+ Having done this he is considered a 
+\begin_inset Quotes eld
+\end_inset
+
+Registered User
+\begin_inset Quotes erd
+\end_inset
+
+ by the system, but he still needs to input his DL and payment method.
+ Being a foreigner he provides an image of both sides of his DL as well
+ as his Credit Card details.
+ He then waits for the confirmation, since an Operator must check it.
+ Once his Licence is confirmed he can book cars and use the system.
 \end_layout
 
 \begin_layout Subsection
