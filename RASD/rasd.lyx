@@ -1285,7 +1285,7 @@ Should it be better written?
 \end_layout
 
 \begin_layout Enumerate
-If the User doesn't park in the suggested station he won't be punished.
+If the AU doesn't park in the suggested station he won't be punished.
 \begin_inset Note Note
 status open
 
@@ -1297,6 +1297,11 @@ Since it's a suggestion? I assumed it...
 \end_inset
 
 
+\end_layout
+
+\begin_layout Enumerate
+If the AU chooses this option, the systems gives him the address and shows
+ directions on the smartphone.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1956,23 +1961,13 @@ Exception : if the update introduces some inconsistency in the data the
 \end_layout
 
 \begin_layout Subsubsection
-Kurt needs to go to the train station: 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TO BE CONTINUED
-\end_layout
-
-\end_inset
-
-
+Michelle needs to go to the train station:
 \end_layout
 
 \begin_layout Standard
-Kurt needs to go to the railway station but wants to minimize his costs
- since he's leaving for a thirty days InterRail.
- For this reason he picks two of his friends up and activates the 
+Michelle needs to go to the train station but, not being on a hurry and
+ wanting to save some money for her upcomping journey, she decides to use
+ the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1980,8 +1975,25 @@ money saving option
 \begin_inset Quotes erd
 \end_inset
 
- in the car.
- The navigation system
+ as well as sharing the trip with two of her friends.
+ She inputs her final destination and selects a radius of 3.5km from it.
+ The system decides what the best charging station within that distance
+ is and shows its address and directions to reach it.
+ Michelle starts driving but unfortunately she is caught in a traffic jam.
+ She opts to park closer to the train station fearing that she might miss
+ her train.
+ When she finally gets close to the station she parks the car and she and
+ her friends leave.
+ The system detects that they are not in the proposed charging station and
+ doesn't apply the discount for the 
+\begin_inset Quotes eld
+\end_inset
+
+money saving option
+\begin_inset Quotes erd
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsubsection
