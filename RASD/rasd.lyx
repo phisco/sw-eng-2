@@ -75,7 +75,7 @@ enumitem
 \topmargin 0.6in
 \rightmargin 0.75in
 \bottommargin 0.6in
-\secnumdepth 3
+\secnumdepth 4
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation 0bp
@@ -223,7 +223,8 @@ safe zones
  also notify an operator when a car needs to be moved from where it has
  been parked.
  In the event of an accident an operator will be notified and will reach
- the damaged car, taking care it and reporting the car's status to the system.
+ the damaged car, taking care of it and reporting the car's status to the
+ system.
 \end_layout
 
 \begin_layout Subsection
@@ -358,7 +359,7 @@ name "G-signUp"
 
 \end_inset
 
-Allows visitors to sign up.
+Allow visitors to sign up.
 \end_layout
 
 \begin_layout Enumerate
@@ -368,7 +369,7 @@ name "G-logIn"
 
 \end_inset
 
-Allows visitors to log in.
+Allow visitors to log in.
 \end_layout
 
 \begin_layout Enumerate
@@ -378,7 +379,7 @@ name "G-updatedInfoOnCars"
 
 \end_inset
 
-Shows updated information on available cars.
+Show updated information on available cars.
 \end_layout
 
 \begin_layout Enumerate
@@ -388,7 +389,7 @@ name "G-activeCanReserve"
 
 \end_inset
 
-Allows Active Users to reserve a car.
+Allow Active Users to reserve a car.
 \end_layout
 
 \begin_layout Enumerate
@@ -398,7 +399,7 @@ name "G-activeCanUnlock"
 
 \end_inset
 
-Allows Active Users to unlock a car.
+Allow Active Users to unlock a car.
 \end_layout
 
 \begin_layout Enumerate
@@ -408,17 +409,7 @@ name "G-computeFare"
 
 \end_inset
 
-Computes the fare.
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset CommandInset label
-LatexCommand label
-name "G-applyDiscount"
-
-\end_inset
-
-Apply predetermined discounts to a user following determined behavior.
+Compute the fare.
 \end_layout
 
 \begin_layout Enumerate
@@ -428,7 +419,7 @@ name "G-sysadminCanUpdate"
 
 \end_inset
 
-Allows System Administrator(s) to update system's information.
+Allow System Administrator(s) to update system's information.
 \end_layout
 
 \begin_layout Enumerate
@@ -453,6 +444,12 @@ on.
 \end_layout
 
 \begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-parkCar"
+
+\end_inset
+
 Allow the user to park the rented car, stopping the money charging, only
  in a safe zone.
 \end_layout
@@ -811,7 +808,7 @@ reference "G-signUp"
 
 \end_inset
 
-: Allows visitors to sign up
+: Allow visitors to sign up
 \end_layout
 
 \begin_layout Standard
@@ -904,7 +901,7 @@ reference "G-updatedInfoOnCars"
 
 \end_inset
 
-: Shows updated information on available cars
+: Show updated information on available cars
 \end_layout
 
 \begin_layout Enumerate
@@ -936,7 +933,14 @@ Users can apply filters to show only cars within a certain distance from
 \end_layout
 
 \begin_layout Subsubsection
-G4: Allows Users to reserve a car
+G
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "G-activeCanReserve"
+
+\end_inset
+
+: Allow Active Users to reserve a car
 \end_layout
 
 \begin_layout Enumerate
@@ -981,7 +985,14 @@ The deletion of a reservation shall be allowed only before the reserved
 \end_layout
 
 \begin_layout Subsubsection
-G5: Allows Users to unlock a car
+G
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "G-activeCanUnlock"
+
+\end_inset
+
+: Allow Users to unlock a car
 \end_layout
 
 \begin_layout Enumerate
@@ -1025,7 +1036,14 @@ If a user does not ignite the car after 15 minutes of having entered the
 \end_layout
 
 \begin_layout Subsubsection
-G6: Computes the fare
+G
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "G-computeFare"
+
+\end_inset
+
+: Compute the fare
 \end_layout
 
 \begin_layout Enumerate
@@ -1107,7 +1125,14 @@ maybe not, included in 8
 \end_layout
 
 \begin_layout Subsubsection
-G7: Allows System Administrator(s) to update information
+G
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "G-sysadminCanUpdate"
+
+\end_inset
+
+: Allow System Administrator(s) to update information
 \end_layout
 
 \begin_layout Enumerate
@@ -1135,7 +1160,14 @@ Anyone else except for those granted with these permissions shall be able
 \end_layout
 
 \begin_layout Subsubsection
-G8: Ensure that the fare is paid
+G
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "G-ensureFarePaid"
+
+\end_inset
+
+: Ensure that the fare is paid
 \end_layout
 
 \begin_layout Enumerate
@@ -1186,7 +1218,14 @@ Periodically try to charge pending fare through the specified main payment
 \end_layout
 
 \begin_layout Subsubsection
-G9: Allow the driver to choose the money saving option
+G
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "G-driverCanMoneySave"
+
+\end_inset
+
+: Allow the driver to choose the money saving option
 \end_layout
 
 \begin_layout Enumerate
@@ -1238,7 +1277,14 @@ Since it's a suggestion? I assumed it...
 \end_layout
 
 \begin_layout Subsubsection
-G10: Allow the user to park the car the user rented 
+G
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "G-parkCar"
+
+\end_inset
+
+: Allow the user to park the car the user rented 
 \end_layout
 
 \begin_layout Enumerate
@@ -1346,6 +1392,441 @@ Usecase Diagram
 \end_inset
 
 
+\end_layout
+
+\begin_layout Paragraph
+Visitor sign up
+\end_layout
+
+\begin_layout Itemize
+Actor : Visitor
+\end_layout
+
+\begin_layout Itemize
+Goal : G
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "G-signUp"
+
+\end_inset
+
+ Allow visitors to sign up
+\end_layout
+
+\begin_layout Itemize
+Entry conditions : None
+\end_layout
+
+\begin_layout Itemize
+Flow of events :
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Opens the PowerEnJoy web page or mobile app.
+\end_layout
+
+\begin_layout Enumerate
+Clicks on the 
+\begin_inset Quotes eld
+\end_inset
+
+Sign Up
+\begin_inset Quotes erd
+\end_inset
+
+ button.
+\end_layout
+
+\begin_layout Enumerate
+He's asked to input a valid email address and a password.
+\end_layout
+
+\begin_layout Enumerate
+The system checks whether or not the email and the password submitted are
+ valid.
+\end_layout
+
+\begin_layout Enumerate
+The visitor is asked to insert his driving licence and payment method data.
+\end_layout
+
+\begin_layout Enumerate
+If the data are correct the system stores the submitted data.
+\end_layout
+
+\begin_layout Enumerate
+The visitor will be logged in automatically and redirected to his account
+ page.
+\end_layout
+
+\begin_layout Enumerate
+The user will be asked to confirm his email through a confirmation link
+ the system sent him.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Output conditions: The visitor complete the registration and becomes a User,
+ can now on log in using the submitted email and password and shall wait
+ for his DL to be confirmed by the system in order to become an Active User.
+\end_layout
+
+\begin_layout Itemize
+Exceptions : 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+If the inserted email is already in use the visitor will be prompted to
+ log in or use a different email.
+\end_layout
+
+\end_deeper
+\begin_layout Paragraph
+Visitor log in
+\end_layout
+
+\begin_layout Itemize
+Actor : Visitor
+\end_layout
+
+\begin_layout Itemize
+Goal : 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "G-logIn"
+
+\end_inset
+
+ Allow visitors to log in
+\end_layout
+
+\begin_layout Itemize
+Entry conditions : the Visitor shall already have signed up
+\end_layout
+
+\begin_layout Itemize
+Flow of events : 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Opens the PowerEnJoy web page or mobile app.
+\end_layout
+
+\begin_layout Enumerate
+Clicks on the 
+\begin_inset Quotes eld
+\end_inset
+
+Log in
+\begin_inset Quotes erd
+\end_inset
+
+ button.
+\end_layout
+
+\begin_layout Enumerate
+He's asked to input the registered email and the chosen password.
+\end_layout
+
+\begin_layout Enumerate
+The system checks if the submitted data are correct.
+\end_layout
+
+\begin_layout Enumerate
+Only if the data are correct the user is redirected to his account page.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Output conditions : The visitor is logged in and become a User or Active
+ User if his DL has been already confirmed.
+\end_layout
+
+\begin_layout Itemize
+Exceptions : 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+If the submitted email or password are incorrect the user will be asked
+ to modify them and try again.
+\end_layout
+
+\end_deeper
+\begin_layout Paragraph
+See rentable cars
+\end_layout
+
+\begin_layout Itemize
+Actor : Visitor
+\end_layout
+
+\begin_layout Itemize
+Goal : 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "G-updatedInfoOnCars"
+
+\end_inset
+
+ Show updated information on available cars
+\end_layout
+
+\begin_layout Itemize
+Entry conditions : None
+\end_layout
+
+\begin_layout Itemize
+Flow of events : 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Opens PowerEnJoy web page or mobile app.
+\end_layout
+
+\begin_layout Enumerate
+A map in the home screen shows the position of available cars.
+\end_layout
+
+\begin_layout Enumerate
+A click on an available car shows the battery percentage of the car.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Output conditions : None
+\end_layout
+
+\begin_layout Itemize
+Exceptions : None
+\end_layout
+
+\begin_layout Paragraph
+Rent a car
+\end_layout
+
+\begin_layout Itemize
+Actor : Active User
+\end_layout
+
+\begin_layout Itemize
+Goal : 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "G-activeCanReserve"
+
+\end_inset
+
+ Allow Active Users to reserve a car
+\end_layout
+
+\begin_layout Itemize
+Entry conditions : None
+\end_layout
+
+\begin_layout Itemize
+Flow of events : 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Opens PowerEnJoy web page or mobile app.
+\end_layout
+
+\begin_layout Enumerate
+A map in the home screen shows the position of available cars.
+\end_layout
+
+\begin_layout Enumerate
+A click on an available car shows the battery percentage of the car and
+ prompts the user to rent the selected car.
+\end_layout
+
+\begin_layout Enumerate
+Clicking on the 
+\begin_inset Quotes eld
+\end_inset
+
+Rent Now
+\begin_inset Quotes erd
+\end_inset
+
+ button the user will rent the car.
+\end_layout
+
+\begin_layout Enumerate
+The user will be redirected to the reservations page, where he can see the
+ history of his rents and the countdown for the current reservation.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Output conditions : the user has reserved a car and has an hour to reach
+ the car
+\end_layout
+
+\begin_layout Itemize
+Exception : None
+\end_layout
+
+\begin_layout Paragraph
+Delete a reservation
+\end_layout
+
+\begin_layout Itemize
+Actor : Active User
+\end_layout
+
+\begin_layout Itemize
+Goal : 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "G-activeCanReserve"
+
+\end_inset
+
+ Allow Active Users to reserve a car
+\end_layout
+
+\begin_layout Itemize
+Entry conditions : the user shall have reserved a car and his reservation
+ shall not be already expired
+\end_layout
+
+\begin_layout Itemize
+Flow of events : 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Opens PowerEnJoy web page or mobile app.
+\end_layout
+
+\begin_layout Enumerate
+Goes to the reservations page.
+\end_layout
+
+\begin_layout Enumerate
+Clicks on the current reservation.
+\end_layout
+
+\begin_layout Enumerate
+He will be asked whether or not he want to delete his reservation.
+\end_layout
+
+\begin_layout Enumerate
+Chooses to delete his reservation.
+\end_layout
+
+\begin_layout Enumerate
+The reservation is deleted and the user is redirected to his reservations
+ page.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Output conditions : the user has reserved a car and has an hour to reach
+ the car
+\end_layout
+
+\begin_layout Itemize
+Exception : None
+\end_layout
+
+\begin_layout Paragraph
+Unlock reserved car
+\end_layout
+
+\begin_layout Itemize
+Actor : Active User
+\end_layout
+
+\begin_layout Itemize
+Goal : 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "G-activeCanUnlock"
+
+\end_inset
+
+ Allow Active Users to reserve a car
+\end_layout
+
+\begin_layout Itemize
+Entry conditions : the user shall have reserved a car and his reservation
+ shall not be already expired
+\end_layout
+
+\begin_layout Itemize
+Flow of events : 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Opens PowerEnJoy web page or mobile app.
+\end_layout
+
+\begin_layout Enumerate
+Goes to the reservations page.
+\end_layout
+
+\begin_layout Enumerate
+Clicks on the current reservation.
+\end_layout
+
+\begin_layout Enumerate
+He will be asked whether or not he want to delete his reservation.
+\end_layout
+
+\begin_layout Enumerate
+Chooses to delete his reservation.
+\end_layout
+
+\begin_layout Enumerate
+The reservation is deleted and the user is redirected to his reservations
+ page.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Output conditions : the user has reserved a car and has an hour to reach
+ the car
+\end_layout
+
+\begin_layout Itemize
+Exception : None
 \end_layout
 
 \begin_layout Subsubsection
