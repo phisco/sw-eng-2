@@ -1464,7 +1464,7 @@ status open
 \begin_inset Graphics
 	filename Alloy/showStatic.pdf
 	lyxscale 10
-	scale 50
+	scale 55
 
 \end_inset
 
@@ -1481,7 +1481,9 @@ Dynamical analysis
 \end_layout
 
 \begin_layout Standard
-Different actions have been analysed:
+Different actions have been analysed.
+ c and u (and all is attached to them) are always referred the pre-state
+ while c' and u' (and all is attached to them) are referred to the post-state.
 \end_layout
 
 \begin_layout Itemize
@@ -1507,14 +1509,196 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Alloy/reserveCar.pdf
 	lyxscale 10
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Delete a reservation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Alloy/deleteReservation.pdf
+	lyxscale 10
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Start using a reserved car
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Alloy/reservedToInUse.pdf
+	lyxscale 10
 	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Finish the trip and plug the car to the station if there is one
+\end_layout
+
+\begin_layout Standard
+In this model there 
+\shape italic
+is
+\shape default
+ the possibility to plug the car to the station.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Alloy/finishTripAndPlugPossible.pdf
+	lyxscale 10
+	scale 43
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In this model there 
+\shape italic
+is not
+\shape default
+ the possibility to 
+\shape italic
+plug
+\shape default
+ the car to the station.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Alloy/finishTripAndPlugNotPossible.pdf
+	lyxscale 10
+	scale 45
 
 \end_inset
 
