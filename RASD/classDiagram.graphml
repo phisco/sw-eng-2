@@ -87,10 +87,10 @@ reserved:Bool</y:AttributeLabel>
       <data key="d5"/>
       <data key="d6">
         <y:UMLClassNode>
-          <y:Geometry height="59.25" width="100.0" x="176.0" y="462.625"/>
+          <y:Geometry height="59.25" width="121.25" x="176.0" y="462.625"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="L M Sans10" fontSize="14" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="16.59307861328125" modelName="custom" textColor="#000000" visible="true" width="90.59840393066406" x="4.700798034667969" y="3.0">PowerStation<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="L M Sans10" fontSize="14" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="16.59307861328125" modelName="custom" textColor="#000000" visible="true" width="90.59840393066406" x="15.325798034667969" y="3.0">PowerStation<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -111,7 +111,7 @@ numberParked:Int</y:AttributeLabel>
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
             <y:Point x="17.25" y="263.5"/>
-            <y:Point x="194.75" y="263.5"/>
+            <y:Point x="226.0" y="263.5"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -146,7 +146,7 @@ numberParked:Int</y:AttributeLabel>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="L M Sans10" fontSize="13" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="15.68670654296875" modelName="free" modelPosition="anywhere" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true" width="60.35589599609375" x="-77.65643310546875" y="9.656646728515625">coordinate<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/>
+          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="L M Sans10" fontSize="13" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="15.68670654296875" modelName="free" modelPosition="anywhere" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true" width="60.35589599609375" x="-67.07667541503906" y="9.656646728515625">coordinate<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/>
           </y:EdgeLabel>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
@@ -156,10 +156,10 @@ numberParked:Int</y:AttributeLabel>
       <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:Path sx="-10.625" sy="-1.25" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="L M Sans10" fontSize="13" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="15.68670654296875" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true" width="58.17437744140625" x="0.912811279296875" y="-58.56158447265625">carParked<y:LabelModel>
+          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="L M Sans10" fontSize="13" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="15.68670654296875" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true" width="58.17437744140625" x="0.912811279296875" y="-58.5093994140625">carParked<y:LabelModel>
               <y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/>
             </y:LabelModel>
             <y:ModelParameter>
