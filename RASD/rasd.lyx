@@ -76,7 +76,7 @@ enumitem
 \rightmargin 0.75in
 \bottommargin 0.6in
 \secnumdepth 4
-\tocdepth 3
+\tocdepth 4
 \paragraph_separation indent
 \paragraph_indentation 0bp
 \quotes_language english
@@ -1116,7 +1116,8 @@ The system shall know if a user selected the money saving option.
 status open
 
 \begin_layout Plain Layout
-maybe not, included in 8
+maybe not, included in 8 if we decide to give the moneysaving option the
+ same discount as the other one
 \end_layout
 
 \end_inset
@@ -1157,6 +1158,11 @@ The system shall present an Interface for the System Administrator in order
 \begin_layout Enumerate
 Anyone else except for those granted with these permissions shall be able
  to access sensible data regarding the cars.
+\end_layout
+
+\begin_layout Enumerate
+The system shall be able to check the consistency of the information modified
+ given a set of rules.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1344,20 +1350,7 @@ Scenarios
 \end_layout
 
 \begin_layout Subsubsection
-Use case diagram:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Use case diagram goes here
-\end_layout
-
-\end_inset
-
-
+Use case diagram
 \end_layout
 
 \begin_layout Standard
@@ -1492,7 +1485,7 @@ Actor : Visitor
 \end_layout
 
 \begin_layout Itemize
-Goal : 
+Goal : G
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "G-logIn"
@@ -1565,7 +1558,7 @@ Actor : Visitor
 \end_layout
 
 \begin_layout Itemize
-Goal : 
+Goal : G
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "G-updatedInfoOnCars"
@@ -1621,7 +1614,7 @@ Actor : Active User
 \end_layout
 
 \begin_layout Itemize
-Goal : 
+Goal : G
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "G-activeCanReserve"
@@ -1696,7 +1689,7 @@ Actor : Active User
 \end_layout
 
 \begin_layout Itemize
-Goal : 
+Goal : G
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "G-activeCanReserve"
@@ -1767,7 +1760,7 @@ Actor : Active User
 \end_layout
 
 \begin_layout Itemize
-Goal : 
+Goal : G
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "G-activeCanUnlock"
@@ -1829,6 +1822,99 @@ Output conditions : the user has unlocked the car and can now use it.
 
 \begin_layout Itemize
 Exception : None
+\end_layout
+
+\begin_layout Paragraph
+Update cars information
+\end_layout
+
+\begin_layout Itemize
+Actor : System administrator
+\end_layout
+
+\begin_layout Itemize
+Goal : G
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "G-sysadminCanUpdate"
+
+\end_inset
+
+ Allow System Administrator(s) to update information
+\end_layout
+
+\begin_layout Itemize
+Entry conditions : None
+\end_layout
+
+\begin_layout Itemize
+Flow of events : 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Opens PowerEnJoy system administrator interface.
+\end_layout
+
+\begin_layout Enumerate
+Goes to the cars data management page.
+\end_layout
+
+\begin_layout Enumerate
+Searches for the desired car which information should be updated.
+\end_layout
+
+\begin_layout Enumerate
+Modifies the car information as needed.
+\end_layout
+
+\begin_layout Enumerate
+Clicks the 
+\begin_inset Quotes eld
+\end_inset
+
+Save
+\begin_inset Quotes erd
+\end_inset
+
+ button.
+\end_layout
+
+\begin_layout Enumerate
+The system checks if there are no inconsistency introduced by the update.
+\end_layout
+
+\begin_layout Enumerate
+The system updates the status of the car and act accordingly.
+\end_layout
+
+\begin_layout Enumerate
+Is redirect him to the data management page.
+\end_layout
+
+\begin_layout Enumerate
+Clicks exit.
+\end_layout
+
+\begin_layout Enumerate
+Is redirected to the main page of the system administrator interface.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Output conditions : the car's data have been successfully updated
+\end_layout
+
+\begin_layout Itemize
+Exception : if the update introduces some inconsistency in the data the
+ system administrator is prompted to correct the incorrect information.
 \end_layout
 
 \begin_layout Subsubsection
