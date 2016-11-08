@@ -711,7 +711,8 @@ Foreign licences are allowed, but will be checked personally by an operator.
 \end_layout
 
 \begin_layout Enumerate
-An active user can reserve up to one car at any given time 
+An active user can reserve up to one car at any given time.
+ 
 \begin_inset Note Note
 status open
 
@@ -726,12 +727,28 @@ status open
 \end_layout
 
 \begin_layout Enumerate
-Every car has a screen 
+Every car has a screen.
 \end_layout
 
 \begin_layout Enumerate
-Every car is connected to the internet and can change the displayed information
- can be remotely updated by the system.
+Every car is connected to the internet and can change the displayed information,
+ which can be remotely updated by the system.
+\end_layout
+
+\begin_layout Enumerate
+As soon as a user's DL o CC expires, he is downgraded to User (cannot book/rent
+ cars) until he updates the relevant information and is notified of the
+ problem.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Notifications -> Email -> need to specify better?
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1304,6 +1321,27 @@ resume
 \end_inset
 
 Parking shall be allowed only in safe zones.
+\end_layout
+
+\begin_layout Enumerate
+If the system doesn't recognise the user's position as safe by mistake,
+ he can contact the Company.
+ An operator will go to check the position while the user can leave the
+ car.
+ If he was indeed in the safe zone he will be charged only for the rental,
+ otherwise he will have to pay and extra.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
++ the operator brings the car in zafe zone if it's outside...
+ Is it part of this req?
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
@@ -1918,7 +1956,7 @@ Exception : if the update introduces some inconsistency in the data the
 \end_layout
 
 \begin_layout Subsubsection
-Carlo needs to go to the train station: 
+Kurt needs to go to the train station: 
 \begin_inset Note Note
 status open
 
@@ -1932,7 +1970,7 @@ TO BE CONTINUED
 \end_layout
 
 \begin_layout Standard
-Carlo needs to go to the railway station but wants to minimize his costs
+Kurt needs to go to the railway station but wants to minimize his costs
  since he's leaving for a thirty days InterRail.
  For this reason he picks two of his friends up and activates the 
 \begin_inset Quotes eld
@@ -1974,6 +2012,45 @@ Registered User
  as his Credit Card details.
  He then waits for the confirmation, since an Operator must check it.
  Once his Licence is confirmed he can book cars and use the system.
+\end_layout
+
+\begin_layout Subsubsection
+Francis forgot that his prepaid card is empty
+\end_layout
+
+\begin_layout Standard
+Francis has picked a car up to go shopping with his Fiancé.
+ When they are done with shopping they go back home and he parks the vehicle
+ in a parking space nearby.
+ Once he gets out of the car and locks it, he is notified that the payment
+ was unsuccessful.
+ He is also informed that until he pays for that rental he won't be allowed
+ to use the service.
+ He then remembers that he forgot to load the prepaid card he is using for
+ PowerEnjoy.
+ As soon as he gets home he loads the card from his Home Banking and asks
+ the app to try again with the payment.
+ The transaction is accepted and Francis is allowed to book other cars whenever
+ he pleases.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Shawn has trouble parking 
+\end_layout
+
+\begin_layout Standard
+Shawn wants to park his car but the system will not let him, pretending
+ that he is not inside a safe zone.
+ Since he is certain that he is inside a safe zone he contacts the Company
+ to report the issue.
+ He is allowed to park the car and leave while an operator is sent to check
+ the actual position of the car.
+ The operator finds out that the car was indeed in the safe zone, although
+ really close to the boundary.
+ Therefore Shawn does not have to pay any extras and the operator can leave
+ the car there.
+ 
 \end_layout
 
 \begin_layout Subsection
