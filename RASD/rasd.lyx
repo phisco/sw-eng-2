@@ -160,10 +160,10 @@ Users must have an account on the online platform to be able to access the
  It is possible via the mobile app or directly via a web browser to look
  for available cars within a certain distance from user current location
  (possibly tracked by GPS) or from a specified address.
- Once selected a car the user can book it for up to one hour before the
- picking up.
+ Once the user selects a car he can book it for up to one hour, if he does
+ not pick it up he is fined and his reservations is voided.
  Rates are calculated based on time spent driving and cars must be parked
- in predefined safe areas, some of which are prepared with power grids.
+ in predefined safe areas, some of which are equipped with power grids.
 \end_layout
 
 \begin_layout Standard
