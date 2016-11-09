@@ -1422,7 +1422,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Use Case Diagram1.svg
+	filename C:/Users/pscor/OneDrive/Documenti/GitHub/sw-eng-2/Use Case Diagram1.pdf
 	width 100text%
 
 \end_inset
@@ -1975,6 +1975,44 @@ Output conditions : the car's data have been successfully updated
 \begin_layout Itemize
 Exception : if the update introduces some inconsistency in the data the
  system administrator is prompted to correct the incorrect information.
+\end_layout
+
+\begin_layout Subsubsection
+Visitor interaction with the system
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/pscor/OneDrive/Documenti/GitHub/sw-eng-2/RASD 1 Activity Diagram.pdf
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Activity diagram
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
