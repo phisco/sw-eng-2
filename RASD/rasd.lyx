@@ -2195,8 +2195,23 @@ Dynamical analysis
 
 \begin_layout Standard
 Different actions have been analysed.
- c and u (and all is attached to them) are always referred the pre-state
- while c' and u' (and all is attached to them) are referred to the post-state.
+ 
+\family typewriter
+c
+\family default
+ and 
+\family typewriter
+u
+\family default
+ (and all is attached to them) are always referred the pre-state while 
+\family typewriter
+c'
+\family default
+ and 
+\family typewriter
+u'
+\family default
+ (and all is attached to them) are referred to the post-state.
 \end_layout
 
 \begin_layout Itemize
@@ -2425,6 +2440,11 @@ status open
 
 \begin_layout Subsubsection
 Consistency results
+\end_layout
+
+\begin_layout Standard
+All predicates are consistent and assertions have been verified with a scope
+ constraint of 10.
 \end_layout
 
 \begin_layout Section

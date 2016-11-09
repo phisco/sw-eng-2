@@ -75,7 +75,6 @@ fact CarCanBePluggedToOnlyOneStationAtOnce {
 pred showStatic {
 	eachPowerStationIsInADifferentPlace
 	oneUserPerEmail
-	all u1,u2:User | u1=u2 <=> u1.email=u2.email
 }
 
 pred reservedToInUse (c,c':Car, u,u':User) {
@@ -154,6 +153,18 @@ pred deleteReservation (c,c':Car, u,u':User) {
 	reserveCar[c',c,u',u]
 }
 
+assert BijectionBetweenUserAndEmail {
+	showStatic => all u1,u2:User | u1=u2 <=> u1.email=u2.email
+}
+
+assert CarNotReservedAndInUse {
+	all c:Car | not (c.reserved.isTrue and c.inUse.isTrue)
+}
+
+assert UserNotReservedAndInUse {
+	all u:User | not (#u.carInUse=1 and #u.carReserved=1)
+}
+
 run showStatic for 2 Coordinate, 2 Car, 2 Email, 2 User,
 	2 Int, 1 PowerStation
 
@@ -168,3 +179,9 @@ run reserveCar for 2 Coordinate, 2 User, 2 Email, 2 Car,
 
 run deleteReservation for 2 Coordinate, 2 User, 2 Email, 2 Car,
 	2 PowerStation, 2 Int
+
+check BijectionBetweenUserAndEmail for 10
+
+check CarNotReservedAndInUse for 10
+
+check UserNotReservedAndInUse for 10
