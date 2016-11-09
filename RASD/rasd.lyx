@@ -285,6 +285,10 @@ Safe Zone: predefined zones where parking is allowed, parking is forbidden
  in any other zone.
 \end_layout
 
+\begin_layout Itemize
+Park: park the car in the safe zone and terminate the rental.
+\end_layout
+
 \begin_layout Subsection
 Actors
 \end_layout
@@ -450,8 +454,7 @@ name "G-parkCar"
 
 \end_inset
 
-Allow the user to park the rented car, stopping the money charging, only
- in a safe zone.
+Allow the user to park the rented car in safe zone.
 \end_layout
 
 \begin_layout Standard
@@ -749,6 +752,20 @@ Notifications -> Email -> need to specify better?
 \end_inset
 
 
+\end_layout
+
+\begin_layout Enumerate
+An AU can temporarily switch the engine off (
+\begin_inset Quotes eld
+\end_inset
+
+park
+\begin_inset Quotes erd
+\end_inset
+
+ the car in the common meaning) and keep paying for the rental in order
+ to be able to pick up the same car again.
+ This is only possible outside the Safe Zone.
 \end_layout
 
 \begin_layout Standard
@@ -1312,7 +1329,7 @@ reference "G-parkCar"
 
 \end_inset
 
-: Allow the user to park the car rented 
+: Allow the user to park the rented car in safe zone.
 \end_layout
 
 \begin_layout Enumerate
