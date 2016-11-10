@@ -9,6 +9,14 @@
 \usepackage{microtype}
 \usepackage{eurosym}
 \addtokomafont{disposition}{\rmfamily}
+\usepackage[headsepline]{scrlayer-scrpage}
+\clearpairofpagestyles
+\ohead{RASD}
+\chead{\pagemark}
+\ihead{\headmark}
+\automark[]{section}
+\renewcommand*\pagemark{{\usekomafont{pagenumber}Page\nobreakspace\thepage}}
+\addtokomafont{pageheadfoot}{\upshape}
 \end_preamble
 \use_default_options false
 \begin_modules
@@ -47,7 +55,7 @@ enumitem
 \pdf_backref false
 \pdf_pdfusetitle true
 \papersize a4paper
-\use_geometry false
+\use_geometry true
 \use_package amsmath 1
 \use_package amssymb 2
 \use_package cancel 1
@@ -71,10 +79,7 @@ enumitem
 \shortcut idx
 \color #008000
 \end_index
-\leftmargin 0.75in
-\topmargin 0.6in
-\rightmargin 0.75in
-\bottommargin 0.6in
+\bottommargin 2.5cm
 \secnumdepth 4
 \tocdepth 4
 \paragraph_separation indent
@@ -2445,6 +2450,13 @@ Consistency results
 \begin_layout Standard
 All predicates are consistent and assertions have been verified with a scope
  constraint of 10.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
