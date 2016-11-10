@@ -529,6 +529,14 @@ RASD sample from Oct.
 \end_layout
 
 \end_deeper
+\begin_layout Itemize
+Daniel Jackson, 
+\shape italic
+Software Abstractions: Logic, Language, Analysis
+\shape default
+, MIT Press, 2012
+\end_layout
+
 \begin_layout Subsection
 Overview
 \begin_inset Note Note
@@ -1217,7 +1225,7 @@ reference "G-ensureFarePaid"
 
 \begin_layout Enumerate
 \begin_inset Argument 1
-status open
+status collapsed
 
 \begin_layout Plain Layout
 resume
@@ -1423,7 +1431,7 @@ Use case diagram
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1991,7 +1999,7 @@ Visitor interaction with the system
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -2158,7 +2166,7 @@ predicate
 \end_layout
 
 \begin_layout Standard
-\align center
+\align left
 \begin_inset Box Boxed
 position "t"
 hor_pos "c"
@@ -2175,7 +2183,7 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2242,7 +2250,7 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2326,7 +2334,7 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2376,7 +2384,7 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2424,7 +2432,7 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
