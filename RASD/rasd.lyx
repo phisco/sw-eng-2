@@ -781,6 +781,13 @@ park
  This is only possible outside the Safe Zone.
 \end_layout
 
+\begin_layout Enumerate
+An Assistance Service via phone will be provided and will deal with all
+ the phenomena the system can not handle ( e.g.
+ accidents, paying fees and any other problem with cars not explicitly indicated
+ in this document as held by the system).
+\end_layout
+
 \begin_layout Standard
 \begin_inset ERT
 status collapsed
@@ -975,8 +982,9 @@ For every car is displayed the remaining percentage of the battery.
 \end_layout
 
 \begin_layout Enumerate
-Users can apply filters to show only cars within a certain distance from
- a specified location or with a minimum percentage of battery left.
+Users should be able to apply filters to show only cars within a certain
+ distance from a specified location or with a minimum percentage of battery
+ left.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1143,7 +1151,7 @@ The system shall be able to know the battery percentage of a specific car
 
 \begin_layout Enumerate
 The system shall be able to locate a car and know whether or not it is plugged
- at one of the predetermined parking areas.
+ at one of the predetermined parking areas in any moment.
 \end_layout
 
 \begin_layout Enumerate
@@ -1159,17 +1167,6 @@ The system shall be able to notify an Operator in order to send him charge
 \begin_layout Enumerate
 The system shall know if a user selected the money saving option.
  
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-maybe not, included in 8 if we decide to give the moneysaving option the
- same discount as the other one
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsubsection
@@ -1291,7 +1288,7 @@ resume
 
 \end_inset
 
-The systems suggests a charging station that is near the user's destionation
+The systems suggests a charging station near the user's destination if present
  (within a user-selctable radius).
 \end_layout
 
@@ -1300,22 +1297,13 @@ The suggested station must have at least a free plug to be suggested.
 \end_layout
 
 \begin_layout Enumerate
-The suggested station must allow for a uniform distribution of cars in the
- city.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Should it be better written?
-\end_layout
-
-\end_inset
-
-
+The suggested station shall be determined to ensure a uniform distribution
+ of cars.
 \end_layout
 
 \begin_layout Enumerate
-If the AU doesn't park in the suggested station he won't be punished.
+If the AU doesn't park in the suggested station the money saving option
+ shall not be taken into account for future decisions.
 \begin_inset Note Note
 status open
 
@@ -1356,27 +1344,6 @@ resume
 \end_inset
 
 Parking shall be allowed only in safe zones.
-\end_layout
-
-\begin_layout Enumerate
-If the system doesn't recognise the user's position as safe by mistake,
- he can contact the Company.
- An operator will go to check the position while the user can leave the
- car.
- If he was indeed in the safe zone he will be charged only for the rental,
- otherwise he will have to pay and extra.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-+ the operator brings the car in zafe zone if it's outside...
- Is it part of this req?
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Enumerate
@@ -1431,7 +1398,7 @@ Use case diagram
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1999,7 +1966,7 @@ Visitor interaction with the system
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
