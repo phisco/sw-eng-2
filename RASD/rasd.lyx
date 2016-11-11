@@ -384,6 +384,16 @@ Allow visitors to log in.
 \begin_layout Enumerate
 \begin_inset CommandInset label
 LatexCommand label
+name "G-updateProfile"
+
+\end_inset
+
+Allow Users and Active Users to update or modify their profile's information.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
 name "G-updatedInfoOnCars"
 
 \end_inset
@@ -720,6 +730,7 @@ Every car has a unique code (different from the licence number) that is
 \begin_layout Enumerate
 The licence Office (Motorizzazione Civile) allows for automated check of
  Licence Numbers, also providing checks for Name and Surname (at least).
+ This check can be done in any moment of the day and gives immediate feedback.
 \end_layout
 
 \begin_layout Enumerate
@@ -752,9 +763,9 @@ Every car is connected to the internet and can change the displayed information,
 \end_layout
 
 \begin_layout Enumerate
-As soon as a user's DL o CC expires, he is downgraded to User (cannot book/rent
- cars) until he updates the relevant information and is notified of the
- problem.
+As soon as an Active User's DL o CC expires, he is downgraded to User (cannot
+ book/rent cars) until he updates the relevant information and is notified
+ of the problem.
 \begin_inset Note Note
 status open
 
@@ -900,6 +911,10 @@ Invalid emails are all addresses that are either already in use or not well
 \end_layout
 
 \begin_layout Enumerate
+Email Address must be verified.
+\end_layout
+
+\begin_layout Enumerate
 The DL is valid if all the fields match the user's information and the Licence
  Office confirms that the Licence Number, the Name and the Surname are correct.
 \end_layout
@@ -945,6 +960,59 @@ The password chosen during the registration of the submitted email has to
 \begin_layout Enumerate
 Visitors submitting incorrect email and/or password shall not be allowed
  to log in.
+\end_layout
+
+\begin_layout Subsubsection
+G
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "G-updateProfile"
+
+\end_inset
+
+: Allow Users and Active Users to update or modify their profile's information
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+resume
+\end_layout
+
+\end_inset
+
+Every registered User or Active User can modify of his information.
+\end_layout
+
+\begin_layout Enumerate
+Changing email address is allowed but the new email must be confirmed for
+ the account to be valid.
+\end_layout
+
+\begin_layout Enumerate
+Changing the CC information is allowed as long as the new CC is valid.
+\end_layout
+
+\begin_layout Enumerate
+Changing the DL is allowed but the Licence has to be verified.
+\end_layout
+
+\begin_layout Enumerate
+Changing name and/or surname is not allowed.
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Se uno ha sbagliato a iscriversi si attacca/impara a scrivere/chiama il
+ call center
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -1330,7 +1398,7 @@ reference "G-parkCar"
 
 \end_inset
 
-: Allow the user to park the rented car in safe zone.
+: Allow the user to park the rented car in safe zone
 \end_layout
 
 \begin_layout Enumerate
@@ -2090,14 +2158,20 @@ Shawn has trouble parking
 Shawn wants to park his car but the system will not let him, pretending
  that he is not inside a safe zone.
  Since he is certain that he is inside a safe zone he contacts the Company
- to report the issue.
- He is allowed to park the car and leave while an operator is sent to check
- the actual position of the car.
- The operator finds out that the car was indeed in the safe zone, although
- really close to the boundary.
- Therefore Shawn does not have to pay any extras and the operator can leave
- the car there.
- 
+ to report the issue hoping that he will be allowed to leave the car since
+ he has no time to spare.
+ The Operator handles the problem as per company policy trying to help Shawn
+ as much as he can.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Eccessivamente fuffa?
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -2124,6 +2198,28 @@ La policy dell'azienda non si sa e la deciderà Briatore quando vorrà, penso
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsubsection
+Matthew's licence expires
+\end_layout
+
+\begin_layout Standard
+Matthew has been using PowerEnjoy for quite some time and is very happy
+ with the service since he never had any problem.
+ One morning, being late for work, he decides to use PowerEnjoy to save
+ some time.
+ To his surprise, he is not allowed to rent the car just around the corner.
+ From the app he is notified that his DL is expired and that he will not
+ be allowed to use the service until he updates his DL information.
+ Luckily enough, he has already renewed his Licence.
+ He opens his profile from the App and proceeds with the information update
+ procedure.
+ He is compelled to update his DL only, since the other informations are
+ still valid.
+ He inputs his DL details and hopes that the verification will be fast.
+ Since he has got a non-foreign licence, the process is completely automated
+ and he manages to get on the car after a few minutes.
 \end_layout
 
 \begin_layout Subsection
