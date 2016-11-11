@@ -1544,8 +1544,8 @@ Exceptions :
 
 \begin_deeper
 \begin_layout Enumerate
-If the inserted email is already in use the visitor will be prompted to
- log in or use a different email.
+If the inserted email is already in use or not invalid the visitor will
+ be prompted to log in or use a different email.
 \end_layout
 
 \end_deeper
