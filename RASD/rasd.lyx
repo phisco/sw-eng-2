@@ -209,7 +209,7 @@ The aim of the project is to create a brand new system that allows customers
  to access the car sharing service offered by PowerEnJoy.
  The system will let the customers register and then login, managing the
  sensible data submitted during the registration and checking automatically
- or via an operator these data.
+ or via an operator the correctness of the information.
  The system will allow logged customers to reserve available cars both via
  web or mobile app, access the cars once they reach them via mobile app
  using positioning data and then compute and apply the fare once they park
@@ -1313,6 +1313,7 @@ Users with unsuccessful pending fare shall not be allowed to book cars.
 
 \begin_layout Enumerate
 Allow users to insert new payment methods.
+ 
 \begin_inset Note Note
 status open
 
