@@ -867,9 +867,10 @@ PowerEnjoy makes mainly use of two external providers, one for the maps
  The map provider's API will be used only to download location-specific
  maps, over which the car's position will be shown as an overlay.
  The payment handler will have to take care of the transaction, ensuring
- a suitable encrypted connection between the user and the service.
+ a suitable secure connection between the user and the service.
  Moreover the API will have to provide information about the outcome of
- a transaction, if it succeeded or the reason because of which it failed.
+ a transaction, wether it succeeded or it failed and the reason for the
+ failure.
  
 \end_layout
 
