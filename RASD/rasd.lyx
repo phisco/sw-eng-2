@@ -1928,8 +1928,8 @@ Output conditions : the user has unlocked the car and can now use it.
 \end_layout
 
 \begin_layout Itemize
-Exception : The user is not acknowledged to be nearby and the car is not
- unlocked 
+Exception : The user is not recognized as nearby so the car is not unlocked
+ 
 \begin_inset Note Note
 status open
 
@@ -2061,6 +2061,63 @@ status open
 
 \begin_layout Plain Layout
 Activity diagram
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename BPMN 2.0 - Page 1.pdf
+	lyxscale 10
+	width 100text%
+	height 90theight%
+	keepAspectRatio
+	rotateAngle -90
+	rotateOrigin centerTop
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+BPMN representing the process of reservation of a car
 \end_layout
 
 \end_inset
