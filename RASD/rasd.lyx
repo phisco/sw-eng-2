@@ -630,7 +630,7 @@ Regulatory policies
 The system must require users the permission to access their position data
  and has to manage sensible data (position, phone number, email, DL, CC)
  respecting the privacy laws in force in the current country where the system
- will be deployed.
+ is being deployed.
 \end_layout
 
 \begin_layout Subsubsection
@@ -983,7 +983,7 @@ resume
 
 \end_inset
 
-Every registered User or Active User can modify of his information.
+Every registered User or Active User can modify his information.
 \end_layout
 
 \begin_layout Enumerate
@@ -1115,7 +1115,7 @@ reference "G-activeCanUnlock"
 
 \end_inset
 
-: Allow Active Users to unlock the car reserved
+: Allow Active Users to unlock the car they reserved
 \end_layout
 
 \begin_layout Enumerate
@@ -1132,8 +1132,7 @@ A car can be unlocked only by the user who has reserved it.
 \end_layout
 
 \begin_layout Enumerate
-There exists a physical mechanism of acknowledgment between the car and
- the user.
+There exists a mechanism of acknowledgment between the car and the user.
 \end_layout
 
 \begin_layout Enumerate
@@ -1153,8 +1152,8 @@ n) expires.
 \end_layout
 
 \begin_layout Enumerate
-If a user does not ignite the car after 15 minutes of having entered the
- car, the systems prompts the user to confirm he is fine.
+If a user does not ignite the car within 15 minutes from the moment he unlocks
+ it, the systems prompts the user to confirm he is fine.
  If no answer is received, an operator checks the car.
 \end_layout
 
@@ -1179,7 +1178,7 @@ resume
 
 \end_inset
 
-The fare takes into account all price modifiers (discounts or extra fees)
+The fare takes into account all price modifiers (discounts or extra fees).
 \end_layout
 
 \begin_layout Enumerate
@@ -1223,13 +1222,12 @@ The system shall be able to locate a car and know whether or not it is plugged
 \end_layout
 
 \begin_layout Enumerate
-The system shall be able to measure the distance of a specific car the nearest
- power grid station.
+The system shall be able to measure the distance of a specific car from
+ the nearest power grid station.
 \end_layout
 
 \begin_layout Enumerate
-The system shall be able to notify an Operator in order to send him charge
- a specific car.
+The system shall be able to make an Operator charge a specific car.
 \end_layout
 
 \begin_layout Enumerate
@@ -1258,8 +1256,8 @@ resume
 
 \end_inset
 
-The system shall allow a System Administrator to be granted of the necessary
- permission in order to access the cars data, status and position.
+The System Administrator is granted the necessary permissions allowing him
+ to access each cars' data, status and position.
 \end_layout
 
 \begin_layout Enumerate
@@ -1268,8 +1266,8 @@ The system shall present an Interface for the System Administrator in order
 \end_layout
 
 \begin_layout Enumerate
-Anyone else except for those granted with these permissions shall be able
- to access sensible data regarding the cars.
+Only those accessing the systems with these permissions shall be able to
+ access sensible data regarding the cars.
 \end_layout
 
 \begin_layout Enumerate
@@ -1358,7 +1356,7 @@ resume
 \end_inset
 
 The systems suggests a charging station near the user's destination if present
- (within a user-selctable radius).
+ (within a user-selectable radius).
 \end_layout
 
 \begin_layout Enumerate
@@ -1373,21 +1371,10 @@ The suggested station shall be determined to ensure a uniform distribution
 \begin_layout Enumerate
 If the AU doesn't park in the suggested station the money saving option
  shall not be taken into account for future decisions.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Since it's a suggestion? I assumed it...
- ?
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Enumerate
-If the AU chooses this option, the systems gives him the address and shows
+If the AU chooses this option, the system gives him the address and shows
  directions on the smartphone.
 \end_layout
 
@@ -1416,8 +1403,8 @@ Parking shall be allowed only in safe zones.
 \end_layout
 
 \begin_layout Enumerate
-The system shall not charge the user after the car has been parked and the
- user has exited the car.
+The system shall not charge the user after the car has been parked and he
+ has exited the car.
 \end_layout
 
 \begin_layout Enumerate
@@ -1483,7 +1470,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Usecase Diagram
+Use case Diagram
 \end_layout
 
 \end_inset
@@ -1852,8 +1839,18 @@ The reservation is deleted and the user is redirected to his reservations
 
 \end_deeper
 \begin_layout Itemize
-Output conditions : the user has reserved a car and has an hour to reach
- the car
+Output conditions : the reservation has been cancelled and the user has
+ no active reservation 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+check if it's ok
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -1876,7 +1873,7 @@ reference "G-activeCanUnlock"
 
 \end_inset
 
- Allow Active Users to unlock the car reserved
+ Allow Active Users to unlock the car they reserved
 \end_layout
 
 \begin_layout Itemize
