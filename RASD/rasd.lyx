@@ -1528,7 +1528,7 @@ Sign Up
 \end_layout
 
 \begin_layout Enumerate
-He's asked to input a valid email address and a password.
+He is asked to input a valid email address and a password.
 \end_layout
 
 \begin_layout Enumerate
@@ -1541,7 +1541,7 @@ The visitor is asked to insert his driving licence and payment method data.
 \end_layout
 
 \begin_layout Enumerate
-If the data are correct the system stores the submitted data.
+If the data is correct the system stores the submitted data.
 \end_layout
 
 \begin_layout Enumerate
@@ -1556,9 +1556,10 @@ The user will be asked to confirm his email through a confirmation link
 
 \end_deeper
 \begin_layout Itemize
-Output conditions: The visitor complete the registration and becomes a User,
- can now on log in using the submitted email and password and shall wait
- for his DL to be confirmed by the system in order to become an Active User.
+Output conditions: The visitor completes the registration and becomes a
+ User, can now on log in using the submitted email and password and shall
+ wait for his DL to be confirmed by the system in order to become an Active
+ User.
 \end_layout
 
 \begin_layout Itemize
@@ -1567,8 +1568,8 @@ Exceptions :
 
 \begin_deeper
 \begin_layout Enumerate
-If the inserted email is already in use or not invalid the visitor will
- be prompted to log in or use a different email.
+If the inserted email is already in use or not valid the visitor will be
+ prompted to log in or use a different email.
 \end_layout
 
 \end_deeper
@@ -1617,7 +1618,7 @@ Log in
 \end_layout
 
 \begin_layout Enumerate
-He's asked to input the registered email and the chosen password.
+He is asked to input the registered email and the chosen password.
 \end_layout
 
 \begin_layout Enumerate
@@ -1702,7 +1703,7 @@ Exceptions : None
 \end_layout
 
 \begin_layout Paragraph
-Rent a car
+Reserve a car
 \end_layout
 
 \begin_layout Itemize
@@ -1747,7 +1748,7 @@ Clicking on the
 \begin_inset Quotes eld
 \end_inset
 
-Rent Now
+Reserve Now
 \begin_inset Quotes erd
 \end_inset
 
@@ -1818,7 +1819,7 @@ Clicks on the current reservation.
 \end_layout
 
 \begin_layout Enumerate
-He will be asked whether or not he want to delete his reservation.
+He will be asked whether or not he wants to delete his reservation.
 \end_layout
 
 \begin_layout Enumerate
@@ -1927,11 +1928,22 @@ Output conditions : the user has unlocked the car and can now use it.
 \end_layout
 
 \begin_layout Itemize
-Exception : None
+Exception : The user is not acknowledged to be nearby and the car is not
+ unlocked 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+check if it's ok
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Paragraph
-Update cars information
+Update cars' information
 \end_layout
 
 \begin_layout Itemize
@@ -1991,19 +2003,19 @@ The system checks if there are no inconsistency introduced by the update.
 \end_layout
 
 \begin_layout Enumerate
-The system updates the status of the car and act accordingly.
+The system updates the status of the car and acts accordingly.
 \end_layout
 
 \begin_layout Enumerate
-Is redirect him to the data management page.
+The System administrator is redirected to the data management page.
 \end_layout
 
 \begin_layout Enumerate
-Clicks exit.
+He clicks exit.
 \end_layout
 
 \begin_layout Enumerate
-Is redirected to the main page of the system administrator interface.
+He is redirected to the main page of the system administrator interface.
 \end_layout
 
 \begin_layout Standard
