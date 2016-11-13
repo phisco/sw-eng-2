@@ -861,6 +861,40 @@ Specific Requirements
 External Interface Requirements
 \end_layout
 
+\begin_layout Standard
+PowerEnjoy makes mainly use of two external providers, one for the maps
+ and one to handle payments.
+ The map provider's API will be used only to download location-specific
+ maps, over which the car's position will be shown as an overlay.
+ The payment handler will have to take care of the transaction, ensuring
+ a suitable secure connection between the user and the service.
+ Moreover the API will have to provide information about the outcome of
+ a transaction, wether it succeeded or it failed and the reason for the
+ failure.
+ Furthermore, PowerEnjoy will use the Licence Office (Motorizzazione Civile)
+ public API to verify Driving Licences and retrieve driver's informations
+ in order to autametically accept local users.
+ 
+\end_layout
+
+\begin_layout Standard
+Both the web application and the mobile application will access the same
+ APIs offered by PowerEnjoy in order to login and retrieve information.
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Gli altri parlano solo di questa parte, per me interfacce esterne sono quelle
+ con il mondo esterno rispetto a PowerEnjoy...
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Functional Requirements
 \end_layout
