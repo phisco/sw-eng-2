@@ -497,13 +497,7 @@ Reference documents
 \end_layout
 
 \begin_layout Itemize
-\begin_inset CommandInset label
-LatexCommand label
-name "A16"
-
-\end_inset
-
-Specification Document: 
+[A16] Specification Document: 
 \begin_inset Quotes eld
 \end_inset
 
@@ -515,7 +509,7 @@ Assignments AA 2016-2017.pdf
 \end_layout
 
 \begin_layout Itemize
-ISO/IEC/ IEEE 29148:2011(E) 
+[IEEE11] ISO/IEC/ IEEE 29148:2011(E) 
 \begin_inset Quotes eld
 \end_inset
 
@@ -546,7 +540,7 @@ RASD sample from Oct.
 
 \end_deeper
 \begin_layout Itemize
-Daniel Jackson, 
+[Jack12] Daniel Jackson, 
 \shape italic
 Software Abstractions: Logic, Language, Analysis
 \shape default
@@ -2338,16 +2332,9 @@ Non functional requirements
 \end_layout
 
 \begin_layout Standard
-Althought in 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "A16"
-
-\end_inset
-
- there is no reference in terms of quality of service, as for any other
- software artifact we can imagine that the system should behave within some
- quality constraints.
+Althought in [A16] there is no reference in terms of quality of service,
+ as for any other software artifact we can imagine that the system should
+ behave within some quality constraints.
  In particular:
 \end_layout
 
