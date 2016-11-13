@@ -497,6 +497,12 @@ Reference documents
 \end_layout
 
 \begin_layout Itemize
+\begin_inset CommandInset label
+LatexCommand label
+name "A16"
+
+\end_inset
+
 Specification Document: 
 \begin_inset Quotes eld
 \end_inset
@@ -2325,6 +2331,48 @@ Matthew has been using PowerEnjoy for quite some time and is very happy
  He inputs his DL details and hopes that the verification will be fast.
  Since he has got a non-foreign licence, the process is completely automated
  and he manages to get on the car after a few minutes.
+\end_layout
+
+\begin_layout Subsection
+Non functional requirements
+\end_layout
+
+\begin_layout Standard
+Althought in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "A16"
+
+\end_inset
+
+ there is no reference in terms of quality of service, as for any other
+ software artifact we can imagine that the system should behave within some
+ quality constraints.
+ In particular:
+\end_layout
+
+\begin_layout Itemize
+Client applications should be user friendly, so that anyone can use them
+ without a training.
+\end_layout
+
+\begin_layout Itemize
+The system should be available 24/7, because customers may need any time
+ to rent a car.
+\end_layout
+
+\begin_layout Itemize
+The system should be scalable, because as the business grows, the number
+ of requests to manage and the number of cars grows.
+\end_layout
+
+\begin_layout Itemize
+All personal data should be stored in a secure way, according to the law.
+\end_layout
+
+\begin_layout Itemize
+The system should be very protected from external attacks, in particular
+ to prevent the theft of cars.
 \end_layout
 
 \begin_layout Subsection
