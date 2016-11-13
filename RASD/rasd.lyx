@@ -497,7 +497,7 @@ Reference documents
 \end_layout
 
 \begin_layout Itemize
-[A16] Specification Document: 
+[SDA16] Specification Document: 
 \begin_inset Quotes eld
 \end_inset
 
@@ -2372,7 +2372,8 @@ Part of the requirements have been formalized in the Alloy language.
 \end_layout
 
 \begin_layout Standard
-There are two types of models: static and dynamical ones.
+Accoring to [Jack12] there are two types of models: static and dynamical
+ ones.
  In particular static ones represent a snapshot of our world at a certain
  time while dynamical models represent the evolution of the system from
  one state to another one.
