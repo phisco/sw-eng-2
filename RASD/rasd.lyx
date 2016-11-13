@@ -189,7 +189,7 @@ Purpose
 
 \begin_layout Standard
 This document is the Requirement Analysis and Specification Document (RASD).
- Its main objective is to accurately describe the systems, in terms of both
+ Its main objective is to accurately describe the system, in terms of both
  functional and non-functional requirements.
  Moreover it focuses on modeling the system taking into account the customer's
  needs, as well as showing the constraints and limits that must be imposed
@@ -1262,7 +1262,7 @@ The System Administrator is granted the necessary permissions allowing him
 
 \begin_layout Enumerate
 The system shall present an Interface for the System Administrator in order
- to access with the necessary permission.
+ to access with the necessary permissions.
 \end_layout
 
 \begin_layout Enumerate
