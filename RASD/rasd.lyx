@@ -871,6 +871,9 @@ PowerEnjoy makes mainly use of two external providers, one for the maps
  Moreover the API will have to provide information about the outcome of
  a transaction, wether it succeeded or it failed and the reason for the
  failure.
+ Furthermore, PowerEnjoy will use the Licence Office (Motorizzazione Civile)
+ public API to verify Driving Licences and retrieve driver's informations
+ in order to autametically accept local users.
  
 \end_layout
 
