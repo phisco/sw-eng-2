@@ -547,13 +547,12 @@ Software Abstractions: Logic, Language, Analysis
 , MIT Press, 2012
 \end_layout
 
-\begin_layout Subsection
-Overview
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-An overall description of the whole document (what it is about?)
+overview
 \end_layout
 
 \end_inset
@@ -584,18 +583,27 @@ The future product will consist of a mobile application and a web interface
  both the mobile application and the web interface, after logging in.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
 \begin_layout Subsection
-Product functions
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Major functions (maybe not necessary, add some more functions to 2.1)
+Product functions Major functions (maybe not necessary, add some more functions
+ to 2.1)
 \end_layout
 
 \end_inset
 
  
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -819,6 +827,10 @@ arabic{enumi}.}
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
 \begin_layout Subsection
 Idea of the implementation
 \begin_inset Note Note
@@ -833,17 +845,22 @@ probabilmente da rimuovere +1
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 A server will provide business logic and databases, sending dynamic web
  pages to the web app and anwering the queries coming from the mobile app.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 In particular the server and the web app will be implemented in JEE with
  a SQL relational database.
  The mobile app will be compatible with both Android and iOS.
  However other mobile platforms will be able to access services through
  web browser via the web app, that will have a mobile theme.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1484,33 +1501,10 @@ Use case diagram
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename Use Case Diagram1.pdf
 	width 100text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Use case Diagram
-\end_layout
-
-\end_inset
-
-
-\end_layout
 
 \end_inset
 
@@ -2074,6 +2068,13 @@ Visitor interaction with the system
 \end_layout
 
 \begin_layout Standard
+The interaction between the visitor and the system is modelled with UML
+ Activity Diagram (in fig.
+ 1) and BPMN notation (in fig.
+ 2).
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
@@ -2081,6 +2082,7 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename RASD 1 Activity Diagram.pdf
 	width 100text%
@@ -2094,7 +2096,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Activity diagram
+UML Activity diagram
 \end_layout
 
 \end_inset
@@ -2151,7 +2153,7 @@ centering
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-BPMN representing the process of reservation of a car
+BPMN diagram representing the process of reservation of a car
 \end_layout
 
 \end_inset
@@ -2438,7 +2440,8 @@ status open
 \end_layout
 
 \begin_layout Standard
-Here is one of the possible different static models generated with 
+In next page there is one of the possible different static models generated
+ with 
 \family typewriter
 showStatic
 \family default
@@ -2467,7 +2470,7 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2692,6 +2695,13 @@ status collapsed
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Itemize
 
 \series bold
@@ -2856,6 +2866,108 @@ Consistency results
 \begin_layout Standard
 All predicates are consistent and assertions have been verified with a scope
  constraint of 10.
+ For more details on the implementation see Appendix A.
+\end_layout
+
+\begin_layout Section
+Effort spent
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Component
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Time spent (in hour)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Philippe Scorsolini
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+21
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Lorenzo Semeria
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13.5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Gabriele Vanoni
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+24.5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
