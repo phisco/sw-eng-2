@@ -283,6 +283,7 @@ User: a registered and logged in Visitor, that may be still waiting for
 
 \begin_layout Itemize
 Active User: a User whose data (CC, DL) have been verified.
+ (Shares all User's characteristics)
 \end_layout
 
 \begin_layout Itemize
@@ -748,17 +749,6 @@ Foreign licences are allowed, but will be checked personally by an operator.
 \begin_layout Enumerate
 An active user can reserve up to one car at any given time.
  
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-(not clear from specification).
- (In alloy l'ho assunto e cambiarlo sarebbe un casino)
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Enumerate
@@ -774,16 +764,6 @@ Every car is connected to the internet and can change the displayed information,
 As soon as an Active User's DL o CC expires, he is downgraded to User (cannot
  book/rent cars) until he updates the relevant information and is notified
  of the problem.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Notifications -> Email -> need to specify better?
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Enumerate
@@ -898,18 +878,6 @@ PowerEnjoy makes mainly use of two external providers, one for the maps
 Both the web application and the mobile application will access the same
  APIs offered by PowerEnjoy in order to login and retrieve information.
  
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-Gli altri parlano solo di questa parte, per me interfacce esterne sono quelle
- con il mondo esterno rispetto a PowerEnjoy...
- 
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection
@@ -1021,7 +989,7 @@ reference "G-updateProfile"
 
 \end_inset
 
-: Allow Users and Active Users to update or modify their profile's information
+: Allow Users to update or modify their profile's information
 \end_layout
 
 \begin_layout Enumerate
@@ -1034,7 +1002,7 @@ resume
 
 \end_inset
 
-Every registered User or Active User can modify his information.
+Every registered User can modify his information.
 \end_layout
 
 \begin_layout Enumerate
@@ -1358,22 +1326,6 @@ If the provided method is invalid (e.g.
 
 \begin_layout Enumerate
 Users with unsuccessful pending fare shall not be allowed to book cars.
-\end_layout
-
-\begin_layout Enumerate
-Allow users to insert new payment methods.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Forse superfluo, l'idea è evitare con certezza di non bloccargli al 100%
- l'account 
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Enumerate
@@ -1870,16 +1822,6 @@ The reservation is deleted and the user is redirected to his reservations
 \begin_layout Itemize
 Output conditions : the reservation has been cancelled and the user has
  no active reservation 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-check if it's ok
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Itemize
@@ -1958,16 +1900,6 @@ Output conditions : the user has unlocked the car and can now use it.
 \begin_layout Itemize
 Exception : The user is not recognized as nearby so the car is not unlocked
  
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-check if it's ok
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Paragraph
@@ -2937,7 +2869,7 @@ Lorenzo Semeria
 \begin_inset Text
 
 \begin_layout Plain Layout
-13.5
+16.5
 \end_layout
 
 \end_inset
