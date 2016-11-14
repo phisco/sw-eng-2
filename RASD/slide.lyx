@@ -177,8 +177,134 @@ Goals
 
 \end_layout
 
+\begin_deeper
 \begin_layout Enumerate
-Goal 1
+\SpecialChar ligaturebreak
+
+\begin_inset CommandInset label
+LatexCommand label
+name "G-signUp"
+
+\end_inset
+
+Allow visitors to sign up.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-logIn"
+
+\end_inset
+
+Allow visitors to log in.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-updateProfile"
+
+\end_inset
+
+Allow Users and Active Users to update or modify their profile's information.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-updatedInfoOnCars"
+
+\end_inset
+
+Show updated information on available cars.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-activeCanReserve"
+
+\end_inset
+
+Allow Active Users to reserve a car.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-activeCanUnlock"
+
+\end_inset
+
+ Allow Active Users to unlock the car reserved
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-computeFare"
+
+\end_inset
+
+Compute the fare.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-sysadminCanUpdate"
+
+\end_inset
+
+Allow System Administrator(s) to update system's information.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-ensureFarePaid"
+
+\end_inset
+
+Ensure that the fare is paid.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-driverCanMoneySave"
+
+\end_inset
+
+Allow the driver to choose the money saving option and get near their destionati
+on.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-parkCar"
+
+\end_inset
+
+Allow the user to park the rented car in safe zone.
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout Frame
@@ -186,7 +312,7 @@ Goal 1
 status open
 
 \begin_layout Plain Layout
-GoalX requirements
+Core Requirements
 \end_layout
 
 \end_inset
@@ -194,8 +320,14 @@ GoalX requirements
 
 \end_layout
 
-\begin_layout Enumerate
-Requirement 1
+\begin_deeper
+\begin_layout Standard
+asdasdt
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout Frame
@@ -211,10 +343,116 @@ Assumptions
 
 \end_layout
 
+\begin_deeper
 \begin_layout Enumerate
-Assumption
+There is at least one System Administrator that manages the website and
+ the app.
 \end_layout
 
+\begin_layout Enumerate
+The System Administrator can add and remove cars from the system and manage
+ their status if needed.
+\end_layout
+
+\begin_layout Enumerate
+There are operators that can recover cars.
+\end_layout
+
+\begin_layout Enumerate
+Only Active Users can use the service.
+\end_layout
+
+\begin_layout Enumerate
+Every car has a unique code (different from the licence number) that is
+ visible from the outside.
+ This number is used to ensure that a User is near a Car if he tries to
+ unlock it and no GPS data is available.
+\end_layout
+
+\begin_layout Enumerate
+The licence Office (Motorizzazione Civile) allows for automated check of
+ Licence Numbers, also providing checks for Name and Surname (at least).
+ This check can be done in any moment of the day and gives immediate feedback.
+\end_layout
+
+\begin_layout Enumerate
+Foreign licences are allowed, but will be checked personally by an operator.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Assumptions (cont.)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Non riesco a far continuare l'enumerazione se qualcuno lo sa fare ben venga
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+An active user can reserve up to one car at any given time.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Every car has a screen.
+\end_layout
+
+\begin_layout Enumerate
+Every car is connected to the internet and can change the displayed information,
+ which can be remotely updated by the system.
+\end_layout
+
+\begin_layout Enumerate
+As soon as an Active User's DL o CC expires, he is downgraded to User (cannot
+ book/rent cars) until he updates the relevant information and is notified
+ of the problem.
+\end_layout
+
+\begin_layout Enumerate
+An AU can temporarily switch the engine off (
+\begin_inset Quotes eld
+\end_inset
+
+park
+\begin_inset Quotes erd
+\end_inset
+
+ the car in the common meaning) and keep paying for the rental in order
+ to be able to pick up the same car again.
+ This is only possible outside the Safe Zone.
+\end_layout
+
+\begin_layout Enumerate
+An Assistance Service via phone will be provided and will deal with all
+ the phenomena the system can not handle ( e.g.
+ accidents, paying fees and any other problem with cars not explicitly indicated
+ in this document as held by the system).
+\end_layout
+
+\end_deeper
 \begin_layout Section
 Alloy modeling
 \end_layout
