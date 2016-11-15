@@ -160,6 +160,48 @@ November 16, 2016
 Introduction
 \end_layout
 
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+PowerEnJoy structure
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+We offer both a website and a mobile app
+\end_layout
+
+\begin_layout Itemize
+The app is used both to reserve cars and during the use (e.g.
+ allows to choose the Power saving option)
+\end_layout
+
+\begin_layout Itemize
+We have 
+\begin_inset Quotes eld
+\end_inset
+
+Operators
+\begin_inset Quotes erd
+\end_inset
+
+ that can both help customers via a hotline or intervene themselves on a
+ car (e.g.
+ low battery, accident)
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
 \begin_layout Section
 Requirement specification
 \end_layout
