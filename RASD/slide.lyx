@@ -312,7 +312,7 @@ Allow the user to park the rented car in safe zone.
 status open
 
 \begin_layout Plain Layout
-Core Requirements
+Interesting Requirements
 \end_layout
 
 \end_inset
@@ -321,8 +321,49 @@ Core Requirements
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
-asdasdt
+\begin_layout Enumerate
+The list of available cars always includes only cars that are parked and
+ not reserved and each is shown on a map in the location where it is actually
+ parked.
+\end_layout
+
+\begin_layout Enumerate
+Users should be able to apply filters to show only cars within a certain
+ distance from a specified location or with a minimum percentage of battery
+ left.
+\end_layout
+
+\begin_layout Enumerate
+If a user unlocks the car without igniting the engine, the systems starts
+ charging the regular price after the pick up time (one hour from the reservatio
+n) expires.
+\end_layout
+
+\begin_layout Enumerate
+If a user does not ignite the car within 15 minutes from the moment he unlocks
+ it, the systems prompts the user to confirm he is fine.
+ If no answer is received, an operator checks the car.
+ 
+\end_layout
+
+\begin_layout Enumerate
+The system shall be able to check the consistency of the information modified
+ [by the System Administrator] given a set of rules.
+\end_layout
+
+\begin_layout Enumerate
+If the AU doesn’t park in the suggested station the money saving option
+ shall not be taken into account for future decisions.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+-> No fee if not used
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
