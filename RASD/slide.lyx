@@ -179,7 +179,7 @@ We offer both a website and a mobile app
 \end_layout
 
 \begin_layout Itemize
-The app is used both to reserve cars and during the use (e.g.
+The app is used both to unlock cars and while using th service (e.g.
  allows to choose the Power saving option)
 \end_layout
 
@@ -195,6 +195,12 @@ Operators
  that can both help customers via a hotline or intervene themselves on a
  car (e.g.
  low battery, accident)
+\end_layout
+
+\begin_layout Itemize
+The system is managed by a System Administrator who can do virtually anything
+ (e.g.
+ add or remove cars)
 \end_layout
 
 \end_deeper
@@ -221,8 +227,6 @@ Goals
 
 \begin_deeper
 \begin_layout Enumerate
-\SpecialChar ligaturebreak
-
 \begin_inset CommandInset label
 LatexCommand label
 name "G-signUp"
@@ -279,7 +283,7 @@ name "G-activeCanUnlock"
 
 \end_inset
 
- Allow Active Users to unlock the car reserved
+ Allow Active Users to unlock the reserved car
 \end_layout
 
 \begin_layout Enumerate
