@@ -399,7 +399,7 @@ Assumptions (cont.)
 
 
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Non riesco a far continuare l'enumerazione se qualcuno lo sa fare ben venga
@@ -450,6 +450,231 @@ An Assistance Service via phone will be provided and will deal with all
  the phenomena the system can not handle ( e.g.
  accidents, paying fees and any other problem with cars not explicitly indicated
  in this document as held by the system).
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Actors
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Visitor: person that may not be registered to the system or not logged in.
+\end_layout
+
+\begin_layout Itemize
+User: a registered and logged in Visitor, that may be still waiting for
+ his information to be verified.
+\end_layout
+
+\begin_layout Itemize
+Active User: a User whose data (CC, DL) have been verified.
+ 
+\end_layout
+
+\begin_layout Itemize
+Operator: person that physically actuates any operation needed by the system
+ in the physical world.
+\end_layout
+
+\begin_layout Itemize
+System Administrator: person in charge of the maintenance of the system
+ and the management of cars’ information.
+\end_layout
+
+\begin_layout Itemize
+Geographical DB (Gmaps)
+\end_layout
+
+\begin_layout Itemize
+Payment Handler
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Use Case Diagram
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Use Case Diagram1.pdf
+	lyxscale 10
+	height 80theight%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Use Cases - Goals relationship
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+G1 (Allow visitors to sign up) ⇒ Register
+\end_layout
+
+\begin_layout Itemize
+G2 (Allow visitors to log in) ⇒ Login
+\end_layout
+
+\begin_layout Itemize
+G3 (Allow Users to update or modify their profile’s information) ⇒ Update
+ user data
+\end_layout
+
+\begin_layout Itemize
+G4 (Show updated information on available cars) ⇒ Show Cars
+\end_layout
+
+\begin_layout Itemize
+G5 (Allow Active Users to reserve a car) ⇒ Reserve Car, Delete Reservation
+\end_layout
+
+\begin_layout Itemize
+G6 (Allow Active Users to unlock the car they reserved) ⇒ Unlock Car
+\end_layout
+
+\begin_layout Itemize
+G7 + G10 ⇒ Activate Money Saving Option
+\end_layout
+
+\begin_layout Itemize
+G8 (Allow System Administrator(s) to update information) ⇒ Update Cars Data
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Visitor interaction with the system
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename RASD 1 Activity Diagram.pdf
+	height 80theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout FrameSubtitle
+Activity Diagram
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Visitor interaction with the system
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename BPMN 2.0 v2.pdf
+	lyxscale 10
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout FrameSubtitle
+BPMN
 \end_layout
 
 \end_deeper
