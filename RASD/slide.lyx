@@ -739,7 +739,7 @@ Activity Diagram
 status open
 
 \begin_layout Plain Layout
-Visitor interaction with the system
+Active User interaction with the system
 \end_layout
 
 \end_inset
@@ -762,6 +762,12 @@ Visitor interaction with the system
 
 \begin_layout FrameSubtitle
 BPMN
+\end_layout
+
+\begin_layout Standard
+Modeling of the process of car reservation, dealing with the possible timeout,
+ the deletion of the reservation, the actual unlocking of the car and the
+ payment procedure.
 \end_layout
 
 \end_deeper
