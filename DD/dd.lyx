@@ -227,6 +227,90 @@ Park: park the car in the safe zone and terminate the rental.
 \end_layout
 
 \begin_layout Section
+Algorithm design
+\end_layout
+
+\begin_layout Standard
+All algorithms needed in the project are trivial but the one dealing with
+ uniform repartition of cars in the city.
+ This problem has been studied a lot and there are in literature various
+ algorithms that solve it.
+ They are mainly based on mixed integer linear programming techniques and
+ in particular [1] presented a complete model.
+ In [2] is presented a greedy algorithm that achieves almost the same result.
+ In [3] a more sofisticated approach is used taking into account a three
+ dimensional objective function and exploiting genetic algorithms and local
+ search methods.
+ [4] offers a sort of classification of the stragies proposed in the past
+ years.
+\end_layout
+
+\begin_layout Subsection*
+Riferimenti
+\end_layout
+
+\begin_layout Standard
+[1] A.
+ G.
+ Kek, R.
+ L.
+ Cheu, Q.
+ Meng, and C.
+ H.
+ Fung, “A decision support system for vehicle relocation operations in carsharin
+g systems
+\begin_inset Quotes erd
+\end_inset
+
+, Transportation Research Part E: Logistics and Transportation Review, vol.
+ 45, no.
+ 1, pp.
+ 149–158, 2009.
+\end_layout
+
+\begin_layout Standard
+[2] R.
+ Zakaria, L.
+ Moalic, A.
+ Caminada, M.
+ Dib, 
+\begin_inset Quotes eld
+\end_inset
+
+A Greedy Algorithm for relocation problem in one-way carsharing
+\begin_inset Quotes erd
+\end_inset
+
+, 10th International Conference on Modeling, Optimization and Simulation
+ - MOSIM’14 – November 5-7-2014- Nancy – France “Toward circular Economy”.
+\end_layout
+
+\begin_layout Standard
+[3] Moalic, L., Lamrous, S., & Caminada, A.
+ (2013).
+ A Multiobjective Memetic Algorithm for Solving the Carsharing Problem.
+ Proceedings Of The 2013 International Conference On Artificial IntelligenceIcai
+ 2013, Vol.
+ 1, pp.
+ 877-883.
+\end_layout
+
+\begin_layout Standard
+[4] S.
+ Weikl, K.
+ Bogenberger, 
+\begin_inset Quotes eld
+\end_inset
+
+Relocation Strategies and Algorithms for free-floating Car Sharing Systems
+\begin_inset Quotes erd
+\end_inset
+
+, 15th International IEEE Conference on Intelligent Transportation Systems
+ Anchorage, Alaska, USA, September 16-19, 2012.
+\end_layout
+
+\begin_layout Section
 Effort spent
 \end_layout
 
