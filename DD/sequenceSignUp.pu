@@ -12,7 +12,7 @@ AU -> CA : accessRegistrationForm()
 activate CA
 CA ->> CH : getRegistrationForm() : registrationForm
 activate CH
-CH -->> CA
+CA <<-- CH
 CA -> CA : showRegistrationForm()
 CA <- AU : fillRegistrationForm()
 CA ->> CH : registerUser(User user)
