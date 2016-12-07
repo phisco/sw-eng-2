@@ -1,0 +1,22 @@
+@startuml
+actor ActiveUser as AU
+participant ClientApplication as CA
+participant ClientHandler as CH
+participant RegistrationManager as RM
+participant DLValidatorInt as DLV
+participant CCValidatorInt as CCV
+participant ModelManager as MM
+
+activate AU
+AU -> CA : accessRegistrationForm()
+activate CA
+CA ->> CH : getRegistrationForm()
+activate CH
+CH -->> CA
+CA -> CA : showRegistrationForm()
+AU -> CA : fillRegistrationForm()
+CA ->> CH : registerUser(User user)
+CH -->> RM: registerUser(User user) : success
+activate RM 
+
+@enduml
