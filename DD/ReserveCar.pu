@@ -1,0 +1,41 @@
+-- Reserve a car
+@startuml
+actor "Active User" as AU
+participant "User Application" as UApp
+participant "Map Provider" as MAP
+participant "Client Handler" as CH
+participant "Reservation Manager" as RM
+activate AU
+activate UApp
+activate MAP
+
+== Intialize ==
+AU -> UApp: reserveIntention()
+UApp -> UApp : retrieveVirtualPositionOnMap()
+UApp -> UApp : retrieveRadiusOnMap()
+UApp ->> MAP : getAreaMap(location, radius)
+UApp ->> CH : getNearAvailableCars(location, radius)
+activate CH
+CH ->> RM : getNearAvailableCars(location, radius)
+activate RM
+CH <<-- RM : <<Available Cars>>
+UApp <<-- CH : <<Available Cars>>
+UApp <<-- MAP : << Data: Map>>
+
+== Wait user selection ==
+UApp -> UApp : renderAvailableCars()
+AU -> UApp : highlightCar(CarID)
+UApp -> UApp : showHiglightedDetail()
+AU -> UApp : confirmReservation()
+
+== Make Reservation ==
+UApp ->> CH : reserveCar(CarID, AU_ID)
+CH ->> RM : reserveCar(CarID, AU_ID)
+RM ->> RM : makeReservation(CarID, AU_ID):Reg##
+CH <<-- RM : <<Confirmed Registration Reg##, CarID, AU_ID>>
+UApp <<-- CH : <<Confirmed Registration Reg##, CarID>>
+
+
+UApp -> UApp : showResevationConfirmed()
+
+@enduml
