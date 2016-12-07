@@ -1,0 +1,34 @@
+@startuml
+actor ActiveUser as AU
+participant ClientApplication as CA
+participant ClientHandler as CH
+participant RegistrationManager as RM
+participant DLValidatorInt as DLV
+participant CCValidatorInt as CCV
+participant ModelManager as MM
+
+activate AU
+AU -> CA : accessRegistrationForm()
+activate CA
+CA ->> CH : getRegistrationForm() : registrationForm
+activate CH
+CH -->> CA
+CA -> CA : showRegistrationForm()
+CA <- AU : fillRegistrationForm()
+CA ->> CH : registerUser(User user)
+activate RM
+CH ->> RM: registerUser(User user)
+activate DLV
+RM -> DLV : checkDL(DrivingLicence dl) : success
+RM <-- DLV
+activate CCV
+deactivate DLV
+RM -> CCV : checkCC(CCData ccd) : success
+RM <-- CCV
+activate MM
+deactivate CCV
+RM ->> MM : addUser(User user)
+CH <<- RM : userCreated(User user)
+CA <<- CH : showRegistrationSuccess()
+
+@enduml
