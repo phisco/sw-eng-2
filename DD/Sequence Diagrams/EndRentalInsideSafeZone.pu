@@ -2,9 +2,10 @@
 actor "Active User" as AU
 participant "User Application" as UApp
 participant "Client Handler" as CH
-participant "Car Manager" as CM
 participant "Reservation Manager" as RM
+participant "Car Manager" as CM
 participant "Payment Handler" as PH
+participant "ModelManager" as MM
 
 
 
@@ -15,27 +16,26 @@ activate UApp
 AU -> UApp : parkCarIntention()
 UApp -> UApp : retrieveRealPosition()
 '-> client side check to be in safe zone'
-UApp ->> CH : parkRequest(CarID, AU_ID)
 activate CH
+UApp ->> CH : parkRequest(CarID, AU_ID)
+activate RM
+CH ->> RM :  parkRequest(CarID, AU_ID)
 activate CM
-
-CH ->> CM :  parkRequest(CarID, AU_ID)
+RM ->> CM : getCarInfo(CarID,AU_ID)
 CM -> Car : retrieveCarPosition (CarID)
 CM <-- Car : <<Current Position>>
-CM -> CM : verifyBoundaries()
+RM <<- CM : carStatus(Car)
 'Server side check of car position'
-CM-> RM : terminateRental()
-activate RM
+RM -> RM : verifyBoundaries(Car)
+activate MM
+RM ->> CM : terminateRental(CarID, AU_ID)
+CM ->> MM : updateStatus(CarID,FREE)
 RM ->> RM : computeFare()
-RM ->> PH : makePayment(UserInfo, amount)
+CH <<- RM : showFare(Payment)
+UApp <<- CH :showFare(Payment)
 activate PH
-RM <<-- PH : <<Payment Successful>>
-CM <<-- RM : <<Rental Terminated: OK>>
-deactivate PH
+RM ->> PH : makePayment(User, amount)
+RM <<- PH : paymentSuccessful(User, PaymentSeqID)
 
-CM -->> CH : <<Rental Terminated: OK>>
-CH -->> UApp : <<Rental Terminated: OK>>
-CM ->> Car : updateStatus(FREE)
-CM ->> CM : updateCars()
-UApp -> UApp : showEndOfRentalSuccessful()
+deactivate PH
 @enduml
