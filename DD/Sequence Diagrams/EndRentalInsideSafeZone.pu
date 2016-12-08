@@ -1,0 +1,41 @@
+@startuml
+actor "Active User" as AU
+participant "User Application" as UApp
+participant "Client Handler" as CH
+participant "Car Manager" as CM
+participant "Reservation Manager" as RM
+participant "Payment Handler" as PH
+
+
+
+actor "Car"
+activate Car
+activate AU
+activate UApp
+AU -> UApp : parkCarIntention()
+UApp -> UApp : retrieveRealPosition()
+'-> client side check to be in safe zone'
+UApp ->> CH : parkRequest(CarID, AU_ID)
+activate CH
+activate CM
+
+CH ->> CM :  parkRequest(CarID, AU_ID)
+CM -> Car : retrieveCarPosition (CarID)
+CM <-- Car : <<Current Position>>
+CM -> CM : verifyBoundaries()
+'Server side check of car position'
+CM-> RM : terminateRental()
+activate RM
+RM ->> RM : computeFare()
+RM ->> PH : makePayment(UserInfo, amount)
+activate PH
+RM <<-- PH : <<Payment Successful>>
+CM <<-- RM : <<Rental Terminated: OK>>
+deactivate PH
+
+CM -->> CH : <<Rental Terminated: OK>>
+CH -->> UApp : <<Rental Terminated: OK>>
+CM ->> Car : updateStatus(FREE)
+CM ->> CM : updateCars()
+UApp -> UApp : showEndOfRentalSuccessful()
+@enduml

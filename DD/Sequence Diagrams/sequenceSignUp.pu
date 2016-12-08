@@ -19,16 +19,29 @@ CA ->> CH : registerUser(User user)
 activate RM
 CH ->> RM: registerUser(User user)
 activate DLV
-RM -> DLV : checkDL(DrivingLicence dl) : success
-RM <-- DLV
+RM ->> DLV : checkDL(DrivingLicence dl)
 activate CCV
-deactivate DLV
-RM -> CCV : checkCC(CCData ccd) : success
-RM <-- CCV
+RM ->> CCV : checkCC(CCData ccd)
 activate MM
-deactivate CCV
+RM ->> MM : checkUser(User user)
+RM <<- MM : userAccepted(User user)
 RM ->> MM : addUser(User user)
 CH <<- RM : userCreated(User user)
 CA <<- CH : showRegistrationSuccess()
+...
+== wait for DLV and CC check ==
+...
+RM <<-- DLV : success
+RM <<-- CCV : success
+deactivate DLV
+deactivate CCV
+CH <<- RM : CCConfirmed()
+RM ->> MM : CCConfirmed(User user)
+CA <<- CH : CCConfirmed()
+...
+CH <<- RM : DLVConfirmed()
+RM ->> MM : DLVConfirmed(User user)
+CA <<- CH : DLVConfirmed()
+
 
 @enduml
