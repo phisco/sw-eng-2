@@ -245,6 +245,11 @@ All algorithms needed in the project are trivial but the one dealing with
  years.
 \end_layout
 
+\begin_layout Standard
+For our purpose the approach described in [2] is the best since it minimizes
+ the number of the operators needed to relocate cars and so the costs.
+\end_layout
+
 \begin_layout Subsection*
 Riferimenti
 \end_layout
