@@ -38,7 +38,7 @@ deactivate CCV
 CH <<- RM : CCConfirmed()
 RM ->> MM : CCConfirmed(User user)
 CA <<- CH : CCConfirmed()
-...
+
 CH <<- RM : DLVConfirmed()
 RM ->> MM : DLVConfirmed(User user)
 CA <<- CH : DLVConfirmed()
