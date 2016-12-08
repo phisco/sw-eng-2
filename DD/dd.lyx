@@ -23,7 +23,7 @@
 enumitem
 \end_modules
 \maintain_unincluded_children false
-\language american
+\language british
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -159,8 +159,60 @@ Introduction
 Purpose
 \end_layout
 
+\begin_layout Standard
+The purpose of this document is to give the detailed structure of the PowerEnJoy
+ system we are designing.
+\end_layout
+
+\begin_layout Standard
+So we try to give developers a clear representation of:
+\end_layout
+
+\begin_layout Itemize
+The high level architecture of the system
+\end_layout
+
+\begin_layout Itemize
+The design patterns applied in order to achieve specific necessities
+\end_layout
+
+\begin_layout Itemize
+The main components and the interfaces they provide
+\end_layout
+
+\begin_layout Itemize
+The Runtime behaviour
+\end_layout
+
 \begin_layout Subsection
 Scope
+\end_layout
+
+\begin_layout Standard
+PowerEnJoy's project aims to give users, PowerEnJoy's operators and callcenter's
+ operators access to the system services they need and they are supposed
+ to access.
+\end_layout
+
+\begin_layout Standard
+The system allows Users to manage their personal data through both a web
+ and a mobile app and Active Users to manage reservations only through mobile
+ app.
+\end_layout
+
+\begin_layout Standard
+Allows the callcenter's operators to manage assistance tickets, that will
+ be managed by PowerEnJoy it self.
+\end_layout
+
+\begin_layout Standard
+Gives the PowerEnjoy's operator the ability to manage the opened assistance
+ tickets, take them in charge and update car's and user's data consequentially.
+\end_layout
+
+\begin_layout Standard
+The system architecture shall guarantee future proof scalability, allow
+ subsequent improvements and general reliability.
 \end_layout
 
 \begin_layout Subsection
@@ -227,7 +279,39 @@ Park: park the car in the safe zone and terminate the rental.
 \end_layout
 
 \begin_layout Section
-Algorithm design
+Architecture Design
+\end_layout
+
+\begin_layout Subsection
+Overview
+\end_layout
+
+\begin_layout Standard
+The system will adopt a three tier architecture with a thin client 
+\end_layout
+
+\begin_layout Subsection
+Component View
+\end_layout
+
+\begin_layout Subsection
+Deployment View
+\end_layout
+
+\begin_layout Subsection
+Component Interfaces
+\end_layout
+
+\begin_layout Subsection
+Selected Architectural Styles And Patterns
+\end_layout
+
+\begin_layout Subsection
+Other Design Decisions
+\end_layout
+
+\begin_layout Section
+Algorithm Design
 \end_layout
 
 \begin_layout Standard
