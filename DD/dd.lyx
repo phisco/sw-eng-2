@@ -160,8 +160,8 @@ Purpose
 \end_layout
 
 \begin_layout Standard
-The purpose of this document is to give the detailed structure of the PowerEnJoy
- system we are designing.
+The purpose of this document is to give the detailed structure of PowerEnJoy
+ software system.
 \end_layout
 
 \begin_layout Standard
@@ -169,19 +169,19 @@ So we try to give developers a clear representation of:
 \end_layout
 
 \begin_layout Itemize
-The high level architecture of the system
+The high level architecture of the system.
 \end_layout
 
 \begin_layout Itemize
-The design patterns applied in order to achieve specific necessities
+The design patterns applied in order to achieve our specific necessities.
 \end_layout
 
 \begin_layout Itemize
-The main components and the interfaces they provide
+The main components and the interfaces they provide.
 \end_layout
 
 \begin_layout Itemize
-The Runtime behaviour
+The Runtime behaviour.
 \end_layout
 
 \begin_layout Subsection
@@ -189,29 +189,31 @@ Scope
 \end_layout
 
 \begin_layout Standard
-PowerEnJoy's project aims to give users, PowerEnJoy's operators and callcenter's
- operators access to the system services they need and they are supposed
- to access.
+PowerEnJoy project aims to give users, operators and callcenter operators
+ access to the system services they need and they are supposed to access.
 \end_layout
 
 \begin_layout Standard
-The system allows Users to manage their personal data through both a web
- and a mobile app and Active Users to manage reservations only through mobile
- app.
+The system allows: 
+\end_layout
+
+\begin_layout Itemize
+Users to manage their personal data through both a web and a mobile app
+ and Active Users to manage reservations only through the mobile app.
+\end_layout
+
+\begin_layout Itemize
+callcenter operators to manage assistance tickets, that will be managed
+ by PowerEnJoy itself.
+\end_layout
+
+\begin_layout Itemize
+PowerEnjoy operators to manage the opened assistance tickets, take them
+ in charge and update car's and user's data accordingly.
 \end_layout
 
 \begin_layout Standard
-Allows the callcenter's operators to manage assistance tickets, that will
- be managed by PowerEnJoy it self.
-\end_layout
-
-\begin_layout Standard
-Gives the PowerEnjoy's operator the ability to manage the opened assistance
- tickets, take them in charge and update car's and user's data consequentially.
-\end_layout
-
-\begin_layout Standard
-The system architecture shall guarantee future proof scalability, allow
+The system architecture shall guarantee future proof scalability and allow
  subsequent improvements and general reliability.
 \end_layout
 
@@ -278,8 +280,15 @@ Safe Zone: predefined zones where parking is allowed, parking is forbidden
 Park: park the car in the safe zone and terminate the rental.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
-Architecture Design
+Architectural Design
 \end_layout
 
 \begin_layout Subsection
@@ -301,6 +310,10 @@ Deployment View
 \end_layout
 
 \begin_layout Subsection
+Runtime View
+\end_layout
+
+\begin_layout Subsection
 Component Interfaces
 \end_layout
 
@@ -310,6 +323,13 @@ Selected Architectural Styles And Patterns
 
 \begin_layout Subsection
 Other Design Decisions
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -399,6 +419,35 @@ Relocation Strategies and Algorithms for free-floating Car Sharing Systems
 
 , 15th International IEEE Conference on Intelligent Transportation Systems
  Anchorage, Alaska, USA, September 16-19, 2012.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+User Interface Design
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Requirements traceability
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
