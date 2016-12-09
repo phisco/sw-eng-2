@@ -469,6 +469,7 @@ From the home page any user can try to login inserting username and password
 
 \begin_layout Standard
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status open
@@ -515,6 +516,7 @@ In this page users must input the core informations to register online:
 
 \begin_layout Standard
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status open
@@ -562,13 +564,10 @@ After having registered and logged in, users must input their Licence and
 
 \begin_layout Standard
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -612,6 +611,7 @@ All users can view available maps near their position and choose one if
 
 \begin_layout Standard
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status open
@@ -655,7 +655,14 @@ Map - Selected Car (Web)
 \end_layout
 
 \begin_layout Standard
+Selecting a car provides relevant information about that specific car, in
+ order to give to the user the chance to pick a car that can suit his needs.
+ 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status open
@@ -698,6 +705,13 @@ Selected car
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Paragraph
 Selected Car Confirmation (Web)
 \end_layout
@@ -717,6 +731,7 @@ Click to reserve
 
 \begin_layout Standard
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status open
@@ -764,7 +779,12 @@ Reservation Confirmed (Web)
 \end_layout
 
 \begin_layout Standard
+Confirming a reservation shows a brief summary containing the address.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status open
@@ -819,6 +839,7 @@ From the App's home page users can either login or create an account.
 
 \begin_layout Standard
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status open
@@ -826,7 +847,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Mockup_Exported/Home Mobile.png
-	scale 80
+	scale 60
 
 \end_inset
 
@@ -873,6 +894,7 @@ The user is shown a map displaying all cars that are nearby.
 
 \begin_layout Standard
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status open
@@ -920,7 +942,13 @@ Selected Car (Mobile)
 \end_layout
 
 \begin_layout Standard
+Selecting a car on the map shows relevant information, like the web happens.
+ 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status open
@@ -968,7 +996,13 @@ Car Confirmation (Mobile)
 \end_layout
 
 \begin_layout Standard
+A user can confirm a reservation or go back if he chose that car by mistake.
+ 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status open
@@ -976,7 +1010,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Mockup_Exported/Car Confirmation Mobile.png
-	scale 80
+	scale 60
 
 \end_inset
 
@@ -1016,7 +1050,14 @@ Reservation Confirmed (Mobile)
 \end_layout
 
 \begin_layout Standard
+When the reservation is confirmed, the smartphone shows a countdown as well
+ as the car's address.
+ 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status open
@@ -1072,6 +1113,7 @@ While using the car, Users can decide to park it — which signals the system
 
 \begin_layout Standard
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status open
@@ -1079,7 +1121,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Mockup_Exported/Car Park or End Mobile.png
-	scale 80
+	scale 60
 
 \end_inset
 
@@ -1128,6 +1170,7 @@ If the car is already parked users can decide to end the rental using the
 
 \begin_layout Standard
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status open
@@ -1175,7 +1218,13 @@ Rental Ended (Mobile)
 \end_layout
 
 \begin_layout Standard
+Ending a rental shows the total as well as whether the Money Saving Option
+ was active for the trip.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status open
@@ -1227,7 +1276,20 @@ Operator Main Page (Web)
 \end_layout
 
 \begin_layout Standard
+Operators can choose between performing a pending task (a 
+\begin_inset Quotes eld
+\end_inset
+
+Todo
+\begin_inset Quotes erd
+\end_inset
+
+) or managing a specific car.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status open
@@ -1275,7 +1337,15 @@ Operator chose TODO (Web)
 \end_layout
 
 \begin_layout Standard
+Choosing a pending operations brings up relevant information about it: its
+ type, the position (if relevant), a short summary and a map.
+ The operator can confirm the task if he will take care of it or go home
+ (the logo links to the home).
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status open
@@ -1323,7 +1393,14 @@ Operator Searched Car (Web)
 \end_layout
 
 \begin_layout Standard
+Choosing to manage a specific car allows the operator to search among all
+ cars, by car Licence Plate or by Current Driver (User) if in use.
+ 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status open
@@ -1371,7 +1448,14 @@ Car Details (Web)
 \end_layout
 
 \begin_layout Standard
+The Car Details page shows all informations available for the chosen car
+ as well as providing buttons to change all editable parameters (for instance
+ the car's status)
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status open
@@ -1419,7 +1503,20 @@ Changing a Car parameter - Sample (Web)
 \end_layout
 
 \begin_layout Standard
+Choosing to edit a parameter brings up a 
+\begin_inset Quotes eld
+\end_inset
+
+pop-up
+\begin_inset Quotes erd
+\end_inset
+
+ providing the needed options to edit.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status open
@@ -1468,6 +1565,7 @@ Main Page (Mobile)
 
 \begin_layout Standard
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status open
@@ -1475,7 +1573,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Mockup_Exported/Operator Main Mobile.png
-	scale 60
+	scale 59
 
 \end_inset
 
@@ -1564,6 +1662,7 @@ Operator Searched Car (Mobile)
 
 \begin_layout Standard
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status open
@@ -1612,6 +1711,7 @@ Operator Car Details (Mobile)
 
 \begin_layout Standard
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status open
@@ -1656,6 +1756,7 @@ Changing a Car parameter - Sample (Mobile)
 
 \begin_layout Standard
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status open
