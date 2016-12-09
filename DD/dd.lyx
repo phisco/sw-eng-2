@@ -287,7 +287,9 @@ Overview
 \end_layout
 
 \begin_layout Standard
-The system will adopt a three tier architecture with a thin client 
+The system adopt a three tier architecture with a thin client composed by
+ a web and a mobile app, both managed by a specific server side client handler
+ 
 \end_layout
 
 \begin_layout Subsection
