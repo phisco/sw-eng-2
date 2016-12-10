@@ -744,6 +744,61 @@ Selected Architectural Styles And Patterns
 \end_layout
 
 \begin_layout Subsection
+Data management
+\end_layout
+
+\begin_layout Standard
+Although we have used a microservice approach for the business logic tier,
+ it doesn't make much sense split data between the different modules.
+ In fact our data model is very small and interconnected and we don't need
+ to use different approaches (eg.
+ SQL and noSQL at the same time).
+ Of course in this way we couple the different modules but it is inevitable
+ since they run for the same macro-functionality.
+ A unique database grant us the possibility to achieve in a simple way ACID
+ properties and to use the standardized SQL language for queries.
+ We provide an Entity-Relationship model for our application in figure 7.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ER.pdf
+	lyxscale 10
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+ER data model
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
 Other Design Decisions
 \end_layout
 
