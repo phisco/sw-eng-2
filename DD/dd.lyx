@@ -434,10 +434,10 @@ User Interface Design
 
 \begin_layout Standard
 Below are some mockups to show how users will interact with the service.
- Since PowerEnJoy can be used both from a computer (except unlocking the
- car), both Mobile and Web mockups are provided.
- Moreover, since both users and Operators have access to the service via
- browser/app, interfaces for both types of users have been created.
+ Since PowerEnJoy can be used both from a computer (except for unlocking
+ the car), both Mobile and Web mockups are provided.
+ Moreover, since both Users and Operators have access to the service via
+ browser and app, interfaces for both types of users have been created.
  
 \end_layout
 
@@ -447,9 +447,9 @@ User Interfaces
 
 \begin_layout Standard
 As anticipated, in this section all User mockups are analyzed.
- These mockups show how all actions will be performed by our users.
+ These mockups show how all actions that can be performed by our users.
  This section is further split between Web interfaces, imagined for standard
- browsers, and Mobile interfaces, designed having a smartphone App in mind
+ browsers, and Mobile interfaces, designed having a smartphone App in mind.
 \end_layout
 
 \begin_layout Subsubsection
@@ -558,7 +558,7 @@ Further Information (Web)
 
 \begin_layout Standard
 After having registered and logged in, users must input their Licence and
- Credit Card in order to use the service.
+ Credit Card in order to use the service if they haven't already.
  
 \end_layout
 
@@ -605,8 +605,8 @@ Map (Web)
 \end_layout
 
 \begin_layout Standard
-All users can view available maps near their position and choose one if
- they want more info (see next mockup)
+All users can view available cars near their position and choose one if
+ they want more info (see next mockup).
 \end_layout
 
 \begin_layout Standard
@@ -630,7 +630,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Map
+Web Interface - Map
 \end_layout
 
 \end_inset
@@ -681,7 +681,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Selected car
+Web Interface - Selected car
 \end_layout
 
 \end_inset
@@ -725,8 +725,8 @@ Click to reserve
 \begin_inset Quotes erd
 \end_inset
 
-, users are asked to confirm their choice one last time, to avoid mistakenly
- pressed links or misread information.
+, users are asked to confirm their choice one last time, to avoid errors
+ in case of mistakenly pressed links or misread information.
 \end_layout
 
 \begin_layout Standard
@@ -750,7 +750,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Car Confirmation Screen
+Web Interface - Car Confirmation Screen
 \end_layout
 
 \end_inset
@@ -779,7 +779,9 @@ Reservation Confirmed (Web)
 \end_layout
 
 \begin_layout Standard
-Confirming a reservation shows a brief summary containing the address.
+Confirming a reservation shows a brief summary containing the address at
+ which the car is parked.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -803,7 +805,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Reservation Confirmed
+Web Interface - Reservation Confirmed
 \end_layout
 
 \end_inset
@@ -858,7 +860,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Mobile Home Page
+Mobile Interface - Home Page
 \end_layout
 
 \end_inset
@@ -913,7 +915,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Map Mobile
+Mobile Interface - Map
 \end_layout
 
 \end_inset
@@ -942,8 +944,8 @@ Selected Car (Mobile)
 \end_layout
 
 \begin_layout Standard
-Selecting a car on the map shows relevant information, like the web happens.
- 
+Selecting a car on the map shows relevant information, like it happens on
+ the website.
 \end_layout
 
 \begin_layout Standard
@@ -967,7 +969,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Selected Car Mobile
+Mobile Interface - Selected Car
 \end_layout
 
 \end_inset
@@ -1021,7 +1023,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Car Confirmation Mobile
+Mobile Interface - Car Confirmation
 \end_layout
 
 \end_inset
@@ -1076,7 +1078,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Reservation Confirmed Mobile
+Mobile Interface - Reservation Confirmed
 \end_layout
 
 \end_inset
@@ -1132,7 +1134,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Car in Use
+Mobile Interface - Car in Use
 \end_layout
 
 \end_inset
@@ -1189,7 +1191,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Car Parked
+Mobile Interface - Car Parked
 \end_layout
 
 \end_inset
@@ -1243,7 +1245,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Rental Ended
+Mobile Interface - Rental Ended
 \end_layout
 
 \end_inset
@@ -1308,7 +1310,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Operator Main Page
+Web Interface - Operator Main Page
 \end_layout
 
 \end_inset
@@ -1337,10 +1339,10 @@ Operator chose TODO (Web)
 \end_layout
 
 \begin_layout Standard
-Choosing a pending operations brings up relevant information about it: its
+Choosing a pending operation brings up relevant information about it: its
  type, the position (if relevant), a short summary and a map.
- The operator can confirm the task if he will take care of it or go home
- (the logo links to the home).
+ The operator can confirm the task if he will take care of it or go back
+ to the home page(the logo links to the home page).
 \end_layout
 
 \begin_layout Standard
@@ -1364,7 +1366,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Chosen TODO
+Web Interface - Chosen TODO
 \end_layout
 
 \end_inset
@@ -1419,7 +1421,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Car Search
+Web Interface - Car Search
 \end_layout
 
 \end_inset
@@ -1474,7 +1476,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Car Details
+Web Interface - Car Details
 \end_layout
 
 \end_inset
@@ -1535,7 +1537,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Changing a detail
+Web Interface - Changing a detail
 \end_layout
 
 \end_inset
@@ -1564,6 +1566,12 @@ Main Page (Mobile)
 \end_layout
 
 \begin_layout Standard
+The mobile Main page for operators offers the same options of the web one:
+ they caan either choose a pensing task or opt to manage a car.
+ 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement h
 wide false
@@ -1584,7 +1592,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Operator Main Mobile
+Mobile Interface - Operator Main Page
 \end_layout
 
 \end_inset
@@ -1632,7 +1640,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Chosen Todo
+Mobile Interface - Chosen Todo
 \end_layout
 
 \end_inset
@@ -1681,7 +1689,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Car Search
+Mobile Interface - Car Search
 \end_layout
 
 \end_inset
@@ -1730,7 +1738,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Car Details
+Mobile Interface - Car Details
 \end_layout
 
 \end_inset
@@ -1775,7 +1783,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Changing a Car's parameter
+Mobile Interface - Changing a Car's parameter
 \end_layout
 
 \end_inset
