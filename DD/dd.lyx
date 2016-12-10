@@ -836,6 +836,15 @@ Other Design Decisions
 \end_layout
 
 \begin_layout Standard
+Seen the previous sections we decided that the overall logic of the system
+ will be implemented in Java using JEE technology with Frameworks such as
+ Spring Boot and open source services such as RabbitMQ as Message Broker,
+ Eureka as discovery service, Kong as API gateway and Nginex+, could use
+ Cordova as mobile application framework.
+ 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage pagebreak
 \end_inset
 
