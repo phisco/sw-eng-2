@@ -300,21 +300,22 @@ Overview
 The system adopts a three tier architecture with a thin client represented
  by web and mobile app, which allows users and operators to access through
  a GUI the different functionalities of the system accordingly to the type
- of client used, these clients are both managed by a specific server side
- ClientHandler offering the same interface to the different server side
- services and handling appropriately the communication with the two clients
- adopting in both cases an asynchronous implementation of the RESTful APIs
- over HTTPS in JSON format in order to achieve complete freedom of development
- specific choices on both sides.
+ of client used.
+ These clients are both managed by a specific server-side ClientHandler
+ offering the same interface to other server-side services and handling
+ appropriately the communication with the two clients adopting in both cases
+ an asynchronous implementation of the RESTful APIs over HTTPS in JSON format
+ in order to achieve complete freedom of development-specific choices on
+ both sides.
 \end_layout
 
 \begin_layout Standard
-The second tier adopts a micro service oriented architecture with shared
+The second tier adopts a microservice oriented architecture with shared
  database that considered the unknown, but supposed not massive, load of
  the system in the near future, reduces the need of synchronization between
- services, keeping the structure as simple as possible, but wouldn't be
- an issue to implement, in case of necessity, more performing solutions
- such as 
+ services.
+ This allows to keep the structure as simple as possible, permitting in
+ case of need more performing solutions such as 
 \begin_inset Quotes eld
 \end_inset
 
@@ -330,16 +331,17 @@ schema per service
 \begin_inset Quotes erd
 \end_inset
 
-.
- It will also manage the communication with the cars and the power station
- around the city through OpenVPN and MQTT protocols.
+ to be implemented.
+ This tier will also manage the communication with the cars and the power
+ station around the city through OpenVPN and MQTT protocols.
 \end_layout
 
 \begin_layout Standard
-The third tier provides the second tier the necessary abstraction on the
+The third tier provides the previous one the necessary abstraction on the
  storage technology chosen and will manage the concurrent access to the
- databases, choosing a PaaS hosting service this layer will be managed by
- the provider.
+ databases.
+ In case a PaaS hosting service is chosen this tier will be managed by the
+ provider.
 \end_layout
 
 \begin_layout Standard
@@ -352,8 +354,8 @@ scale on need
 \begin_inset Quotes erd
 \end_inset
 
- possibility it gives and for that reason has been designed as a micro service
- architecture.
+ possibility it gives.
+ For this reason has been designed as a micro service architecture.
 \end_layout
 
 \begin_layout Standard
@@ -432,18 +434,19 @@ Component View of the server side single services
 
 \begin_layout Standard
 As previously said the system has been designed in order to respect the
- principles of microservice architecture, so every component will be stateless,
- independently deployable, dealing with a specific aspect of our business
+ principles of microservice architecture every component will be stateless,
+ independently deployable, will deal with a specific aspect of our business
  domain and will hide to the other services any kind of implementation detail.
  
 \end_layout
 
 \begin_layout Standard
-The communication between these micro services will use AMQP (Advanced Messaging
+The communication between these microservices will use AMQP (Advanced Messaging
  Queue Protocol) and will be managed by a centralized message broker (such
- as RabbitMQ or ActiveMQ) that at the deployment of a new instance of a
- service will be automatically connected to the new service and publish
- its existence to the other services through the 
+ as RabbitMQ or ActiveMQ).
+ At the deployment of a new instance of a service, the message broker will
+ be automatically connected to the new service and publish its existence
+ to the other services through the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -460,24 +463,15 @@ binding service
 \end_inset
 
  will take charge of setting up the correct queue binding rules with the
- 
-\begin_inset Quotes eld
-\end_inset
-
-message broker
-\begin_inset Quotes erd
-\end_inset
-
- and that will allow some advanced traffic routing features, including per-versi
-on weighting and elastic load balancing on the different instances of the
+ message broker.
+ That will allow some advanced traffic routing features including per-version
+ weighting and elastic load balancing on the different instances of the
  same service.
 \end_layout
 
 \begin_layout Standard
-The now specified component could be in the future divided in much more
- granular services in order to decouple even more their functionalities,
- but at this moment of the design process these are the main components
- we have defined:
+The hereunder specified components could be in the future divided in much
+ more granular services in order to decouple even more their functionalities:
 \end_layout
 
 \begin_layout Itemize
