@@ -743,42 +743,7 @@ Component Interfaces
 Selected Architectural Styles And Patterns
 \end_layout
 
-\begin_layout Standard
-As previously said the system will adopt a 3-tier cloud architecture to
- decouple the presentations logic from the business logic and allow the
- database management to be shared and provided by a Paas and accessed through
- a single model manager service in a classical , allowing the services to
- be stateless.
- The overall serverside system will be composed of microservices.
- The web server will take advantage of a facade pattern offered by the ClientHan
-dler that will work as an API gateway both for the web server and the mobile
- web application in an already mentioned Client/Server architectural style
- with thin client, that will allow our users to access our application without
- too strict hardware constraints on their devices.
- On need the system could be made elastic by adding a service as an 
-\begin_inset Quotes eld
-\end_inset
-
-elastic component
-\begin_inset Quotes erd
-\end_inset
-
- managing the other services instantiation.
- The elastic load balancing will be managed by the API gateway and the message
- broker in order to minimize the use of physical resources and costs.
- The system will benefit of the server-side discovery pattern thanks to
- the discovery and binding services that will grant the necessary connection
- between the various components in a sort of publish-subscribe pattern where
- the services are subscribed by the binding service to the appropriate messaging
- queue and can publish to other.
- The communication between server and client will adopt a REST architectural
- style.
-\end_layout
-
 \begin_layout Subsection
-<<<<<<< HEAD
-Other Design Decisions 
-=======
 Data management
 \end_layout
 
@@ -835,7 +800,6 @@ ER data model
 
 \begin_layout Subsection
 Other Design Decisions
->>>>>>> d1a3d4ed675c9a93486d540ea329829608adafa1
 \end_layout
 
 \begin_layout Standard
