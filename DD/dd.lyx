@@ -189,8 +189,9 @@ Scope
 \end_layout
 
 \begin_layout Standard
-PowerEnJoy project aims to give users, operators and callcenter operators
- access to the system services they need and they are supposed to access.
+PowerEnJoy project aims to give users, operators and callcenter's operators
+ access to the system services they need and they are supposed to have access
+ to.
 \end_layout
 
 \begin_layout Standard
@@ -203,12 +204,12 @@ Users to manage their personal data through both a web and a mobile app
 \end_layout
 
 \begin_layout Itemize
-callcenter operators to manage assistance tickets, that will be managed
+callcenter's operators to manage assistance tickets, that will be managed
  by PowerEnJoy itself.
 \end_layout
 
 \begin_layout Itemize
-PowerEnjoy operators to manage the opened assistance tickets, take them
+PowerEnjoy's operators to manage the opened assistance tickets, take them
  in charge and update car's and user's data accordingly.
 \end_layout
 
@@ -297,26 +298,27 @@ Overview
 
 \begin_layout Standard
 The system adopts a three tier architecture with a thin client represented
- by the web and mobile app, which allows the user and the operator to access
- through a GUI the different functionalities of the system according to
- the type of client used, these clients are both managed by a specific server
- side ClientHandler offering the same interface to the different server
- side services and handling appropriately the communication with the two
- clients using in both cases an asynchronous implementation of the RESTful
- API over HTTPS using the JSON format in order to achieve complete freedom
- of development specific choices on both sides.
+ by web and mobile app, which allows users and operators to access through
+ a GUI the different functionalities of the system accordingly to the type
+ of client used, these clients are both managed by a specific server side
+ ClientHandler offering the same interface to the different server side
+ services and handling appropriately the communication with the two clients
+ adopting in both cases an asynchronous implementation of the RESTful APIs
+ over HTTPS in JSON format in order to achieve complete freedom of development
+ specific choices on both sides.
 \end_layout
 
 \begin_layout Standard
 The second tier adopts a micro service oriented architecture with shared
- database that considered the unknown charge of the system in the near future
- reduces the need of synchronization between services keeping the structure
- simple, but wouldn't be an issue to implement, in case of future necessity,
- more performing solutions such as 
+ database that considered the unknown, but supposed not massive, load of
+ the system in the near future, reduces the need of synchronization between
+ services, keeping the structure as simple as possible, but wouldn't be
+ an issue to implement, in case of necessity, more performing solutions
+ such as 
 \begin_inset Quotes eld
 \end_inset
 
-Database per service
+database per service
 \begin_inset Quotes erd
 \end_inset
 
@@ -324,13 +326,13 @@ Database per service
 \begin_inset Quotes eld
 \end_inset
 
-Schema per service
+schema per service
 \begin_inset Quotes erd
 \end_inset
 
 .
  It will also manage the communication with the cars and the power station
- around the city
+ around the city through OpenVPN and MQTT protocols.
 \end_layout
 
 \begin_layout Standard
@@ -430,7 +432,7 @@ Component View of the server side single services
 
 \begin_layout Standard
 As previously said the system has been designed in order to respect the
- principles of micro service architecture, so every component will be stateless,
+ principles of microservice architecture, so every component will be stateless,
  independently deployable, dealing with a specific aspect of our business
  domain and will hide to the other services any kind of implementation detail.
  
@@ -440,7 +442,7 @@ As previously said the system has been designed in order to respect the
 The communication between these micro services will use AMQP (Advanced Messaging
  Queue Protocol) and will be managed by a centralized message broker (such
  as RabbitMQ or ActiveMQ) that at the deployment of a new instance of a
- service will be automatically connected to the new service and will publish
+ service will be automatically connected to the new service and publish
  its existence to the other services through the 
 \begin_inset Quotes eld
 \end_inset
@@ -473,9 +475,9 @@ on weighting and elastic load balancing on the different instances of the
 
 \begin_layout Standard
 The now specified component could be in the future divided in much more
- granular services in order to decouple even more the functionalities of
- each one of them, but at this moment of the design process these are the
- main components we have defined:
+ granular services in order to decouple even more their functionalities,
+ but at this moment of the design process these are the main components
+ we have defined:
 \end_layout
 
 \begin_layout Itemize
@@ -502,7 +504,7 @@ Registration Manager: manages the registration of the new users and the
 \end_layout
 
 \begin_layout Itemize
-Administration Module: grants PowerEnJoys operators access to some specific
+Administration Module: grants PowerEnJoy's operators access to some specific
  feature needed to manage the assistance tickets they take on charge
 \end_layout
 
@@ -528,13 +530,20 @@ Assistance Ticket Manager: grants the assistance callcenter, the operators
 
 \begin_layout Itemize
 Reservation Manager: manages the whole reservation process for an Active
- User from the reservation intention to the effective payment
+ User from the reservation intention to the effective payment, interacting
+ with the external payment handler through his APIs
 \end_layout
 
 \begin_layout Standard
 All the communications between the different component will be asynchronous
  in order to minimise useless usage of processing power that would result
  in an increase of the costs for commissioner.
+\end_layout
+
+\begin_layout Standard
+Each of these services can be instantiated and deallocated as many times
+ as needed to handle the momentary load of the system, taking advantage
+ of the queuing system offered by the message broker.
 \end_layout
 
 \begin_layout Subsection
@@ -549,8 +558,7 @@ To reach our goals we have depicted 4 main components to be deployed separately
 \begin_layout Itemize
 Onboard Car Management system: grants access remotely to the needed data
  both from the car to the server and vice versa and will grant the system
- to access functionalities such as locking and unlocking the car remotely
- through OpenVPN and MQTT protocols.
+ to access functionalities such as locking and unlocking the car remotely.
 \end_layout
 
 \begin_layout Itemize
