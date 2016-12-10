@@ -189,9 +189,18 @@ Scope
 \end_layout
 
 \begin_layout Standard
-PowerEnJoy project aims to give users, operators and callcenter's operators
- access to the system services they need and they are supposed to have access
- to.
+PowerEnJoy project aims to provide users and operators with means to use
+ the system services they need and they are supposed to have access to.
+ It also provides an API for external services to access the system with
+ 
+\begin_inset Quotes eld
+\end_inset
+
+operator
+\begin_inset Quotes erd
+\end_inset
+
+ rights, in order to allow call center operators to interface with the system.
 \end_layout
 
 \begin_layout Standard
@@ -200,16 +209,16 @@ The system allows:
 
 \begin_layout Itemize
 Users to manage their personal data through both a web and a mobile app
- and Active Users to manage reservations only through the mobile app.
+ and Active Users to manage reservations.
 \end_layout
 
 \begin_layout Itemize
-callcenter's operators to manage assistance tickets, that will be managed
- by PowerEnJoy itself.
+Callcenter's operators to manage assistance tickets via the API.
+ The tickets will tne be managed internally by PowerEnJoy.
 \end_layout
 
 \begin_layout Itemize
-PowerEnjoy's operators to manage the opened assistance tickets, take them
+PowerEnjoy's operators to manage the open assistance tickets, take them
  in charge and update car's and user's data accordingly.
 \end_layout
 
@@ -311,11 +320,11 @@ The system adopts a three tier architecture with a thin client represented
 
 \begin_layout Standard
 The second tier adopts a microservice oriented architecture with shared
- database that considered the unknown, but supposed not massive, load of
- the system in the near future, reduces the need of synchronization between
- services.
- This allows to keep the structure as simple as possible, permitting in
- case of need more performing solutions such as 
+ database that, taking into account the unknown but supposedly not massive
+ load of the system in the near future, reduces the need of synchronization
+ between services.
+ This allows to keep the structure as simple as possible, allowing ibetter
+ performing solutions such as 
 \begin_inset Quotes eld
 \end_inset
 
@@ -331,7 +340,7 @@ schema per service
 \begin_inset Quotes erd
 \end_inset
 
- to be implemented.
+ to be implemented when needed.
  This tier will also manage the communication with the cars and the power
  station around the city through OpenVPN and MQTT protocols.
 \end_layout
@@ -340,8 +349,8 @@ schema per service
 The third tier provides the previous one the necessary abstraction on the
  storage technology chosen and will manage the concurrent access to the
  databases.
- In case a PaaS hosting service is chosen this tier will be managed by the
- provider.
+ In case a PaaS hosting service is chosen, this tier will be managed by
+ the provider.
 \end_layout
 
 \begin_layout Standard
@@ -355,7 +364,7 @@ scale on need
 \end_inset
 
  possibility it gives.
- For this reason has been designed as a micro service architecture.
+ For this reason it has been designed as a micro service architecture.
 \end_layout
 
 \begin_layout Standard
@@ -434,9 +443,10 @@ Component View of the server side single services
 
 \begin_layout Standard
 As previously said the system has been designed in order to respect the
- principles of microservice architecture every component will be stateless,
- independently deployable, will deal with a specific aspect of our business
- domain and will hide to the other services any kind of implementation detail.
+ principles of microservice architecture.
+ Therefore every component will be stateless, independently deployable,
+ able to deal with a specific aspect of our business domain and to hide
+ to the other services any kind of implementation detail.
  
 \end_layout
 
@@ -444,8 +454,8 @@ As previously said the system has been designed in order to respect the
 The communication between these microservices will use AMQP (Advanced Messaging
  Queue Protocol) and will be managed by a centralized message broker (such
  as RabbitMQ or ActiveMQ).
- At the deployment of a new instance of a service, the message broker will
- be automatically connected to the new service and publish its existence
+ When a new instance of a service is created the message broker will be
+ automatically connected to the new service and will publish its existence
  to the other services through the 
 \begin_inset Quotes eld
 \end_inset
@@ -479,7 +489,7 @@ Client Handler: orchestrates the needed services for the clients
 \end_layout
 
 \begin_layout Itemize
-Discovery Service: gives the other services the references that allows them
+Discovery Service: gives the other services the references that allow them
  to communicate with each other
 \end_layout
 
@@ -499,22 +509,23 @@ Registration Manager: manages the registration of the new users and the
 
 \begin_layout Itemize
 Administration Module: grants PowerEnJoy's operators access to some specific
- feature needed to manage the assistance tickets they take on charge
+ features needed to manage the assistance tickets they have to take care
+ of
 \end_layout
 
 \begin_layout Itemize
-Model Manager: grants access to the data to the other component, abstracting
- any kind of technology specific consideration to the other services.
+Model Manager: grants access to the data to the other components, abstracting
+ any kind of technology specific detail to the other services
 \end_layout
 
 \begin_layout Itemize
-Car Manager: manages the physical cars giving the other services the needed
- functionalities and informations
+Car Manager: manages the physical cars providing other services with the
+ needed functionalities and informations
 \end_layout
 
 \begin_layout Itemize
-Power Station Manager: manages the physical power stations data and their
- functionalities
+Power Station Manager: manages the physical power stations' data and functionali
+ties
 \end_layout
 
 \begin_layout Itemize
@@ -530,14 +541,19 @@ Reservation Manager: manages the whole reservation process for an Active
 
 \begin_layout Standard
 All the communications between the different component will be asynchronous
- in order to minimise useless usage of processing power that would result
- in an increase of the costs for commissioner.
+ in order to minimise unneeded resource consumption that would result in
+ an increase of the costs for commissioner.
 \end_layout
 
 \begin_layout Standard
 Each of these services can be instantiated and deallocated as many times
  as needed to handle the momentary load of the system, taking advantage
  of the queuing system offered by the message broker.
+ This, coupled with a dynamic cloud infrastructure that allows quasi-immediate
+ upscale of computing and networking capability, will allow the system to
+ handle load spikes along with mitigating the risk of a downtime due to
+ the excessive load.
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -572,7 +588,7 @@ on of cars' positions.
 
 \begin_layout Itemize
 Web Page: will give the Visitors access to the map with cars' positions
- and let the signed in Active Users modify their personal data
+ and let the signed in Users modify their personal data
 \end_layout
 
 \begin_layout Standard
@@ -777,7 +793,23 @@ Algorithm Design
 \begin_layout Standard
 All algorithms needed in the project are trivial but the one dealing with
  uniform repartition of cars in the city.
- This problem has been studied a lot and there are in literature various
+\end_layout
+
+\begin_layout Standard
+Cars are picked up by by users in one location dropped off in another one.
+ Of course the distribution of of picking up and dropping off locations
+ is not uniform.
+ So some operators are needed in order to perform some relocations, in particula
+r during the night, so that in the morning cars are located where there
+ is actual necessity.
+ The money saving option tries to drop the load of relocations, stimulating
+ users to park where there is a deficiency, with a discount.
+ So the global situation have to be monitored in real time, taking into
+ account, the static situation, the reservations and and the current rides.
+\end_layout
+
+\begin_layout Standard
+This problem has been studied a lot and there are in literature various
  algorithms that solve it.
  They are mainly based on mixed integer linear programming techniques and
  in particular [1] presented a complete model.
@@ -785,7 +817,7 @@ All algorithms needed in the project are trivial but the one dealing with
  In [3] a more sofisticated approach is used taking into account a three
  dimensional objective function and exploiting genetic algorithms and local
  search methods.
- [4] offers a sort of classification of the stragies proposed in the past
+ [4] offers a sort of classification of the strategies proposed in the past
  years.
 \end_layout
 
@@ -915,7 +947,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Mockup_Exported/PC Home Web.png
-	scale 80
+	lyxscale 10
+	scale 70
 
 \end_inset
 
@@ -962,7 +995,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Mockup_Exported/PC Sign Up Web.png
-	scale 80
+	lyxscale 10
+	scale 70
 
 \end_inset
 
@@ -1010,7 +1044,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Mockup_Exported/PC Further Account Info Web.png
-	scale 80
+	lyxscale 10
+	scale 70
 
 \end_inset
 
@@ -1057,7 +1092,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Mockup_Exported/PC Map Web.png
-	scale 80
+	lyxscale 10
+	scale 70
 
 \end_inset
 
@@ -1108,7 +1144,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Mockup_Exported/PC Map Web - Selected Car.png
-	scale 80
+	lyxscale 10
+	scale 70
 
 \end_inset
 
@@ -1177,7 +1214,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Mockup_Exported/PC Car confirmation Screen.png
-	scale 80
+	lyxscale 10
+	scale 70
 
 \end_inset
 
@@ -1232,7 +1270,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Mockup_Exported/PC Car confirmation Screen - Confirmed.png
-	scale 80
+	lyxscale 10
+	scale 70
 
 \end_inset
 
@@ -1287,6 +1326,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Mockup_Exported/Home Mobile.png
+	lyxscale 10
 	scale 60
 
 \end_inset
@@ -1342,6 +1382,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Mockup_Exported/Map Mobile.png
+	lyxscale 10
 	scale 60
 
 \end_inset
@@ -1396,6 +1437,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Mockup_Exported/Selected Car mobile.png
+	lyxscale 10
 	scale 60
 
 \end_inset
@@ -1450,6 +1492,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Mockup_Exported/Car Confirmation Mobile.png
+	lyxscale 10
 	scale 60
 
 \end_inset
@@ -1505,6 +1548,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Mockup_Exported/Car Confirmed Mobile.png
+	lyxscale 10
 	scale 60
 
 \end_inset
@@ -1561,6 +1605,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Mockup_Exported/Car Park or End Mobile.png
+	lyxscale 10
 	scale 60
 
 \end_inset
@@ -1618,6 +1663,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Mockup_Exported/Car Parked.png
+	lyxscale 10
 	scale 60
 
 \end_inset
@@ -1672,6 +1718,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Mockup_Exported/Rental Ended.png
+	lyxscale 10
 	scale 60
 
 \end_inset
@@ -1793,7 +1840,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Mockup_Exported/PC Operator chosen TODO.png
-	scale 80
+	lyxscale 10
+	scale 70
 
 \end_inset
 
@@ -1848,7 +1896,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Mockup_Exported/PC Operator Choose Car.png
-	scale 80
+	lyxscale 10
+	scale 70
 
 \end_inset
 
@@ -1903,7 +1952,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Mockup_Exported/PC Operator Manage Car.png
-	scale 80
+	lyxscale 10
+	scale 70
 
 \end_inset
 
@@ -1964,7 +2014,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Mockup_Exported/PC Operator Car Specific Operation (Sample).png
-	scale 80
+	lyxscale 10
+	scale 70
 
 \end_inset
 
@@ -1989,7 +2040,7 @@ Web Interface - Changing a detail
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage pagebreak
+\begin_inset Newpage newpage
 \end_inset
 
 
@@ -2011,7 +2062,7 @@ The mobile Main page for operators offers the same options of the web one:
 
 \begin_layout Standard
 \begin_inset Float figure
-placement h
+placement H
 wide false
 sideways false
 status open
@@ -2019,6 +2070,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Mockup_Exported/Operator Main Mobile.png
+	lyxscale 10
 	scale 59
 
 \end_inset
@@ -2048,7 +2100,7 @@ Mobile Interface - Operator Main Page
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage pagebreak
+\begin_inset Newpage newpage
 \end_inset
 
 
@@ -2060,6 +2112,7 @@ Operator chose TODO (Mobile)
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -2067,7 +2120,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Mockup_Exported/Operator Chosen TODO Mobile.png
-	scale 80
+	lyxscale 10
+	scale 60
 
 \end_inset
 
@@ -2096,7 +2150,7 @@ Mobile Interface - Chosen Todo
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage pagebreak
+\begin_inset Newpage newpage
 \end_inset
 
 
@@ -2108,7 +2162,7 @@ Operator Searched Car (Mobile)
 
 \begin_layout Standard
 \begin_inset Float figure
-placement h
+placement H
 wide false
 sideways false
 status open
@@ -2116,6 +2170,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Mockup_Exported/Operator Choose Car Mobile.png
+	lyxscale 10
 	scale 60
 
 \end_inset
@@ -2157,7 +2212,7 @@ Operator Car Details (Mobile)
 
 \begin_layout Standard
 \begin_inset Float figure
-placement h
+placement H
 wide false
 sideways false
 status open
@@ -2165,6 +2220,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Mockup_Exported/Operator Manage Car Mobile.png
+	lyxscale 10
 	scale 60
 
 \end_inset
@@ -2202,7 +2258,7 @@ Changing a Car parameter - Sample (Mobile)
 
 \begin_layout Standard
 \begin_inset Float figure
-placement h
+placement H
 wide false
 sideways false
 status open
@@ -2210,6 +2266,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Mockup_Exported/Operator Manage Car Specific Mobile.png
+	lyxscale 10
 	scale 60
 
 \end_inset
@@ -2230,6 +2287,61 @@ Mobile Interface - Changing a Car's parameter
 \end_layout
 
 \begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Car Interface
+\end_layout
+
+\begin_layout Subsubsection
+Car Screen
+\end_layout
+
+\begin_layout Standard
+The car has a screen that shows the fare in real time as well as showing
+ whether the Money Saving Option is active or not.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Mockup_Exported/On-board screen.png
+	lyxscale 10
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Car Screen
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
