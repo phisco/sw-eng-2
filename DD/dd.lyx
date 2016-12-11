@@ -951,6 +951,44 @@ Below are some mockups to show how users will interact with the service.
  
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+User Experience Diagram
+\end_layout
+
+\begin_layout Standard
+This diagram briefly sums up the core interactions that a User can have
+ with the system, highlighting how each 
+\begin_inset Quotes eld
+\end_inset
+
+Page
+\begin_inset Quotes erd
+\end_inset
+
+ (called Screen) is accessible in a normal browsing behaviour.
+ A Screen represents both a Web Page and a Mobile App page since the interaction
+s themselves do not change.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename UX.pdf
+	scale 65
+	clip
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 User Interfaces
 \end_layout
@@ -4030,7 +4068,7 @@ Lorenzo Semeria
 \begin_inset Text
 
 \begin_layout Plain Layout
-18
+22
 \end_layout
 
 \end_inset
