@@ -678,6 +678,17 @@ Car reservation sequence diagram:
 Component Interfaces
 \end_layout
 
+\begin_layout Standard
+Seen that we have adopted a message based communication between our services,
+ the only type of interface with the outside world they need are the ones
+ defined by the message broker in order to be able to receive and pull messages
+ from the queues.
+\end_layout
+
+\begin_layout Standard
+The client Handler will offer the necessary REST APIs to the clients.
+\end_layout
+
 \begin_layout Subsection
 Selected Architectural Styles And Patterns
 \end_layout
@@ -690,9 +701,8 @@ As previously said the system will adopt a 3-tier cloud architecture to
  The overall serverside system will be composed of microservices.
  The webserver will take advantage of a façade pattern offered by the ClientHand
 ler that will work as an API gateway both for the web server and the mobile
- web application in a classical Client/Server architectural style with thin
- client, that will allow our users to access our application without too
- strict hardware constraints on their devices.
+ web application, that will allow our users to access our application without
+ too strict hardware constraints on their devices.
  On need the system could be made elastic by adding a service as an 
 \begin_inset Quotes eld
 \end_inset
