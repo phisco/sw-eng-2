@@ -693,6 +693,22 @@ Car reservation sequence diagram:
 
 \end_layout
 
+\begin_layout Standard
+End of a car rental
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Sequence Diagrams/EndRentalInsideSafeZone.pdf
+	lyxscale 10
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Component Interfaces
 \end_layout
