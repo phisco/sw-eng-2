@@ -953,31 +953,18 @@ From the home page any user can try to login inserting username and password
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-placement h
-wide false
-sideways false
-status open
+\begin_inset VSpace bigskip
+\end_inset
 
-\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Standard
+\align center
 \begin_inset Graphics
 	filename Mockup_Exported/PC Home Web.png
 	lyxscale 10
-	scale 70
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Web Interface - User's Home Page
-\end_layout
-
-\end_inset
-
-
-\end_layout
+	scale 60
 
 \end_inset
 
@@ -1001,39 +988,19 @@ In this page users must input the core informations to register online:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-placement h
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Mockup_Exported/PC Sign Up Web.png
-	lyxscale 10
-	scale 70
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Web Interface - User Registration
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
+\begin_inset VSpace bigskip
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage pagebreak
+\align center
+\begin_inset Graphics
+	filename Mockup_Exported/PC Sign Up Web.png
+	lyxscale 10
+	scale 60
+
 \end_inset
 
 
@@ -1050,31 +1017,18 @@ After having registered and logged in, users must input their Licence and
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-placement h
-wide false
-sideways false
-status open
+\begin_inset VSpace bigskip
+\end_inset
 
-\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Standard
+\align center
 \begin_inset Graphics
 	filename Mockup_Exported/PC Further Account Info Web.png
 	lyxscale 10
-	scale 70
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Web Interface - User Further Information
-\end_layout
-
-\end_inset
-
-
-\end_layout
+	scale 60
 
 \end_inset
 
@@ -1098,42 +1052,19 @@ All users can view available cars near their position and choose one if
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-placement h
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Mockup_Exported/PC Map Web.png
-	lyxscale 10
-	scale 70
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Web Interface - Map
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
+\begin_inset VSpace bigskip
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage pagebreak
+\align center
+\begin_inset Graphics
+	filename Mockup_Exported/PC Map Web.png
+	lyxscale 10
+	scale 50
+
 \end_inset
 
 
@@ -1150,38 +1081,18 @@ Selecting a car provides relevant information about that specific car, in
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-placement h
-wide false
-sideways false
-status open
+\begin_inset VSpace bigskip
+\end_inset
 
-\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Standard
+\align center
 \begin_inset Graphics
 	filename Mockup_Exported/PC Map Web - Selected Car.png
 	lyxscale 10
-	scale 70
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Web Interface - Selected car
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
+	scale 50
 
 \end_inset
 
@@ -1190,13 +1101,6 @@ Web Interface - Selected car
 
 \begin_layout Standard
 \begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage newpage
 \end_inset
 
 
@@ -1220,46 +1124,19 @@ Click to reserve
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-placement h
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Mockup_Exported/PC Car confirmation Screen.png
-	lyxscale 10
-	scale 70
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Web Interface - Car Confirmation Screen
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
+\begin_inset VSpace bigskip
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage pagebreak
+\align center
+\begin_inset Graphics
+	filename Mockup_Exported/PC Car confirmation Screen.png
+	lyxscale 10
+	scale 60
+
 \end_inset
 
 
@@ -1276,34 +1153,18 @@ Confirming a reservation shows a brief summary containing the address at
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-placement h
-wide false
-sideways false
-status open
+\begin_inset VSpace bigskip
+\end_inset
 
-\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Standard
+\align center
 \begin_inset Graphics
 	filename Mockup_Exported/PC Car confirmation Screen - Confirmed.png
 	lyxscale 10
-	scale 70
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Web Interface - Reservation Confirmed
-\end_layout
-
-\end_inset
-
-
-\end_layout
+	scale 60
 
 \end_inset
 
@@ -1329,52 +1190,7 @@ Home (Mobile)
 From the App's home page users can either login or create an account.
  Login is handled inside the app, while to create an account the user is
  redirected to the website.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement h
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Mockup_Exported/Home Mobile.png
-	lyxscale 10
-	scale 60
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Mobile Interface - Home Page
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
+ (On the left)
 \end_layout
 
 \begin_layout Paragraph
@@ -1385,41 +1201,29 @@ Map (Mobile)
 The user is shown a map displaying all cars that are nearby.
  His position can be calculated using the built in GPS receiver or can be
  manually input.
+ (On the right)
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-placement h
-wide false
-sideways false
-status open
+\begin_inset VSpace bigskip
+\end_inset
 
-\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Mockup_Exported/Home Mobile.png
+	lyxscale 10
+	scale 55
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename Mockup_Exported/Map Mobile.png
 	lyxscale 10
-	scale 60
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Mobile Interface - Map
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
+	scale 55
 
 \end_inset
 
@@ -1440,52 +1244,7 @@ Selected Car (Mobile)
 \begin_layout Standard
 Selecting a car on the map shows relevant information, like it happens on
  the website.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement h
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Mockup_Exported/Selected Car mobile.png
-	lyxscale 10
-	scale 60
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Mobile Interface - Selected Car
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
+ (On the left)
 \end_layout
 
 \begin_layout Paragraph
@@ -1494,42 +1253,29 @@ Car Confirmation (Mobile)
 
 \begin_layout Standard
 A user can confirm a reservation or go back if he chose that car by mistake.
- 
+ (On the right)
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-placement h
-wide false
-sideways false
-status open
+\begin_inset VSpace bigskip
+\end_inset
 
-\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Mockup_Exported/Selected Car mobile.png
+	lyxscale 10
+	scale 55
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename Mockup_Exported/Car Confirmation Mobile.png
 	lyxscale 10
-	scale 60
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Mobile Interface - Car Confirmation
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
+	scale 55
 
 \end_inset
 
@@ -1550,53 +1296,7 @@ Reservation Confirmed (Mobile)
 \begin_layout Standard
 When the reservation is confirmed, the smartphone shows a countdown as well
  as the car's address.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement h
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Mockup_Exported/Car Confirmed Mobile.png
-	lyxscale 10
-	scale 60
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Mobile Interface - Reservation Confirmed
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
+ (On the left)
 \end_layout
 
 \begin_layout Paragraph
@@ -1607,42 +1307,29 @@ Car In Use (Mobile)
 While using the car, Users can decide to park it — which signals the system
  that the car will be picked up by the same user and that the rental is
  not to be terminated — or to end the rental.
- 
+ (On the right)
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-placement h
-wide false
-sideways false
-status open
+\begin_inset VSpace bigskip
+\end_inset
 
-\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Mockup_Exported/Car Confirmed Mobile.png
+	lyxscale 10
+	scale 55
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename Mockup_Exported/Car Park or End Mobile.png
 	lyxscale 10
-	scale 60
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Mobile Interface - Car in Use
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
+	scale 55
 
 \end_inset
 
@@ -1665,53 +1352,7 @@ If the car is already parked users can decide to end the rental using the
  app.
  In case they want to continue their journey, they only have to jump back
  on the car.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement h
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Mockup_Exported/Car Parked.png
-	lyxscale 10
-	scale 60
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Mobile Interface - Car Parked
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
+ (On the left)
 \end_layout
 
 \begin_layout Paragraph
@@ -1721,37 +1362,29 @@ Rental Ended (Mobile)
 \begin_layout Standard
 Ending a rental shows the total as well as whether the Money Saving Option
  was active for the trip.
+ (On the right)
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-placement h
-wide false
-sideways false
-status open
+\begin_inset VSpace bigskip
+\end_inset
 
-\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Mockup_Exported/Car Parked.png
+	lyxscale 10
+	scale 55
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename Mockup_Exported/Rental Ended.png
 	lyxscale 10
-	scale 60
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Mobile Interface - Rental Ended
-\end_layout
-
-\end_inset
-
-
-\end_layout
+	scale 55
 
 \end_inset
 
@@ -1790,46 +1423,19 @@ Todo
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-placement h
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Mockup_Exported/PC Operator Main.png
-	lyxscale 10
-	scale 60
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Web Interface - Operator Main Page
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
+\begin_inset VSpace bigskip
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage pagebreak
+\align center
+\begin_inset Graphics
+	filename Mockup_Exported/PC Operator Main.png
+	lyxscale 10
+	scale 55
+
 \end_inset
 
 
@@ -1847,38 +1453,18 @@ Choosing a pending operation brings up relevant information about it: its
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-placement h
-wide false
-sideways false
-status open
+\begin_inset VSpace bigskip
+\end_inset
 
-\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Standard
+\align center
 \begin_inset Graphics
 	filename Mockup_Exported/PC Operator chosen TODO.png
 	lyxscale 10
-	scale 70
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Web Interface - Chosen TODO
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
+	scale 55
 
 \end_inset
 
@@ -1899,50 +1485,22 @@ Operator Searched Car (Web)
 \begin_layout Standard
 Choosing to manage a specific car allows the operator to search among all
  cars, by car Licence Plate or by Current Driver (User) if in use.
- 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-placement h
-wide false
-sideways false
-status open
+\begin_inset VSpace bigskip
+\end_inset
 
-\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Standard
+\align center
 \begin_inset Graphics
 	filename Mockup_Exported/PC Operator Choose Car.png
 	lyxscale 10
-	scale 70
+	scale 60
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Web Interface - Car Search
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -1955,42 +1513,22 @@ Car Details (Web)
 \begin_layout Standard
 The Car Details page shows all informations available for the chosen car
  as well as providing buttons to change all editable parameters (for instance
- the car's status)
+ the car's status).
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-placement h
-wide false
-sideways false
-status open
+\begin_inset VSpace bigskip
+\end_inset
 
-\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Standard
+\align center
 \begin_inset Graphics
 	filename Mockup_Exported/PC Operator Manage Car.png
 	lyxscale 10
-	scale 70
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Web Interface - Car Details
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
+	scale 60
 
 \end_inset
 
@@ -2021,34 +1559,18 @@ pop-up
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-placement h
-wide false
-sideways false
-status open
+\begin_inset VSpace bigskip
+\end_inset
 
-\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Standard
+\align center
 \begin_inset Graphics
 	filename Mockup_Exported/PC Operator Car Specific Operation (Sample).png
 	lyxscale 10
-	scale 70
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Web Interface - Changing a detail
-\end_layout
-
-\end_inset
-
-
-\end_layout
+	scale 60
 
 \end_inset
 
@@ -2056,7 +1578,7 @@ Web Interface - Changing a detail
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage newpage
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -2073,53 +1595,7 @@ Main Page (Mobile)
 \begin_layout Standard
 The mobile Main page for operators offers the same options of the web one:
  they caan either choose a pensing task or opt to manage a car.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Mockup_Exported/Operator Main Mobile.png
-	lyxscale 10
-	scale 59
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Mobile Interface - Operator Main Page
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
+ (On the left)
 \end_layout
 
 \begin_layout Paragraph
@@ -2127,88 +1603,29 @@ Operator chose TODO (Mobile)
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
+(On the right)
+\end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Mockup_Exported/Operator Main Mobile.png
+	lyxscale 10
+	scale 55
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename Mockup_Exported/Operator Chosen TODO Mobile.png
 	lyxscale 10
-	scale 60
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Mobile Interface - Chosen Todo
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Paragraph
-Operator Searched Car (Mobile)
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Mockup_Exported/Operator Choose Car Mobile.png
-	lyxscale 10
-	scale 60
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Mobile Interface - Car Search
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
+	scale 55
 
 \end_inset
 
@@ -2223,38 +1640,41 @@ Mobile Interface - Car Search
 \end_layout
 
 \begin_layout Paragraph
+Operator Searched Car (Mobile)
+\end_layout
+
+\begin_layout Standard
+(On the left)
+\end_layout
+
+\begin_layout Paragraph
 Operator Car Details (Mobile)
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
+(On the right)
+\end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Graphics
-	filename Mockup_Exported/Operator Manage Car Mobile.png
+	filename Mockup_Exported/Operator Choose Car Mobile.png
 	lyxscale 10
 	scale 60
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Mobile Interface - Car Details
-\end_layout
-
-\end_inset
-
-
-\end_layout
+\begin_inset Graphics
+	filename Mockup_Exported/Operator Manage Car Mobile.png
+	lyxscale 10
+	scale 60
 
 \end_inset
 
@@ -2273,38 +1693,18 @@ Changing a Car parameter - Sample (Mobile)
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
+\begin_inset VSpace bigskip
+\end_inset
 
-\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Standard
+\align center
 \begin_inset Graphics
 	filename Mockup_Exported/Operator Manage Car Specific Mobile.png
 	lyxscale 10
 	scale 60
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Mobile Interface - Changing a Car's parameter
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \end_inset
 
@@ -2332,34 +1732,18 @@ The car has a screen that shows the fare in real time as well as showing
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
+\begin_inset VSpace bigskip
+\end_inset
 
-\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Standard
+\align center
 \begin_inset Graphics
 	filename Mockup_Exported/On-board screen.png
 	lyxscale 10
 	scale 80
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Car Screen
-\end_layout
-
-\end_inset
-
-
-\end_layout
 
 \end_inset
 
