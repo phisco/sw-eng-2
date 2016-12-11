@@ -24,29 +24,30 @@ activate CM
 RM ->> CM : getCarInfo(CarID,AU_ID)
 CM ->> Car : retrieveCarPosition (CarID)
 CM <<-- Car : <<Current Position>>
-'RM <<-- CM : carStatus(Car) 'Seems to be useless'
+RM <<- CM : carStatus(Car)
 'Server side check of car position'
 RM -> RM : verifyBoundaries(Car)
 activate MM
 RM ->> CM : terminateRental(CarID, AU_ID)
-CM ->> MM : updateStatus(CarID,CAN_PARK)
-CM ->> Car : setState(CAN_PARK)
+CM ->> MM : updateStatus(CarID,PARKED)
 RM ->> RM : computeFare()
 activate PH
 RM ->> PH : makePayment(User, amount)
 CH <<- RM : showFare(Payment)
 UApp <<- CH :showFare(Payment)
 
-RM <<- PH : paymentSuccessful(User, PaymentSeqID)
-deactivate PH
-CH <<-- RM :  paymentSuccessful(User, PaymentSeqID)
-UApp <<-- CH : paymentSuccessful(PaymentSeqID)
-UApp -> UApp : showSuccesfulPayment()
+
 'The customer will terminate the rental on the app and then get off so the car
 'is freed after "some" time
 CM <<- Car : <<Doors Locked, Car Empty>>
 CM ->> MM : updateStatus(CarID,FREE)
 CM ->> Car : setState(FREE)
-
+...
+RM <<- PH : paymentSuccessful(User, PaymentSeqID)
 deactivate PH
+CH <<-- RM :  paymentSuccessful(User, PaymentSeqID)
+UApp <<-- CH : paymentSuccessful(PaymentSeqID)
+UApp -> UApp : showSuccesfulPayment()
+deactivate PH
+
 @enduml
