@@ -669,7 +669,7 @@ Sign up sequence diagram:
 \begin_inset Graphics
 	filename Sequence Diagrams/sequenceSignUp.pdf
 	lyxscale 10
-	scale 35
+	scale 30
 
 \end_inset
 
@@ -686,7 +686,7 @@ Car reservation sequence diagram:
 \begin_inset Graphics
 	filename Sequence Diagrams/ReserveCar.pdf
 	lyxscale 10
-	scale 35
+	scale 30
 
 \end_inset
 
@@ -1691,7 +1691,7 @@ Operator Car Details (Mobile)
 \begin_inset Graphics
 	filename Mockup_Exported/Operator Choose Car Mobile.png
 	lyxscale 10
-	scale 60
+	scale 55
 
 \end_inset
 
@@ -1699,7 +1699,7 @@ Operator Car Details (Mobile)
 \begin_inset Graphics
 	filename Mockup_Exported/Operator Manage Car Mobile.png
 	lyxscale 10
-	scale 60
+	scale 55
 
 \end_inset
 
@@ -3962,13 +3962,6 @@ Car manager + Car management system
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Effort spent
 \end_layout
@@ -4057,7 +4050,7 @@ Gabriele Vanoni
 \begin_inset Text
 
 \begin_layout Plain Layout
-24.5
+20
 \end_layout
 
 \end_inset
