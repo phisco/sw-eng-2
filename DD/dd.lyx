@@ -348,7 +348,7 @@ schema per service
 \begin_layout Standard
 The third tier provides the previous one the necessary abstraction on the
  storage technology chosen and will manage the concurrent access to the
- databases.
+ database.
  In case a PaaS hosting service is chosen, this tier will be managed by
  the provider.
 \end_layout
