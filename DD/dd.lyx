@@ -485,58 +485,61 @@ The hereunder specified components could be in the future divided in much
 \end_layout
 
 \begin_layout Itemize
-Client Handler: orchestrates the needed services for the clients
+Client Handler: orchestrates the needed services for the clients translating
+ REST http requests into AMQP-compliant messages then sent to the different
+ microservices as needed.
 \end_layout
 
 \begin_layout Itemize
 Discovery Service: gives the other services the references that allow them
- to communicate with each other
+ to communicate with each other.
 \end_layout
 
 \begin_layout Itemize
-Binding Service: manages the queue binding for the services
+Binding Service: manages the queue binding for the services.
 \end_layout
 
 \begin_layout Itemize
 Authentication Manager: checks whether or not a certain user is allowed
- to do a certain action
+ to do a certain action and allows a protocol to securely manage a user
+ data.
 \end_layout
 
 \begin_layout Itemize
 Registration Manager: manages the registration of the new users and the
- update of the registered users data if needed
+ update of the registered users data if needed.
 \end_layout
 
 \begin_layout Itemize
 Administration Module: grants PowerEnJoy's operators access to some specific
  features needed to manage the assistance tickets they have to take care
- of
+ of.
 \end_layout
 
 \begin_layout Itemize
 Model Manager: grants access to the data to the other components, abstracting
- any kind of technology specific detail to the other services
+ any kind of technology specific detail to the other services.
 \end_layout
 
 \begin_layout Itemize
 Car Manager: manages the physical cars providing other services with the
- needed functionalities and informations
+ needed functionalities and informations.
 \end_layout
 
 \begin_layout Itemize
 Power Station Manager: manages the physical power stations' data and functionali
-ties
+ties.
 \end_layout
 
 \begin_layout Itemize
 Assistance Ticket Manager: grants the assistance callcenter, the operators
- and the other services the APIs to manage the assistance tickets
+ and the other services the APIs to manage the assistance tickets.
 \end_layout
 
 \begin_layout Itemize
 Reservation Manager: manages the whole reservation process for an Active
  User from the reservation intention to the effective payment, interacting
- with the external payment handler through his APIs
+ with the external payment handler through his APIs.
 \end_layout
 
 \begin_layout Standard
@@ -838,10 +841,11 @@ Other Design Decisions
 \begin_layout Standard
 Seen the previous sections we decided that the overall logic of the system
  will be implemented in Java using JEE technology with Frameworks such as
- Spring Boot and open source services such as RabbitMQ as Message Broker,
- Eureka as discovery service, Kong as API gateway and Nginex+, could use
- Cordova as mobile application framework.
- 
+ Spring Boot and open source services such as RabbitMQ as Message Broker
+ and other to cover the discovery and binding services, the ClientHandler
+ and the Authentication Manager.
+ The web server part could be managed by Nginx in order to reach the needed
+ scalability and reliability and manage the web interface for the clients.
 \end_layout
 
 \begin_layout Standard
