@@ -3950,13 +3950,6 @@ Car manager + Car management system
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Effort spent
 \end_layout
@@ -4045,7 +4038,7 @@ Gabriele Vanoni
 \begin_inset Text
 
 \begin_layout Plain Layout
-24.5
+20
 \end_layout
 
 \end_inset
