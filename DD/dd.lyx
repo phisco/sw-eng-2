@@ -752,7 +752,7 @@ As previously said the system will adopt a 3-tier cloud architecture to
  database management to be shared and provided by a Paas and accessed through
  a single model manager service, allowing the other services to be stateless.
  The overall serverside system will be composed of microservices.
- The webserver will take advantage of a facade pattern offered by the ClientHand
+ The webserver will take advantage of a façade pattern offered by the ClientHand
 ler that will work as an API gateway both for the web server and the mobile
  web application in a classical Client/Server architectural style with thin
  client, that will allow our users to access our application without too
