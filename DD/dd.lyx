@@ -2370,6 +2370,9 @@ Requirements traceability
 \begin_layout Standard
 Below are listed all requirements defined in our RASD and their mapping
  on the architecture.
+ The map is neither injective nor surjective.
+ In fact some requirements need more than one module to be satisfied and
+ modules achieve the satisfiability of many requirements.
 \end_layout
 
 \begin_layout Standard
