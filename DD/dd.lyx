@@ -663,7 +663,7 @@ Sign up sequence diagram:
 \begin_inset Graphics
 	filename Sequence Diagrams/sequenceSignUp.pdf
 	lyxscale 10
-	scale 35
+	scale 30
 
 \end_inset
 
@@ -680,7 +680,7 @@ Car reservation sequence diagram:
 \begin_inset Graphics
 	filename Sequence Diagrams/ReserveCar.pdf
 	lyxscale 10
-	scale 35
+	scale 30
 
 \end_inset
 
