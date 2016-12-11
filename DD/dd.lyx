@@ -641,6 +641,19 @@ Runtime View
 \end_layout
 
 \begin_layout Standard
+The following sequence diagram will only show the way the system will act
+ during the accomplishment of certain tasks, but are not to be meant as
+ an exact representation of the software implementation of the procedures.
+ For sake of simplicity we have preferred to show the intention of the calls
+ to other services, omitting all the technical details concerning the mere
+ technological choice of a specific message broker.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
 \align left
 Sign up sequence diagram:
 \end_layout
@@ -696,7 +709,7 @@ Selected Architectural Styles And Patterns
 \begin_layout Standard
 As previously said the system will adopt a 3-tier cloud architecture to
  decouple the presentations logic from the business logic and allow the
- database management to be shared and provided by a Paas and accessed through
+ database management to be shared and provided by a PaaS and accessed through
  a single model manager service, allowing the other services to be stateless.
  The overall serverside system will be composed of microservices.
  The webserver will take advantage of a façade pattern offered by the ClientHand
