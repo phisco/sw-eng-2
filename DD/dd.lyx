@@ -214,7 +214,7 @@ Users to manage their personal data through both a web and a mobile app
 
 \begin_layout Itemize
 Callcenter's operators to manage assistance tickets via the API.
- The tickets will tne be managed internally by PowerEnJoy.
+ The tickets will then be managed internally by PowerEnJoy.
 \end_layout
 
 \begin_layout Itemize
@@ -323,7 +323,7 @@ The second tier adopts a microservice oriented architecture with shared
  database that, taking into account the unknown but supposedly not massive
  load of the system in the near future, reduces the need of synchronization
  between services.
- This allows to keep the structure as simple as possible, allowing ibetter
+ This allows to keep the structure as simple as possible, allowing better
  performing solutions such as 
 \begin_inset Quotes eld
 \end_inset
@@ -485,13 +485,13 @@ The hereunder specified components could be in the future divided in much
 \end_layout
 
 \begin_layout Itemize
-Client Handler: orchestrates the needed services for the clients translating
- REST http requests into AMQP-compliant messages then sent to the different
- microservices as needed.
+Client Handler: orchestrates the needed services for the clients, translating
+ REST HTTP requests into AMQP-compliant messages and sending them to the
+ different microservices as needed.
 \end_layout
 
 \begin_layout Itemize
-Discovery Service: gives the other services the references that allow them
+Discovery Service: gives to other services the references that allow them
  to communicate with each other.
 \end_layout
 
@@ -500,14 +500,21 @@ Binding Service: manages the queue binding for the services.
 \end_layout
 
 \begin_layout Itemize
-Authentication Manager: checks whether or not a certain user is allowed
- to do a certain action and allows a protocol to securely manage a user
- data.
+Authentication Manager: ensures that only authorised users are able to perform
+ 
+\begin_inset Quotes eld
+\end_inset
+
+restricted
+\begin_inset Quotes erd
+\end_inset
+
+ actions as well as checking login credentials.
 \end_layout
 
 \begin_layout Itemize
-Registration Manager: manages the registration of the new users and the
- update of the registered users data if needed.
+Registration Manager: manages the registration of new users and the update
+ of registered users' data if needed.
 \end_layout
 
 \begin_layout Itemize
@@ -543,9 +550,9 @@ Reservation Manager: manages the whole reservation process for an Active
 \end_layout
 
 \begin_layout Standard
-All the communications between the different component will be asynchronous
+All the communications between the different components will be asynchronous
  in order to minimise unneeded resource consumption that would result in
- an increase of the costs for commissioner.
+ an increase of the costs for the commissioner.
 \end_layout
 
 \begin_layout Standard
@@ -569,29 +576,31 @@ To reach our goals we have depicted 4 main components to be deployed separately
 \end_layout
 
 \begin_layout Itemize
-Onboard Car Management system: grants access remotely to the needed data
- both from the car to the server and vice versa and will grant the system
- to access functionalities such as locking and unlocking the car remotely.
+Onboard Car Management system: it allows the server and the car to communicate,
+ and more specifically makes it possible for the server to retrieve important
+ data from the car and to remotely access car functions such as locking
+ and unlocking the doors.
+ 
 \end_layout
 
 \begin_layout Itemize
-PowerStation Data System: deployed inside the single power stations will
- manage the communication with the central system granting access to it's
- data to the services that need them.
+PowerStation Data System: it will be deployed in each Power Station and
+ will manage the communication with the central system ensuring that every
+ service is able to access relevant data.
 \end_layout
 
 \begin_layout Itemize
-Mobile App: will give both the operators and the Active Users, only once
- they signed in, access to the specific feature they have permission to
- access, could be implemented in many ways and will comunicate with the
- client handler server side through RESTful APIs.
- It will use an external map provider to give users a human friendly visualizati
-on of cars' positions.
+Mobile App: it will give both operators and Active Users access to the specific
+ features they have permission to access, only after they sign in.
+ There are many possible implementations for the app, while the communication
+ with the Client Handler (on the server) will use RESTful APIs.
+ Maps will be downloaded from an external probider in order to have a user-frien
+dly visualization of cars' positions.
 \end_layout
 
 \begin_layout Itemize
-Web Page: will give the Visitors access to the map with cars' positions
- and let the signed in Users modify their personal data
+Web Page: it will allow Visitors to check the map only, while letting Users
+ reserve cars and change their account's data.
 \end_layout
 
 \begin_layout Standard
@@ -641,9 +650,10 @@ Runtime View
 \end_layout
 
 \begin_layout Standard
-The following sequence diagram will only show the way the system will act
- during the accomplishment of certain tasks, but are not to be meant as
- an exact representation of the software implementation of the procedures.
+The following sequence diagrams will only show the way the system will act
+ while performing certain tasks.
+ They are not meant to be an exact representation of the software implementation
+ of the procedures.
  For sake of simplicity we have preferred to show the intention of the calls
  to other services, omitting all the technical details concerning the mere
  technological choice of a specific message broker.
@@ -703,16 +713,21 @@ Selected Architectural Styles And Patterns
 \end_layout
 
 \begin_layout Standard
-As previously said the system will adopt a 3-tier cloud architecture to
- decouple the presentations logic from the business logic and allow the
- database management to be shared and provided by a PaaS and accessed through
- a single model manager service, allowing the other services to be stateless.
- The overall serverside system will be composed of microservices.
+As previously stated our system will adopt a 3-tier, cloud-based architecture.
+ This will allow to decouple the presentation logic from the business logic
+ as well as to have a shared database management that will be provided by
+ a PaaS and will be accessed through a single model manager service, allowing
+ the other services to be stateless.
+\end_layout
+
+\begin_layout Standard
+The overall serverside system will be composed of microservices.
  The webserver will take advantage of a façade pattern offered by the ClientHand
-ler that will work as an API gateway both for the web server and the mobile
- web application, that will allow our users to access our application without
- too strict hardware constraints on their devices.
- On need the system could be made elastic by adding a service as an 
+ler that will work as an API gateway for both the web server and the client
+ (either a mobile application or a web page).
+ This pattern choice will allow access to our application without too strict
+ hardware constraints on user's devices.
+ If needed the system could be made elastic by adding a service as an 
 \begin_inset Quotes eld
 \end_inset
 
@@ -722,8 +737,8 @@ elastic component
 
  managing the other services instantiation.
  The elastic load balancing will be managed by the API gateway and the message
- broker in order to minimize the use of physical resources and costs.
- The system will apply a server-side discovery pattern thanks to the discovery
+ broker in order to minimize the use of physical resources and costs.The
+ system will apply a server-side discovery pattern thanks to the discovery
  and binding services that will grant the necessary connection between the
  various components in a sort of publish-subscribe pattern where the services
  are subscribed by the binding service to the appropriate messaging queue
@@ -748,7 +763,7 @@ Although we have used a microservice approach for the business logic tier,
  since they run for the same macro-functionality.
  A unique database grants us the possibility to ensure in a simple way ACID
  properties and to use the standardized SQL language for queries.
- We provide an Entity-Relationship model for our application in figure 7.
+ We provide an Entity-Relationship model for our application in figure 4.
 \end_layout
 
 \begin_layout Standard
@@ -794,11 +809,12 @@ Other Design Decisions
 \end_layout
 
 \begin_layout Standard
-Seen the previous sections we decided that the overall logic of the system
- will be implemented in Java using JEE technology with Frameworks such as
- Spring Boot and open source services such as RabbitMQ as Message Broker
- and other to cover the discovery and binding services, the ClientHandler
- and the Authentication Manager.
+Having taken into account the decisions explained in the previous sections
+ we decided to implement the overall logic of the system in Java.
+ We will use Java EE with Frameworks such as Spring Boot as well as open
+ source services such as RabbitMQ as Message Broker and other to cover the
+ discovery and binding services, the ClientHandler and the Authentication
+ Manager.
  The web server part could be managed by Nginx in order to reach the needed
  scalability and reliability and manage the web interface for the clients.
 \end_layout
