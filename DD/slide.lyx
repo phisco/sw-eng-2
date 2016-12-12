@@ -14,6 +14,7 @@
 \setbeamercolor{author in head/foot}{fg=white, bg=blue3}
 \setbeamercolor{title in head/foot}{fg=white, bg=blue2}
 \setbeamercolor{date in head/foot}{fg=white, bg=blue1}
+\useoutertheme{split}
 \setbeamertemplate{navigation symbols}{}
 \setbeamertemplate{footline}
 {
@@ -168,16 +169,55 @@ Design
 Architecture Design
 \end_layout
 
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Data management
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Algorithm Design
 \end_layout
 
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Algorithmic decisions
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
-Use Interface Design
+User Interface Design
 \end_layout
 
 \begin_layout Section
 Conclusions
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Requirements traceability
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
