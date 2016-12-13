@@ -248,7 +248,7 @@ textwidth
 \begin_inset Graphics
 	filename OverView.svg
 	lyxscale 10
-	width 110col%
+	width 90col%
 
 \end_inset
 
@@ -451,6 +451,93 @@ textwidth
 
 \lang british
 Runtime View
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Sequence Diagram
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout ColumnsTopAligned
+
+\end_layout
+
+\begin_deeper
+\begin_layout Column
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+.6
+\backslash
+textwidth
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout ColumnsTopAligned
+This Diagram represents the intentions needed to complete the reservation
+ of a car:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The Map and the current car's position is retrieved
+\end_layout
+
+\begin_layout Enumerate
+The User chooses a car and tries to reserve it
+\end_layout
+
+\begin_layout Enumerate
+The Car is reserved and a confirmation is sent to the user
+\end_layout
+
+\begin_layout Column
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+.5
+\backslash
+textwidth
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Sequence Diagrams/ReserveCar.pdf
+	lyxscale 10
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Frame
+
 \end_layout
 
 \begin_layout Subsection
@@ -751,6 +838,170 @@ greedy algorithm
 User Interface Design
 \end_layout
 
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+User Experience Diagram
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout ColumnsTopAligned
+
+\end_layout
+
+\begin_deeper
+\begin_layout Column
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+.6
+\backslash
+textwidth
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout ColumnsTopAligned
+This Diagram shows the main interactions between the 
+\begin_inset Quotes eld
+\end_inset
+
+Screens
+\begin_inset Quotes erd
+\end_inset
+
+ that compose both the Web and the Mobile App.
+\end_layout
+
+\begin_layout ColumnsTopAligned
+The main actions are: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+signUp (User registration)
+\end_layout
+
+\begin_layout Itemize
+showMap (shows available cars and allows to reserve one)
+\end_layout
+
+\begin_layout Itemize
+ConfirmReserveCar (confirms the reservation and shows a summary with the
+ car's position)
+\end_layout
+
+\begin_layout Column
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+.5
+\backslash
+textwidth
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename UX.pdf
+	lyxscale 10
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Sample Mockups
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Mockup_Exported/Selected Car mobile.png
+	scale 20
+
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 8em
+\end_inset
+
+
+\begin_inset Graphics
+	filename Mockup_Exported/PC Map Web - Selected Car.png
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Selected Car - Mobile and Web mockup
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Conclusions
 \end_layout
@@ -971,140 +1222,6 @@ end{textblock}
 \end_layout
 
 \begin_layout Frame
-
-\end_layout
-
-\begin_layout Frame
-
-\end_layout
-
-\begin_layout Section
-Mockups and User Interfaces
-\end_layout
-
-\begin_layout Subsection
-User Experience Diagram
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-UX Diagram
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename UX.pdf
-	scale 28
-	rotateAngle 90
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-UX Diagram
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-
-\end_layout
-
-\begin_layout Frame
-
-\end_layout
-
-\begin_layout Standard
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Sample Mockups
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Mockup_Exported/Selected Car mobile.png
-	scale 20
-
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 8em
-\end_inset
-
-
-\begin_inset Graphics
-	filename Mockup_Exported/PC Map Web - Selected Car.png
-	scale 20
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Selected Car - Mobile and Web mockup
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
 
 \end_layout
 
