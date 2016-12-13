@@ -860,8 +860,8 @@ All algorithms needed in the project are trivial but the one dealing with
 
 \begin_layout Standard
 Cars are picked up by by users in one location dropped off in another one.
- Of course the distribution of of picking up and dropping off locations
- is not uniform.
+ Of course the distribution of picking up and dropping off locations is
+ not uniform.
  So some operators are needed in order to perform some relocations, in particula
 r during the night, so that in the morning cars are located where there
  is actual necessity.

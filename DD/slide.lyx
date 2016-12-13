@@ -32,6 +32,9 @@
   \end{beamercolorbox}}%
   \vskip0pt%
 }
+\usepackage[absolute,overlay]{textpos}
+\setlength{\TPHorizModule}{1mm}
+  \setlength{\TPVertModule}{1mm}
 \end_preamble
 \use_default_options false
 \maintain_unincluded_children false
@@ -182,6 +185,107 @@ Data management
 
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{textblock}{60}(8,20)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+We opted for a 
+\series bold
+centralized approach
+\series default
+ since our 
+\series bold
+data model
+\series default
+ is very small and interconnected and we do not need different types of
+ data models (eg.
+ SQL and noSQL).
+\end_layout
+
+\begin_layout Itemize
+We chose a 
+\series bold
+SQL approach
+\series default
+ because it offers an easy and 
+\series bold
+standardized language
+\series default
+ for queries, and grants 
+\series bold
+ACID
+\series default
+ properties.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{textblock}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{textblock}{20}(70,20)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ER.pdf
+	lyxscale 10
+	scale 25
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{textblock}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Subsection
 Algorithm Design
 \end_layout
@@ -199,6 +303,64 @@ Algorithmic decisions
 
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+All 
+\series bold
+algorithms
+\series default
+ needed in the project are trivial but the one dealing with uniform repartition
+ of cars in the city.
+\end_layout
+
+\begin_layout Itemize
+This problem has been studied a lot and there are in literature various
+ algorithms that solve it.
+\end_layout
+
+\begin_layout Itemize
+They are mainly based on 
+\series bold
+mixed integer linear programming
+\series default
+ techniques and in particular [1] presented a complete 
+\series bold
+model
+\series default
+.
+ In [2] is presented a 
+\series bold
+greedy algorithm
+\series default
+ that achieves almost the same result.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename model.png
+	lyxscale 10
+	scale 10
+
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 1cm
+\end_inset
+
+
+\begin_inset Graphics
+	filename greedy.png
+	lyxscale 10
+	scale 20
+	rotateAngle 90
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Subsection
 User Interface Design
 \end_layout
@@ -217,6 +379,50 @@ Requirements traceability
 
 \end_inset
 
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+The 
+\series bold
+map
+\series default
+ is neither injective nor surjective.
+ In fact some 
+\series bold
+requirements
+\series default
+ need more than one 
+\series bold
+module
+\series default
+ to be satisfied and 
+\series bold
+modules
+\series default
+ achieve the satisfiability of many 
+\series bold
+requirements
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+immagine con i post it, da correggere
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Frame
 
 \end_layout
 
