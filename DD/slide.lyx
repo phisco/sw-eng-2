@@ -384,6 +384,18 @@ Requirements traceability
 
 \begin_deeper
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{textblock}{40}(8,20)
+\end_layout
+
+\end_inset
+
 The 
 \series bold
 map
@@ -406,14 +418,52 @@ modules
 requirements
 \series default
 .
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
+ The corrispondence is summarized in the figure.
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-immagine con i post it, da correggere
+
+
+\backslash
+end{textblock}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{textblock}{20}(50,12)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ComponentDiagramGoals.pdf
+	lyxscale 10
+	scale 20
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{textblock}
 \end_layout
 
 \end_inset

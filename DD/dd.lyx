@@ -3047,7 +3047,7 @@ The fare takes into account all price modifiers (discounts or extra fees).
 \begin_inset Text
 
 \begin_layout Plain Layout
-Reservation module
+Reservation manager
 \end_layout
 
 \end_inset
@@ -3077,7 +3077,7 @@ The computed fare is based on how many minutes have passed since the engine
 \begin_inset Text
 
 \begin_layout Plain Layout
-Reservation module + Car management system
+Reservation manager + Car management system
 \end_layout
 
 \end_inset
@@ -3735,7 +3735,7 @@ The systems suggests a charging station near the user’s destination if present
 \begin_inset Text
 
 \begin_layout Plain Layout
-Reservation manager + Power Station manager
+Reservation manager
 \end_layout
 
 \end_inset
@@ -3764,7 +3764,7 @@ The suggested station must have at least a free plug to be suggested.
 \begin_inset Text
 
 \begin_layout Plain Layout
-Power Station manager
+Reservation manager
 \end_layout
 
 \end_inset
@@ -4011,6 +4011,22 @@ Car manager + Car management system
 </cell>
 </row>
 </lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The corrispondence is summarized in the following figure.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename ComponentDiagramGoals.pdf
+	lyxscale 10
+	scale 40
 
 \end_inset
 
