@@ -170,7 +170,392 @@ Design
 \end_layout
 
 \begin_layout Subsection
-Architecture Design
+Overview
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Overview
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout ColumnsTopAligned
+
+\end_layout
+
+\begin_deeper
+\begin_layout Column
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+.6
+\backslash
+textwidth
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Three tier
+\end_layout
+
+\begin_layout Itemize
+Thin client: mobile app for both operators and users, web app only for users
+\end_layout
+
+\begin_layout Itemize
+RESTful APIs over HTTPS in JSON between server and clients
+\end_layout
+
+\begin_layout Itemize
+OpenVPN with the cars and MQTT with the power stations
+\end_layout
+
+\begin_layout Itemize
+Microservice oriented architecture with shared database
+\end_layout
+
+\begin_layout Column
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+.65
+\backslash
+textwidth
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename OverView.svg
+	lyxscale 10
+	width 110col%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout ColumnsTopAligned
+
+\end_layout
+
+\begin_layout ColumnsTopAligned
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Component
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Serverside Component View
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout ColumnsTopAligned
+
+\end_layout
+
+\begin_deeper
+\begin_layout Column
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+.6
+\backslash
+textwidth
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Microservice architecture
+\end_layout
+
+\begin_layout Itemize
+Stateless, indipendently deployable and business domain specific 
+\end_layout
+
+\begin_layout Itemize
+Message oriented (RabbitMQ) 
+\end_layout
+
+\begin_layout Itemize
+AMQP (Advanced Messaging Queue Protocol) Asynchronous communication
+\end_layout
+
+\begin_layout Itemize
+Discovery and Binding Services to setup new services at instantiation
+\end_layout
+
+\begin_layout Itemize
+Allows advanced traffic routing features and elastic load balancing
+\end_layout
+
+\begin_layout Column
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+.7
+\backslash
+textwidth
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename ComponentDiagram.svg
+	lyxscale 10
+	width 90col%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsection
+
+\lang british
+Deployment
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Deployment View
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout ColumnsTopAligned
+
+\end_layout
+
+\begin_deeper
+\begin_layout Column
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+.6
+\backslash
+textwidth
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Various Microservices : AMQP
+\end_layout
+
+\begin_layout Itemize
+OnBoardCarManager : OpenVpn + MQTT
+\end_layout
+
+\begin_layout Itemize
+PowerStationDataSystem : MQTT Protocol
+\end_layout
+
+\begin_layout Itemize
+MobileApp : RESTful APIs
+\end_layout
+
+\begin_layout Itemize
+WebPage : RESTful APIs
+\end_layout
+
+\begin_layout Column
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+.5
+\backslash
+textwidth
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Deployment Diagram.svg
+	lyxscale 10
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsection
+
+\lang british
+Runtime View
+\end_layout
+
+\begin_layout Subsection
+
+\lang british
+Architecture
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\lang british
+Selected Architectural Styles And Patterns
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout ColumnsCenterAligned
+
+\end_layout
+
+\begin_deeper
+\begin_layout Column
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+1
+\backslash
+textwidth
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Three-Tier Cloud Application
+\end_layout
+
+\begin_layout Itemize
+Microservice Architectural Style
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+testability
+\end_layout
+
+\begin_layout Itemize
+scalability
+\end_layout
+
+\begin_layout Itemize
+deployability
+\end_layout
+
+\begin_layout Itemize
+isolation
+\end_layout
+
+\begin_layout Itemize
+extensibility
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Message Bus Architectural Style
+\end_layout
+
+\begin_layout Itemize
+REST architectural style
+\end_layout
+
+\begin_layout Itemize
+Data Access Component
+\end_layout
+
+\begin_layout Itemize
+API gateway pattern
+\end_layout
+
+\begin_layout Itemize
+Publish/Subscribe pattern
+\end_layout
+
+\begin_layout Itemize
+
+\lang british
+Façade pattern
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsection
+Data management
 \end_layout
 
 \begin_layout Frame
