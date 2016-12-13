@@ -266,7 +266,7 @@ textwidth
 
 \end_deeper
 \begin_layout Subsection
-Component View
+Component
 \end_layout
 
 \begin_layout Frame
@@ -360,7 +360,7 @@ textwidth
 \begin_layout Subsection
 
 \lang british
-Deployment View
+Deployment
 \end_layout
 
 \begin_layout Frame
@@ -388,7 +388,7 @@ status open
 
 \begin_layout Plain Layout
 
-.7
+.6
 \backslash
 textwidth
 \end_layout
@@ -456,9 +456,104 @@ Runtime View
 \begin_layout Subsection
 
 \lang british
+Architecture
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\lang british
 Selected Architectural Styles And Patterns
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout ColumnsCenterAligned
+
+\end_layout
+
+\begin_deeper
+\begin_layout Column
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+1
+\backslash
+textwidth
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Three-Tier Cloud Application
+\end_layout
+
+\begin_layout Itemize
+Microservice Architectural Style
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+testability
+\end_layout
+
+\begin_layout Itemize
+scalability
+\end_layout
+
+\begin_layout Itemize
+deployability
+\end_layout
+
+\begin_layout Itemize
+isolation
+\end_layout
+
+\begin_layout Itemize
+extensibility
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Message Bus Architectural Style
+\end_layout
+
+\begin_layout Itemize
+REST architectural style
+\end_layout
+
+\begin_layout Itemize
+Data Access Component
+\end_layout
+
+\begin_layout Itemize
+API gateway pattern
+\end_layout
+
+\begin_layout Itemize
+Publish/Subscribe pattern
+\end_layout
+
+\begin_layout Itemize
+
+\lang british
+Façade pattern
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Subsection
 Data management
 \end_layout
