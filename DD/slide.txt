@@ -69,7 +69,10 @@ on the public Cloud, taking advantage of the "scale on need" possibility the num
 SLIDE 4 SELECTED ARCHITECTURAL STYLES AND PATTERNS
 We have adopted the following architectural styles:
 -Three-tier cloud application: for the ability of the cloud to allow scalability otherwise unreachable
--Microservice Architecture in order take advatage of this possibility given by the cloud and
+-Microservice Architecture: in order take advantage of this possibility given by the cloud and
 to maximize also testability, deployability, fault isolation and extensibility
--Message Bus Architectural Style: to decouple the microservices and allow an easy way to scale up on need our microservices
--REST architectural style:
+-Message Bus Architectural Style: to decouple the microservices and allow an easy way to scale them up on need
+-REST architectural style: in order to allow a simple communication between the Presentation and Application Layer
+-API gateway Pattern: the client handlers will act as a gateway between our application and the outer world offering a single interface from the outside,
+that will then orchestrate all the other services in a sort of Facade pattern
+-Publish/subscribe for what concerns the management of the message queues
