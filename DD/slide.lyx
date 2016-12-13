@@ -35,6 +35,7 @@
 \usepackage[absolute,overlay]{textpos}
 \setlength{\TPHorizModule}{1mm}
   \setlength{\TPVertModule}{1mm}
+\newcommand\Fontvi{\fontsize{8}{12}\selectfont}
 \end_preamble
 \use_default_options false
 \maintain_unincluded_children false
@@ -391,34 +392,142 @@ status open
 
 
 \backslash
-begin{textblock}{40}(8,20)
+Fontvi
 \end_layout
 
 \end_inset
 
-The 
-\series bold
-map
-\series default
- is neither injective nor surjective.
- In fact some 
-\series bold
-requirements
-\series default
- need more than one 
-\series bold
-module
-\series default
- to be satisfied and 
-\series bold
-modules
-\series default
- achieve the satisfiability of many 
-\series bold
-requirements
-\series default
-.
- The corrispondence is summarized in the figure.
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{textblock}{65}(-2,12)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-signUp"
+
+\end_inset
+
+Allow visitors to sign up.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-logIn"
+
+\end_inset
+
+Allow visitors to log in.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-updateProfile"
+
+\end_inset
+
+Allow Users and Active Users to update or modify their profile's information.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-updatedInfoOnCars"
+
+\end_inset
+
+Show updated information on available cars.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-activeCanReserve"
+
+\end_inset
+
+Allow Active Users to reserve a car.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-activeCanUnlock"
+
+\end_inset
+
+ Allow Active Users to unlock the car reserved
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-computeFare"
+
+\end_inset
+
+Compute the fare.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-sysadminCanUpdate"
+
+\end_inset
+
+Allow System Administrator(s) to update system's information.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-ensureFarePaid"
+
+\end_inset
+
+Ensure that the fare is paid.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-driverCanMoneySave"
+
+\end_inset
+
+Allow the driver to choose the money saving option and get near their destionati
+on.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-parkCar"
+
+\end_inset
+
+Allow the user to park the rented car in safe zone.
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -442,7 +551,7 @@ status open
 
 
 \backslash
-begin{textblock}{20}(50,12)
+begin{textblock}{20}(63,12)
 \end_layout
 
 \end_inset
@@ -451,7 +560,7 @@ begin{textblock}{20}(50,12)
 \begin_inset Graphics
 	filename ComponentDiagramGoals.pdf
 	lyxscale 10
-	scale 20
+	scale 18
 
 \end_inset
 
