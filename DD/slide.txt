@@ -1,0 +1,75 @@
+SLIDE 1 OVERVIEW
+This high level COMPONENT DIAGRAM shows how we have divided our system in Three tiers
+with a thin client represented here as a single component,
+but composed of 2 possible GUIs a web and a mobile application.
+The client and the server will communicate through RESTful APIs over HTTPS exchanging JSON files.
+The two clients will be managed by two different client handlers offering the same interface at the server side.
+The communication with the cars will go through an OpenVPN connection,
+to grant the necessary security and permissions, instead cars' and PowerStations' data
+will adopt the MQTT protocol.
+
+To develop the second and third tier of our system we have adopted
+a Microservice oriented Architecture with shared database
+-----------------------
+
+SLIDE 2 SERVER SIDE COMPONENT VIEW
+The microservices will be stateless, independently deployable and
+able to deal with a specific aspect of our business, in the respect of this architecture's principles.
+The communication between them will use AMQP (Advanced Messaging Queue Protocol) and
+will be managed by a centralized message broker such as RabbitMQ,
+through a system of queues where the microservices will put the messages for other component.
+These messages then will be pulled by the specificated service or one
+of the instances of the very same microservice needed, infact some advanced
+traffic routing features and elastic load balancing will be made possible by the adoption of this message system.
+We have introduced the discovery and binding service in order to allow the dynamic
+binding of the newly instantiated microservices to the right queues.
+The here specified components could be even divided in much more granular services
+in order to decouple even more their functionalities.
+((((( MAYBE
+• Client Handler: orchestrates the needed services for the clients, translating REST HTTP requests into AMQP-compliant messages and sending them to the different microservices as needed.
+
+• Discovery Service: gives to other services the references that allow them to communicate with each other.
+
+• Binding Service: manages the queue binding for the services.
+
+• Authentication Manager: ensures that only authorised users are able to perform “restricted” actions as well as checking login credentials.
+
+• Registration Manager: manages the registration of new users and the update of registered users' data if needed.
+
+• Administration Module: grants PowerEnJoy's operators access to some specific features needed to manage the assistance tickets they have to take care of.
+
+• Model Manager: grants access to the data to the other components, abstracting any kind of technology specific detail to the other services.
+
+• Car Manager: manages the physical cars providing other services with the needed functionalities and informations.
+
+• Power Station Manager: manages the physical power stations' data and functionalities.
+
+• Assistance Ticket Manager: grants the assistance callcenter, the operators and the other services the APIs to manage the assistance tickets.
+
+• Reservation Manager: manages the whole reservation process for an Active User from the reservation intention to the effective payment, interacting with the external payment handler through his APIs.
+
+)))))
+
+----------------------------
+
+SLIDE 3 DEPLOYMENT VIEW
+So we have depicted 4 main components to be deployed separatly from the previous services:
+OnBorad Car Manager: that will manage the display in the car and take care of
+sending the needed data to the system (through MQTT) and allowing the system to actuate the needed action on the car through OpenVPN
+PowerStation Data System: that will send the needed data to the system through MQTT
+MobileApp
+WebPage
+
+The mobile app will allow both the users and the Operators to interact after the login
+with the system as defined in the RASD.
+Seen the Microservice architecture we have adopted, we have decided to deploy our microservices
+on the public Cloud, taking advantage of the "scale on need" possibility the numerous PaaS providers offers.
+
+------------------------
+SLIDE 4 SELECTED ARCHITECTURAL STYLES AND PATTERNS
+We have adopted the following architectural styles:
+-Three-tier cloud application: for the ability of the cloud to allow scalability otherwise unreachable
+-Microservice Architecture in order take advatage of this possibility given by the cloud and
+to maximize also testability, deployability, fault isolation and extensibility
+-Message Bus Architectural Style: to decouple the microservices and allow an easy way to scale up on need our microservices
+-REST architectural style:
