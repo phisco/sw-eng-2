@@ -302,6 +302,302 @@ Architectural Design
 \end_layout
 
 \begin_layout Subsection
+Design Process
+\end_layout
+
+\begin_layout Standard
+In this subsection we'll try to give an overview of the process that brought
+ to the final design chosen for the system, underlining the reasons that
+ motivated our main choices in a mixed top-down/bottom-up approach.
+ The more detailed description of the system will be given in the remainder
+ of the document.
+\end_layout
+
+\begin_layout Standard
+Initially, given the goals and the requirements we have depicted in the
+ RASD, we have decided to adopt a three tier client-server architecture
+ to be able to manage different clients and to decouple the three layers,
+ this choice was trivial given the nature and the needs of our system, not
+ so trivial was the choice of adopting a thin client in order to not have
+ any performance constraint on the client's hardware to maximize the possibility
+ of adoption by the user of our service.
+ 
+\end_layout
+
+\begin_layout Standard
+Then we have started aggregating the different requirements in much granular
+ components, trying to follow a single responsibility principle, as can
+ be seen in section 5.
+ So we have depicted the following components as part of the second tier
+ on the server side of our system: 
+\end_layout
+
+\begin_layout Itemize
+Client Handler: orchestrates the needed services for the clients, translating
+ client's requests to the server and returning the needed data.
+\end_layout
+
+\begin_layout Itemize
+Authentication Manager: ensures that only authorised users are able to perform
+ 
+\begin_inset Quotes eld
+\end_inset
+
+restricted
+\begin_inset Quotes erd
+\end_inset
+
+ actions as well as checking login credentials.
+\end_layout
+
+\begin_layout Itemize
+Registration Manager: manages the registration of new users and the update
+ of registered users' data if needed.
+\end_layout
+
+\begin_layout Itemize
+Administration Module: grants PowerEnJoy's operators access to some specific
+ features needed to manage the assistance tickets they have to take care
+ of.
+\end_layout
+
+\begin_layout Itemize
+Model Manager: grants access to the data to the other components, abstracting
+ any kind of technology specific detail to the other services.
+\end_layout
+
+\begin_layout Itemize
+Car Manager: manages the physical cars providing other services with the
+ needed functionalities and informations.
+\end_layout
+
+\begin_layout Itemize
+Power Station Manager: manages the physical power stations' data and functionali
+ties.
+\end_layout
+
+\begin_layout Itemize
+Assistance Ticket Manager: grants the assistance callcenter, the operators
+ and the other services the APIs to manage the assistance tickets.
+\end_layout
+
+\begin_layout Itemize
+Reservation Manager: manages the whole reservation process for an Active
+ User from the reservation intention to the effective payment, interacting
+ with the external payment handler through his APIs.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename component lvl 2 - Page 1.svg
+	lyxscale 10
+	width 50line%
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Component view derived from the Requirements analysis
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then we needed to find where our components could be deployed and how we
+ would have managed the communication between them, we could have adopted
+ a monolithic approach or take advantage of the well established application
+ server architecture, but that wouldn't have granted the scalability and
+ the independent deployment of the components we were looking for, so we
+ decided to go for a microservice oriented architecture.
+ This choice allowed us to take advantage of the growing number of Platform-as-a
+-Service providers, so it seemed natural given the previous choices to deploy
+ our whole server side in the cloud, giving us the ability to scale our
+ application on need and abstracting us from any hardware specific consideration
+ in the future.
+ 
+\end_layout
+
+\begin_layout Standard
+To fully take advantage of this architectural style we have introduced some
+ components that will manage the life cycle of the deployed components:
+\end_layout
+
+\begin_layout Itemize
+Discovery Service: gives to other services the references that allow them
+ to communicate with each other.
+\end_layout
+
+\begin_layout Itemize
+Binding Service: manages the queue binding for the services.i
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename component lvl 2b.svg
+	lyxscale 10
+	width 50line%
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Component view derived from the Requirements analysis and the decision of
+ microservice oriented architecture
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Although we had decided to transform our three-tiered application in a three-tie
+red cloud application, the problem of the communication between our microservice
+s still needed a solution, two options arose as the most valuable of attention:
+ a point-to-point communication approach or a more centralized messaging/bus
+ oriented one.
+ These two options where not linked to the choice of a cloud application,
+ it could have also be adopted in a server.
+ The obvious advantages of the first one with respect to the second where
+ the absence of a clear single point of failure and with that the absence
+ of a possible bottleneck in the central message bus, but the disadvantages
+ such as the difficulty of managing the whole system without a central coordinat
+or and the numerous APIs that such approach would have needed, but given
+ the previewed load of our system the advantage didn't seem really much
+ of an advantage and the disadvantage would have burdened the development
+ of the system.
+ 
+\end_layout
+
+\begin_layout Standard
+Checked some numbers of the actual load the of the third party message broker
+ could handle and the advantages of adopting one of them, we have decided
+ to adopt a centralized message broker that with a publish subscribe pattern
+ would manage the communication between the components giving us as secondary
+ effect the possibility to implement some advanced load balancing techniques
+ in the near future to better take advantage of the pay-per-use approach
+ the cloud provides.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename Component with message broker.svg
+	lyxscale 10
+	width 50line%
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Component view derived from the message broker decision
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+After deciding the structure of the server side, we have focused on the
+ remainder part of the deployment diagram and depicted the counterpart of
+ the previous components outside the server, such as the software that will
+ be deployed inside the cars and the one for the powerstations and the two
+ clients' software accordingly to the RASD specifications.
+\end_layout
+
+\begin_layout Standard
+Then we've tried to give a possible, but not mandatory, implementation of
+ the system, especially concerning the communication protocols that could
+ be used between the different parts of the system and the technologies
+ that could be used to implement them, in order to check the feasibility
+ of our choices.
+ Java Enterprise Edition as implementation language seemed the most adopted
+ solution for this kind of systems and microservice-oriented framework on
+ top of JEE such as Spring Boot could ease the development fitting most
+ of our needs out of the box, even if our design choice could give the developme
+nt team of each service the freedom to choose the most appropriate framework/lan
+guage as long as the communication protocol chosen is supported.
+\end_layout
+
+\begin_layout Subsection
 Overview
 \end_layout
 
@@ -389,7 +685,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Component View of the server side deployed
+Component View overview
 \end_layout
 
 \end_inset
