@@ -1441,6 +1441,46 @@ arabic{enumi}.}
 \end_layout
 
 \begin_layout Subsection
+The world and the machine
+\end_layout
+
+\begin_layout Standard
+We developed an analysis about 
+\begin_inset Quotes eld
+\end_inset
+
+the world and the machine
+\begin_inset Quotes erd
+\end_inset
+
+ according to the paper [1].
+ We used the form of Venn diagrams.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename WandM.pdf
+	lyxscale 10
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+[1] M.
+ Jackson and P.
+ Zave, 
+\shape italic
+Deriving specifications from requirements: an example
+\shape default
+, Proceeding ICSE '95, p.
+ 15-24 
+\end_layout
+
+\begin_layout Subsection
 Scenarios
 \end_layout
 
@@ -1452,6 +1492,7 @@ Use case diagram
 \align center
 \begin_inset Graphics
 	filename Use Case Diagram1.pdf
+	lyxscale 10
 	width 100text%
 
 \end_inset
@@ -2903,6 +2944,22 @@ Gabriele Vanoni
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Changelog:
+\end_layout
+
+\begin_layout Standard
+01/01/2017: Added 
+\begin_inset Quotes eld
+\end_inset
+
+world and machine
+\begin_inset Quotes erd
+\end_inset
+
+ analysis
 \end_layout
 
 \begin_layout Standard
