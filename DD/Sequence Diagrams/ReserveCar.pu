@@ -5,6 +5,7 @@ participant "User Application" as UApp
 participant "Map Provider" as MAP
 participant "Client Handler" as CH
 participant "Reservation Manager" as RM
+participant "Model Manager" as MM
 activate AU
 activate UApp
 activate MAP
@@ -16,8 +17,11 @@ UApp -> UApp : retrieveRadiusOnMap()
 UApp ->> MAP : getAreaMap(location, radius)
 UApp ->> CH : getNearAvailableCars(location, radius)
 activate CH
-CH ->> RM : getNearAvailableCars(location, radius)
 activate RM
+CH ->> RM : getNearAvailableCars(location, radius)
+activate MM
+RM ->> MM : getNearAvailableCars(location, radius)
+RM <<-- MM : <<Available Cars>>
 CH <<-- RM : <<Available Cars>>
 UApp <<-- CH : <<Available Cars>>
 UApp <<-- MAP : << Data: Map>>
@@ -31,8 +35,8 @@ AU -> UApp : confirmReservation()
 == Make Reservation ==
 UApp ->> CH : reserveCar(CarID, AU_ID)
 CH ->> RM : reserveCar(CarID, AU_ID)
-RM ->> RM : makeReservation(CarID, AU_ID):Reg##
-CH <<-- RM : <<Confirmed Registration Reg##, CarID, AU_ID>>
+RM ->> MM : makeReservation(CarID, AU_ID)
+CH <<-- RM : <<Confirmed Registration, CarID, AU_ID>>
 UApp <<-- CH : <<Confirmed Registration Reg##, CarID>>
 
 
