@@ -1,0 +1,385 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass scrartcl
+\begin_preamble
+\usepackage{microtype}
+\usepackage{eurosym}
+\addtokomafont{disposition}{\rmfamily}
+\usepackage[headsepline]{scrlayer-scrpage}
+\clearpairofpagestyles
+\ohead{DD}
+\chead{\pagemark}
+\ihead{\headmark}
+\automark[]{section}
+\renewcommand*\pagemark{{\usekomafont{pagenumber}Page\nobreakspace\thepage}}
+\addtokomafont{pageheadfoot}{\upshape}
+\end_preamble
+\use_default_options false
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language british
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "lmodern" "default"
+\font_sans "lmss" "default"
+\font_typewriter "lmtt" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 0
+\use_package mathtools 1
+\use_package mhchem 0
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\bottommargin 2.5cm
+\secnumdepth 4
+\tocdepth 4
+\paragraph_separation indent
+\paragraph_indentation 0bp
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\listings_params "basicstyle={\ttfamily},columns=fullflexible"
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Integration Test Plan Document
+\end_layout
+
+\begin_layout Author
+Philippe Scorsolini,
+\begin_inset Newline newline
+\end_inset
+
+Lorenzo Semeria,
+\begin_inset Newline newline
+\end_inset
+
+Gabriele Vanoni
+\end_layout
+
+\begin_layout Subject
+Politecnico di Milano, A.Y.
+ 2016/2017
+\begin_inset Newline newline
+\end_inset
+
+M.Sc.
+ Degree Programme in Computer Science and Engineering
+\begin_inset Newline newline
+\end_inset
+
+Software Engineering 2 Project
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Subsection
+Purpose
+\end_layout
+
+\begin_layout Subsection
+Scope
+\end_layout
+
+\begin_layout Subsection
+Abbreviations, Definitions and Acronyms
+\end_layout
+
+\begin_layout Subsubsection
+Abbreviations:
+\end_layout
+
+\begin_layout Itemize
+Gn: the n-th Goal
+\end_layout
+
+\begin_layout Itemize
+An: the n-th Assumption
+\end_layout
+
+\begin_layout Itemize
+Rn: the n-th Requirement
+\end_layout
+
+\begin_layout Subsubsection
+Acronyms
+\end_layout
+
+\begin_layout Itemize
+CC: Credit Card
+\end_layout
+
+\begin_layout Itemize
+DL: Driving Licence
+\end_layout
+
+\begin_layout Itemize
+AU: Active User
+\end_layout
+
+\begin_layout Subsubsection
+Definitions
+\end_layout
+
+\begin_layout Itemize
+Visitor: person that may not be registered to the system or not logged in.
+\end_layout
+
+\begin_layout Itemize
+User: a registered and logged in Visitor, that may be still waiting for
+ his information to be verified.
+\end_layout
+
+\begin_layout Itemize
+Active User: a User whose data (CC, DL) have been verified.
+ (Shares all User's characteristics)
+\end_layout
+
+\begin_layout Itemize
+Safe Zone: predefined zones where parking is allowed, parking is forbidden
+ in any other zone.
+\end_layout
+
+\begin_layout Itemize
+Park: park the car in the safe zone and terminate the rental.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Tools and test equipment required
+\end_layout
+
+\begin_layout Subsection
+Tools
+\end_layout
+
+\begin_layout Subsubsection
+JUnit
+\end_layout
+
+\begin_layout Standard
+JUnit is a testing framework for Java source code.
+ Integrated in most Java IDEs, it allows automatic unit testing.
+\end_layout
+
+\begin_layout Subsubsection
+AssertJ
+\end_layout
+
+\begin_layout Standard
+AssertJ provides a rich set of assertions, that can make more readable JUnit
+ tests.
+\end_layout
+
+\begin_layout Subsubsection
+Mockito
+\end_layout
+
+\begin_layout Standard
+Mockito is mocking framework.
+ With its API it is easy to write unit tests that rely on other classes,
+ by just mocking them i.e.
+ creating an empty box which can be filled with any behaviour.
+\end_layout
+
+\begin_layout Subsubsection
+Arquillan
+\end_layout
+
+\begin_layout Standard
+Arquillian provides a component model for integration tests, which includes
+ dependency injection and container life cycle management.
+ It integrates well with JUnit.
+\end_layout
+
+\begin_layout Section
+Effort spent
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Component
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Time spent (in hour)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Philippe Scorsolini
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+35
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Lorenzo Semeria
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+22
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Gabriele Vanoni
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+22
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
