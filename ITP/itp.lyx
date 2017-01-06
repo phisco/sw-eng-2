@@ -234,6 +234,57 @@ Park: park the car in the safe zone and terminate the rental.
 \end_layout
 
 \begin_layout Section
+Integration Strategy
+\end_layout
+
+\begin_layout Subsection
+Entry Criteria
+\end_layout
+
+\begin_layout Standard
+Before actually doing integration tests it is important that some criterias
+ are met.
+ This helps ensuring that the results of the test are not skewed by other
+ factors (e.g.
+ a test fails because a function does not behave properly).
+\end_layout
+
+\begin_layout Standard
+These are the conditions that must be met before integration testing:
+\end_layout
+
+\begin_layout Itemize
+Dependencies among modules must all be defined
+\end_layout
+
+\begin_layout Itemize
+All unit testing must have been successfully done
+\end_layout
+
+\begin_layout Itemize
+Input and expected output/behaviour must be specified for each test case
+\end_layout
+
+\begin_layout Itemize
+Parts of the system that are yet to be implemented must be stubbed
+\end_layout
+
+\begin_layout Itemize
+The testing environment (better specified later) must be completed
+\end_layout
+
+\begin_layout Itemize
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
 Tools and test equipment required
 \end_layout
 
