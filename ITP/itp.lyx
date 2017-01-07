@@ -294,6 +294,17 @@ Tools and test equipment required
 Tools
 \end_layout
 
+\begin_layout Standard
+Testing would be impossible without the use of proper tools.
+ There are on the market many different frameworks that achieve the task
+ of automatizing testing.
+ We briefly describe those that we are going to use during the integration
+ test phase.
+ For further informations and technical details refer to the official web
+ site of each tool.
+ 
+\end_layout
+
 \begin_layout Subsubsection
 JUnit
 \end_layout
@@ -301,6 +312,8 @@ JUnit
 \begin_layout Standard
 JUnit is a testing framework for Java source code.
  Integrated in most Java IDEs, it allows automatic unit testing.
+ Since other testing frameworks heavily rely on it, it is part of our integratio
+n test suite.
 \end_layout
 
 \begin_layout Subsubsection
@@ -310,6 +323,8 @@ AssertJ
 \begin_layout Standard
 AssertJ provides a rich set of assertions, that can make more readable JUnit
  tests.
+ In fact test shouldn't be obscure since different developers have to work
+ together with them.
 \end_layout
 
 \begin_layout Subsubsection
@@ -321,6 +336,10 @@ Mockito is mocking framework.
  With its API it is easy to write unit tests that rely on other classes,
  by just mocking them i.e.
  creating an empty box which can be filled with any behaviour.
+ In case of integration testing interfaces can be mocked so to isolate some
+ components from the others.
+ In this way it is possible to disambiguate sources of errors.
+ 
 \end_layout
 
 \begin_layout Subsubsection
@@ -330,7 +349,63 @@ Arquillian
 \begin_layout Standard
 Arquillian provides a component model for integration tests, which includes
  dependency injection and container life cycle management.
- It integrates well with JUnit.
+ It is built on top of JUnit.
+ It makes quite easy testing interactions with database, and interoperability
+ between the programming model and the different available containers.
+\end_layout
+
+\begin_layout Subsubsection
+Manual testing
+\end_layout
+
+\begin_layout Standard
+There are some software components or functionalities that cannot be tested
+ in automatic way.
+ In those cases the only way of testing them is by manually stressing them.
+ GUI is an example of component that can be tested only manually and in
+ particular it's usability.
+ After a huge number of tests the developer decides if it is compliant with
+ the specification of both functional and non functional requirements.
+ One possibility to enhance the reliability of this approach is to distribute
+ the artifact to some people required to leave a feedback after having spent
+ some time with the software.
+ Manual testing will be used also for IoT integration, in particular for
+ power grid and on car software.
+\end_layout
+
+\begin_layout Subsection
+Test equipment
+\end_layout
+
+\begin_layout Standard
+The environment needed for testing the server side of our application is
+ nothing but the development environment.
+\end_layout
+
+\begin_layout Standard
+Client side testing instead needs a more accurate description.
+\end_layout
+
+\begin_layout Paragraph*
+Web interface
+\end_layout
+
+\begin_layout Standard
+Customers should be able to browse our web app from every browser installed
+ on every type of device.
+ So both the PC version and mobile one should be tested in different browsers
+ on different operating systems on different devices, in particular regarding
+ screen size.
+\end_layout
+
+\begin_layout Paragraph*
+Mobile app
+\end_layout
+
+\begin_layout Standard
+The mobile app should be compatible with every recent device.
+ Test should cover both smartphones and tablets with different versions
+ of the OS and different screen resolutions.
 \end_layout
 
 \begin_layout Section
