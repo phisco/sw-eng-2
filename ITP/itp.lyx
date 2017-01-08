@@ -286,6 +286,79 @@ The testing environment (better specified later) must be completed
 
 \end_layout
 
+\begin_layout Subsection
+Elements to be integrated
+\end_layout
+
+\begin_layout Standard
+The elements that must be integrated in this phase are all the modules present
+ in the Component Diagram already shown in the Design Document.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename D:/lorse/Documents/GitHub/IngSW/sw-eng-2/DD/Component with message broker.pdf
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Component Diagram showing all modules.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+From the above diagram it is clear that some modules rely or depend on others.
+ These dependendencies are important to structure the testing, in particular
+ the order in which the modules must be tested in.
+ This aspect is better analyzed in other sections of this document.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Integration Strategy
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Tools and test equipment required
 \end_layout
