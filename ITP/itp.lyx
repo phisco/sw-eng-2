@@ -300,14 +300,22 @@ The elements that must be integrated in this phase are all the modules present
 placement h
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
 \begin_inset Graphics
-	filename D:/lorse/Documents/GitHub/IngSW/sw-eng-2/DD/Component with message broker.pdf
+	filename component lvl 2 - Page 1.svg
 	lyxscale 30
 	scale 30
 
+\end_inset
+
+
+\begin_inset space \hfill{}
 \end_inset
 
 
@@ -350,6 +358,64 @@ From the above diagram it is clear that some modules rely or depend on others.
 
 \begin_layout Subsection
 Integration Strategy
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Sequence of Component/Function Integration
+\end_layout
+
+\begin_layout Standard
+Given the dependency graph in the following graph
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename ITP order.svg
+	lyxscale 30
+	width 50text%
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Dependency graph.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
