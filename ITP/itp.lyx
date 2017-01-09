@@ -156,74 +156,19 @@ Introduction
 \end_layout
 
 \begin_layout Subsection
-Purpose
+Purpose and scope
 \end_layout
 
-\begin_layout Subsection
-Scope
-\end_layout
-
-\begin_layout Subsection
-Abbreviations, Definitions and Acronyms
-\end_layout
-
-\begin_layout Subsubsection
-Abbreviations:
-\end_layout
-
-\begin_layout Itemize
-Gn: the n-th Goal
-\end_layout
-
-\begin_layout Itemize
-An: the n-th Assumption
-\end_layout
-
-\begin_layout Itemize
-Rn: the n-th Requirement
-\end_layout
-
-\begin_layout Subsubsection
-Acronyms
-\end_layout
-
-\begin_layout Itemize
-CC: Credit Card
-\end_layout
-
-\begin_layout Itemize
-DL: Driving Licence
-\end_layout
-
-\begin_layout Itemize
-AU: Active User
-\end_layout
-
-\begin_layout Subsubsection
-Definitions
-\end_layout
-
-\begin_layout Itemize
-Visitor: person that may not be registered to the system or not logged in.
-\end_layout
-
-\begin_layout Itemize
-User: a registered and logged in Visitor, that may be still waiting for
- his information to be verified.
-\end_layout
-
-\begin_layout Itemize
-Active User: a User whose data (CC, DL) have been verified.
- (Shares all User's characteristics)
-\end_layout
-
-\begin_layout Itemize
-Safe Zone: predefined zones where parking is allowed, parking is forbidden
- in any other zone.
-\end_layout
-
-\begin_layout Itemize
-Park: park the car in the safe zone and terminate the rental.
+\begin_layout Standard
+In this Integration Test Plan Document we are going to develop a detailed
+ description of the path we are going to follow to achieve integration testing.
+ Starting right after unit testing and component testing, this phase is
+ the most crucial.
+ Combining different components is not easy and so is testing them.
+ In purticular in this phase we focus on interactions between components,
+ starting from simple ones and arriving to more complex situations.
+ In the document we highlight the rationale behind our testing choices i.e.
+ our strategy and in which way we plan to write tests.
 \end_layout
 
 \begin_layout Standard
