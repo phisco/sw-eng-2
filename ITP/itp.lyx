@@ -419,6 +419,106 @@ Integration Strategy
 \end_layout
 
 \begin_layout Standard
+The Integration Strategy defines the order and the approach to testing.
+ For this project, we have decided to use a bottom-up approach.
+ Going bottom up means testing the components with the least dependencies
+ first, thus avoiding the creation of any stub.
+ On the other hand, this forces to create many drivers.
+ Choosing this approach creates an order among components since those with
+ no dependencies will be tested first, then gradually – as more components
+ are tested – those that rely on them will be analyzed.
+ Although ideally only stubs are created, it may become necessary to create
+ some stubs or interfaces in order to break dependency cicles.
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Secondo me non serve a niente dirlo, se i programmatori non sono scimmie
+ ci arrivano.
+ 
+\end_layout
+
+\end_inset
+
+ Choosing a bottom up approach has many advantages:
+\end_layout
+
+\begin_layout Itemize
+It is easier to create test cases
+\end_layout
+
+\begin_layout Itemize
+It is easier to check the behaviour of 
+\begin_inset Quotes eld
+\end_inset
+
+simpler
+\begin_inset Quotes erd
+\end_inset
+
+ (less integrated) components
+\end_layout
+
+\begin_layout Itemize
+Since many components rely on the functions of the 
+\begin_inset Quotes eld
+\end_inset
+
+bottom
+\begin_inset Quotes erd
+\end_inset
+
+ modules, it makes sense to ensure that these behave properly as soon as
+ possible to avoid skewing other test's results
+\end_layout
+
+\begin_layout Itemize
+Core components are tested early and developers will have more time to fix
+ the issue
+\end_layout
+
+\begin_layout Itemize
+It is possible to test meaningful system functions earlier since at an intermedi
+ate stage all 
+\begin_inset Quotes eld
+\end_inset
+
+system
+\begin_inset Quotes erd
+\end_inset
+
+ modules are teested
+\end_layout
+
+\begin_layout Standard
+Of course, this approach also has drawbacks:
+\end_layout
+
+\begin_layout Itemize
+Drivers must be created
+\end_layout
+
+\begin_layout Itemize
+Solving an error at the top is likely to be very hard and such and error
+ would be identified only near the end of the testing phase
+\end_layout
+
+\begin_layout Itemize
+A 
+\begin_inset Quotes eld
+\end_inset
+
+sample
+\begin_inset Quotes erd
+\end_inset
+
+ system will not be available until the ending of the testing phase.
+ It may be useful to have a sample early in order to show a draft to our
+ client.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage pagebreak
 \end_inset
 
