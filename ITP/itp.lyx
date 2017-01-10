@@ -496,7 +496,8 @@ Of course, this approach also has drawbacks:
 \end_layout
 
 \begin_layout Itemize
-Drivers must be created
+Drivers must be created: writing and maintaining drivers can be a difficult
+ task
 \end_layout
 
 \begin_layout Itemize
@@ -516,6 +517,11 @@ sample
  system will not be available until the ending of the testing phase.
  It may be useful to have a sample early in order to show a draft to our
  client.
+\end_layout
+
+\begin_layout Itemize
+It is not possible to observe the behaviour of top level system functions
+ until the top level components are in place
 \end_layout
 
 \begin_layout Standard
