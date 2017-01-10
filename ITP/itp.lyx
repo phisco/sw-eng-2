@@ -1182,7 +1182,7 @@ I4
 \end_layout
 
 \begin_layout Standard
-The following table summerize wich Target components will be tested at each
+The following table summerize wich target components will be tested at each
  step and which driver shall be implemented in order to test them.
 \end_layout
 
