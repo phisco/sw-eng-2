@@ -427,7 +427,7 @@ The Integration Strategy defines the order and the approach to testing.
  Choosing this approach creates an order among components since those with
  no dependencies will be tested first, then gradually – as more components
  are tested – those that rely on them will be analyzed.
- Although ideally only stubs are created, it may become necessary to create
+ Although ideally only drivers are created, it may become necessary to create
  some stubs or interfaces in order to break dependency cicles.
  
 \begin_inset Note Note
@@ -475,7 +475,7 @@ bottom
 
 \begin_layout Itemize
 Core components are tested early and developers will have more time to fix
- the issue
+ the issues
 \end_layout
 
 \begin_layout Itemize
@@ -488,7 +488,7 @@ system
 \begin_inset Quotes erd
 \end_inset
 
- modules are teested
+ modules are tested
 \end_layout
 
 \begin_layout Standard
@@ -513,7 +513,7 @@ sample
 \begin_inset Quotes erd
 \end_inset
 
- system will not be available until the ending of the testing phase.
+ system will not be available until the end of the testing phase.
  It may be useful to have a sample early in order to show a draft to our
  client.
 \end_layout
