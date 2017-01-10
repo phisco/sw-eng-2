@@ -551,7 +551,7 @@ Given this dependencies directed acyclic graph and chosen the bottom-up
 
 \begin_layout Standard
 In the following table we formalize how we selected at each step the components
- that could be integrated due to the fact that their dependencies have already
+ that could be integrated due to the fact that their dependencies had already
  been all tested, infact the number of dependecies has to be intended as
  the number of outgoing arrows in the dependencies graph, updated at each
  step removing the components and the arrows previously selected.
