@@ -1690,6 +1690,21 @@ Administration Module
 \end_layout
 
 \begin_layout Standard
+We haven't taken into account during the Integration testing phase components
+ we won't be in charge of developing because taken as 
+\begin_inset Quotes eld
+\end_inset
+
+off the shelf
+\begin_inset Quotes erd
+\end_inset
+
+ solutions, these components has to be set up as first thing in order to
+ give the developed components the infrastracture to comunicate (message
+ broker) and go through their life cycle.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage pagebreak
 \end_inset
 
@@ -1764,7 +1779,7 @@ Test items
 \begin_inset Text
 
 \begin_layout Plain Layout
-Authentication Manager → Model Manager 
+Authentication Manager → Model Manager
 \end_layout
 
 \end_inset
@@ -1911,7 +1926,7 @@ Test items
 \begin_inset Text
 
 \begin_layout Plain Layout
-Administration Module → Model Manager 
+Administration Module → Model Manager
 \end_layout
 
 \end_inset
@@ -1952,9 +1967,9 @@ Input specification
 \begin_inset Text
 
 \begin_layout Plain Layout
-Users', Power Stations' and Users' data modification and queries about their
- current status has to be performed to check the correct behaviour of the
- Model Manager and the persistence of its actions.
+Users', data modification and queries about their current status has to
+ be performed to check the correct behaviour of the Model Manager and the
+ persistence of its actions.
 \end_layout
 
 \end_inset
@@ -2058,7 +2073,7 @@ Test items
 \begin_inset Text
 
 \begin_layout Plain Layout
-Car Manager → Model Manager 
+Car Manager → Model Manager
 \end_layout
 
 \end_inset
@@ -2205,7 +2220,7 @@ Test items
 \begin_inset Text
 
 \begin_layout Plain Layout
-Reservation Manager → Model Manager 
+Reservation Manager → Model Manager
 \end_layout
 
 \end_inset
@@ -3658,6 +3673,184 @@ The mobile app should be compatible with every recent device.
  Same devices of the previous section can be used to test compliance to
  their screen resolutions and concerning OS versions, last three major releases
  should be taken into account.
+\end_layout
+
+\begin_layout Section
+Program Stubs and Test Data Required
+\end_layout
+
+\begin_layout Subsection
+Program Stubs
+\end_layout
+
+\begin_layout Standard
+As mentioned we are adopting a bottom-up approach to the components integration
+ and testing, so we'll need a number of drivers to access the external interface
+s offered by the tested components, before actually implementing the real
+ consumers of the APIs.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="25line%">
+<column alignment="center" valignment="top" width="25line%">
+<column alignment="center" valignment="top" width="50line%">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Driver
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Test(s) Involved
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Description
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Authentication Manager
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I1T1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Should be able to test the methods of the Model Manager to access and manipulate
+ authentications' data
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Administration Module
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I1T2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Should allow to test the part of the APIs offered by the Model Manager to
+ access and manipulate Users' data
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Car Manager
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I1T3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Should allow to test the APIs offered by the Model Manager to access and
+ manipulate cars' data
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Reservation Manager
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I1T4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Should allow to test the storing and fetching of reservations by the ModelManage
+r
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
