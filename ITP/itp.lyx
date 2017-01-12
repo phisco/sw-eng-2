@@ -1815,7 +1815,6 @@ To check if all the datas in the Model Manager can be reached correctly
  dealt as intended.
  Particular care should be put into ensuring that passwords are checked
  correctly since they will likely be salted and hashed.
- 
 \end_layout
 
 \end_inset
@@ -2897,7 +2896,6 @@ Output specification
 \begin_layout Plain Layout
 Positive answer and access confirmation if the correct combination of username
  and password is given, an error otherwise.
- 
 \end_layout
 
 \end_inset
@@ -3527,7 +3525,7 @@ In order to test the whole system against a real world scenario, that will
  guarantee the core business functionalities to be fully functioning, we
  have decided to add a further integration step on the deployed system.
  This step shall simulate the entire process of renting a car, following
- theese steps: 
+ theese steps:
 \end_layout
 
 \begin_layout Enumerate
@@ -4358,11 +4356,7 @@ s offered by the tested components, before actually implementing the real
 
 \begin_layout Standard
 \begin_inset Tabular
-<<<<<<< HEAD
-<lyxtabular version="3" rows="7" columns="3">
-=======
-<lyxtabular version="3" rows="9" columns="3">
->>>>>>> origin/master
+<lyxtabular version="3" rows="10" columns="3">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="25line%">
 <column alignment="center" valignment="top" width="25line%">
@@ -4519,8 +4513,6 @@ r.
 </row>
 <row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-<<<<<<< HEAD
-=======
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4592,7 +4584,7 @@ Registration Manager
 \begin_inset Text
 
 \begin_layout Plain Layout
-I1Y7
+I1T7
 \end_layout
 
 \end_inset
@@ -4610,7 +4602,6 @@ Should check that the registration works properly: all input fields are
 </row>
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
->>>>>>> origin/master
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4685,7 +4676,7 @@ Has to perform all the action needed to perform the E2E test as specified
 \end_layout
 
 \begin_layout Standard
-As mentioned in the section 
+As mentioned in the section
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec:End-to-End"
