@@ -4358,7 +4358,11 @@ s offered by the tested components, before actually implementing the real
 
 \begin_layout Standard
 \begin_inset Tabular
+<<<<<<< HEAD
 <lyxtabular version="3" rows="7" columns="3">
+=======
+<lyxtabular version="3" rows="9" columns="3">
+>>>>>>> origin/master
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="25line%">
 <column alignment="center" valignment="top" width="25line%">
@@ -4515,6 +4519,98 @@ r.
 </row>
 <row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<<<<<<< HEAD
+=======
+\begin_inset Text
+
+\begin_layout Plain Layout
+Power Station Manager
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I1T5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Should allow to test the system capability to retrieve and update a Power
+ Station's status (available and total plugs, cars parked, ...).
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Assistance Ticket Manager
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I1T6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Should allow to test that tickets can be correctly created, edited and deleted.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Registration Manager
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I1Y7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Should check that the registration works properly: all input fields are
+ correctly saved using the Model Manager
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+>>>>>>> origin/master
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4527,7 +4623,7 @@ Client Handler
 \begin_inset Text
 
 \begin_layout Plain Layout
-I2T2, I3T1, I4T1
+I2T1, I2T2, I3T1, I4T1
 \end_layout
 
 \end_inset
@@ -4536,8 +4632,9 @@ I2T2, I3T1, I4T1
 \begin_inset Text
 
 \begin_layout Plain Layout
-It has to be able to register as a new user, to make, cancel and edit reservatio
-ns, and to call administration APIs.
+It has to be able to allow existing users to login and visitors to register.
+ Moreover it must be possible to make, cancel and edit reservations as well
+ as using the administraion APIs.
 \end_layout
 
 \end_inset
