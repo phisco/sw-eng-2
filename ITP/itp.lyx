@@ -4676,7 +4676,7 @@ Has to perform all the action needed to perform the E2E test as specified
 \end_layout
 
 \begin_layout Standard
-As mentioned in the section
+As mentioned in the section 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec:End-to-End"
