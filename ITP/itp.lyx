@@ -3559,12 +3559,12 @@ If any of the above steps doesn't succeed, the test has to be considered
  failed.
  The car chosen has to be faken for obvious reasons and to grant the testing
  system to check that the request has really been forwarded correctly, giving
- a coherent succesful acknowledgment to the Car Manager.
- The client that will actuate effectively the test has to be created ad
+ a coherent successful acknowledgment to the Car Manager.
+ The client that will effectively perform the test has to be created ad
  hoc to allow the full automation of the process.
- Seen that the bank account and the user data have to be accepted by the
- system, they have to be created for this purpose (the driving licence can
- be accepted automatically only in this case).
+ Considering that the bank account and the user data have to be accepted
+ by the system, they have to be created for this purpose (the driving licence
+ can be accepted automatically only in this case).
  After the run of the test all modifications to the system has to be undone
  in both, success and unsuccess, cases.
  To perform this test all the aforementioned tests have to be successfully
