@@ -3571,6 +3571,13 @@ If any of the above steps doesn't succeed, the test has to be considered
  been run.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Tools and test equipment required
 \end_layout
@@ -4332,6 +4339,13 @@ The mobile app should be compatible with every recent device.
  should be taken into account.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Program Stubs and Test Data
 \end_layout
@@ -4688,6 +4702,13 @@ reference "subsec:End-to-End"
 
 \begin_layout Subsection*
 5.2 Test Data
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
