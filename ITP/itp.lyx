@@ -3512,11 +3512,65 @@ tors.
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
+\begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:End-to-End"
+
 \end_inset
 
+End to End integration test (E2E)
+\end_layout
 
+\begin_layout Standard
+In order to test the whole system against a real world scenario, that will
+ guarantee the core business functionalities to be fully functioning, we
+ have decided to add a further integration step on the deployed system.
+ This step shall simulate the entire process of renting a car, following
+ theese steps: 
+\end_layout
+
+\begin_layout Enumerate
+the registration of a new user with valid data.
+\end_layout
+
+\begin_layout Enumerate
+the login of the newly created user.
+\end_layout
+
+\begin_layout Enumerate
+the choice of a specific car.
+\end_layout
+
+\begin_layout Enumerate
+the actual rental of that car.
+ (unlocking, locking it back after the the end of the rental).
+\end_layout
+
+\begin_layout Enumerate
+the proportional payment for the rental calculation.
+\end_layout
+
+\begin_layout Enumerate
+the payment, we'll accept the test as successfull when the request will
+ be received by the fake user's banking account.
+\end_layout
+
+\begin_layout Standard
+If any of the above steps doesn't succeed, the test has to be considered
+ failed.
+ The car chosen has to be faken for obvious reasons and to grant the testing
+ system to check that the request has really been forwarded correctly, giving
+ a coherent succesful acknowledgment to the Car Manager.
+ The client that will actuate effectively the test has to be created ad
+ hoc to allow the full automation of the process.
+ Seen that the bank account and the user data have to be accepted by the
+ system, they have to be created for this purpose (the driving licence can
+ be accepted automatically only in this case).
+ After the run of the test all modifications to the system has to be undone
+ in both, success and unsuccess, cases.
+ To perform this test all the aforementioned tests have to be successfully
+ been run.
 \end_layout
 
 \begin_layout Section
@@ -4296,8 +4350,15 @@ s offered by the tested components, before actually implementing the real
 \end_layout
 
 \begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="3">
+<lyxtabular version="3" rows="7" columns="3">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="25line%">
 <column alignment="center" valignment="top" width="25line%">
@@ -4453,7 +4514,7 @@ r.
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4462,7 +4523,7 @@ Client Handler
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4471,7 +4532,7 @@ I2T2, I3T1, I4T1
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4482,11 +4543,63 @@ ns, and to call administration APIs.
 \end_inset
 </cell>
 </row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Client
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+E2E
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Has to perform all the action needed to perform the E2E test as specified
+ communicating with the external interface of the Client Handler.
+\end_layout
+
+\end_inset
+</cell>
+</row>
 </lyxtabular>
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As mentioned in the section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:End-to-End"
+
+\end_inset
+
+ the only stub needed will be the Car for the E2E test.
+\end_layout
+
+\begin_layout Subsection*
+5.2 Test Data
 \end_layout
 
 \begin_layout Section
