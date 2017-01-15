@@ -195,12 +195,16 @@ API: application programming interface
 IDE: integrated development environment
 \end_layout
 
+\begin_layout Itemize
+DB: database
+\end_layout
+
 \begin_layout Subsection
 List of reference documents
 \end_layout
 
 \begin_layout Itemize
-Project description
+Project description 
 \begin_inset Quotes eld
 \end_inset
 
@@ -212,7 +216,7 @@ Assignments AA 2016-2017.pdf
 \end_layout
 
 \begin_layout Itemize
-Requirement analysis and specification document
+Requirement analysis and specification document 
 \begin_inset Quotes eld
 \end_inset
 
@@ -224,7 +228,7 @@ rasd.pdf
 \end_layout
 
 \begin_layout Itemize
-Design document
+Design document 
 \begin_inset Quotes eld
 \end_inset
 
@@ -280,8 +284,14 @@ target "http://joel-costigliola.github.io/assertj/index.html"
 \end_layout
 
 \begin_layout Itemize
-Pact documentation https://github.com/DiUS/pact-jvm/tree/master/pact-jvm-consumer
--junit
+Pact documentation 
+\begin_inset CommandInset href
+LatexCommand href
+target "https://github.com/DiUS/pact-jvm/tree/master/pact-jvm-consumer-junit"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -429,11 +439,11 @@ Secondo me non serve a niente dirlo, se i programmatori non sono scimmie
 \end_layout
 
 \begin_layout Itemize
-It is easier to create test cases
+It is easier to create test cases.
 \end_layout
 
 \begin_layout Itemize
-It is easier to check the behaviour of
+It is easier to check the behaviour of 
 \begin_inset Quotes eld
 \end_inset
 
@@ -441,11 +451,11 @@ simpler
 \begin_inset Quotes erd
 \end_inset
 
- (less integrated) components
+ (less integrated) components.
 \end_layout
 
 \begin_layout Itemize
-Since many components rely on the functions of the
+Since many components rely on the functions of the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -454,12 +464,12 @@ bottom
 \end_inset
 
  modules, it makes sense to ensure that these behave properly as soon as
- possible to avoid skewing other test's results
+ possible to avoid skewing other test's results.
 \end_layout
 
 \begin_layout Itemize
 Core components are tested early and developers will have more time to fix
- the issues
+ the issues.
 \end_layout
 
 \begin_layout Itemize
@@ -472,7 +482,7 @@ system
 \begin_inset Quotes erd
 \end_inset
 
- modules are tested
+ modules are tested.
 \end_layout
 
 \begin_layout Standard
@@ -481,16 +491,16 @@ Of course, this approach also has drawbacks:
 
 \begin_layout Itemize
 Drivers must be created: writing and maintaining drivers can be a difficult
- task
+ task.
 \end_layout
 
 \begin_layout Itemize
 Solving an error at the top is likely to be very hard and such and error
- would be identified only near the end of the testing phase
+ would be identified only near the end of the testing phase.
 \end_layout
 
 \begin_layout Itemize
-A
+A 
 \begin_inset Quotes eld
 \end_inset
 
@@ -505,7 +515,7 @@ sample
 
 \begin_layout Itemize
 It is not possible to observe the behaviour of top level system functions
- until the top level components are in place
+ until the top level components are in place.
 \end_layout
 
 \begin_layout Standard
@@ -542,7 +552,7 @@ Given this dependencies directed acyclic graph and chosen the bottom-up
 \begin_layout Standard
 In the following table we formalize how we selected at each step the components
  that could be integrated due to the fact that their dependencies had already
- been all tested, infact the number of dependecies has to be intended as
+ been all tested, in fact the number of dependecies has to be intended as
  the number of outgoing arrows in the dependencies graph, updated at each
  step removing the components and the arrows previously selected.
 \end_layout
@@ -1709,7 +1719,7 @@ Administration Module
 
 \begin_layout Standard
 We haven't taken into account during the Integration testing phase components
- we won't be in charge of developing because taken as
+ we won't be in charge of developing because taken as 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1841,8 +1851,8 @@ Input specification
 \begin_inset Text
 
 \begin_layout Plain Layout
-Users' and Operators' authentication data modification and queries has to
- be performed in order to check their correctness.
+Users' and Operators' authentication data modification and queries have
+ to be performed in order to check their correctness.
 \end_layout
 
 \end_inset
@@ -3532,7 +3542,7 @@ In order to test the whole system against a real world scenario, that will
  guarantee the core business functionalities to be fully functioning, we
  have decided to add a further integration step on the deployed system.
  This step shall simulate the entire process of renting a car, following
- theese steps:
+ these steps:
 \end_layout
 
 \begin_layout Enumerate
@@ -3992,7 +4002,7 @@ Tablet
 \begin_inset Text
 
 \begin_layout Plain Layout
-Android Hi Resolution
+Android High Resolution
 \end_layout
 
 \end_inset
@@ -4166,7 +4176,7 @@ SmartPhone
 \begin_inset Text
 
 \begin_layout Plain Layout
-Android Hi Resolution
+Android High Resolution
 \end_layout
 
 \end_inset
@@ -5096,7 +5106,7 @@ Gabriele Vanoni
 \begin_inset Text
 
 \begin_layout Plain Layout
-22
+15
 \end_layout
 
 \end_inset
