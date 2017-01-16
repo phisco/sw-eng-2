@@ -28,7 +28,7 @@
   \end{beamercolorbox}%
   \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
     \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
-    \insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
+    \insertframenumber{} / \inserttotalframenumber\hspace*{2ex}
   \end{beamercolorbox}}%
   \vskip0pt%
 }
@@ -177,17 +177,17 @@ Introduction
 \begin_deeper
 \begin_layout Standard
 Starting right after unit testing and component testing, this phase is the
- most 
+ most
 \series bold
 crucial
 \series default
 .
  Combining different components is not easy and so is testing them.
- In particular in this phase we focus on 
+ In particular in this phase we focus on
 \series bold
 interactions
 \series default
- between components, starting from simple ones and arriving to more 
+ between components, starting from simple ones and arriving to more
 \series bold
 complex
 \series default
@@ -221,6 +221,221 @@ LatexCommand tableofcontents
 \end_deeper
 \begin_layout Section
 Integratation strategy
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Entry Criteria
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Before actually doing integration tests it is important that some criteria
+ are met in order to avoid skewiing the results.
+ Among the possible criteria we highlighted the following:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Dependencies
+\series default
+ among modules must all be defined
+\end_layout
+
+\begin_layout Itemize
+All 
+\series bold
+unit
+\series default
+ 
+\series bold
+testing
+\series default
+ must have been successfully done
+\end_layout
+
+\begin_layout Itemize
+Input and expected output/behaviour must be specified for each test case
+\end_layout
+
+\begin_layout Itemize
+Parts of the system that are yet to be implemented must be 
+\series bold
+stubbed
+\end_layout
+
+\begin_layout Itemize
+The 
+\series bold
+testing
+\series default
+ 
+\series bold
+environment
+\series default
+ (better specified later) must be completed
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Elements to be integrated
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+In the following diagram, as shown in the DD, all components are recognisable.
+ We will test all of them.
+\end_layout
+
+\begin_layout Frame
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename component lvl 2 - Page 1.svg
+	lyxscale 30
+	scale 20
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Integration Strategy
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+The testing strategy defines the order in which components are tested.
+ For this project we decided to use a 
+\series bold
+bottom-up
+\series default
+ approach, which means testing the components with the least dependencies
+ first.
+ Ideally, only 
+\series bold
+drivers
+\series default
+ are created proceding in this order.
+ It may still be necessary to create 
+\series bold
+stubs
+\series default
+ of components to break dependency cicles.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Pros and Cons of our approach
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+The major 
+\series bold
+advantages
+\series default
+ of this approach are:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Easy test creation
+\end_layout
+
+\begin_layout Itemize
+Core components are tested early and developers will have more time to fix
+ the issues.
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+Some of the 
+\series bold
+downfalls
+\series default
+ are:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Drivers must be created: writing and maintaining drivers can be a difficult
+ task.
+\end_layout
+
+\begin_layout Itemize
+A “sample” system will not be available until the end of the testing phase.
+ It may be useful to have a sample early in order to show a draft to our
+ client.
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
 \end_layout
 
 \begin_layout Section
@@ -286,7 +501,7 @@ Tools
 
 \begin_deeper
 \begin_layout Standard
-Testing would be impossible without the use of proper 
+Testing would be impossible without the use of proper
 \series bold
 tools
 \series default
@@ -294,11 +509,11 @@ tools
 \end_layout
 
 \begin_layout Standard
-There are on the 
+There are on the
 \series bold
 market
 \series default
- many different 
+ many different
 \series bold
 frameworks
 \series default
@@ -306,11 +521,11 @@ frameworks
 \end_layout
 
 \begin_layout Standard
-A particular tool we plan to use is 
+A particular tool we plan to use is
 \series bold
 Pact
 \series default
-, a testing tool created to support the 
+, a testing tool created to support the
 \series bold
 Consumer Driven Contract
 \series default
@@ -339,7 +554,7 @@ A Contract is a collection of agreements between a client (Consumer) and
 \series bold
 Pact
 \series default
- is a testing tool that guarantees those Contracts are 
+ is a testing tool that guarantees those Contracts are
 \series bold
 satisfied
 \series default
@@ -396,7 +611,7 @@ status open
 
 \begin_layout Plain Layout
 
- 
+
 \backslash
 scalebox{0.55}{
 \end_layout
