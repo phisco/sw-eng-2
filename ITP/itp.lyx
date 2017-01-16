@@ -165,7 +165,7 @@ In this Integration Test Plan Document we are going to develop a detailed
  Starting right after unit testing and component testing, this phase is
  the most crucial.
  Combining different components is not easy and so is testing them.
- In purticular in this phase we focus on interactions between components,
+ In particular in this phase we focus on interactions between components,
  starting from simple ones and arriving to more complex situations.
  In the document we highlight the rationale behind our testing choices i.e.
  our strategy and in which way we plan to write tests.
@@ -3666,8 +3666,7 @@ Pact JVM
 \end_layout
 
 \begin_layout Standard
-Pact is a testing tool compliant created to support the Consumer Driven
- Contract testing.
+Pact is a testing tool created to support the Consumer Driven Contract testing.
 \end_layout
 
 \begin_layout Standard
