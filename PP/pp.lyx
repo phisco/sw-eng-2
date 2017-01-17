@@ -217,6 +217,10 @@ EO: External Output.
 EQ: External Inquiries.
 \end_layout
 
+\begin_layout Itemize
+LOC: Lines Of Code
+\end_layout
+
 \begin_layout Subsection
 List of reference documents
 \end_layout
@@ -232,12 +236,21 @@ List of reference documents
 Estimations
 \end_layout
 
-\begin_layout Subsection
-Size estimation through Function Points
+\begin_layout Standard
+This section will present an estimation of the expected size, cost and effort
+ required for PowerEnJoy.
 \end_layout
 
-\begin_layout Subsubsection
-Introduction
+\begin_layout Standard
+To estimate the size we will adopt the Function Points approach, taking
+ into account all main functionalities, listed in the RASD, that the system
+ has to offer to the various users.
+ We'll assume the system will be implemented using Java, so we'll estimate
+ the ammount of LOC
+\end_layout
+
+\begin_layout Subsection
+Size estimation through Function Points
 \end_layout
 
 \begin_layout Subsubsection
