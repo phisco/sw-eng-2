@@ -323,39 +323,103 @@ Based on the literature on the subject we now list those that we think are
 \end_layout
 
 \begin_layout Enumerate
-Budget is too low.
+
+\series bold
+Low budget
+\series default
+.
+ Budgeting is done before the actual starting point of the project and expenditu
+re items are forecasts.
+ During the development of the project we realize that expenses are higher
+ than budgeted.
+ 
 \end_layout
 
 \begin_layout Enumerate
-The schedule is wrong.
+
+\series bold
+Wrong schedule
+\series default
+.
+ Project planning is done before the actual starting point of the project
+ and schedules are estimates.
+ During the development of the project we realize that some operations require
+ more time than estimated.
 \end_layout
 
 \begin_layout Enumerate
-There is a personnel shortfall.
+
+\series bold
+Personnel shortfall
+\series default
+.
+ In the project planning phase we estimate the amount of hours required
+ to complete the overall work and, based on the deadlines and requirements,
+ the number of people required and their competences.
+ During the development of the project we realize that some operations require
+ more people or different competences than estimated.
 \end_layout
 
 \begin_layout Enumerate
-Requirements change over time.
+
+\series bold
+Requirement changes
+\series default
+.
+ Requirements are set up in the RASD, but they are not set in stone.
+ Stakeholders can change them or add new ones during all the phases of the
+ development.
 \end_layout
 
 \begin_layout Enumerate
-External components behave badly.
+
+\series bold
+Bad external components
+\series default
+.
+ Third party components can behave differently from what was expected when
+ they were chosen in the design phase.
 \end_layout
 
 \begin_layout Enumerate
-There are performance issues.
+
+\series bold
+Performance issues
+\series default
+.
+ After deployment it turns out that our hardware (servers, bandwidth, etc)
+ can't support the load of requests.
 \end_layout
 
 \begin_layout Enumerate
-There are scalability issues.
+
+\series bold
+Scalability issues
+\series default
+.
+ After deployment and after many clients registred to our service, an upgrade
+ of our hardware is needed.
+ It turns out that our software does not scale on many server archictures,
+ distributed database, etc.
 \end_layout
 
 \begin_layout Enumerate
-There are security issues.
+
+\series bold
+Security issues
+\series default
+.
+ After deployment a vulnerability is discovered in our software, so that
+ user privacy is at risk, all our data are no more secure and also our physical
+ machines (servers, cars, power stations).
 \end_layout
 
 \begin_layout Enumerate
-Client apps are not user friendly.
+
+\series bold
+Wrong user interface
+\series default
+.
 \end_layout
 
 \begin_layout Enumerate
@@ -375,22 +439,21 @@ The car sharing market is extinguished.
 \end_layout
 
 \begin_layout Standard
-We are going to classify these risks according to their probability (in
- a range Low, Medium, High) and to their impact on the final outcome of
- the project.
+We are going to classify these risks according to their category, their
+ probability (in a range Low, Moderate, High) and to their impact on the
+ final outcome of the project.
  Furthermore for each problem we propose a strategy to manage or prevent
  it.
- 
 \end_layout
 
 \begin_layout Standard
 \begin_inset Tabular
-<lyxtabular version="3" rows="14" columns="4">
+<lyxtabular version="3" rows="17" columns="4">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
+<column alignment="left" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -425,13 +488,53 @@ Impact
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
 \series bold
 Strategy
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Project risks
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -451,7 +554,7 @@ R1
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+High
 \end_layout
 
 \end_inset
@@ -460,12 +563,12 @@ R1
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Critical
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -489,7 +592,7 @@ R2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+High
 \end_layout
 
 \end_inset
@@ -498,12 +601,12 @@ R2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Critical
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -527,7 +630,7 @@ R3
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Low
 \end_layout
 
 \end_inset
@@ -536,12 +639,12 @@ R3
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Critical
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -552,7 +655,7 @@ R3
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -561,7 +664,25 @@ R4
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+High
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Marginal
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -570,7 +691,20 @@ R4
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+</row>
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Technical risks
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -579,7 +713,16 @@ R4
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -603,7 +746,7 @@ R5
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Moderate
 \end_layout
 
 \end_inset
@@ -612,12 +755,12 @@ R5
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Marginal
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -641,7 +784,7 @@ R6
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Low
 \end_layout
 
 \end_inset
@@ -650,12 +793,12 @@ R6
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Marginal
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -679,7 +822,7 @@ R7
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Low
 \end_layout
 
 \end_inset
@@ -688,12 +831,12 @@ R7
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Marginal
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -717,7 +860,7 @@ R8
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Moderate
 \end_layout
 
 \end_inset
@@ -726,12 +869,12 @@ R8
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Catastrophic
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -742,7 +885,7 @@ R8
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -751,7 +894,25 @@ R9
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Moderate
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Critical
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -760,7 +921,20 @@ R9
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+</row>
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Business risks
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -769,7 +943,16 @@ R9
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -793,7 +976,7 @@ R10
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Low
 \end_layout
 
 \end_inset
@@ -802,12 +985,12 @@ R10
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Critical
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -831,7 +1014,7 @@ R11
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Low
 \end_layout
 
 \end_inset
@@ -840,12 +1023,12 @@ R11
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Catastrophic
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -869,7 +1052,7 @@ R12
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Moderate
 \end_layout
 
 \end_inset
@@ -878,12 +1061,12 @@ R12
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Critical
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -907,7 +1090,7 @@ R13
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Low
 \end_layout
 
 \end_inset
@@ -916,12 +1099,12 @@ R13
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Catastrophic
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
