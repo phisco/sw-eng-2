@@ -2259,6 +2259,26 @@ Based on the literature on the subject we now list those that we think are
  the main possible risks.
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+labelenumi}{R
+\backslash
+arabic{enumi})}  
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Enumerate
 
 \series bold
@@ -2357,22 +2377,69 @@ Security issues
 Wrong user interface
 \series default
 .
+ Feedbacks from users suggest that the user interface of our application
+ is complex, not intuitive and difficult to use.
+ 
 \end_layout
 
 \begin_layout Enumerate
-Laws related to car sharing change.
+
+\series bold
+Regulation changes
+\series default
+.
+ Governments continuously change laws and regulations.
+ Our service in particular depends on regulations on driving licences, car
+ sharing policies and civil insurance.
 \end_layout
 
 \begin_layout Enumerate
-PowerEnJoy goes bankrupt.
+
+\series bold
+Bankruptcy
+\series default
+.
+ The main company could go bankrupt.
 \end_layout
 
 \begin_layout Enumerate
-A competitor enters the market.
+
+\series bold
+New competitors
+\series default
+.
+ Car sharing market is an open market and new competitors can arrive at
+ any moment.
 \end_layout
 
 \begin_layout Enumerate
-The car sharing market is extinguished.
+
+\series bold
+Market extinction
+\series default
+.
+ All markets may become extinct, if no user is anymore interested in the
+ service or product offered.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+labelenumi}{
+\backslash
+arabic{enumi}.}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2384,13 +2451,20 @@ We are going to classify these risks according to their category, their
 \end_layout
 
 \begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="17" columns="4">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
-<column alignment="left" valignment="top">
+<column alignment="left" valignment="top" width="7.7cm">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -2505,11 +2579,13 @@ Critical
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Try to make a good estimate to avoid the problem.
+ However if it arises, ask managers to invest more since this is a core
+ business project.
 \end_layout
 
 \end_inset
@@ -2543,11 +2619,13 @@ Critical
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Try to make a good estimate to avoid the problem.
+ However if it arises, ask managers for more time or release a public beta
+ with less functionalities but still usable.
 \end_layout
 
 \end_inset
@@ -2581,11 +2659,12 @@ Critical
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Try to make a good estimate to avoid the problem.
+ However if it arises, ask managers for the possiblity of hiring new people.
 \end_layout
 
 \end_inset
@@ -2623,7 +2702,8 @@ Marginal
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Try to develope the system in such a way that it can be modified without
+ totally rewriting it.
 \end_layout
 
 \end_inset
@@ -2701,7 +2781,9 @@ Marginal
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Try to avoid the problem choosing reliable third party vendors.
+ However if it arises, change external software or if it is open source,
+ adapt it to the need.
 \end_layout
 
 \end_inset
@@ -2739,7 +2821,8 @@ Marginal
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Try to avoid the problem making performance testing.
+ However if it arises, upgrade the hardware.
 \end_layout
 
 \end_inset
@@ -2768,7 +2851,7 @@ Low
 \begin_inset Text
 
 \begin_layout Plain Layout
-Marginal
+Critical
 \end_layout
 
 \end_inset
@@ -2777,7 +2860,9 @@ Marginal
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+This problem has to be avoided in the design phase, since otherwise it is
+ difficult to solve a fortiori.
+ Software must be designed to scale!
 \end_layout
 
 \end_inset
@@ -2815,7 +2900,8 @@ Catastrophic
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+If a vulnerability is discovered in the software, disconnect everything
+ from the Internet and fix it as soon as possible.
 \end_layout
 
 \end_inset
@@ -2853,7 +2939,9 @@ Critical
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+This problem can be avoided distributing in advance the application to some
+ testers and asking them a feedback.
+ However, if the problem arises, upgrade the user interface as soon as possible.
 \end_layout
 
 \end_inset
