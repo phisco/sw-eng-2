@@ -159,8 +159,66 @@ Introduction
 Purpose and scope
 \end_layout
 
+\begin_layout Standard
+The Project Plan document aims at investigating all costs and risks concerning
+ the PowerEnJoy system development, giving a clear planning of the process.
+\end_layout
+
+\begin_layout Standard
+We'll proceed first of all with a size estimation through the Function Points
+ technique, based on which we'll estimate through COCOMO efforts and cost
+ of the development.
+ These information will lead to a budget estimation, resource allocation
+ plan and activities scheduling in the following sections.
+\end_layout
+
+\begin_layout Standard
+Then we'll present a feasible split into atomic tasks, analysing their interdepe
+ndencies.
+ This will allow us, given the human resources allocated for this project,
+ to produce a timetable assigning tasks and timeslots to the various components
+ of the team.
+ 
+\end_layout
+
+\begin_layout Standard
+We'll then give a brief analysis of risks, taking into account the probability
+ and the relevance for each of them, presenting also a possible solution.
+\end_layout
+
 \begin_layout Subsection
 List of abbreviations
+\end_layout
+
+\begin_layout Itemize
+FP: Function Points.
+\end_layout
+
+\begin_layout Itemize
+ILF: Internal logic file 
+\end_layout
+
+\begin_layout Itemize
+ELF: External logic file.
+ 
+\end_layout
+
+\begin_layout Itemize
+EI: External Input.
+ 
+\end_layout
+
+\begin_layout Itemize
+EO: External Output.
+ 
+\end_layout
+
+\begin_layout Itemize
+EQ: External Inquiries.
+\end_layout
+
+\begin_layout Itemize
+LOC: Lines Of Code
 \end_layout
 
 \begin_layout Subsection
@@ -175,15 +233,24 @@ List of reference documents
 \end_layout
 
 \begin_layout Section
-Cost Estimation
+Estimations
+\end_layout
+
+\begin_layout Standard
+This section will present an estimation of the expected size, cost and effort
+ required for PowerEnJoy.
+\end_layout
+
+\begin_layout Standard
+To estimate the size we will adopt the Function Points approach, taking
+ into account all main functionalities, listed in the RASD, that the system
+ has to offer to the various users.
+ We'll assume the system will be implemented using Java, so we'll estimate
+ the ammount of LOC
 \end_layout
 
 \begin_layout Subsection
-Function Points
-\end_layout
-
-\begin_layout Subsubsection
-Introduction
+Size estimation through Function Points
 \end_layout
 
 \begin_layout Subsubsection
