@@ -152,19 +152,44 @@ LatexCommand tableofcontents
 \end_layout
 
 \begin_layout Section
-Introduction
+Class assigned
 \end_layout
 
-\begin_layout Subsection
-Purpose and scope
+\begin_layout Standard
+In this document we'll inspect the code of the class 
+\begin_inset Quotes eld
+\end_inset
+
+XmlSerializer
+\begin_inset Quotes erd
+\end_inset
+
+ of the project 
+\begin_inset Quotes eld
+\end_inset
+
+Apache OFBiz®
+\begin_inset Quotes erd
+\end_inset
+
+.
 \end_layout
 
-\begin_layout Subsection
-List of abbreviations
+\begin_layout Standard
+Specifically this file will be analyzed : 
+\begin_inset Quotes eld
+\end_inset
+
+../apache-ofbiz-16.11.01/framework/entity/src/main/java/org/apache/ofbiz/entity/seri
+alize/XmlSerializer.java
+\begin_inset Quotes erd
+\end_inset
+
+.
 \end_layout
 
-\begin_layout Subsection
-List of reference documents
+\begin_layout Section
+Functional role of assigned class
 \end_layout
 
 \begin_layout Standard
@@ -172,6 +197,21 @@ List of reference documents
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+List of issues found by applying the checklist
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Other issues
 \end_layout
 
 \begin_layout Standard
