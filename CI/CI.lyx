@@ -1,0 +1,386 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass scrartcl
+\begin_preamble
+\usepackage{microtype}
+\usepackage{eurosym}
+\addtokomafont{disposition}{\rmfamily}
+\usepackage[headsepline]{scrlayer-scrpage}
+\clearpairofpagestyles
+\ohead{DD}
+\chead{\pagemark}
+\ihead{\headmark}
+\automark[]{section}
+\renewcommand*\pagemark{{\usekomafont{pagenumber}Page\nobreakspace\thepage}}
+\addtokomafont{pageheadfoot}{\upshape}
+\end_preamble
+\use_default_options false
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language british
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "lmodern" "default"
+\font_sans "lmss" "default"
+\font_typewriter "lmtt" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 0
+\use_package mathtools 1
+\use_package mhchem 0
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\bottommargin 2.5cm
+\secnumdepth 4
+\tocdepth 4
+\paragraph_separation indent
+\paragraph_indentation 0bp
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\listings_params "basicstyle={\ttfamily},columns=fullflexible"
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Code Insepection Document - Apache OFbiz
+\end_layout
+
+\begin_layout Author
+Philippe Scorsolini,
+\begin_inset Newline newline
+\end_inset
+
+Lorenzo Semeria,
+\begin_inset Newline newline
+\end_inset
+
+Gabriele Vanoni
+\end_layout
+
+\begin_layout Subject
+Politecnico di Milano, A.Y.
+ 2016/2017
+\begin_inset Newline newline
+\end_inset
+
+M.Sc.
+ Degree Programme in Computer Science and Engineering
+\begin_inset Newline newline
+\end_inset
+
+Software Engineering 2 Project
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Class assigned
+\end_layout
+
+\begin_layout Standard
+In this document we'll inspect the code of the class 
+\begin_inset Quotes eld
+\end_inset
+
+XmlSerializer
+\begin_inset Quotes erd
+\end_inset
+
+ of the project 
+\begin_inset Quotes eld
+\end_inset
+
+Apache OFBiz®
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Specifically this file will be analyzed : 
+\begin_inset Quotes eld
+\end_inset
+
+../apache-ofbiz-16.11.01/framework/entity/src/main/java/org/apache/ofbiz/entity/seri
+alize/XmlSerializer.java
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Functional role of assigned class
+\end_layout
+
+\begin_layout Standard
+As the comment about 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+List of issues found by applying the checklist
+\end_layout
+
+\begin_layout Standard
+11.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+All if, while, do-while, try-catch, and for statements that have only one
+ statement to execute are surrounded by curly braces.
+\begin_inset Quotes erd
+\end_inset
+
+ @ lines: 295,433,446
+\end_layout
+
+\begin_layout Standard
+14.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+When line length must exceed 80 characters, it does NOT exceed 120 characters.
+\begin_inset Quotes erd
+\end_inset
+
+ @ lines: 176, 217, 350, 446, 448
+\end_layout
+
+\begin_layout Standard
+18.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Comments are used to adequately explain what the class, interface, methods,
+ and blocks of code are doing.
+\begin_inset Quotes erd
+\end_inset
+
+ not all methods are commented appropriately, there is an overall good usage
+ of comments, but some methods could have been more clearly explained.
+\end_layout
+
+\begin_layout Standard
+19.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Commented out code contains a reason for being commented out and a date
+ it can be removed from the source file if determined it is no longer needed.
+\begin_inset Quotes erd
+\end_inset
+
+ @ lines: 171, 194
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Other issues
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Effort spent
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Component
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Time spent (in hour)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Philippe Scorsolini
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Lorenzo Semeria
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Gabriele Vanoni
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
