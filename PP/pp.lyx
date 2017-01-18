@@ -246,7 +246,7 @@ To estimate the size we will adopt the Function Points approach, taking
  into account all main functionalities, listed in the RASD, that the system
  has to offer to the various users.
  We'll assume the system will be implemented using Java, so we'll estimate
- the ammount of the LOC needed to implement the business logic of our system,
+ the amount of the LOC needed to implement the business logic of our system,
  excluding the client parts.
 \end_layout
 
