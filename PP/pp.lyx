@@ -2366,7 +2366,7 @@ Scale Factors.
 \begin_inset Formula $EM$
 \end_inset
 
-) and for Early Design is 6.
+) and for Early Design is 7.
  
 \begin_inset Note Note
 status open
@@ -4164,6 +4164,139 @@ E=1.0738
 
 \begin_layout Subsubsection
 Effort Multipliers
+\end_layout
+
+\begin_layout Standard
+For Early Design, we need 7 Effort Multipliers that will concur in Equation
+ 1.
+ These multipliers are the result of the combination of one or more post-archite
+cture 
+\series bold
+Cost Drivers
+\series default
+.
+ They will be combined according to the Manual, as it will be better explained
+ later.
+ 
+\end_layout
+
+\begin_layout Paragraph
+RELY: Software Reliability
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+The RELY rating should be at most one level below the RUSE rating.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This parameter aims at weighting in the estimation the impact of a software
+ failure, depending on the consequences it will have.
+ It seems reasonable to choose a RELY level of
+\series bold
+ Nominal (moderate, easily recoverable losses)
+\series default
+ since a failure won't be able to harm our users (the system can only unlock
+ a car but has no control over the driving system).
+ The most likely consequence of a software error will be the inability for
+ a User to unlock a car or to terminate the rental.
+ This will result in having to refund the client, have the operators take
+ care of the single cases and maybe give the Users some form of discount
+ for future rentals.
+ Therefore, RELY will have a value of 
+\series bold
+1.00.
+\end_layout
+
+\begin_layout Paragraph
+DATA: Data Base Size
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Bisogna fare due conti ma probabilmente viene basso siccome SLOC = 6466000
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This Cost Driver aims at taking into account the effort needed to create
+ and mantain the test data that will be used during testing.
+ 
+\end_layout
+
+\begin_layout Paragraph
+CPLX: Product Complexity
+\end_layout
+
+\begin_layout Standard
+Complexity is the result of many factors, illustrated in the following table.
+\end_layout
+
+\begin_layout Paragraph
+RUSE: Developed for Reusability
+\end_layout
+
+\begin_layout Standard
+Creating reusable software means putting more effort in every part of its
+ development.
+ In particular, the software itself must be more general, the documentation
+ must be better written and more detailed (poses a constraint on 
+\series bold
+DOCU
+\series default
+), the testing must be more thorough (constraints 
+\series bold
+RELY
+\series default
+).
+ For this reason it is strongly suggested to have a RELY of at least one
+ level higher than the RUSE rating, while DOCU should be on the same level
+ of RUSE or better (depending on the chosen RUSE level, higher levels of
+ RUSE demand slightly lower DOCU levels).
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+tradurre da bonobo a inglese
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+DOCU: Documentation Match to Life-Cycle Needs
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+The DOCU rating should be at least Nominal for Nominal and High RUSE ratings,
+ and at least High for Very High and Extra High RUSE ratings.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This Driver aims at estimating the thoroughness of the documentation with
+ regards to the life cycles.
+ Low or absent documentation will result in lower costs upfront but will
+ probably make future changes and maintanance very expensive.
+ For this reason a level of at least Nominal should be chosen.
+ 
 \end_layout
 
 \begin_layout Standard
