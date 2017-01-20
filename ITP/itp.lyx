@@ -11,7 +11,7 @@
 \addtokomafont{disposition}{\rmfamily}
 \usepackage[headsepline]{scrlayer-scrpage}
 \clearpairofpagestyles
-\ohead{DD}
+\ohead{ITP}
 \chead{\pagemark}
 \ihead{\headmark}
 \automark[]{section}
