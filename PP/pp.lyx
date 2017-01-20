@@ -8275,6 +8275,35 @@ Project Tasks and Schedule
 \end_layout
 
 \begin_layout Standard
+We have divided each phase of the project in activities.
+ Fortunately many of them could, at least partially overlap.
+ In this way it has been possible to carry forward them in parallel.
+ We chose the classical approach of industrial engineering and operations
+ reasearch i.e.
+ to represent the schedule with tasks against time using a Gantt diagram
+ (figure 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+).
+ The complete output of the planning tool 
+\family sans
+GanttProject 
+\family default
+can be found in 
+\family typewriter
+Attachment1.pdf
+\family default
+.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage pagebreak
 \end_inset
 
@@ -8283,6 +8312,30 @@ Project Tasks and Schedule
 
 \begin_layout Section
 Resources and Task Allocation
+\end_layout
+
+\begin_layout Standard
+The only human resources we have are ourselves.
+\end_layout
+
+\begin_layout Standard
+We have split the load of the hardest activities over more than one person,
+ while the simplest were completed by a single member of the team.
+ 
+\end_layout
+
+\begin_layout Standard
+Percentages in the Gantt chart (figure 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+) mean that the activity was split between different people in that fraction.
 \end_layout
 
 \begin_layout Standard
