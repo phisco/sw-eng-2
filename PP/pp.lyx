@@ -2341,7 +2341,7 @@ Where:
 Note
 \shape default
 : the table shows the SLOC to UFP ratio while the formula requires the KSLOC
- so the factor must be multiplied by 1000).
+ so the factor must be divided by 1000).
 \end_layout
 
 \begin_layout Itemize
@@ -8258,6 +8258,21 @@ Result
 
 
 \begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pluggin all the values in the PM formula we obtain the following result:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+PM=13.1
+\]
+
 \end_inset
 
 
