@@ -8424,7 +8424,7 @@ GanttProject
 \family default
 can be found in 
 \family typewriter
-Attachment1.pdf
+gantt.pdf
 \family default
 .
 \end_layout
@@ -8514,7 +8514,7 @@ GanttProject
 \family default
 can be found in 
 \family typewriter
-Attachment1.pdf
+gantt.pdf
 \family default
 .
 \end_layout
