@@ -168,16 +168,16 @@ The Project Plan document aims at investigating all costs and risks concerning
 \end_layout
 
 \begin_layout Standard
-We'll proceed first of all with a size estimation through the Function Points
- technique, based on which we'll estimate through COCOMO efforts and cost
- of the development.
+We will proceed first of all with a size estimation through the Function
+ Points technique, based on which we will estimate through COCOMO efforts
+ and cost of the development.
  These information will lead to a budget estimation, resource allocation
  plan and activities scheduling in the following sections.
 \end_layout
 
 \begin_layout Standard
-Then we'll present a feasible split into atomic tasks, analysing their interdepe
-ndencies.
+Then we will present a feasible split into atomic tasks, analysing their
+ interdependencies.
  This will allow us, given the human resources allocated for this project,
  to produce a timetable assigning tasks and timeslots to the various components
  of the team.
@@ -185,7 +185,7 @@ ndencies.
 \end_layout
 
 \begin_layout Standard
-We'll then give a brief analysis of risks, taking into account the probability
+We will then give a brief analysis of risks, taking into account the probability
  and the relevance for each of them, presenting also a possible solution.
 \end_layout
 
@@ -248,7 +248,7 @@ This section will present an estimation of the expected size, cost and effort
 To estimate the size we will adopt the Function Points approach, taking
  into account all main functionalities, listed in the RASD, that the system
  has to offer to the various users.
- We'll assume the system will be implemented using Java, so we'll estimate
+ We will assume the system will be implemented using Java, so we will estimate
  the amount of the LOC needed to implement the business logic of our system,
  excluding the client parts.
 \end_layout
@@ -320,7 +320,7 @@ Complex
 
 \begin_layout Standard
 By assigning,at each feature the system has to provide, a category and a
- complexity we'll be able to compute the Unadjusted Function Points (UFP)
+ complexity we will be able to compute the Unadjusted Function Points (UFP)
  value of the system as follows:
 \end_layout
 
@@ -385,7 +385,7 @@ UFC=\sum_{f\in F,c\in C}(n\left[f,c\right]*w\left[f,c\right])
 \end_layout
 
 \begin_layout Standard
-the weights we'll consider will be the following (
+the weights we will consider will be the following (
 \begin_inset Formula $w\left[f,c\right]$
 \end_inset
 
@@ -702,8 +702,8 @@ Internal Logic Files
 \begin_layout Standard
 Homogeneous set of data used and managed by the application.
  The application should manage an internal database, used to store the data
- about registered users, cars, power stations, reservations, drives, assistance'
-s tickets and operators.
+ about registered users, cars, power stations, reservations, drives, assistance
+ tickets and operators.
 \end_layout
 
 \begin_layout Standard
@@ -2314,6 +2314,25 @@ PM=A\cdot Size^{E}\cdot\prod_{i=1}^{n}EM_{i}
 \end_layout
 
 \begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
 Where:
 \end_layout
 
@@ -2322,7 +2341,7 @@ Where:
 \end_inset
 
  by default.
- It may be calibrated on a company's local development encironment as explained
+ It may be calibrated on a company's local development environment as explained
  and suggested in the Manual (see Manual, Section 7).
  
 \end_layout
@@ -2385,6 +2404,11 @@ the specific combinations are given in Section 3.2.2.
 \end_inset
 
  are obtained by combining the Post-Architecture Design equivalent coefficients.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Paragraph
@@ -2451,6 +2475,25 @@ E=B+0.01\sum_{j=1}^{5}SF_{j}
 \end_layout
 
 \begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
 Where:
 \end_layout
 
@@ -2469,6 +2512,11 @@ Where:
  are the 5 Scale Factors, as detailed in Table 10, Section 3.1 of the Manual.
  The 5 SFs are thoroughly analyzed in the following parts.
  
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Paragraph
@@ -2494,6 +2542,25 @@ EPML=5\cdot\frac{1}{n}\cdot\sum_{i=1}^{n}\frac{\%KPA_{i}}{100}
 \end_layout
 
 \begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
 Where:
 \end_layout
 
@@ -2520,6 +2587,11 @@ Do Not Apply
 
  is the percentage of times that a specific goal is achieved, for each of
  the KPAs
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -2769,7 +2841,8 @@ FLEX: Development Flexibilty
 \end_layout
 
 \begin_layout Standard
-The Flexibility with regards to the requirements and external specification.
+This factor is used to estimate the flexibility of the project with regards
+ to the requirements and external specification.
  
 \end_layout
 
@@ -2956,10 +3029,13 @@ We have opted for
 \series bold
 Full 
 \series default
-(Low Flexivility) for the first two features since the compliance with the
- given requirements is expected to be of high importance for our customer
- and the compliance with the banking system (payment handling) has strict
- requirements in order to ensure that payments are safe.
+(Low Flexivility) for the first two features since we will have to handle
+ payments, which in turn require compliance with the banking system.
+ It is reasonable to consider the bank's protocols to be very strict since
+ they must ensure that payments are safe.
+ This limits our flexibility in the development.
+ A similiar consideration can probably apply with the handling of our users'
+ personal information, which must abide by strict laws.
  For the last feature a value of 
 \series bold
 Low 
@@ -3178,6 +3254,10 @@ Some
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 0bp
+\end_inset
+
 
 \series bold
 Generally
@@ -3440,6 +3520,10 @@ Significant
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 0bp
+\end_inset
+
 Considerable
 \end_layout
 
@@ -3692,6 +3776,10 @@ Basic
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 0bp
+\end_inset
+
 Considerable
 \end_layout
 
@@ -3760,6 +3848,10 @@ Basic
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 0bp
+\end_inset
+
 Considerable
 \end_layout
 
@@ -3836,6 +3928,10 @@ Basic
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 0bp
+\end_inset
+
 Considerable
 \end_layout
 
@@ -3845,6 +3941,10 @@ Considerable
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 0bp
+\end_inset
+
 
 \series bold
 Extensive
@@ -3905,6 +4005,10 @@ Basic
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 0bp
+\end_inset
+
 Considerable
 \end_layout
 
@@ -3914,6 +4018,10 @@ Considerable
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 0bp
+\end_inset
+
 
 \series bold
 Extensive
@@ -3953,14 +4061,17 @@ For this Factor, the Manual suggests to either use CMM levels where available
  Since our team has no CMM level, we have examined the KPA levels trying
  to assess the overall maturity of the team.
  According to the given Formula (see Formula 3 in this Section), since in
- our assessment it resulted that 15 out of 18 KPAs were applicable resulting
- in 
+ our assessment 15 out of 18 KPAs were applicable (resulting in 
 \begin_inset Formula $n=15$
 \end_inset
 
-, it resulted that 
+), we have estimated the 
 \series bold
-EPML = 2,45
+EPML 
+\series default
+level to be
+\series bold
+ 2,45
 \series default
 .
 \end_layout
@@ -3982,7 +4093,7 @@ Final Result
 \end_layout
 
 \begin_layout Standard
-Using the Scale Factors calculated in the previous paragraph, we can calculate
+Using the Scale Factors calculated in the previous paragraphs, we can calculate
  E as specified in Formula 2.
 \end_layout
 
@@ -4586,8 +4697,8 @@ It seems reasonable to choose a RELY level of
 \series bold
  Nominal (moderate, easily recoverable losses)
 \series default
- since a failure won't be able to harm our users (the system can only unlock
- a car but has no control over the driving system).
+ since a failure will not be able to harm our users (the system can only
+ unlock a car but has no control over the driving system).
  The most likely consequence of a software error will be the inability for
  a User to unlock a car or to terminate the rental.
  This will result in having to refund the client, have the operators take
@@ -4625,13 +4736,21 @@ Cars
  For the car, although the used information seem to be mainly numeric, we
  can assume that the database will also hold some of the car's information
  (like insurance number or frame number).
+ Therefore we can assume few bytes for the foreseen numeric values and other
+ fields that will likely not be more than 20 255-byte text fields.
  A small yet relevant test dataset would likely consist of approximately
  100 users and 20 cars.
- Taking into account the above assumptions we can estimate its overall size
- to have an upper bound of 500MB.
- Therefore the Bytes/SLOC ratio is 
+ Using these assumptions we can have an estimate of the final test database
+ size that would be approximately 360kB.
+ In order to take into account unforseen tables and columns, it is sound
+ to take an upper bound for the database of 2MB.
+ 
+\end_layout
+
+\begin_layout Standard
+Therefore the Bytes/SLOC ratio is approximately 
 \series bold
-41.95
+300
 \series default
 .
 \end_layout
@@ -4801,8 +4920,6 @@ Low
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\series bold
 Nominal
 \end_layout
 
@@ -4812,6 +4929,8 @@ Nominal
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 High
 \end_layout
 
@@ -4861,8 +4980,6 @@ Effort multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\series bold
 1.00
 \end_layout
 
@@ -4872,6 +4989,8 @@ Effort multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 1.14
 \end_layout
 
@@ -4903,13 +5022,13 @@ From the above table, using the calculated Ratio (
 \series bold
 R
 \series default
-) of 41.95, we choose a DATA level of 
+) of 300, we choose a DATA level of 
 \series bold
-Nominal
+High
 \series default
  and a DATA value of 
 \series bold
-1.00
+1.14
 \series default
 .
 \end_layout
@@ -4957,7 +5076,7 @@ Data Management Operations
 User Interface Management Operations
 \series default
  we opted for a level of Nominal since, although we will likely use maps
- in pur application (which would suggest a level of Very High for the 2D
+ in our application (which would suggest a level of Very High for the 2D
  graphic part), these more complex features will be provided by an external
  entity.
  
@@ -5352,7 +5471,7 @@ The DOCU rating should be at least Nominal for Nominal and High RUSE ratings,
 This Driver aims at estimating the thoroughness of the documentation with
  regards to the life cycles.
  Low or absent documentation will result in lower costs upfront but will
- probably make future changes and maintanance very expensive.
+ probably make future changes and maintenance very expensive.
  For this reason a level of at least Nominal should ideally be chosen for
  every project.
  Since no other constraint is forced by the RUSE factor, a level of 
@@ -5740,7 +5859,7 @@ PVOL: Platform Volatility
 \end_layout
 
 \begin_layout Standard
-This Driver aims at weighting the volatibility of the 
+This Driver aims at weighting the volatility of the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -5838,7 +5957,7 @@ APEX: Applications Experience
 
 \begin_layout Standard
 This Driver gives parameters to create an estimate for the team's experience
- with this tipe of application.
+ with this type of application.
  Since the experience with this specific type of software is none, the appropria
 te level is 
 \series bold
@@ -6334,13 +6453,13 @@ PERS: Personnel Capability
 \end_layout
 
 \begin_layout Standard
-This Effort multiplier is the combination of ACAP, PCAP and PCONS.
+This Effort multiplier is the combination of ACAP, PCAP and PCON.
  We have previously chosen a Nominal level for ACAP, a High level for PCAP
- and a level of Very High for PCONS.
- Using the mapping shown in the beginnning of the section, we have a combined
+ and a level of Very High for PCON.
+ Using the mapping shown in the beginning of the section, we have a combined
  result of 
 \series bold
-15
+12
 \series default
 .
 \end_layout
@@ -6494,6 +6613,8 @@ Sum of Drivers
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 12,13
 \end_layout
 
@@ -6503,8 +6624,6 @@ Sum of Drivers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\series bold
 14, 15
 \end_layout
 
@@ -6570,6 +6689,8 @@ High
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Very High
 \end_layout
 
@@ -6579,8 +6700,6 @@ Very High
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\series bold
 Extra High
 \end_layout
 
@@ -6646,6 +6765,8 @@ Effort Multiplier
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 0.63
 \end_layout
 
@@ -6655,8 +6776,6 @@ Effort Multiplier
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\series bold
 0.50
 \end_layout
 
@@ -6677,7 +6796,7 @@ Effort Multiplier
 \begin_layout Standard
 Our PERS Effort Multiplier will therefore be 
 \series bold
-0.50
+0.63
 \end_layout
 
 \begin_layout Paragraph
@@ -6686,11 +6805,12 @@ RCPX: Product Reliability and Complexity
 
 \begin_layout Standard
 This Effort multiplier is the combination of RELY, DATA, CPLX and DOCU.
- We have chosen a Nominal level for all the multipliers.
- Using the mapping shown in the beginnning of the section, we have a combined
+ We have chosen a Nominal level for all the multipliers but for DATA, that
+ has been set to High.
+ Using the mapping shown in the beginning of the section, we have a combined
  result of 
 \series bold
-10
+13
 \series default
 .
 \end_layout
@@ -6826,8 +6946,6 @@ Sum of Drivers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\series bold
 12
 \end_layout
 
@@ -6837,6 +6955,8 @@ Sum of Drivers
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 13-15
 \end_layout
 
@@ -6902,8 +7022,6 @@ Low
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\series bold
 Nominal
 \end_layout
 
@@ -6913,6 +7031,8 @@ Nominal
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 High
 \end_layout
 
@@ -6978,8 +7098,6 @@ Effort Multiplier
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\series bold
 1.00
 \end_layout
 
@@ -6989,6 +7107,8 @@ Effort Multiplier
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 1.33
 \end_layout
 
@@ -7027,7 +7147,7 @@ Effort Multiplier
 \begin_layout Standard
 Our RCPX Effort Multiplier will therefore be 
 \series bold
-0.83
+1.33
 \series default
 .
 \end_layout
@@ -7053,7 +7173,7 @@ PDIF: Platform Difficulty
 This Effort multiplier is the combination of TIME, STOR and PVOL.
  We have chosen a Nominal level for STORE and PVOL, while the level for
  TIME is High.
- Using the mapping shown in the beginnning of the section, we have a combined
+ Using the mapping shown in the beginning of the section, we have a combined
  result of 
 \series bold
 10
@@ -7332,7 +7452,7 @@ PREX: Personnel Experience
 This Effort multiplier is the combination of APEX, PLEX and LTEX.
  We have chosen a Very Low level for APEX and PLEX, while the level for
  LTEX is Nominal.
- Using the mapping shown in the beginnning of the section, we have a combined
+ Using the mapping shown in the beginning of the section, we have a combined
  result of 
 \series bold
 5
@@ -7685,7 +7805,7 @@ FCIL: Facilities
 This Effort multiplier is the combination of TOOL and SITE.
  We have chosen a levels of High and Extra High respectively for TOOL and
  SITE.
- Using the mapping shown in the beginnning of the section, we have a combined
+ Using the mapping shown in the beginning of the section, we have a combined
  result of 
 \series bold
 10
@@ -8102,7 +8222,7 @@ PERS
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.50
+0.63
 \end_layout
 
 \end_inset
@@ -8122,7 +8242,7 @@ RCPX
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.00
+1.33
 \end_layout
 
 \end_inset
@@ -8246,7 +8366,7 @@ Result
 \begin_layout Plain Layout
 
 \series bold
-0.60
+0.99
 \end_layout
 
 \end_inset
@@ -8264,13 +8384,13 @@ Result
 \end_layout
 
 \begin_layout Standard
-Pluggin all the values in the PM formula we obtain the following result:
+Plugging all the values in the PM formula we obtain the following result:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-PM=13.1
+PM=21.6
 \]
 
 \end_inset
@@ -8294,7 +8414,7 @@ We have divided each phase of the project in activities.
  Fortunately many of them could, at least partially overlap.
  In this way it has been possible to carry forward them in parallel.
  We chose the classical approach of industrial engineering and operations
- reasearch i.e.
+ research i.e.
  to represent the schedule with tasks against time using a Gantt diagram
  (figure 
 \begin_inset Note Note
@@ -8367,7 +8487,7 @@ Project Risks
 \begin_layout Standard
 During the development of our project several things can go wrong i.e our
  project is subject to many risks.
- This section is aimed at analyzing problems that can arise and at formulating
+ This section is aimed at analysing problems that can arise and at formulating
  strategies that can be put in practice to manage or prevent them.
 \end_layout
 
@@ -8404,7 +8524,7 @@ Low budget
 .
  Budgeting is done before the actual starting point of the project and expenditu
 re items are forecasts.
- During the development of the project we realize that expenses are higher
+ During the development of the project we realise that expenses are higher
  than budgeted.
  
 \end_layout
@@ -8417,7 +8537,7 @@ Wrong schedule
 .
  Project planning is done before the actual starting point of the project
  and schedules are estimates.
- During the development of the project we realize that some operations require
+ During the development of the project we realise that some operations require
  more time than estimated.
 \end_layout
 
@@ -8430,7 +8550,7 @@ Personnel shortfall
  In the project planning phase we estimate the amount of hours required
  to complete the overall work and, based on the deadlines and requirements,
  the number of people required and their competences.
- During the development of the project we realize that some operations require
+ During the development of the project we realise that some operations require
  more people or different competences than estimated.
 \end_layout
 
@@ -8462,7 +8582,7 @@ Performance issues
 \series default
 .
  After deployment it turns out that our hardware (servers, bandwidth, etc)
- can't support the load of requests.
+ can not support the load of requests.
 \end_layout
 
 \begin_layout Enumerate
@@ -8471,9 +8591,9 @@ Performance issues
 Scalability issues
 \series default
 .
- After deployment and after many clients registred to our service, an upgrade
+ After deployment and after many clients registered to our service, an upgrade
  of our hardware is needed.
- It turns out that our software does not scale on many server archictures,
+ It turns out that our software does not scale on many server architectures,
  distributed database, etc.
 \end_layout
 
@@ -8781,7 +8901,7 @@ Critical
 
 \begin_layout Plain Layout
 Try to make a good estimate to avoid the problem.
- However if it arises, ask managers for the possiblity of hiring new people.
+ However if it arises, ask managers for the possibility of hiring new people.
 \end_layout
 
 \end_inset
@@ -9213,7 +9333,7 @@ Critical
 \begin_inset Text
 
 \begin_layout Plain Layout
-Develope quickly new features that the new competitors doesn't have and
+Develope quickly new features that the new competitors does not have and
  launch an aggressive marketing campaign.
 \end_layout
 
