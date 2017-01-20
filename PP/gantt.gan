@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Software Engineering II" company="Politecnico di Milano" webLink="https://github.com/sco93/sw-eng-2" view-date="2016-09-26" view-index="0" gantt-divider-location="555" resource-divider-location="300" version="2.8.1" locale="it">
+<?xml version="1.0" encoding="UTF-8"?><project name="Software Engineering II" company="Politecnico di Milano" webLink="https://github.com/sco93/sw-eng-2" view-date="2016-10-01" view-index="0" gantt-divider-location="382" resource-divider-location="274" version="2.8.1" locale="en">
     <description/>
-    <view zooming-state="default:7" id="gantt-chart">
-        <field id="tpd3" name="Nome" width="364" order="0"/>
-        <field id="tpd4" name="Data d'inizio" width="84" order="1"/>
-        <field id="tpd5" name="Data di fine" width="103" order="2"/>
+    <view zooming-state="default:8" id="gantt-chart">
+        <field id="tpd3" name="Name" width="245" order="0"/>
+        <field id="tpd4" name="Begin date" width="60" order="1"/>
+        <field id="tpd5" name="End date" width="73" order="2"/>
         <option id="color.recent"><![CDATA[#99ccff #eeeeee]]></option>
     </view>
     <view id="resource-table">
-        <field id="0" name="Nome" width="296" order="0"/>
+        <field id="0" name="Name" width="270" order="0"/>
     </view>
     <!-- -->
     <calendars>
@@ -33,38 +33,38 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="1" name="Requirement analysis and specification" color="#000000" meeting="false" start="2016-10-17" duration="20" complete="0" expand="true">
-            <task id="2" name="Elicitation of requirements" color="#8cb6ce" meeting="false" start="2016-10-17" duration="17" complete="0" expand="true"/>
-            <task id="20" name="Definition of the Alloy model" color="#8cb6ce" meeting="false" start="2016-10-24" duration="12" complete="0" expand="true"/>
-            <task id="21" name="Document drafting" color="#8cb6ce" meeting="false" start="2016-11-09" duration="3" complete="0" expand="true"/>
+        <task id="1" name="Requirement analysis and specification" color="#000000" meeting="false" start="2016-10-17" duration="20" complete="100" expand="true">
+            <task id="2" name="Elicitation of requirements" color="#8cb6ce" meeting="false" start="2016-10-17" duration="17" complete="100" expand="true"/>
+            <task id="20" name="Definition of the Alloy model" color="#8cb6ce" meeting="false" start="2016-10-24" duration="12" complete="100" expand="true"/>
+            <task id="21" name="Document drafting" color="#8cb6ce" meeting="false" start="2016-11-09" duration="3" complete="100" expand="true"/>
         </task>
-        <task id="23" name="Design" meeting="false" start="2016-11-14" duration="20" complete="0" expand="true">
-            <task id="29" name="Architectural design" color="#8cb6ce" meeting="false" start="2016-11-14" duration="16" complete="0" expand="true"/>
-            <task id="30" name="User Interface design" color="#8cb6ce" meeting="false" start="2016-11-28" duration="6" complete="0" expand="true"/>
-            <task id="28" name="Algorithm design" color="#8cb6ce" meeting="false" start="2016-11-28" duration="6" complete="0" expand="true"/>
-            <task id="31" name="Requirements traceability" color="#8cb6ce" meeting="false" start="2016-12-06" duration="2" complete="0" expand="true"/>
-            <task id="33" name="Document drafting" color="#8cb6ce" meeting="false" start="2016-12-06" duration="4" complete="0" expand="true"/>
+        <task id="23" name="Design" color="#000000" meeting="false" start="2016-11-14" duration="20" complete="82" expand="true">
+            <task id="29" name="Architectural design" color="#8cb6ce" meeting="false" start="2016-11-14" duration="16" complete="100" expand="true"/>
+            <task id="30" name="User Interface design" color="#8cb6ce" meeting="false" start="2016-11-28" duration="6" complete="100" expand="true"/>
+            <task id="28" name="Algorithm design" color="#8cb6ce" meeting="false" start="2016-11-28" duration="6" complete="100" expand="true"/>
+            <task id="31" name="Requirements traceability" color="#8cb6ce" meeting="false" start="2016-12-06" duration="2" complete="100" expand="true"/>
+            <task id="33" name="Document drafting" color="#8cb6ce" meeting="false" start="2016-12-06" duration="4" complete="100" expand="true"/>
         </task>
-        <task id="34" name="Integration test plan" color="#000000" meeting="false" start="2016-12-27" duration="14" complete="0" expand="true">
-            <task id="39" name="Integration strategy" color="#8cb6ce" meeting="false" start="2016-12-27" duration="6" complete="0" expand="true"/>
-            <task id="40" name="Test description" color="#8cb6ce" meeting="false" start="2017-01-04" duration="7" complete="0" expand="true"/>
-            <task id="41" name="Tools and equipment" color="#8cb6ce" meeting="false" start="2017-01-05" duration="2" complete="0" expand="true"/>
-            <task id="50" name="Document drafting" color="#8cb6ce" meeting="false" start="2017-01-13" duration="1" complete="0" expand="true"/>
+        <task id="34" name="Integration test plan" color="#000000" meeting="false" start="2016-12-27" duration="14" complete="100" expand="true">
+            <task id="39" name="Integration strategy" color="#8cb6ce" meeting="false" start="2016-12-27" duration="6" complete="100" expand="true"/>
+            <task id="40" name="Test description" color="#8cb6ce" meeting="false" start="2017-01-04" duration="7" complete="100" expand="true"/>
+            <task id="41" name="Tools and equipment" color="#8cb6ce" meeting="false" start="2017-01-05" duration="2" complete="100" expand="true"/>
+            <task id="50" name="Document drafting" color="#8cb6ce" meeting="false" start="2017-01-13" duration="1" complete="100" expand="true"/>
         </task>
-        <task id="5" name="Project planning" meeting="false" start="2017-01-17" duration="4" complete="0" expand="true">
-            <task id="11" name="Size estimation" color="#8cb6ce" meeting="false" start="2017-01-17" duration="1" complete="0" expand="true"/>
-            <task id="12" name="Risk management" color="#8cb6ce" meeting="false" start="2017-01-17" duration="2" complete="0" expand="true"/>
-            <task id="15" name="Tasks and schedule definition" color="#8cb6ce" meeting="false" start="2017-01-18" duration="1" complete="0" expand="true"/>
-            <task id="16" name="Resource allocation" color="#8cb6ce" meeting="false" start="2017-01-18" duration="1" complete="0" expand="true"/>
-            <task id="10" name="Cost estimation" color="#8cb6ce" meeting="false" start="2017-01-18" duration="2" complete="0" expand="true"/>
-            <task id="9" name="Document drafting" color="#8cb6ce" meeting="false" start="2017-01-20" duration="1" complete="0" expand="true"/>
+        <task id="5" name="Project planning" color="#000000" meeting="false" start="2017-01-17" duration="4" complete="100" expand="true">
+            <task id="11" name="Size estimation" color="#8cb6ce" meeting="false" start="2017-01-17" duration="1" complete="100" expand="true"/>
+            <task id="12" name="Risk management" color="#8cb6ce" meeting="false" start="2017-01-17" duration="2" complete="100" expand="true"/>
+            <task id="15" name="Tasks and schedule definition" color="#8cb6ce" meeting="false" start="2017-01-18" duration="1" complete="100" expand="true"/>
+            <task id="16" name="Resource allocation" color="#8cb6ce" meeting="false" start="2017-01-18" duration="1" complete="100" expand="true"/>
+            <task id="10" name="Cost estimation" color="#8cb6ce" meeting="false" start="2017-01-18" duration="2" complete="100" expand="true"/>
+            <task id="9" name="Document drafting" color="#8cb6ce" meeting="false" start="2017-01-20" duration="1" complete="100" expand="true"/>
         </task>
         <task id="53" name="Code inspection" meeting="false" start="2017-01-23" duration="10" complete="0" expand="true">
             <task id="58" name="Code Inspection" color="#8cb6ce" meeting="false" start="2017-01-23" duration="9" complete="0" expand="true"/>
             <task id="60" name="Document drafting" color="#8cb6ce" meeting="false" start="2017-02-03" duration="1" complete="0" expand="true"/>
         </task>
-        <task id="61" name="Code Development" meeting="false" start="2016-09-26" duration="1" complete="0" expand="true"/>
-        <task id="62" name="Deployment" meeting="false" start="2016-09-26" duration="1" complete="0" expand="true"/>
+        <task id="61" name="Code Development" color="#8cb6ce" meeting="false" start="2017-02-06" duration="155" complete="0" expand="true"/>
+        <task id="62" name="Deployment" color="#8cb6ce" meeting="false" start="2017-09-11" duration="45" complete="0" expand="true"/>
     </tasks>
     <resources>
         <resource id="1" name="Philippe Scorsolini" function="Default:0" contacts="" phone=""/>
@@ -84,6 +84,8 @@
         <allocation task-id="9" resource-id="1" function="Default:0" responsible="false" load="33.0"/>
         <allocation task-id="58" resource-id="1" function="Default:0" responsible="false" load="33.0"/>
         <allocation task-id="60" resource-id="1" function="Default:0" responsible="false" load="33.0"/>
+        <allocation task-id="61" resource-id="1" function="Default:0" responsible="false" load="33.0"/>
+        <allocation task-id="62" resource-id="1" function="Default:0" responsible="false" load="33.0"/>
         <allocation task-id="2" resource-id="2" function="Default:0" responsible="false" load="50.0"/>
         <allocation task-id="21" resource-id="2" function="Default:0" responsible="false" load="33.0"/>
         <allocation task-id="30" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
@@ -96,6 +98,8 @@
         <allocation task-id="58" resource-id="2" function="Default:0" responsible="false" load="33.0"/>
         <allocation task-id="60" resource-id="2" function="Default:0" responsible="false" load="33.0"/>
         <allocation task-id="29" resource-id="2" function="Default:0" responsible="false" load="10.0"/>
+        <allocation task-id="61" resource-id="2" function="Default:0" responsible="false" load="33.0"/>
+        <allocation task-id="62" resource-id="2" function="Default:0" responsible="false" load="33.0"/>
         <allocation task-id="20" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="21" resource-id="0" function="Default:0" responsible="false" load="33.0"/>
         <allocation task-id="28" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
@@ -111,6 +115,8 @@
         <allocation task-id="58" resource-id="0" function="Default:0" responsible="false" load="33.0"/>
         <allocation task-id="60" resource-id="0" function="Default:0" responsible="false" load="33.0"/>
         <allocation task-id="29" resource-id="0" function="Default:0" responsible="false" load="10.0"/>
+        <allocation task-id="61" resource-id="0" function="Default:0" responsible="false" load="33.0"/>
+        <allocation task-id="62" resource-id="0" function="Default:0" responsible="false" load="33.0"/>
     </allocations>
     <vacations/>
     <previous/>

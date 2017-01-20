@@ -20,6 +20,7 @@
 \renewcommand\[{\begin{equation}}
 \renewcommand\]{\end{equation}}
 \@addtoreset{equation}{subsection}
+\usepackage{adjustbox}
 \end_preamble
 \use_default_options false
 \begin_modules
@@ -8416,17 +8417,7 @@ We have divided each phase of the project in activities.
  We chose the classical approach of industrial engineering and operations
  research i.e.
  to represent the schedule with tasks against time using a Gantt diagram
- (figure 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-).
+ (in figure 1, until April 2017).
  The complete output of the planning tool 
 \family sans
 GanttProject 
@@ -8436,6 +8427,68 @@ can be found in
 Attachment1.pdf
 \family default
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[ht]
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+begin{adjustbox}{addcode={
+\backslash
+begin{minipage}{
+\backslash
+width}}{
+\backslash
+caption{%
+\end_layout
+
+\begin_layout Plain Layout
+
+      Gantt diagram of activieties and tasks
+\end_layout
+
+\begin_layout Plain Layout
+
+      }
+\backslash
+end{minipage}},rotate=90,center}
+\end_layout
+
+\begin_layout Plain Layout
+
+      
+\backslash
+includegraphics[scale=.63]{ganttAc.pdf}%
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+end{adjustbox}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -8451,26 +8504,81 @@ Resources and Task Allocation
 
 \begin_layout Standard
 The only human resources we have are ourselves.
-\end_layout
-
-\begin_layout Standard
-We have split the load of the hardest activities over more than one person,
+ We have split the load of the hardest activities over more than one person,
  while the simplest were completed by a single member of the team.
- 
+ Percentages in the Gantt chart (figure 2, until April 2017) mean that the
+ activity was split between different people in that fraction.
+ The complete output of the planning tool 
+\family sans
+GanttProject 
+\family default
+can be found in 
+\family typewriter
+Attachment1.pdf
+\family default
+.
 \end_layout
 
 \begin_layout Standard
-Percentages in the Gantt chart (figure 
-\begin_inset Note Note
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
+
+\backslash
+begin{figure}[ht]
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+begin{adjustbox}{addcode={
+\backslash
+begin{minipage}{
+\backslash
+width}}{
+\backslash
+caption{%
+\end_layout
+
+\begin_layout Plain Layout
+
+      Gantt diagram of activieties and tasks
+\end_layout
+
+\begin_layout Plain Layout
+
+      }
+\backslash
+end{minipage}},rotate=90,center}
+\end_layout
+
+\begin_layout Plain Layout
+
+      
+\backslash
+includegraphics[scale=.76]{ganttRes.pdf}%
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+end{adjustbox}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
 \end_layout
 
 \end_inset
 
-) mean that the activity was split between different people in that fraction.
+
 \end_layout
 
 \begin_layout Standard
