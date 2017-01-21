@@ -2614,6 +2614,13 @@ The following table, extracted from the manual, provides some default features
 \end_layout
 
 \begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="4">
 <features tabularvalignment="middle">
@@ -2827,6 +2834,13 @@ Minimal
 \end_layout
 
 \begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 According to the above table it seems reasonable to choose a PREC value
  of 
 \series bold
@@ -2850,6 +2864,13 @@ This factor is used to estimate the flexibility of the project with regards
 \begin_layout Standard
 The following table, extracted from the manual, provides some default features
  that help assessing the FLEX factor value.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3026,6 +3047,9 @@ Low
 \end_layout
 
 \begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
 We have opted for 
 \series bold
 Full 
@@ -3635,6 +3659,9 @@ Number and criticality of risk items.
 \end_layout
 
 \begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
 Taking into consideration all of the above table's features it seams reasonable
  to choose a RESL level of 
 \series bold
@@ -4041,6 +4068,9 @@ Extensive
 \end_layout
 
 \begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
 Taking into consideration that our small team has already worked on projects
  with optimal results and very good cohesion as shown in the above table,
  it seems reasonable to choose a TEAM level of 
@@ -4096,6 +4126,13 @@ Final Result
 \begin_layout Standard
 Using the Scale Factors calculated in the previous paragraphs, we can calculate
  E as specified in Formula 2.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4264,6 +4301,13 @@ Total
 \end_layout
 
 \begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 The final result, since 
 \begin_inset Formula $\sum_{j=1}^{5}SF_{j}=16.38$
 \end_inset
@@ -4319,6 +4363,13 @@ The RELY rating should be at most one level below the RUSE rating.
 This parameter aims at weighting in the estimation the impact of a software
  failure, depending on the consequences it will have.
  
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4694,6 +4745,13 @@ Effort multipliers
 \end_layout
 
 \begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 It seems reasonable to choose a RELY level of
 \series bold
  Nominal (moderate, easily recoverable losses)
@@ -4754,6 +4812,13 @@ Therefore the Bytes/SLOC ratio is approximately
 300
 \series default
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -5019,6 +5084,13 @@ Effort multipliers
 \end_layout
 
 \begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 From the above table, using the calculated Ratio (
 \series bold
 R
@@ -5118,6 +5190,13 @@ RELY
  of RUSE or better (depending on the chosen RUSE level, for higher levels
  of RUSE it is suggested to choose equal DOCU levels).
  
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -5439,6 +5518,13 @@ Effort multipliers
 \end_layout
 
 \begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Since we are not planning to reuse the software we are creating and it does
  not seem that there will be some across project reuse of components, it
  seems that a RUSE level of 
@@ -5500,6 +5586,13 @@ This Driver is used to estimate the computational demands of our software.
  (e.g.
  for the Money Saving Option).
  
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -5821,6 +5914,13 @@ Effort multipliers
 \end_layout
 
 \begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 For the reason stated above, we opted for a TIME level of 
 \series bold
 High
@@ -6100,6 +6200,10 @@ As already stated, in order to use Equation 1 we need the Early Design Effort
 \begin_layout Standard
 The following table shows which Post-architecture Effort Multipliers are
  combined to calculate the corresponding Early Design Effort Multiplier.
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -6281,11 +6385,19 @@ SCED
 \end_inset
 
 
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 To create the combined values it is usually needed to sum the various levels
  using the following level-to-value mapping:
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -6449,6 +6561,13 @@ Extra High
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
 \begin_layout Paragraph
 PERS: Personnel Capability
 \end_layout
@@ -6463,6 +6582,13 @@ This Effort multiplier is the combination of ACAP, PCAP and PCON.
 12
 \series default
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -6795,6 +6921,13 @@ Effort Multiplier
 \end_layout
 
 \begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Our PERS Effort Multiplier will therefore be 
 \series bold
 0.63
@@ -6814,6 +6947,13 @@ This Effort multiplier is the combination of RELY, DATA, CPLX and DOCU.
 13
 \series default
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -7146,6 +7286,13 @@ Effort Multiplier
 \end_layout
 
 \begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Our RCPX Effort Multiplier will therefore be 
 \series bold
 1.33
@@ -7180,6 +7327,13 @@ This Effort multiplier is the combination of TIME, STOR and PVOL.
 10
 \series default
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -7438,6 +7592,13 @@ Effort Multiplier
 \end_layout
 
 \begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Our PDIF Effort Multiplier will therefore be 
 \series bold
 1.29
@@ -7459,6 +7620,13 @@ This Effort multiplier is the combination of APEX, PLEX and LTEX.
 5
 \series default
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -7791,6 +7959,9 @@ Effort Multiplier
 \end_layout
 
 \begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
 Our PREX Effort Multiplier will therefore be 
 \series bold
 1.33
@@ -7811,6 +7982,10 @@ This Effort multiplier is the combination of TOOL and SITE.
 \series bold
 10
 \series default
+
+\begin_inset VSpace defskip
+\end_inset
+
 .
 \end_layout
 
@@ -8144,6 +8319,13 @@ Effort Multiplier
 \end_layout
 
 \begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Our FCIL Effort Multiplier will therefore be 
 \series bold
 0.73
@@ -8177,6 +8359,10 @@ Now we can compute the only part that was missing to calculate the result
 .
  The table below shows the Effort Multipliers and the final result for the
  product.
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -8385,7 +8571,18 @@ Result
 \end_layout
 
 \begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Plugging all the values in the PM formula we obtain the following result:
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
