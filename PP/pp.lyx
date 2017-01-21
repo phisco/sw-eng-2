@@ -2584,7 +2584,7 @@ Where:
 \begin_inset Formula $n$
 \end_inset
 
- is the number of KPAs that was not assessed to be
+ is the number of KPAs that was not assessed to be 
 \begin_inset Quotes eld
 \end_inset
 
@@ -4769,7 +4769,7 @@ This Cost Driver aims at taking into account the effort needed to create
 \begin_layout Standard
 Therefore the Bytes/SLOC ratio is approximately
 \series bold
-300
+ 300
 \series default
 .
 \end_layout
