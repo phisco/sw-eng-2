@@ -182,7 +182,6 @@ We will then present a feasible split into atomic tasks, analysing their
  This will allow us, given the human resources allocated for this project,
  to produce a timetable assigning tasks and timeslots to the various components
  of the team.
- 
 \end_layout
 
 \begin_layout Standard
@@ -200,22 +199,19 @@ FP: Function Points.
 \end_layout
 
 \begin_layout Itemize
-ILF: Internal logic file 
+ILF: Internal logic file
 \end_layout
 
 \begin_layout Itemize
 ELF: External logic file.
- 
 \end_layout
 
 \begin_layout Itemize
 EI: External Input.
- 
 \end_layout
 
 \begin_layout Itemize
 EO: External Output.
- 
 \end_layout
 
 \begin_layout Itemize
@@ -258,7 +254,6 @@ To estimate the size we will adopt the Function Points approach, taking
  We will assume the system will be implemented using Java, so we will estimate
  the amount of the LOC needed to implement the business logic of our system,
  excluding the client parts.
- 
 \end_layout
 
 \begin_layout Standard
@@ -279,7 +274,7 @@ The Function Points estimation starts by extracting the main functionalities
 \end_layout
 
 \begin_layout Standard
-The categories will be the following: 
+The categories will be the following:
 \end_layout
 
 \begin_layout Itemize
@@ -299,12 +294,11 @@ External Outputs
 \end_layout
 
 \begin_layout Itemize
-External Inquieries
+External Inquiries
 \end_layout
 
 \begin_layout Standard
 For each of the aforementioned categories we can have three level of complexity:
- 
 \end_layout
 
 \begin_layout Itemize
@@ -990,7 +984,7 @@ Homogeneous set of data used by the application but generated and maintained
 \end_layout
 
 \begin_layout Standard
-The system will check the driving licences using the APIs of the 
+The system will check the driving licences using the APIs of the
 \begin_inset Quotes eld
 \end_inset
 
@@ -1166,7 +1160,7 @@ Elementary operation to elaborate data coming from the external environment
 \end_layout
 
 \begin_layout Standard
-The system will handle the interaction with users: 
+The system will handle the interaction with users:
 \end_layout
 
 \begin_layout Itemize
@@ -1470,7 +1464,6 @@ External Outputs
 \begin_layout Standard
 Elementary operations that generate data from the external environment,
  usually includes the elaboration of data from logic files.
- 
 \end_layout
 
 \begin_layout Standard
@@ -1483,7 +1476,7 @@ Computed fairs: Medium as it will access some entities of the system and
 \end_layout
 
 \begin_layout Itemize
-Money saving option enabled powerstations: High as the system will have
+Money saving option enabled power stations: High as the system will have
  to access many entities and do complex elaborations on these data in order
  to return the power stations where the user that has enabled this option
  could plug the parked car.
@@ -1567,7 +1560,7 @@ Medium
 \begin_inset Text
 
 \begin_layout Plain Layout
-Money saving Powerstations
+Money saving Power stations
 \end_layout
 
 \end_inset
@@ -1626,7 +1619,7 @@ Their data: Medium due to the fact that it will deal with all the entities
 \end_layout
 
 \begin_layout Standard
-And by the Operators: 
+And by the Operators:
 \end_layout
 
 \begin_layout Itemize
@@ -2235,7 +2228,6 @@ COCOMO II
 Cost estimation using COCOMO II aims at providing an objective cost estimation
  for a project.
  In this document we will use the Early Design model for the estimate.
- 
 \end_layout
 
 \begin_layout Standard
@@ -2255,7 +2247,6 @@ The official COCOMO II Manual, as listed in Section 1.3 of this document.
 
 ,
 \shape italic
- 
 \color inherit
 «The Early Design model is a high-level model that is used to explore of
  architectural alternatives or incremental development strategies.
@@ -2272,7 +2263,7 @@ http://csse.usc.edu/csse/research/COCOMOII/cocomo2000.0/CII_modelman2000.0.pdf
 
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Standard
@@ -2280,7 +2271,6 @@ Early Design, as the name suggests, has been developed for an early analysis
  of a project.
  For this reason in this document we will assume that none of the others
  has been written yet.
- 
 \end_layout
 
 \begin_layout Subsubsection
@@ -2352,14 +2342,13 @@ Where:
  by default.
  It may be calibrated on a company's local development environment as explained
  and suggested in the Manual (see Manual, Section 7).
- 
 \end_layout
 
 \begin_layout Itemize
 \begin_inset Formula $Size$
 \end_inset
 
- can be expressed usign either thousands of source lines of code (KSLOC)
+ can be expressed using either thousands of source lines of code (KSLOC)
  or unadjusted function points (UFP).
  The formula assumes that KSLOC are used but convertion between the two
  units is trivial since according to the Manual (Section 2.3), the SLOC/UFP
@@ -2380,10 +2369,9 @@ Note
 \begin_inset Formula $Size$
 \end_inset
 
-, is derived by the aggregation of 5 
+, is derived by the aggregation of 5
 \shape italic
 Scale Factors.
- 
 \end_layout
 
 \begin_layout Itemize
@@ -2395,7 +2383,6 @@ Scale Factors.
 \end_inset
 
 ) and for Early Design is 7.
- 
 \begin_inset Note Note
 status open
 
@@ -2438,7 +2425,6 @@ The exponent
  the project shows economies of scale, which means that the increment of
  effort needed grows with a factor smaller than the one representing the
  increase of project size.
- 
 \begin_inset Note Note
 status collapsed
 
@@ -2461,7 +2447,6 @@ If
  the project exhibits diseconomies of scale.
  This usually happens with big projects and is mainly due to increased intercomm
 unication needs and greater integration overhead.
- 
 \end_layout
 
 \begin_layout Standard
@@ -2543,8 +2528,7 @@ Where:
 \end_inset
 
  are the 5 Scale Factors, as detailed in Table 10, Section 3.1 of the Manual.
- The 5 SFs are thoroughly analyzed in the following parts.
- 
+ The 5 SFs are thoroughly analysed in the following parts.
 \end_layout
 
 \end_inset
@@ -2560,7 +2544,6 @@ Calculating PMAT: EPML
 EPML (Equivalent Process Maturity Level) is defined in the Manual and is
  based on the 18 Key Process Areas (KPAs) in the SEI Capability Maturity
  Model.
- 
 \end_layout
 
 \begin_layout Standard
@@ -2601,7 +2584,7 @@ Where:
 \begin_inset Formula $n$
 \end_inset
 
- is the number of KPAs that was not assessed to be 
+ is the number of KPAs that was not assessed to be
 \begin_inset Quotes eld
 \end_inset
 
@@ -2611,7 +2594,6 @@ Do Not Apply
 
  – that is all Key Process Area that seemed applicable and relevant in our
  case.
- 
 \end_layout
 
 \begin_layout Itemize
@@ -2639,7 +2621,6 @@ Scale Factors account for some important aspects regarding both the team
 \end_inset
 
 , therefore having an exponential influence to the final result of our estimate.
- 
 \end_layout
 
 \begin_layout Paragraph
@@ -2885,23 +2866,22 @@ Minimal
 
 \begin_layout Standard
 According to the above table it seems reasonable to choose a PREC value
- of 
+ of
 \series bold
-Nominal (Somewhat Unprecedented)
+ Nominal (Somewhat Unprecedented)
 \series default
-, which translates in a numerical value of 
+, which translates in a numerical value of
 \series bold
-3.72
+ 3.72
 \end_layout
 
 \begin_layout Paragraph
-FLEX: Development Flexibilty
+FLEX: Development Flexibility
 \end_layout
 
 \begin_layout Standard
 This factor is used to estimate the flexibility of the project with regards
  to the requirements and external specification.
- 
 \end_layout
 
 \begin_layout Standard
@@ -3093,37 +3073,37 @@ Low
 \begin_inset VSpace defskip
 \end_inset
 
-We have opted for 
+We have opted for
 \series bold
-Full 
+ Full
 \series default
-(Low Flexivility) for the first two features since we will have to handle
+ (Low Flexibility) for the first two features since we will have to handle
  payments, which in turn require compliance with the banking system.
  It is reasonable to consider the bank's protocols to be very strict since
  they must ensure that payments are safe.
  This limits our flexibility in the development.
- A similiar consideration can probably apply with the handling of our users'
+ A similar consideration can probably apply with the handling of our users'
  personal information, which must abide by strict laws.
- For the last feature a value of 
+ For the last feature a value of
 \series bold
-Low 
+ Low
 \series default
-appears to be appropriate since no premium will be granted if the project
+ appears to be appropriate since no premium will be granted if the project
  is completed earlier.
 \end_layout
 
 \begin_layout Standard
-This leads to a FLEX value of 
+This leads to a FLEX value of
 \series bold
-Low (Occasional relaxation)
+ Low (Occasional relaxation)
 \series default
-, which transaltes in a numerical value of 
+, which translates in a numerical value of
 \series bold
-4.05.
+ 4.05.
 \end_layout
 
 \begin_layout Paragraph
-RESL: Architecture / Risk Resolution 
+RESL: Architecture / Risk Resolution
 \end_layout
 
 \begin_layout Standard
@@ -3706,13 +3686,13 @@ Number and criticality of risk items.
 \end_inset
 
 Taking into consideration all of the above table's features it seams reasonable
- to choose a RESL level of 
+ to choose a RESL level of
 \series bold
-High (Generally)
+ High (Generally)
 \series default
-, which transaltes in a numerical value of 
+, which translates in a numerical value of
 \series bold
-2.83
+ 2.83
 \end_layout
 
 \begin_layout Paragraph
@@ -3720,9 +3700,8 @@ TEAM: Team Cohesion
 \end_layout
 
 \begin_layout Standard
-Team Cohesion aims at estimating sources of turbolence caused by differences
+Team Cohesion aims at estimating sources of turbulence caused by differences
  among stakeholders.
- 
 \end_layout
 
 \begin_layout Standard
@@ -4019,8 +3998,6 @@ Considerable
 
 \series bold
 Extensive
-\series default
- 
 \end_layout
 
 \end_inset
@@ -4031,7 +4008,7 @@ Extensive
 \begin_inset Text
 
 \begin_layout Plain Layout
-Stakeholder teambuilding to achieve shared vision and commitments
+Stakeholder team building to achieve shared vision and commitments
 \end_layout
 
 \end_inset
@@ -4096,8 +4073,6 @@ Considerable
 
 \series bold
 Extensive
-\series default
- 
 \end_layout
 
 \end_inset
@@ -4116,13 +4091,13 @@ Extensive
 
 Taking into consideration that our small team has already worked on projects
  with optimal results and very good cohesion as shown in the above table,
- it seems reasonable to choose a TEAM level of 
+ it seems reasonable to choose a TEAM level of
 \series bold
-Very High (Highly Cooperative)
+ Very High (Highly Cooperative)
 \series default
-, which transaltes in a numerical value of 
+, which translates in a numerical value of
 \series bold
-1.10
+ 1.10
 \end_layout
 
 \begin_layout Paragraph
@@ -4135,17 +4110,17 @@ For this Factor, the Manual suggests to either use CMM levels where available
  Since our team has no CMM level, we have examined the KPA levels trying
  to assess the overall maturity of the team.
  According to the given Formula (see Formula 3 in this Section), since in
- our assessment 15 out of 18 KPAs were applicable (resulting in 
+ our assessment 15 out of 18 KPAs were applicable (resulting in
 \begin_inset Formula $n=15$
 \end_inset
 
-), we have estimated the 
+), we have estimated the
 \series bold
-EPML 
+ EPML
 \series default
-level to be
+ level to be
 \series bold
- 2,45
+ 2.45
 \series default
 .
 \end_layout
@@ -4153,13 +4128,13 @@ level to be
 \begin_layout Standard
 According to the table in the Manual, this value puts us in between of Nominal
  and High (CMM Level 2 and 3, respectively).
- It seems more cautios to choose a PMAT level of 
+ It seems more cautious to choose a PMAT level of
 \series bold
-Nominal (SW-CMM Level 2)
+ Nominal (SW-CMM Level 2)
 \series default
-, which transaltes in a numerical value of 
+, which translates in a numerical value of
 \series bold
-4.68
+ 4.68
 \end_layout
 
 \begin_layout Paragraph
@@ -4355,7 +4330,7 @@ The final result, since
 \begin_inset Formula $\sum_{j=1}^{5}SF_{j}=16.38$
 \end_inset
 
- as calculetad above, is
+ as calculated above, is
 \end_layout
 
 \begin_layout Standard
@@ -4377,14 +4352,13 @@ Effort Multipliers
 For Early Design, we need 7 Effort Multipliers that will concur in Equation
  1.
  These multipliers are the result of the combination of one or more post-archite
-cture 
+cture
 \series bold
-Cost Drivers
+ Cost Drivers
 \series default
 .
  They will be combined according to the Manual, as it will be better explained
  later (See subsection 2.2.4).
- 
 \end_layout
 
 \begin_layout Paragraph
@@ -4394,7 +4368,6 @@ status open
 
 \begin_layout Plain Layout
 The RELY rating should be at most one level below the RUSE rating.
- 
 \end_layout
 
 \end_inset
@@ -4405,7 +4378,6 @@ The RELY rating should be at most one level below the RUSE rating.
 \begin_layout Standard
 This parameter aims at weighting in the estimation the impact of a software
  failure, depending on the consequences it will have.
- 
 \end_layout
 
 \begin_layout Standard
@@ -4420,8 +4392,6 @@ This parameter aims at weighting in the estimation the impact of a software
 \begin_inset space \hfill{}
 \end_inset
 
-
-\lang english
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="6">
@@ -4439,7 +4409,6 @@ This parameter aims at weighting in the estimation the impact of a software
 \begin_layout Plain Layout
 
 \series bold
-\lang english
 RELY
 \end_layout
 
@@ -4449,8 +4418,6 @@ RELY
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang english
 Slight
 \end_layout
 
@@ -4460,8 +4427,6 @@ Slight
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang english
 Low, easy,
 \end_layout
 
@@ -4471,8 +4436,6 @@ Low, easy,
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang english
 Moderate, easily
 \end_layout
 
@@ -4482,8 +4445,6 @@ Moderate, easily
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang english
 High
 \end_layout
 
@@ -4493,8 +4454,6 @@ High
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang english
 Risk
 \end_layout
 
@@ -4508,7 +4467,6 @@ Risk
 \begin_layout Plain Layout
 
 \series bold
-\lang english
 Descriptors
 \end_layout
 
@@ -4518,8 +4476,6 @@ Descriptors
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang english
 inconvenience
 \end_layout
 
@@ -4529,9 +4485,7 @@ inconvenience
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang english
-recoverable 
+recoverable
 \end_layout
 
 \end_inset
@@ -4540,9 +4494,7 @@ recoverable
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang english
-recoverable 
+recoverable
 \end_layout
 
 \end_inset
@@ -4551,9 +4503,7 @@ recoverable
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang english
-financial 
+financial
 \end_layout
 
 \end_inset
@@ -4562,9 +4512,7 @@ financial
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang english
-to human 
+to human
 \end_layout
 
 \end_inset
@@ -4593,8 +4541,6 @@ to human
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang english
 loss
 \end_layout
 
@@ -4604,8 +4550,6 @@ loss
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang english
 losses
 \end_layout
 
@@ -4615,8 +4559,6 @@ losses
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang english
 losses
 \end_layout
 
@@ -4626,8 +4568,6 @@ losses
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang english
 life
 \end_layout
 
@@ -4641,7 +4581,6 @@ life
 \begin_layout Plain Layout
 
 \series bold
-\lang english
 Rating levels
 \end_layout
 
@@ -4651,8 +4590,6 @@ Rating levels
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang english
 Very Low
 \end_layout
 
@@ -4662,8 +4599,6 @@ Very Low
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang english
 Low
 \end_layout
 
@@ -4675,7 +4610,6 @@ Low
 \begin_layout Plain Layout
 
 \series bold
-\lang english
 Nominal
 \end_layout
 
@@ -4685,8 +4619,6 @@ Nominal
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang english
 High
 \end_layout
 
@@ -4696,8 +4628,6 @@ High
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang english
 Very High
 \end_layout
 
@@ -4711,7 +4641,6 @@ Very High
 \begin_layout Plain Layout
 
 \series bold
-\lang english
 Effort multipliers
 \end_layout
 
@@ -4721,8 +4650,6 @@ Effort multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang english
 1.34
 \end_layout
 
@@ -4732,8 +4659,6 @@ Effort multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang english
 1.15
 \end_layout
 
@@ -4745,7 +4670,6 @@ Effort multipliers
 \begin_layout Plain Layout
 
 \series bold
-\lang english
 1.00
 \end_layout
 
@@ -4755,8 +4679,6 @@ Effort multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang english
 0.88
 \end_layout
 
@@ -4766,8 +4688,6 @@ Effort multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang english
 0.76
 \end_layout
 
@@ -4778,8 +4698,6 @@ Effort multipliers
 
 \end_inset
 
-
-\lang british
 
 \begin_inset space \hfill{}
 \end_inset
@@ -4806,9 +4724,9 @@ It seems reasonable to choose a RELY level of
  This will result in having to refund the client, have the operators take
  care of the single cases and maybe give the Users some form of discount
  for future rentals.
- Therefore, RELY will have a value of 
+ Therefore, RELY will have a value of
 \series bold
-1.00.
+ 1.00.
 \end_layout
 
 \begin_layout Paragraph
@@ -4817,17 +4735,17 @@ DATA: Data Base Size
 
 \begin_layout Standard
 This Cost Driver aims at taking into account the effort needed to create
- and mantain the test data that will be used during testing.
+ and maintain the test data that will be used during testing.
  Since we are creating this Driver in an Early Design estimate we can only
  assume the characteristics of the data we have to store.
  From the Assignments document we can infer that we will have at least the
- entities representing 
+ entities representing
 \series bold
-Users
+ Users
 \series default
- and 
+ and
 \series bold
-Cars
+ Cars
 \series default
 .
  Each User entry will likely store all the information in strings while
@@ -4844,13 +4762,12 @@ Cars
  100 users and 20 cars.
  Using these assumptions we can have an estimate of the final test database
  size that would be approximately 360kB.
- In order to take into account unforseen tables and columns, it is sound
+ In order to take into account unforeseen tables and columns, it is sound
  to take an upper bound for the database of 2MB.
- 
 \end_layout
 
 \begin_layout Standard
-Therefore the Bytes/SLOC ratio is approximately 
+Therefore the Bytes/SLOC ratio is approximately
 \series bold
 300
 \series default
@@ -4913,7 +4830,7 @@ R < 10
 \begin_inset Text
 
 \begin_layout Plain Layout
-10 ≤ R < 100 
+10 ≤ R < 100
 \end_layout
 
 \end_inset
@@ -4922,7 +4839,7 @@ R < 10
 \begin_inset Text
 
 \begin_layout Plain Layout
-100 ≤ R < 1000 
+100 ≤ R < 1000
 \end_layout
 
 \end_inset
@@ -5138,13 +5055,13 @@ From the above table, using the calculated Ratio (
 \series bold
 R
 \series default
-) of 300, we choose a DATA level of 
+) of 300, we choose a DATA level of
 \series bold
-High
+ High
 \series default
- and a DATA value of 
+ and a DATA value of
 \series bold
-1.14
+ 1.14
 \series default
 .
 \end_layout
@@ -5158,55 +5075,54 @@ Complexity is the result of many factors, illustrated in Table 19 of the
  Manual.
  For the sake of brevity we are not reporting the whole table here but just
  referring to the ratings provided there.
- For the 
+ For the
 \series bold
-Control Operations
+ Control Operations
 \series default
  factor it seems appropriate to choose a level of Nominal since we are likely
  going to deal with distributed processing backed by middleware as well
  as some message passing.
- For the 
+ For the
 \series bold
-Computational Operations
+ Computational Operations
 \series default
  rating a level of at least Nominal is necessary since we will likely deal
  with statistical routines for the Money Saving Option (or, at the very
  least, we will need more than standard operations as described for level
  Low).
- Our software will probably not need complex 
+ Our software will probably not need complex
 \series bold
-Device-dependent Operations
+ Device-dependent Operations
 \series default
  since it will only share basic information with the cars and the charging
  station.
  For this reason it is appropriate to choose a level of Very Low for this
  factor.
- As per 
+ As per
 \series bold
-Data Management Operations
+ Data Management Operations
 \series default
  we decided to use a level of Low since it seems unlikely that complex database
  interaction will be needed.
- For 
+ For
 \series bold
-User Interface Management Operations
+ User Interface Management Operations
 \series default
  we opted for a level of Nominal since, although we will likely use maps
  in our application (which would suggest a level of Very High for the 2D
  graphic part), these more complex features will be provided by an external
  entity.
- 
 \end_layout
 
 \begin_layout Standard
 For these reasons, interpolating the above levels, the overall CPLX level
- is conservatively set to 
+ is conservatively set to
 \series bold
-Nominal
+ Nominal
 \series default
- with a numeric value of 
+ with a numeric value of
 \series bold
-1.00
+ 1.00
 \series default
 .
 \end_layout
@@ -5219,20 +5135,19 @@ RUSE: Developed for Reusability
 Creating reusable software means putting more effort in every part of its
  development.
  In particular, the software itself must be more general, the documentation
- must be better written and more detailed (poses a constraint on 
+ must be better written and more detailed (poses a constraint on
 \series bold
-DOCU
+ DOCU
 \series default
-), the testing must be more thorough (constraints 
+), the testing must be more thorough (constraints
 \series bold
-RELY
+ RELY
 \series default
 ).
  For this reason it is strongly suggested to have a RELY of at least one
  level higher than the RUSE rating, while DOCU should be on the same level
  of RUSE or better (depending on the chosen RUSE level, for higher levels
  of RUSE it is suggested to choose equal DOCU levels).
- 
 \end_layout
 
 \begin_layout Standard
@@ -5570,14 +5485,14 @@ Effort multipliers
 \begin_layout Standard
 Since we are not planning to reuse the software we are creating and it does
  not seem that there will be some across project reuse of components, it
- seems that a RUSE level of 
+ seems that a RUSE level of
 \series bold
-Low (None)
+ Low (None)
 \series default
  is the most appropriate.
- Therefore, the numeric value of RUSE is 
+ Therefore, the numeric value of RUSE is
 \series bold
-0.95
+ 0.95
 \series default
 .
 \end_layout
@@ -5604,21 +5519,20 @@ This Driver aims at estimating the thoroughness of the documentation with
  probably make future changes and maintenance very expensive.
  For this reason a level of at least Nominal should ideally be chosen for
  every project.
- Since no other constraint is forced by the RUSE factor, a level of 
+ Since no other constraint is forced by the RUSE factor, a level of
 \series bold
-Nominal (Right-sized to life-cycle needs)
+ Nominal (Right-sized to life-cycle needs)
 \series default
  seems to be the most fitting.
- This assigns a numerical value of 
+ This assigns a numerical value of
 \series bold
-1.00
+ 1.00
 \series default
  to DOCU.
- 
 \end_layout
 
 \begin_layout Paragraph
-TIME: Execution Time Constraint 
+TIME: Execution Time Constraint
 \end_layout
 
 \begin_layout Standard
@@ -5628,7 +5542,6 @@ This Driver is used to estimate the computational demands of our software.
  From time to time some non trivial computation will probably be necessary
  (e.g.
  for the Money Saving Option).
- 
 \end_layout
 
 \begin_layout Standard
@@ -5678,7 +5591,7 @@ TIME
 \begin_inset Text
 
 \begin_layout Plain Layout
-<= 50% use of 
+<= 50% use of
 \end_layout
 
 \end_inset
@@ -5964,11 +5877,11 @@ Effort multipliers
 \end_layout
 
 \begin_layout Standard
-For the reason stated above, we opted for a TIME level of 
+For the reason stated above, we opted for a TIME level of
 \series bold
-High
+ High
 \series default
- and a corresponding numerical value for TIME of 
+ and a corresponding numerical value for TIME of
 \series bold
 1.11
 \series default
@@ -5983,17 +5896,16 @@ STOR: Main Storage Constraint
 Taking into account the increasing amounts of cheap and fast storage, since
  our software probably will not need huge amounts of storage data, it seems
  optimal to choose the lowest possible level for this Driver.
- 
 \end_layout
 
 \begin_layout Standard
-The lowest level for STOR is 
+The lowest level for STOR is
 \series bold
-Nominal
+ Nominal
 \series default
-, with a numerical value of 
+, with a numerical value of
 \series bold
-1.00
+ 1.00
 \series default
 .
 \end_layout
@@ -6003,7 +5915,7 @@ PVOL: Platform Volatility
 \end_layout
 
 \begin_layout Standard
-This Driver aims at weighting the volatility of the 
+This Driver aims at weighting the volatility of the
 \begin_inset Quotes eld
 \end_inset
 
@@ -6016,17 +5928,16 @@ Platform
  depending on the specific case.
  In this project volatility may concern both, although it seems reasonable
  that the hardware will not need to be update as often as the software will.
- 
 \end_layout
 
 \begin_layout Standard
-Overall it seems appropriate to choose a 
+Overall it seems appropriate to choose a
 \series bold
-Nominal
+ Nominal
 \series default
- level for PVOL, which translates into a value of 
+ level for PVOL, which translates into a value of
 \series bold
-1.00
+ 1.00
 \series default
 .
 \end_layout
@@ -6041,19 +5952,19 @@ This Driver is used to evaluate the Analyst's capabilities but not their
  The main factors that are taken into account are analysis and design ability,
  efficiency and thoroughness, and the ability to communicate and cooperate.
  For this reason, although not experienced, we can assess the ACAP level
- for our team to be 
+ for our team to be
 \series bold
-Nominal
+ Nominal
 \series default
- (55th percentile), which translates in a numerical value for ACAP of 
+ (55th percentile), which translates in a numerical value for ACAP of
 \series bold
-1.00
+ 1.00
 \series default
 .
 \end_layout
 
 \begin_layout Paragraph
-PCAP: Programmer Capability 
+PCAP: Programmer Capability
 \end_layout
 
 \begin_layout Standard
@@ -6064,14 +5975,14 @@ This Driver aims at having an estimate of the programmers capabilities as
  As for ACAP, experience should not be a factor for the estimation of this
  driver's level.
  For this reason, considered that we have already efficiently worked as
- a team and have used COTS, a 
+ a team and have used COTS, a
 \series bold
-High
+ High
 \series default
  (75th percentile) level of PCAP is appropriate.
- This translates in a numerical value for PCAP of 
+ This translates in a numerical value for PCAP of
 \series bold
-0.88
+ 0.88
 \series default
 .
 \end_layout
@@ -6088,9 +5999,9 @@ This Driver is use to take into account the turnover of the personnel.
  Very High
 \series default
  level of PCON is chosen.
- This translates in a numerical value of 
+ This translates in a numerical value of
 \series bold
-0.81
+ 0.81
 \series default
  for PCAP.
 \end_layout
@@ -6103,14 +6014,14 @@ APEX: Applications Experience
 This Driver gives parameters to create an estimate for the team's experience
  with this type of application.
  Since the experience with this specific type of software is none, the appropria
-te level is 
+te level is
 \series bold
-Very Low
+ Very Low
 \series default
  (Less than or Equal to 2 Months) which translates in a numerical value
- for APEX of 
+ for APEX of
 \series bold
-1.22
+ 1.22
 \series default
 .
 \end_layout
@@ -6128,7 +6039,7 @@ Since we have limited expertise in the production use of many platforms
 Very Low
 \series default
  (Less than or Equal to 2 Months) which translates in a numerical value
- for PLEX of 
+ for PLEX of
 \series bold
 1.19
 \series default
@@ -6146,14 +6057,14 @@ s analysis, program style and formatting and others.
  Since overall we have good expertise in some production languages (Java,
  Python and JS seem the most relevant for this project) and and average
  knowledge of many important tools used in production environments, it seems
- appropriate to choose a 
+ appropriate to choose a
 \series bold
-Nominal
+ Nominal
 \series default
  (1 year of experience) for this Driver.
- This means that a value of 
+ This means that a value of
 \series bold
-1.00
+ 1.00
 \series default
  will be used for LTEX
 \end_layout
@@ -6166,13 +6077,13 @@ TOOL: Use of Software Tools
 This driver is used to estimate the Tools that will be used in the project
  (or that it will possible to use).
  Since we have already used widely adopted life-cycle integration tools
- we will set the TOOL level to 
+ we will set the TOOL level to
 \series bold
-High
+ High
 \series default
-, which results in a numerical value of 
+, which results in a numerical value of
 \series bold
-0.90
+ 0.90
 \series default
 .
 \end_layout
@@ -6197,33 +6108,33 @@ Fully collocated
  in Table 33 of the Manual).
  Should we need to communicate in other occasions we will use any technology
  needed including interactive multimedia.
- For this reason we decide to use a SITE level of 
+ For this reason we decide to use a SITE level of
 \series bold
-Extra High
+ Extra High
 \series default
- (Fully Collocated) and therefore a numerical value for SITE of 
+ (Fully Collocated) and therefore a numerical value for SITE of
 \series bold
-0.80
+ 0.80
 \series default
 .
 \end_layout
 
 \begin_layout Paragraph
-SCED: Required Development Schedule 
+SCED: Required Development Schedule
 \end_layout
 
 \begin_layout Standard
 This Driver is used to describe the effect of schedule compression/expansion
  for the whole project.
  It is likely that at most few schedule stretch-outs will be required.
- However, it seems prudent to select a SCED level of 
+ However, it seems prudent to select a SCED level of
 \series bold
-High
+ High
 \series default
  (130% of nominal schedule) to account for possible delays.
- The numerical value for SCED will therefore be 
+ The numerical value for SCED will therefore be
 \series bold
-1.00
+ 1.00
 \series default
 .
 \end_layout
@@ -6237,7 +6148,6 @@ As already stated, in order to use Equation 1 we need the Early Design Effort
  Multipliers.
  These are derived from the Effort Multipliers calculated in the previous
  subsection, combined as explained in section 3.2.2 of the Manual.
- 
 \end_layout
 
 \begin_layout Standard
@@ -6578,7 +6488,7 @@ Very High
 \begin_inset Text
 
 \begin_layout Plain Layout
-Extra High 
+Extra High
 \end_layout
 
 \end_inset
@@ -6620,9 +6530,9 @@ This Effort multiplier is the combination of ACAP, PCAP and PCON.
  We have previously chosen a Nominal level for ACAP, a High level for PCAP
  and a level of Very High for PCON.
  Using the mapping shown in the beginning of the section, we have a combined
- result of 
+ result of
 \series bold
-12
+ 12
 \series default
 .
 \end_layout
@@ -6971,9 +6881,9 @@ Effort Multiplier
 \end_layout
 
 \begin_layout Standard
-Our PERS Effort Multiplier will therefore be 
+Our PERS Effort Multiplier will therefore be
 \series bold
-0.63
+ 0.63
 \end_layout
 
 \begin_layout Paragraph
@@ -6985,9 +6895,9 @@ This Effort multiplier is the combination of RELY, DATA, CPLX and DOCU.
  We have chosen a Nominal level for all the multipliers but for DATA, that
  has been set to High.
  Using the mapping shown in the beginning of the section, we have a combined
- result of 
+ result of
 \series bold
-13
+ 13
 \series default
 .
 \end_layout
@@ -7336,9 +7246,9 @@ Effort Multiplier
 \end_layout
 
 \begin_layout Standard
-Our RCPX Effort Multiplier will therefore be 
+Our RCPX Effort Multiplier will therefore be
 \series bold
-1.33
+ 1.33
 \series default
 .
 \end_layout
@@ -7349,9 +7259,9 @@ RUSE: Developed for Reusability
 
 \begin_layout Standard
 This Driver will not be combined with others so we can use the same value
- calculated in section 2.2.3, which was 
+ calculated in section 2.2.3, which was
 \series bold
-0.95
+ 0.95
 \series default
 .
 \end_layout
@@ -7365,9 +7275,9 @@ This Effort multiplier is the combination of TIME, STOR and PVOL.
  We have chosen a Nominal level for STORE and PVOL, while the level for
  TIME is High.
  Using the mapping shown in the beginning of the section, we have a combined
- result of 
+ result of
 \series bold
-10
+ 10
 \series default
 .
 \end_layout
@@ -7642,9 +7552,9 @@ Effort Multiplier
 \end_layout
 
 \begin_layout Standard
-Our PDIF Effort Multiplier will therefore be 
+Our PDIF Effort Multiplier will therefore be
 \series bold
-1.29
+ 1.29
 \series default
 .
 \end_layout
@@ -7658,9 +7568,9 @@ This Effort multiplier is the combination of APEX, PLEX and LTEX.
  We have chosen a Very Low level for APEX and PLEX, while the level for
  LTEX is Nominal.
  Using the mapping shown in the beginning of the section, we have a combined
- result of 
+ result of
 \series bold
-5
+ 5
 \series default
 .
 \end_layout
@@ -8005,9 +7915,9 @@ Effort Multiplier
 \begin_inset VSpace defskip
 \end_inset
 
-Our PREX Effort Multiplier will therefore be 
+Our PREX Effort Multiplier will therefore be
 \series bold
-1.33
+ 1.33
 \series default
 .
 \end_layout
@@ -8021,9 +7931,9 @@ This Effort multiplier is the combination of TOOL and SITE.
  We have chosen a levels of High and Extra High respectively for TOOL and
  SITE.
  Using the mapping shown in the beginning of the section, we have a combined
- result of 
+ result of
 \series bold
-10
+ 10
 \series default
 
 \begin_inset VSpace defskip
@@ -8369,9 +8279,9 @@ Effort Multiplier
 \end_layout
 
 \begin_layout Standard
-Our FCIL Effort Multiplier will therefore be 
+Our FCIL Effort Multiplier will therefore be
 \series bold
-0.73
+ 0.73
 \series default
 .
 \end_layout
@@ -8382,9 +8292,9 @@ SCED: Required Development Schedule
 
 \begin_layout Standard
 This Driver will not be combined with others so we can use the same value
- calculated in section 2.2.3, which was 
+ calculated in section 2.2.3, which was
 \series bold
-1.00
+ 1.00
 \series default
 .
 \end_layout
@@ -8658,13 +8568,13 @@ We have divided each phase of the project in activities.
  research i.e.
  to represent the schedule with tasks against time using a Gantt diagram
  (in figure 1, until April 2017).
- The complete output of the planning tool 
+ The complete output of the planning tool
 \family sans
-GanttProject 
+ GanttProject
 \family default
-can be found in 
+ can be found in
 \family typewriter
-gantt.pdf
+ gantt.pdf
 \family default
 .
 \end_layout
@@ -8682,7 +8592,7 @@ begin{figure}[ht]
 
 \begin_layout Plain Layout
 
-  
+
 \backslash
 begin{adjustbox}{addcode={
 \backslash
@@ -8707,14 +8617,14 @@ end{minipage}},rotate=90,center}
 
 \begin_layout Plain Layout
 
-      
+
 \backslash
 includegraphics[scale=.63]{ganttAc.pdf}%
 \end_layout
 
 \begin_layout Plain Layout
 
-  
+
 \backslash
 end{adjustbox}
 \end_layout
@@ -8748,13 +8658,13 @@ The only human resources we have are ourselves.
  while the simplest were completed by a single member of the team.
  Percentages in the Gantt chart (figure 2, until April 2017) mean that the
  activity was split between different people in that fraction.
- The complete output of the planning tool 
+ The complete output of the planning tool
 \family sans
-GanttProject 
+ GanttProject
 \family default
-can be found in 
+ can be found in
 \family typewriter
-gantt.pdf
+ gantt.pdf
 \family default
 .
 \end_layout
@@ -8772,7 +8682,7 @@ begin{figure}[ht]
 
 \begin_layout Plain Layout
 
-  
+
 \backslash
 begin{adjustbox}{addcode={
 \backslash
@@ -8797,14 +8707,14 @@ end{minipage}},rotate=90,center}
 
 \begin_layout Plain Layout
 
-      
+
 \backslash
 includegraphics[scale=.76]{ganttRes.pdf}%
 \end_layout
 
 \begin_layout Plain Layout
 
-  
+
 \backslash
 end{adjustbox}
 \end_layout
@@ -8856,7 +8766,7 @@ renewcommand{
 \backslash
 labelenumi}{R
 \backslash
-arabic{enumi})}  
+arabic{enumi})}
 \end_layout
 
 \end_inset
@@ -8874,7 +8784,6 @@ Low budget
 re items are forecasts.
  During the development of the project we realise that expenses are higher
  than budgeted.
- 
 \end_layout
 
 \begin_layout Enumerate
@@ -8964,7 +8873,6 @@ Wrong user interface
 .
  Feedbacks from users suggest that the user interface of our application
  is complex, not intuitive and difficult to use.
- 
 \end_layout
 
 \begin_layout Enumerate
@@ -9003,8 +8911,8 @@ New competitors
 Market extinction
 \series default
 .
- All markets may become extinct, if no user is anymore interested in the
- service or product offered.
+ All markets may become extinct, if no user is not interested anymore in
+ the service or product offered.
 \end_layout
 
 \begin_layout Standard
@@ -9287,7 +9195,7 @@ Marginal
 \begin_inset Text
 
 \begin_layout Plain Layout
-Try to develope the system in such a way that it can be modified without
+Try to develop the system in such a way that it can be modified without
  totally rewriting it.
 \end_layout
 
@@ -9788,7 +9696,7 @@ Philippe Scorsolini
 \begin_inset Text
 
 \begin_layout Plain Layout
-10
+12
 \end_layout
 
 \end_inset
@@ -9828,7 +9736,7 @@ Gabriele Vanoni
 \begin_inset Text
 
 \begin_layout Plain Layout
-15
+14
 \end_layout
 
 \end_inset
