@@ -2284,6 +2284,11 @@ Early Design, as the name suggests, has been developed for an early analysis
 Introduction and Formulae
 \end_layout
 
+\begin_layout Standard
+In the following paragraphs we introduce the formulae needed to complete
+ the COCOMO cost estimation.
+\end_layout
+
 \begin_layout Paragraph
 Calculating Person Month
 \end_layout
@@ -9765,7 +9770,7 @@ Lorenzo Semeria
 \begin_inset Text
 
 \begin_layout Plain Layout
-12
+15
 \end_layout
 
 \end_inset
