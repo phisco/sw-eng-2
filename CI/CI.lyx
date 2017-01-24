@@ -241,6 +241,15 @@ Semplicemente L.
 
 \series bold
 L.
+ 12, 15
+\series default
+ to indicate a list of non consevutive lines (lines 12 and 15 in this case).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+L.
  12-34
 \series default
  to indicate an interval of lines (line 12 through 34 in this case).
@@ -269,7 +278,7 @@ to indicate the 12-th element of the provided checklist.
 \begin_layout Subsection
 Issues
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Elenco puntato con la formattazione di sopra, in ordine di C 
@@ -280,8 +289,14 @@ Elenco puntato con la formattazione di sopra, in ordine di C
 
 \end_layout
 
-\begin_layout Standard
-11.
+\begin_layout Itemize
+
+\series bold
+\shape italic
+C11
+\series default
+\shape default
+.
  
 \begin_inset Quotes eld
 \end_inset
@@ -291,11 +306,20 @@ All if, while, do-while, try-catch, and for statements that have only one
 \begin_inset Quotes erd
 \end_inset
 
- @ lines: 295,433,446
+ 
+\series bold
+L.
+ 295,433,446
 \end_layout
 
-\begin_layout Standard
-14.
+\begin_layout Itemize
+
+\series bold
+\shape italic
+C14
+\series default
+\shape default
+.
  
 \begin_inset Quotes eld
 \end_inset
@@ -304,11 +328,20 @@ When line length must exceed 80 characters, it does NOT exceed 120 characters.
 \begin_inset Quotes erd
 \end_inset
 
- @ lines: 176, 217, 350, 446, 448
+ 
+\series bold
+L.
+ 176, 217, 350, 446, 448
 \end_layout
 
-\begin_layout Standard
-18.
+\begin_layout Itemize
+
+\series bold
+\shape italic
+C18
+\series default
+\shape default
+.
  
 \begin_inset Quotes eld
 \end_inset
@@ -322,8 +355,14 @@ Comments are used to adequately explain what the class, interface, methods,
  of comments, but some methods could have been more clearly explained.
 \end_layout
 
-\begin_layout Standard
-19.
+\begin_layout Itemize
+
+\series bold
+\shape italic
+C19
+\series default
+\shape default
+.
  
 \begin_inset Quotes eld
 \end_inset
@@ -333,7 +372,10 @@ Commented out code contains a reason for being commented out and a date
 \begin_inset Quotes erd
 \end_inset
 
- @ lines: 171, 194
+ 
+\series bold
+L.
+ 171, 194
 \end_layout
 
 \begin_layout Standard
