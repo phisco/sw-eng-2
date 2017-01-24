@@ -309,7 +309,7 @@ All if, while, do-while, try-catch, and for statements that have only one
  
 \series bold
 L.
- 295,433,446
+ 295, 433, 446
 \end_layout
 
 \begin_layout Itemize
@@ -376,6 +376,274 @@ Commented out code contains a reason for being commented out and a date
 \series bold
 L.
  171, 194
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+C23
+\series default
+\shape default
+.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Check that the javadoc is complete
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\series bold
+L.
+ 131, 259, 276, 292, 464
+\series default
+ contain 
+\family typewriter
+public
+\family default
+ methods that do not have any javadoc.
+ The other methods have some javadoc but no straightforward or detailed
+ explanation is given.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+C25 (c).
+
+\series default
+\shape default
+ 
+\begin_inset Quotes eld
+\end_inset
+
+class/interface implementation comment, if necessary;
+\begin_inset Quotes erd
+\end_inset
+
+ No such comment is provided, while it would have been useful to have a
+ general idea of what the class is for.
+ This may or may not be due to the fact that the class-level javadoc has
+ been replaced by a deprecated notice.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+C27.
+
+\series default
+\shape default
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Check that the code is free of duplicates, long methods, big classes, breaking
+ encapsulation, as well as if coupling and cohesion are adequate
+\begin_inset Quotes erd
+\end_inset
+
+.
+ In
+\series bold
+ L.
+ 73
+\series default
+ the throws are redundant: 
+\family typewriter
+FileNotFoundException extends IOException
+\family default
+ but both are present in the 
+\family typewriter
+throws
+\family default
+ statement.
+ The method at 
+\series bold
+L.
+ 292
+\series default
+ is close to 200 lines long, which make it hard to keep track of the code.
+ The method is mainly composed of 
+\family typewriter
+if
+\family default
+s and 
+\family typewriter
+else if
+\family default
+s so knowing which branch a part of code is in is very hard since there
+ are so many cases.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+C28
+\series default
+\shape default
+.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+[\SpecialChar ldots
+] Check that they have the right visibility (public/private/protected).
+\begin_inset Quotes erd
+\end_inset
+
+.
+ While the methods at 
+\series bold
+L.
+ 93, 118, 131
+\series default
+ are used throughout the package, methods at 
+\series bold
+L.
+ 259, 276, 292, 464
+\series default
+ are never used except internally in this class.
+ They are likely helper methods for this class's functionality but they
+ do not seem to be useful outside of this, therefore they should be 
+\family typewriter
+private
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+C29
+\series default
+\shape default
+.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Check that variables are declared in the proper scope.
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Variable at 
+\series bold
+L.
+ 69
+\series default
+ is 
+\family typewriter
+public
+\family default
+ but is not accessed in the whole project.
+ Its purpose is not clear but should probably be set to 
+\family typewriter
+private
+\family default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+C30
+\series default
+\shape default
+.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Check that constructors are called when a new object is desired.
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Throughout the code it almost always happens that objects are created using
+ external methods.
+ While this clashes with the given entry in the checklist, it seems a correct
+ choice to call external methods to partially process data and create the
+ proper object.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+C31
+\series default
+\shape default
+.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Check that all object references are initialized before use.
+\begin_inset Quotes erd
+\end_inset
+
+.
+ At 
+\series bold
+L.
+ 492
+\series default
+ the variable 
+\family typewriter
+formatter
+\family default
+ is initialized to 
+\family typewriter
+null
+\family default
+, which is the default value for every 
+\family typewriter
+Object
+\family default
+.
+ However, it is impossible for this variable to be 
+\family typewriter
+null
+\family default
+ at 
+\series bold
+L.
+ 501
+\series default
+ (
+\family typewriter
+return
+\family default
+ statement) since it is either initialized at 
+\series bold
+L.
+ 495
+\series default
+ or at 
+\series bold
+L.
+ 498
+\series default
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+
 \end_layout
 
 \begin_layout Standard
