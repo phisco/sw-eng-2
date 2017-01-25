@@ -311,7 +311,7 @@ Element
 \family typewriter
 Document
 \family default
-, whose definition is found in 
+, whose definitions are found in 
 \family typewriter
 org.w3c.dom
 \family default
