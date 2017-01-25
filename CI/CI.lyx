@@ -173,19 +173,55 @@ Apache OFBiz®
 \end_inset
 
 .
+ OFBiz is an Enterprise Resource Planning (ERP) System written in Java.
+ Our class is part of the 
+\family typewriter
+entity.serialize
+\family default
+ package, a very small package that only contains our class, the interface
+ 
+\family typewriter
+XmlSerializable
+\family default
+ and the definition of an 
+\family typewriter
+Exception
+\family default
+, 
+\family typewriter
+SerializeException
+\family default
+ which extends an OFBiz Exception.
+ 
 \end_layout
 
 \begin_layout Standard
-Specifically this file will be analyzed : 
-\begin_inset Quotes eld
+OFBiz uses Gradle as Build Tool and therefore its convention.
+ The class we will analyze is located at this address:
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+../apache-ofbiz-16.11.01/framework/entity/src/main/java/org/apache/ofbiz
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+/entity/serialize/XmlSerializer.java.
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+
+\family typewriter
+Andare meglio a capo?
+\end_layout
+
 \end_inset
 
-../apache-ofbiz-16.11.01/framework/entity/src/main/java/org/apache/ofbiz/entity/seri
-alize/XmlSerializer.java
-\begin_inset Quotes erd
-\end_inset
 
-.
 \end_layout
 
 \begin_layout Section
@@ -193,7 +229,93 @@ Functional role of assigned class
 \end_layout
 
 \begin_layout Standard
-As the comment about 
+The assigned class is deprecated, as clearly stated in the starting 
+\family typewriter
+javadoc
+\family default
+ comment.
+ Its purpose is to handle the serialization of objects into XML and vice
+ versa.
+\end_layout
+
+\begin_layout Standard
+The method 
+\family typewriter
+serialize
+\family default
+ takes an 
+\family typewriter
+Object
+\family default
+ and returns a 
+\family typewriter
+String
+\family default
+, which is the resulting XML for the provided 
+\family typewriter
+Object
+\family default
+.
+ The other methods used for serialization, namely 
+\family typewriter
+serializeSingle
+\family default
+ and 
+\family typewriter
+serializeCustom
+\family default
+ return an 
+\family typewriter
+Element
+\family default
+ which is an instance of 
+\family typewriter
+Node
+\family default
+ from package 
+\family typewriter
+org.w3c.dom
+\family default
+, part of the standard Java library.
+ They both take as input an 
+\family typewriter
+Object
+\family default
+ to serialize and a 
+\family typewriter
+Document
+\family default
+ object
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+wtf?
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+All deserialization methods, as expected, return an 
+\family typewriter
+Object
+\family default
+ and take as input either an XML 
+\family typewriter
+Element
+\family default
+ or a whole 
+\family typewriter
+Document
+\family default
+, whose definition is found in 
+\family typewriter
+org.w3c.dom
+\family default
+.
 \end_layout
 
 \begin_layout Standard
@@ -644,6 +766,169 @@ L.
 
 \begin_layout Itemize
 
+\series bold
+\shape italic
+C33
+\series default
+\shape default
+.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Declarations appear at the beginning of blocks
+\begin_inset Quotes erd
+\end_inset
+
+.
+ At 
+\series bold
+L.
+ 196-198
+\series default
+ variables are declared in the middle of the 
+\family typewriter
+else if
+\family default
+ block opened at
+\series bold
+ L.
+ 172
+\series default
+.
+ Same happens at 
+\series bold
+L.
+ 233-235
+\series default
+, variables are declared in the 
+\family typewriter
+else if
+\family default
+ block opened at
+\series bold
+ L.
+ 213
+\series default
+.
+ In 
+\family typewriter
+makeElement
+\family default
+ at 
+\series bold
+L.
+ 276-290
+\series default
+, variable element is created twice with different visibility.
+ At
+\series bold
+ L.
+ 286
+\series default
+ it is created but not in the beginning of the containing block.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+C36
+\series default
+\shape default
+.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Check that method returned values are used properly.
+\begin_inset Quotes erd
+\end_inset
+
+.
+ In many occasions, for instance when calling 
+\family typewriter
+appendChild
+\family default
+ from 
+\family typewriter
+org.w3c.dom.Node.java
+\family default
+ in 
+\series bold
+L.
+ 201
+\series default
+ (and many others) the return value is not used.
+ However, since the children is added to the 
+\family typewriter
+Node
+\family default
+ object regardless of the returned value, it may not be necessary.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Forse meglio piallare
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+C40
+\series default
+\shape default
+.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Check that all objects (including Strings) are compared with equals and
+ not with ==.
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Every 
+\family typewriter
+Object
+\family default
+ is compared against 
+\family typewriter
+null
+\family default
+ using 
+\begin_inset Quotes eld
+\end_inset
+
+
+\family typewriter
+==
+\family default
+
+\begin_inset Quotes erd
+\end_inset
+
+ instead of the 
+\family typewriter
+equals
+\family default
+ method.
+ While this is wrong, it is not a problem assuming that the 
+\family typewriter
+equals
+\family default
+ methods are implemented correctly when checking equality against 
+\family typewriter
+null
+\family default
+ objects.
 \end_layout
 
 \begin_layout Standard
