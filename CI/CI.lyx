@@ -931,6 +931,30 @@ null
  objects.
 \end_layout
 
+\begin_layout Itemize
+
+\series bold
+\shape italic
+C60
+\series default
+\shape default
+.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Check that all file exceptions are caught and dealt with accordingly
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\series bold
+L73
+\series default
+ FileNot FoundException is thrown instead of caught.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Newpage pagebreak
 \end_inset
