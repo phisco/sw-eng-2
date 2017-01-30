@@ -11,7 +11,7 @@
 \addtokomafont{disposition}{\rmfamily}
 \usepackage[headsepline]{scrlayer-scrpage}
 \clearpairofpagestyles
-\ohead{DD}
+\ohead{CI}
 \chead{\pagemark}
 \ihead{\headmark}
 \automark[]{section}
@@ -99,7 +99,7 @@ enumitem
 \begin_body
 
 \begin_layout Title
-Code Insepection Document - Apache OFbiz
+bCode Insepection Document - Apache OFbiz
 \end_layout
 
 \begin_layout Author
@@ -327,6 +327,16 @@ org.w3c.dom
 
 \begin_layout Section
 List of issues found by applying the checklist
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+List of issues
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -898,7 +908,7 @@ Check that all file exceptions are caught and dealt with accordingly
 \series bold
 L73
 \series default
- FileNot FoundException is thrown instead of caught.
+ FileNotFoundException is thrown instead of caught.
 \end_layout
 
 \begin_layout Standard
