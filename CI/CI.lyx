@@ -923,6 +923,60 @@ Other issues
 \end_layout
 
 \begin_layout Standard
+Throughout the code and in particular in blocks at 
+\series bold
+L.
+ 131-257
+\series default
+ and 
+\series bold
+L.292-462
+\series default
+ there is a series of 
+\family typewriter
+if...else if...else if...
+
+\family default
+ statements.
+ This way of programming is not compliant with the 
+\begin_inset Quotes eld
+\end_inset
+
+open/closed principle
+\begin_inset Quotes erd
+\end_inset
+
+, one of the master ideas of object oriented programming, that states 
+\begin_inset Quotes eld
+\end_inset
+
+software entities (classes, modules, functions, etc.) should be open for
+ extension, but closed for modification
+\begin_inset Quotes erd
+\end_inset
+
+.
+ In fact this class is not 
+\begin_inset Quotes eld
+\end_inset
+
+open
+\begin_inset Quotes erd
+\end_inset
+
+ for extension.
+ Even worse in the first block mentioned the condition inside 
+\family typewriter
+if
+\family default
+ statements is an 
+\family typewriter
+instance of
+\family default
+ call, a witness of bad usage of overriding.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage pagebreak
 \end_inset
 
