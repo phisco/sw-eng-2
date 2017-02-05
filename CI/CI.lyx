@@ -189,7 +189,7 @@ Exception
 \family default
 , 
 \family typewriter
-SerializeException
+SerializeException,
 \family default
  which extends an OFBiz Exception.
  
@@ -1035,7 +1035,7 @@ Philippe Scorsolini
 \begin_inset Text
 
 \begin_layout Plain Layout
-10
+6
 \end_layout
 
 \end_inset
@@ -1055,7 +1055,7 @@ Lorenzo Semeria
 \begin_inset Text
 
 \begin_layout Plain Layout
-12
+8
 \end_layout
 
 \end_inset
@@ -1075,13 +1075,40 @@ Gabriele Vanoni
 \begin_inset Text
 
 \begin_layout Plain Layout
-15
+6
 \end_layout
 
 \end_inset
 </cell>
 </row>
 </lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\start_of_appendix
+
+\lang american
+Source Code
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset CommandInset include
+LatexCommand lstinputlisting
+filename "XmlSerializer.java"
+lstparams "numbers=left,breaklines=true"
 
 \end_inset
 
