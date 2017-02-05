@@ -99,7 +99,7 @@ enumitem
 \begin_body
 
 \begin_layout Title
-bCode Insepection Document - Apache OFbiz
+Code Insepection Document - Apache OFbiz
 \end_layout
 
 \begin_layout Author
@@ -908,7 +908,11 @@ Check that all file exceptions are caught and dealt with accordingly
 \series bold
 L73
 \series default
- FileNotFoundException is thrown instead of caught.
+ 
+\family typewriter
+FileNotFoundException
+\family default
+ is thrown instead of caught.
 \end_layout
 
 \begin_layout Standard
