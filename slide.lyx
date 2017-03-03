@@ -207,7 +207,7 @@ mondo
 \begin_inset Graphics
 	filename /home/gabriele/sw-eng-2/RASD/classDiagram.pdf
 	lyxscale 10
-	scale 50
+	scale 58
 
 \end_inset
 
@@ -237,15 +237,33 @@ Uno dei mondi possibili
 
 \begin_deeper
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{textblock}{100}(10,15)
+\end_layout
+
+\end_inset
+
 Questo è uno dei possibili output generati dal solver di 
 \series bold
 Alloy
 \series default
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{textblock}
 \end_layout
 
-\begin_layout Standard
-\begin_inset VSpace medskip
 \end_inset
 
 
@@ -253,10 +271,36 @@ Alloy
 
 \begin_layout Standard
 \align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{textblock}{100}(5,20)
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename /home/gabriele/sw-eng-2/RASD/Alloy/showStatic.pdf
 	lyxscale 10
-	scale 40
+	scale 48
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{textblock}
+\end_layout
 
 \end_inset
 
@@ -286,6 +330,18 @@ Il modello dinamico
 
 \begin_deeper
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{textblock}{100}(10,15)
+\end_layout
+
+\end_inset
+
 Queste 
 \series bold
 azioni
@@ -295,21 +351,40 @@ azioni
 predicati
 \shape default
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{textblock}
 \end_layout
 
-\begin_layout Standard
-\begin_inset VSpace medskip
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\align center
+\align left
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{textblock}{200}(5,25)
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename /home/gabriele/sw-eng-2/RASD/stateDiagramCar.pdf
 	lyxscale 10
-	scale 50
+	scale 58
 
 \end_inset
 
@@ -322,7 +397,20 @@ predicati
 \begin_inset Graphics
 	filename /home/gabriele/sw-eng-2/RASD/stateDiagramUser.pdf
 	lyxscale 10
-	scale 50
+	scale 58
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{textblock}
+\end_layout
 
 \end_inset
 
@@ -352,18 +440,37 @@ Azione - prenotazione dell'auto
 
 \begin_deeper
 \begin_layout Standard
-\begin_inset VSpace medskip
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{textblock}{100}(5,20)
+\end_layout
+
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-\align center
 \begin_inset Graphics
 	filename /home/gabriele/sw-eng-2/RASD/Alloy/reserveCar.pdf
 	lyxscale 10
-	scale 35
+	scale 38
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{textblock}
+\end_layout
 
 \end_inset
 
@@ -393,18 +500,37 @@ Azione - inizio del viaggio
 
 \begin_deeper
 \begin_layout Standard
-\begin_inset VSpace medskip
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{textblock}{100}(5,15)
+\end_layout
+
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-\align center
 \begin_inset Graphics
 	filename /home/gabriele/sw-eng-2/RASD/Alloy/reservedToInUse.pdf
 	lyxscale 10
-	scale 35
+	scale 41
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{textblock}
+\end_layout
 
 \end_inset
 
@@ -417,7 +543,7 @@ Design
 \end_layout
 
 \begin_layout Section
-Testing
+Test di integrazione
 \end_layout
 
 \end_body
