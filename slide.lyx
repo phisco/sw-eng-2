@@ -165,6 +165,253 @@ PoliMi
 Analisi dei requisiti e specifica
 \end_layout
 
+\begin_layout Subsection
+Modellazione in Alloy
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Il modello statico
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Abbiamo scelto di modellare in 
+\series bold
+Alloy
+\series default
+ questa parte del nostro 
+\series bold
+mondo
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename /home/gabriele/sw-eng-2/RASD/classDiagram.pdf
+	lyxscale 10
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Uno dei mondi possibili
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Questo è uno dei possibili output generati dal solver di 
+\series bold
+Alloy
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename /home/gabriele/sw-eng-2/RASD/Alloy/showStatic.pdf
+	lyxscale 10
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Il modello dinamico
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Queste 
+\series bold
+azioni
+\series default
+ sono state modellate in Alloy come 
+\shape italic
+predicati
+\shape default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename /home/gabriele/sw-eng-2/RASD/stateDiagramCar.pdf
+	lyxscale 10
+	scale 50
+
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 1cm
+\end_inset
+
+
+\begin_inset Graphics
+	filename /home/gabriele/sw-eng-2/RASD/stateDiagramUser.pdf
+	lyxscale 10
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Azione - prenotazione dell'auto
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename /home/gabriele/sw-eng-2/RASD/Alloy/reserveCar.pdf
+	lyxscale 10
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Azione - inizio del viaggio
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename /home/gabriele/sw-eng-2/RASD/Alloy/reservedToInUse.pdf
+	lyxscale 10
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Section
 Design
 \end_layout
