@@ -205,7 +205,7 @@ mondo
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename /home/gabriele/sw-eng-2/RASD/classDiagram.pdf
+	filename classDiagram.pdf
 	lyxscale 10
 	scale 58
 
@@ -285,7 +285,7 @@ begin{textblock}{100}(5,20)
 
 
 \begin_inset Graphics
-	filename /home/gabriele/sw-eng-2/RASD/Alloy/showStatic.pdf
+	filename showStatic.pdf
 	lyxscale 10
 	scale 48
 
@@ -382,7 +382,7 @@ begin{textblock}{200}(5,25)
 
 
 \begin_inset Graphics
-	filename /home/gabriele/sw-eng-2/RASD/stateDiagramCar.pdf
+	filename stateDiagramCar.pdf
 	lyxscale 10
 	scale 58
 
@@ -395,7 +395,7 @@ begin{textblock}{200}(5,25)
 
 
 \begin_inset Graphics
-	filename /home/gabriele/sw-eng-2/RASD/stateDiagramUser.pdf
+	filename stateDiagramUser.pdf
 	lyxscale 10
 	scale 58
 
@@ -455,7 +455,7 @@ begin{textblock}{100}(5,20)
 
 
 \begin_inset Graphics
-	filename /home/gabriele/sw-eng-2/RASD/Alloy/reserveCar.pdf
+	filename reserveCar.pdf
 	lyxscale 10
 	scale 38
 
@@ -515,7 +515,7 @@ begin{textblock}{100}(5,15)
 
 
 \begin_inset Graphics
-	filename /home/gabriele/sw-eng-2/RASD/Alloy/reservedToInUse.pdf
+	filename reservedToInUse.pdf
 	lyxscale 10
 	scale 41
 
@@ -544,6 +544,39 @@ Design
 
 \begin_layout Section
 Test di integrazione
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Criteri di ingresso
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Strategia di integrazione
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
