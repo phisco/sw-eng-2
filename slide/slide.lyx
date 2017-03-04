@@ -236,16 +236,28 @@ I Goal possono essere suddivisi in alcuni macrogruppi:
 
 \begin_deeper
 \begin_layout Itemize
-Gestione utenti (permettere login e gestione profilo)
+
+\series bold
+Gestione utenti
+\series default
+ (permettere login e gestione profilo)
 \end_layout
 
 \begin_layout Itemize
-Gestione delle auto (posizione, disponibilità, stato e sblocco)
+
+\series bold
+Gestione auto
+\series default
+ (posizione, disponibilità, stato e sblocco)
 \end_layout
 
 \begin_layout Itemize
-Azioni relative all'utilizzo del servizio (prenotazione delle auto, scelta
- della modalità di risparmio, prenotazione, calcolo della tariffa...)
+
+\series bold
+Utilizzo del Servizio
+\series default
+ (prenotazione delle auto, scelta della modalità di risparmio, prenotazione,
+ calcolo della tariffa...)
 \end_layout
 
 \end_deeper
@@ -277,7 +289,11 @@ Le caratteristiche e i requisiti della gestione utenti venogono definiti
 \end_layout
 
 \begin_layout Itemize
-G1: Registrazione Utenti
+G1: 
+\series bold
+Registrazione
+\series default
+ Utenti
 \end_layout
 
 \begin_deeper
@@ -288,22 +304,60 @@ I requisiti definiscono le informazioni richieste: email e patente valide.
 
 \end_deeper
 \begin_layout Itemize
-G2: Login utente
+G2: 
+\series bold
+Login
+\series default
+ utente
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 I requisiti definiscono le caratteristiche principali di questo goal, ad
- esempio la necessità di avere un account 
+ esempio la necessità di inserire la combinazione corretta di username e
+ password
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-I requisiti principali per la gestione utenti sono: 
+\begin_layout Itemize
+G3: 
+\series bold
+Modifica
+\series default
+ del profilo
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
-ada
+I requisiti mettono in evidenza come ogni modifica all'account sia permessa
+ a condizione che i nuovi dati inseriti siano validi
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Gestione auto
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Lorem Ipsum
 \end_layout
 
 \end_deeper
