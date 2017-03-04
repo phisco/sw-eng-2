@@ -954,6 +954,16 @@ pause
 \end_deeper
 \begin_layout Subsection
 Modellazione in Alloy
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Alloy
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout PlainFrame
@@ -1378,6 +1388,23 @@ Design - Prime scelte
 \end_layout
 
 \begin_deeper
+\begin_layout Standard
+\align left
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{textblock}{50}(5,20)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Itemize
 Approccio misto Top-down/Bottom-up
 \end_layout
@@ -1401,19 +1428,62 @@ Interazioni con l'esterno
 \end_layout
 
 \begin_layout Standard
-\begin_inset space \hfill{}
+\align left
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{textblock}
+\end_layout
+
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\align left
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{textblock}{80}(50,20)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Graphics
 	filename ComponentView - Page 1 (1).svg
 	lyxscale 10
-	height 60theight%
+	scale 30
 
 \end_inset
 
 
-\begin_inset space \hfill{}
+\end_layout
+
+\begin_layout Standard
+\align left
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{textblock}
+\end_layout
+
 \end_inset
 
 
@@ -1673,7 +1743,7 @@ status open
 
 \begin_layout Plain Layout
 
-.6
+.55
 \backslash
 textwidth
 \end_layout
@@ -1723,7 +1793,7 @@ status open
 
 \begin_layout Plain Layout
 
-.6
+.65
 \backslash
 textwidth
 \end_layout
@@ -1767,20 +1837,15 @@ La comunicazione
 \end_layout
 
 \begin_deeper
-\begin_layout ColumnsTopAligned
-
-\end_layout
-
-\begin_deeper
-\begin_layout Column
+\begin_layout Standard
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-.5
+
 \backslash
-textwidth
+begin{textblock}{50}(5,20)
 \end_layout
 
 \end_inset
@@ -1816,15 +1881,15 @@ comunicazione asincrona
 \end_layout
 
 \end_deeper
-\begin_layout Column
+\begin_layout Standard
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-.5
+
 \backslash
-textwidth
+end{textblock}
 \end_layout
 
 \end_inset
@@ -1832,7 +1897,20 @@ textwidth
 
 \end_layout
 
-\begin_layout ColumnsCenterAligned
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{textblock}{50}(55,15)
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename Copy of ComponentDiagramGoals - Page 1.svg
 	lyxscale 10
@@ -1841,17 +1919,21 @@ textwidth
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{textblock}
 \end_layout
 
-\begin_layout ColumnsCenterAligned
+\end_inset
+
 
 \end_layout
 
-\begin_layout ColumnsCenterAligned
-
-\end_layout
-
-\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -1874,20 +1956,15 @@ Il Deployment
 \end_layout
 
 \begin_deeper
-\begin_layout ColumnsTopAligned
-
-\end_layout
-
-\begin_deeper
-\begin_layout Column
+\begin_layout Standard
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-.5
+
 \backslash
-textwidth
+begin{textblock}{45}(0,20)
 \end_layout
 
 \end_inset
@@ -1925,15 +2002,15 @@ Schema DBMS
 Microservizi
 \end_layout
 
-\begin_layout Column
+\begin_layout Standard
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-.4
+
 \backslash
-textwidth
+end{textblock}
 \end_layout
 
 \end_inset
@@ -1941,11 +2018,27 @@ textwidth
 
 \end_layout
 
-\begin_layout ColumnsCenterAligned
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{textblock}{50}(53,5)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Graphics
 	filename Deployment1 - Page 1.svg
 	lyxscale 10
-	scale 18
+	scale 22
 	BoundingBox 100bp 0bp 1272bp 1069bp
 
 \end_inset
@@ -1953,11 +2046,22 @@ textwidth
 
 \end_layout
 
-\begin_layout ColumnsCenterAligned
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{textblock}
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
-\end_deeper
 \end_deeper
 \begin_layout Section
 Test di integrazione
@@ -2004,6 +2108,19 @@ Criteri di ingresso
 \begin_layout Standard
 Prima di entrare nella fase di integrazione e relativo testing è necessario
  che le seguenti condizioni siano verificate.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -2012,6 +2129,19 @@ L'
 ambiente
 \series default
  di test deve essere pronto.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -2020,6 +2150,19 @@ Tutti i
 test di unità
 \series default
  devono essere completati.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -2028,6 +2171,19 @@ Le
 dipendenze
 \series default
  tra i moduli devono essere definite.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -2040,6 +2196,19 @@ input
 output
 \series default
  attesi.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -2078,6 +2247,19 @@ Sono da
 integrare
 \series default
  tutti i moduli mostrati nella fase di design.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -2086,6 +2268,19 @@ Abbiamo deciso di utilizzare un approccio
 bottom-up
 \series default
 , cioè di integrare man mano i componenti che hanno meno dipendenze.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -2094,6 +2289,19 @@ In questo modo non è necessaria la creazione di stub, ma solo di
 driver
 \series default
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -2107,11 +2315,37 @@ semplice
 prima possibile
 \series default
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
 In questo modo tuttavia risulta molto difficile scovare errori nei componenti
  che vengono integrati alla fine.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
