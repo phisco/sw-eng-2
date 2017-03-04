@@ -258,7 +258,7 @@ Analisi dei requisiti e specifica
 \end_layout
 
 \begin_layout Subsection
-Analisi Requisiti
+Requisiti Funzionali
 \end_layout
 
 \begin_layout Frame
@@ -688,6 +688,19 @@ pause
 \begin_deeper
 \begin_layout Itemize
 Il pagamento viene effettuato immediatamente al termine del noleggio
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -698,10 +711,232 @@ In caso di fallimento (metodo non più valido) l'utente viene notificato
 
 \end_deeper
 \end_deeper
-\begin_layout Frame
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
 
 \end_layout
 
+\begin_layout Subsection
+Requisiti non funzionali
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Requisiti non funzionali
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Le applicazioni per gli utenti devono essere 
+\series bold
+user friendly 
+\series default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Il sistema deve essere 
+\series bold
+disponibile sempre
+\series default
+ (giorno e notte)
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Il sistema deve essere facilmente 
+\series bold
+scalabile
+\series default
+ in caso di crescita
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+I dati personali devono essere salvati in modo 
+\series bold
+sicuro
+\series default
+ e nel rispetto delle norme 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+È fondamentale che il sistema sia ben protetto da attacchi per prevenire,
+ ad esempio, il furto di auto
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Soluzioni di alcuni casi ambigui 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+In alcuni casi quanto scritto nella consegna non era del tutto esaustivo
+ dei possibili scenari, per cui abbiamo qualora necessario deciso come gestire
+ le singole eccezioni, ad esempio: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Il 
+\begin_inset Quotes eld
+\end_inset
+
+Problema IKEA
+\begin_inset Quotes erd
+\end_inset
+
+: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+ abbiamo deciso di permettere agli utenti di 
+\begin_inset Quotes eld
+\end_inset
+
+parcheggiare
+\begin_inset Quotes erd
+\end_inset
+
+ nel senso comune del termine, ovvero continuando a pagare per l'auto, se
+ si trovano fuori dalle zone in cui è possibile terminare il noleggio.
+ (A12)
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Apertura delle portiere senza accensione: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+ dopo un breve periodo di tempo il sistema chiede all'utente di confermare
+ di star bene, in caso contrario un Operatore si reca a verificare che non
+ ci siano problemi (ad esempio un malessere dell'utente).
+ Altrimenti, trascorso il tempo massimo di prenotazione, inizia a pagare
+ la tariffa di utilizzo.
+ (R30 e R31)
+\end_layout
+
+\end_deeper
 \begin_layout Subsection
 Modellazione in Alloy
 \end_layout
