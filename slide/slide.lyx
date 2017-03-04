@@ -603,7 +603,8 @@ pause
 \end_layout
 
 \begin_layout Itemize
-Se l'auto non viene sbloccata o messa in moto in tempo.
+Comportamento nel caso in cui l'auto non venga sbloccata o messa in moto
+ in tempo.
  
 \begin_inset ERT
 status open
