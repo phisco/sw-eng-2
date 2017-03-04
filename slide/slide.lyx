@@ -178,18 +178,73 @@ PowerEnJoy: caratteristiche principali
 
 \end_layout
 
+\begin_layout Frame
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_deeper
 \begin_layout Itemize
-Servizio di Car Sharing di auto elettriche
+Servizio di Car Sharing di auto elettriche 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
-Prenotazione tramite smartphone
+Prenotazione tramite smartphone 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
 Possibilità di iniziare e terminare il noleggio solo all'interno di zone
- predefinite
+ predefinite 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -220,7 +275,7 @@ I Goal
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
+\begin_layout Standard
 Identificati
 \series bold
  11 Goal
@@ -230,37 +285,28 @@ Identificati
 60 Requisiti
 \end_layout
 
-\begin_layout Itemize
-I Goal possono essere suddivisi in alcuni macrogruppi:
+\begin_layout Standard
+I Goal possono essere suddivisi in tre macrogruppi:
 \end_layout
 
-\begin_deeper
 \begin_layout Itemize
 
 \series bold
 Gestione utenti
-\series default
- (permettere login e gestione profilo)
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 Gestione auto
-\series default
- (posizione, disponibilità, stato e sblocco)
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 Utilizzo del Servizio
-\series default
- (prenotazione delle auto, scelta della modalità di risparmio, prenotazione,
- calcolo della tariffa...)
 \end_layout
 
-\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -286,6 +332,19 @@ Gestione utenti
 \begin_layout Standard
 Le caratteristiche e i requisiti della gestione utenti venogono definiti
  dai primi 3 goal: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -298,8 +357,21 @@ Registrazione
 
 \begin_deeper
 \begin_layout Itemize
-I requisiti definiscono le informazioni richieste: email e patente valide.
- Il metodo di pagamento viene aggiunto successivamente
+Sono necesarie email e patente valide.
+ Il metodo di pagamento viene aggiunto successivamente 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -315,7 +387,20 @@ Login
 \begin_layout Itemize
 I requisiti definiscono le caratteristiche principali di questo goal, ad
  esempio la necessità di inserire la combinazione corretta di username e
- password
+ password 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -329,8 +414,8 @@ Modifica
 
 \begin_deeper
 \begin_layout Itemize
-I requisiti mettono in evidenza come ogni modifica all'account sia permessa
- a condizione che i nuovi dati inseriti siano validi
+È possibile effettuare ogni modifica a condizione che i nuovi dati inseriti
+ siano validi 
 \end_layout
 
 \end_deeper
@@ -357,9 +442,261 @@ Gestione auto
 
 \begin_deeper
 \begin_layout Standard
-Lorem Ipsum
+La gestione delle auto è fortemente collegata con l'utilizzo del servizio,
+ tra i goal principali possiamo individuare i seguenti.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+G4: Mostrare le 
+\series bold
+informazioni
+\series default
+ aggiornate sulle auto
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Le auto mantengono il sistema aggiornato sulla propria posizione e carica.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+G6: Permettere lo 
+\series bold
+sblocco
+\series default
+ dell'auto
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+L'auto viene sbloccata dopo che il sistema conferma che l'utente è nei pressi
+ dell'auto
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Utilizzo del Servizio
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Le modalità e i requisiti relativi all'utilizzo del servizio costituiscono
+ la maggior parte dei goal che abbiamo identificato.
+ Tra i principali: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+G5/G6: 
+\series bold
+Prenotazione
+\series default
+ e 
+\series bold
+sblocco
+\series default
+ dell'auto prenotata
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Azione riservata agli utenti abilitati.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Se l'auto non viene sbloccata o messa in moto in tempo.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+G7: Calcolo della 
+\series bold
+tariffa 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+La tariffa viene calcolata tenendo conto di tutti i modificatori (sconti
+ o sovrapprezzi) e del tempo di utilizzo.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Per alcuni casi particolari è stato previsto un comportamento ad hoc 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+G9: 
+\series bold
+Pagamento
+\series default
+ della tariffa
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Il pagamento viene effettuato immediatamente al termine del noleggio
+\end_layout
+
+\begin_layout Itemize
+In caso di fallimento (metodo non più valido) l'utente viene notificato
+ e il suo account temporaneamente disabilitato.
+ 
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Frame
 
