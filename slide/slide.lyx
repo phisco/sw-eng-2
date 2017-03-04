@@ -614,7 +614,7 @@ Interazioni con l'esterno
 status open
 
 \begin_layout Plain Layout
-Le componenti del Server - Cosa?
+Le componenti del Server
 \end_layout
 
 \end_inset
@@ -868,7 +868,7 @@ Architettura a Micro Servizi su Cloud
 
 \begin_deeper
 \begin_layout Itemize
-Scalabilità
+Scalabilità in caso di necessità
 \end_layout
 
 \begin_layout Itemize
@@ -883,11 +883,11 @@ Indipendenza nel deployment
 Indipendenza dall'hardware
 \end_layout
 
+\end_deeper
 \begin_layout Itemize
-Recente crescita dei providers PaaS
+Crescente 
 \end_layout
 
-\end_deeper
 \begin_layout Itemize
 Database centralizzato
 \end_layout
@@ -937,7 +937,7 @@ textwidth
 status open
 
 \begin_layout Plain Layout
-La comunicazione tra i componenti?
+La comunicazione
 \end_layout
 
 \end_inset
@@ -946,7 +946,7 @@ La comunicazione tra i componenti?
 \end_layout
 
 \begin_deeper
-\begin_layout ColumnsCenterAligned
+\begin_layout ColumnsTopAligned
 
 \end_layout
 
@@ -973,13 +973,25 @@ Broker di messaggi centralizzato a code Pub/Sub:
 
 \begin_deeper
 \begin_layout Itemize
-possibile singolo punto di rottura, ma casi reali dimostrano la solidità
+Possibile singolo punto di rottura, ma casi reali dimostrano la solidità
  dell'approccio
 \end_layout
 
 \begin_layout Itemize
-possibile sfruttarlo per fare load balancing tra le diverse istanze dei
- componenti anche per versione
+Possibilità di sfruttarlo per fare load balancing tra le diverse istanze
+ dei componenti, anche 
+\begin_inset Quotes eld
+\end_inset
+
+per versione
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+comunicazione asincrona
 \end_layout
 
 \end_deeper
@@ -989,7 +1001,7 @@ status open
 
 \begin_layout Plain Layout
 
-.7
+.5
 \backslash
 textwidth
 \end_layout
@@ -1007,6 +1019,120 @@ textwidth
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout ColumnsCenterAligned
+
+\end_layout
+
+\begin_layout ColumnsCenterAligned
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Il Deployment
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout ColumnsTopAligned
+
+\end_layout
+
+\begin_deeper
+\begin_layout Column
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+.5
+\backslash
+textwidth
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+PowerStation: sistema di acquisizione dati
+\end_layout
+
+\begin_layout Itemize
+Automobile: sistema di gestione dell'auto
+\end_layout
+
+\begin_layout Itemize
+Clients:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Mobile App
+\end_layout
+
+\begin_layout Itemize
+Web App
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Schema DBMS
+\end_layout
+
+\begin_layout Itemize
+Microservizi
+\end_layout
+
+\begin_layout Column
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+.4
+\backslash
+textwidth
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout ColumnsCenterAligned
+\begin_inset Graphics
+	filename Deployment1 - Page 1.svg
+	lyxscale 10
+	scale 18
+	BoundingBox 100bp 0bp 1272bp 1069bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout ColumnsCenterAligned
 
 \end_layout
 
