@@ -542,6 +542,476 @@ end{textblock}
 Design
 \end_layout
 
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Design - Prime scelte
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Approccio misto Top-down/Bottom-up
+\end_layout
+
+\begin_layout Itemize
+Architettura 3 Tier Client-Server con Thin Client:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+possibilità di gestire diversi client
+\end_layout
+
+\begin_layout Itemize
+nessuna limitazione sull'hardware dei client
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Interazioni con l'esterno
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename ComponentView - Page 1 (1).svg
+	lyxscale 10
+	height 60theight%
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Le componenti del Server - Cosa?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Fontvi
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{textblock}{65}(0,12)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-signUp"
+
+\end_inset
+
+Allow visitors to sign up.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-logIn"
+
+\end_inset
+
+Allow visitors to log in.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-updateProfile"
+
+\end_inset
+
+Allow Users and Active Users to update or modify their profile's information.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-updatedInfoOnCars"
+
+\end_inset
+
+Show updated information on available cars.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-activeCanReserve"
+
+\end_inset
+
+Allow Active Users to reserve a car.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-activeCanUnlock"
+
+\end_inset
+
+ Allow Active Users to unlock the car reserved
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-computeFare"
+
+\end_inset
+
+Compute the fare.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-sysadminCanUpdate"
+
+\end_inset
+
+Allow System Administrator(s) to update system's information.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-ensureFarePaid"
+
+\end_inset
+
+Ensure that the fare is paid.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-driverCanMoneySave"
+
+\end_inset
+
+Allow the driver to choose the money saving option and get near their destionati
+on.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "G-parkCar"
+
+\end_inset
+
+Allow the user to park the rented car in safe zone.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{textblock}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{textblock}{20}(68,12)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ITP - Page 1.svg
+	lyxscale 10
+	scale 29
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{textblock}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Come e dove?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout ColumnsCenterAligned
+
+\end_layout
+
+\begin_deeper
+\begin_layout Column
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+.6
+\backslash
+textwidth
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Architettura a Micro Servizi su Cloud
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Scalabilità
+\end_layout
+
+\begin_layout Itemize
+Indipendenza nello sviluppo
+\end_layout
+
+\begin_layout Itemize
+Indipendenza nel deployment
+\end_layout
+
+\begin_layout Itemize
+Indipendenza dall'hardware
+\end_layout
+
+\begin_layout Itemize
+Recente crescita dei providers PaaS
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Database centralizzato
+\end_layout
+
+\begin_layout Itemize
+Necessari alcuni componenti per sfruttare appieno questa scelta architetturale
+\end_layout
+
+\begin_layout Column
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+.6
+\backslash
+textwidth
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout ColumnsCenterAligned
+\begin_inset Graphics
+	filename component lvl 2 - Page 1.svg
+	lyxscale 10
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+La comunicazione tra i componenti?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout ColumnsCenterAligned
+
+\end_layout
+
+\begin_deeper
+\begin_layout Column
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+.5
+\backslash
+textwidth
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Broker di messaggi centralizzato a code Pub/Sub:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+possibile singolo punto di rottura, ma casi reali dimostrano la solidità
+ dell'approccio
+\end_layout
+
+\begin_layout Itemize
+possibile sfruttarlo per fare load balancing tra le diverse istanze dei
+ componenti anche per versione
+\end_layout
+
+\end_deeper
+\begin_layout Column
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+.7
+\backslash
+textwidth
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout ColumnsCenterAligned
+\begin_inset Graphics
+	filename Copy of ComponentDiagramGoals - Page 1.svg
+	lyxscale 10
+	scale 21
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Section
 Test di integrazione
 \end_layout
