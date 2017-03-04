@@ -162,7 +162,207 @@ PoliMi
 \end_layout
 
 \begin_layout Section
+Introduzione
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+PowerEnJoy: caratteristiche principali
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Servizio di Car Sharing di auto elettriche
+\end_layout
+
+\begin_layout Itemize
+Prenotazione tramite smartphone
+\end_layout
+
+\begin_layout Itemize
+Possibilità di iniziare e terminare il noleggio solo all'interno di zone
+ predefinite
+\end_layout
+
+\begin_layout Itemize
+Possibilità di ottenere sconti in base ad alcuni parametri (numero di passeggeri
+, termine noleggio in una stazione di ricarica)
+\end_layout
+
+\end_deeper
+\begin_layout Section
 Analisi dei requisiti e specifica
+\end_layout
+
+\begin_layout Subsection
+Analisi Requisiti
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+I Goal
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Identificati
+\series bold
+ 11 Goal
+\series default
+ e un totale di 
+\series bold
+60 Requisiti
+\end_layout
+
+\begin_layout Itemize
+I Goal possono essere suddivisi in alcuni macrogruppi:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Gestione utenti
+\series default
+ (permettere login e gestione profilo)
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Gestione auto
+\series default
+ (posizione, disponibilità, stato e sblocco)
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Utilizzo del Servizio
+\series default
+ (prenotazione delle auto, scelta della modalità di risparmio, prenotazione,
+ calcolo della tariffa...)
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Gestione utenti
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Le caratteristiche e i requisiti della gestione utenti venogono definiti
+ dai primi 3 goal: 
+\end_layout
+
+\begin_layout Itemize
+G1: 
+\series bold
+Registrazione
+\series default
+ Utenti
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+I requisiti definiscono le informazioni richieste: email e patente valide.
+ Il metodo di pagamento viene aggiunto successivamente
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+G2: 
+\series bold
+Login
+\series default
+ utente
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+I requisiti definiscono le caratteristiche principali di questo goal, ad
+ esempio la necessità di inserire la combinazione corretta di username e
+ password
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+G3: 
+\series bold
+Modifica
+\series default
+ del profilo
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+I requisiti mettono in evidenza come ogni modifica all'account sia permessa
+ a condizione che i nuovi dati inseriti siano validi
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Gestione auto
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Lorem Ipsum
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
 \end_layout
 
 \begin_layout Subsection
