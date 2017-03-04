@@ -162,7 +162,153 @@ PoliMi
 \end_layout
 
 \begin_layout Section
+Introduzione
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+PowerEnJoy: caratteristiche principali
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Servizio di Car Sharing di auto elettriche
+\end_layout
+
+\begin_layout Itemize
+Prenotazione tramite smartphone
+\end_layout
+
+\begin_layout Itemize
+Possibilità di iniziare e terminare il noleggio solo all'interno di zone
+ predefinite
+\end_layout
+
+\begin_layout Itemize
+Possibilità di ottenere sconti in base ad alcuni parametri (numero di passeggeri
+, termine noleggio in una stazione di ricarica)
+\end_layout
+
+\end_deeper
+\begin_layout Section
 Analisi dei requisiti e specifica
+\end_layout
+
+\begin_layout Subsection
+Analisi Requisiti
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+I Goal
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Identificati
+\series bold
+ 11 Goal
+\series default
+ e un totale di 
+\series bold
+60 Requisiti
+\end_layout
+
+\begin_layout Itemize
+I Goal possono essere suddivisi in alcuni macrogruppi:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Gestione utenti (permettere login e gestione profilo)
+\end_layout
+
+\begin_layout Itemize
+Gestione delle auto (posizione, disponibilità, stato e sblocco)
+\end_layout
+
+\begin_layout Itemize
+Azioni relative all'utilizzo del servizio (prenotazione delle auto, scelta
+ della modalità di risparmio, prenotazione, calcolo della tariffa...)
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Gestione utenti
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Le caratteristiche e i requisiti della gestione utenti venogono definiti
+ dai primi 3 goal: 
+\end_layout
+
+\begin_layout Itemize
+G1: Registrazione Utenti
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+I requisiti definiscono le informazioni richieste: email e patente valide.
+ Il metodo di pagamento viene aggiunto successivamente
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+G2: Login utente
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+I requisiti definiscono le caratteristiche principali di questo goal, ad
+ esempio la necessità di avere un account 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+I requisiti principali per la gestione utenti sono: 
+\end_layout
+
+\begin_layout Itemize
+ada
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
 \end_layout
 
 \begin_layout Subsection
