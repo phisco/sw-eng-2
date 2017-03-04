@@ -206,6 +206,20 @@ Analisi dei requisiti e specifica
 Analisi Requisiti
 \end_layout
 
+\begin_layout PlainFrame
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+
+\series bold
+\size larger
+Analisi dei requisiti
+\end_layout
+
+\end_deeper
 \begin_layout Frame
 \begin_inset Argument 4
 status open
@@ -367,6 +381,27 @@ Lorem Ipsum
 
 \begin_layout Subsection
 Modellazione in Alloy
+\end_layout
+
+\begin_layout PlainFrame
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+
+\series bold
+\size larger
+Modellazione in Alloy
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
 \end_layout
 
 \begin_layout Frame
@@ -742,6 +777,20 @@ end{textblock}
 Design
 \end_layout
 
+\begin_layout PlainFrame
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+
+\series bold
+\size larger
+Design
+\end_layout
+
+\end_deeper
 \begin_layout Frame
 \begin_inset Argument 4
 status open
@@ -1339,8 +1388,32 @@ textwidth
 \end_deeper
 \begin_layout Section
 Test di integrazione
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Testing
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout PlainFrame
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+
+\series bold
+\size larger
+Test di integrazione
+\end_layout
+
+\end_deeper
 \begin_layout Frame
 \begin_inset Argument 4
 status open
@@ -1354,6 +1427,57 @@ Criteri di ingresso
 
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+Prima di entrare nella fase di integrazione e relativo testing è necessario
+ che le seguenti condizioni siano verificate.
+\end_layout
+
+\begin_layout Itemize
+L'
+\series bold
+ambiente
+\series default
+ di test deve essere pronto.
+\end_layout
+
+\begin_layout Itemize
+Tutti i 
+\series bold
+test di unità
+\series default
+ devono essere completati.
+\end_layout
+
+\begin_layout Itemize
+Le 
+\series bold
+dipendenze
+\series default
+ tra i moduli devono essere definite.
+\end_layout
+
+\begin_layout Itemize
+Per ogni caso di test devono essere definiti gli 
+\series bold
+input
+\series default
+ e i relativi 
+\series bold
+output
+\series default
+ attesi.
+\end_layout
+
+\begin_layout Itemize
+Devono essere pronti gli 
+\series bold
+stub
+\series default
+ delle parti del sistema che non sono ancora state implementate.
+\end_layout
+
+\end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
@@ -1374,5 +1498,54 @@ Strategia di integrazione
 
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+Sono da 
+\series bold
+integrare
+\series default
+ tutti i moduli mostrati nella fase di design.
+\end_layout
+
+\begin_layout Itemize
+Abbiamo deciso di utilizzare un approccio 
+\series bold
+bottom-up
+\series default
+, cioè di integrare man mano i componenti che hanno meno dipendenze.
+\end_layout
+
+\begin_layout Itemize
+In questo modo non è necessaria la creazione di stub, ma solo di 
+\series bold
+driver
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+Inoltre risulta più 
+\series bold
+semplice
+\series default
+ verificare il comportamento dei componenti meno integrati testando i componenti
+ di base il 
+\series bold
+prima possibile
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+In questo modo tuttavia risulta molto difficile scovare errori nei componenti
+ che vengono integrati alla fine.
+\end_layout
+
+\begin_layout Itemize
+Inoltre risulta impossibile vedere l'intero sistema funzionante prima della
+ fine del processo.
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
