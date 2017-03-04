@@ -862,7 +862,7 @@ name "G-signUp"
 
 \end_inset
 
-Allow visitors to sign up.
+Permettere all'utente di registrarsi
 \end_layout
 
 \begin_layout Enumerate
@@ -872,7 +872,7 @@ name "G-logIn"
 
 \end_inset
 
-Allow visitors to log in.
+Permettere all'utente di fare login
 \end_layout
 
 \begin_layout Enumerate
@@ -882,7 +882,7 @@ name "G-updateProfile"
 
 \end_inset
 
-Allow Users and Active Users to update or modify their profile's information.
+Permettere a utenti aggiornamento e modifica dei profili.
 \end_layout
 
 \begin_layout Enumerate
@@ -892,7 +892,7 @@ name "G-updatedInfoOnCars"
 
 \end_inset
 
-Show updated information on available cars.
+Mostrare informazioni sulle auto disponibili.
 \end_layout
 
 \begin_layout Enumerate
@@ -902,7 +902,7 @@ name "G-activeCanReserve"
 
 \end_inset
 
-Allow Active Users to reserve a car.
+Permettere la prenotazione delle macchine.
 \end_layout
 
 \begin_layout Enumerate
@@ -912,7 +912,7 @@ name "G-activeCanUnlock"
 
 \end_inset
 
- Allow Active Users to unlock the car reserved
+ Permettere di sbloccare le macchine.
 \end_layout
 
 \begin_layout Enumerate
@@ -922,7 +922,7 @@ name "G-computeFare"
 
 \end_inset
 
-Compute the fare.
+Calcolare il dovuto.
 \end_layout
 
 \begin_layout Enumerate
@@ -932,7 +932,7 @@ name "G-sysadminCanUpdate"
 
 \end_inset
 
-Allow System Administrator(s) to update system's information.
+Permettere agli Admin di aggiornare i dati del sistema.
 \end_layout
 
 \begin_layout Enumerate
@@ -942,7 +942,7 @@ name "G-ensureFarePaid"
 
 \end_inset
 
-Ensure that the fare is paid.
+Assicurarsi che i pagamenti vengano effettuati
 \end_layout
 
 \begin_layout Enumerate
@@ -952,8 +952,7 @@ name "G-driverCanMoneySave"
 
 \end_inset
 
-Allow the driver to choose the money saving option and get near their destionati
-on.
+Permettere al guidatore di attivare la Money Saving Option.
 \end_layout
 
 \begin_layout Enumerate
@@ -963,7 +962,7 @@ name "G-parkCar"
 
 \end_inset
 
-Allow the user to park the rented car in safe zone.
+Permettere agli utenti di parcheggiare nelle zone predeterminate.
 \end_layout
 
 \begin_layout Standard
