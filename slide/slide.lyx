@@ -1845,7 +1845,8 @@ textwidth
 \end_layout
 
 \begin_layout Itemize
-Crescente utilizzo di provider PaaS
+Crescente adozione di provider PaaS e affidabilità delle componenti di terze
+ parti
 \begin_inset ERT
 status open
 
@@ -1880,7 +1881,7 @@ pause
 
 \begin_deeper
 \begin_layout Itemize
-Scalabilità in caso di necessità
+Scalabilità
 \begin_inset ERT
 status open
 
@@ -2079,8 +2080,7 @@ status open
 
 \end_inset
 
-Possibile singolo punto di rottura, ma casi reali dimostrano la solidità
- dell'approccio
+Possibile singolo punto di rottura
 \end_layout
 
 \begin_layout Itemize
@@ -2106,8 +2106,8 @@ status open
 
 \end_inset
 
-Possibilità di sfruttarlo per fare load balancing tra le diverse istanze
- dei componenti, anche 
+Offre funzionalità di load balancing tra le diverse istanze dei componenti,
+ anche specifico 
 \begin_inset Quotes eld
 \end_inset
 
@@ -2243,7 +2243,7 @@ status open
 
 \end_inset
 
-Automobile: sistema di gestione dell'auto
+Automobile: sistema di gestione
 \end_layout
 
 \begin_layout Itemize
@@ -2434,7 +2434,7 @@ pause
 \end_layout
 
 \begin_layout Itemize
-interarfaccia utente → UX diagram
+interarfaccia utente → UX diagram e mockup
 \begin_inset ERT
 status open
 
