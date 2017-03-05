@@ -2417,7 +2417,7 @@ pause
 \end_layout
 
 \begin_layout Itemize
-interazioni tra componenti -> sequence diagram
+interazioni tra componenti → sequence diagram
 \begin_inset ERT
 status open
 
@@ -2434,7 +2434,7 @@ pause
 \end_layout
 
 \begin_layout Itemize
-interarfaccia utente -> UX diagram
+interarfaccia utente → UX diagram
 \begin_inset ERT
 status open
 
@@ -2451,7 +2451,7 @@ pause
 \end_layout
 
 \begin_layout Itemize
-struttura del database -> ER diagram
+struttura del database → ER diagram
 \begin_inset ERT
 status open
 
