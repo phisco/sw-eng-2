@@ -213,7 +213,7 @@ pause
 \end_layout
 
 \begin_layout Itemize
-Prenotazione tramite smartphone 
+Prenotazione tramite smartphone o sito web 
 \begin_inset ERT
 status open
 
@@ -752,7 +752,7 @@ Requisiti non funzionali
 
 \begin_deeper
 \begin_layout Itemize
-Le applicazioni per gli utenti devono essere 
+Le applicazioni per gli utenti e il sito devono essere 
 \series bold
 user friendly 
 \series default
