@@ -161,6 +161,30 @@ PoliMi
 6 Marzo 2017
 \end_layout
 
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Indice
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Section
 Introduzione
 \end_layout
@@ -1008,7 +1032,7 @@ Alloy
 \series default
  questa parte del nostro 
 \series bold
-mondo
+sistema
 \series default
 .
 \end_layout
@@ -1406,25 +1430,80 @@ begin{textblock}{50}(5,20)
 \end_layout
 
 \begin_layout Itemize
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+1-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+1-
+\end_layout
+
+\end_inset
+
 Approccio misto Top-down/Bottom-up
 \end_layout
 
 \begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+2-
+\end_layout
+
+\end_inset
+
 Architettura 3 Tier Client-Server con Thin Client:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+3-
+\end_layout
+
+\end_inset
+
 possibilità di gestire diversi client
 \end_layout
 
 \begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+4-
+\end_layout
+
+\end_inset
+
 nessuna limitazione sull'hardware dei client
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-Interazioni con l'esterno
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+5-
+\end_layout
+
+\end_inset
+
+Interazioni con componenti esterne
 \end_layout
 
 \begin_layout Standard
@@ -1506,7 +1585,7 @@ end{textblock}
 status open
 
 \begin_layout Plain Layout
-Le componenti del Server
+I componenti del Server
 \end_layout
 
 \end_inset
@@ -1723,7 +1802,7 @@ end{textblock}
 status open
 
 \begin_layout Plain Layout
-Come e dove?
+Come e dove mettere i componenti?
 \end_layout
 
 \end_inset
@@ -1733,6 +1812,18 @@ Come e dove?
 
 \begin_deeper
 \begin_layout ColumnsCenterAligned
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -1754,33 +1845,124 @@ textwidth
 \end_layout
 
 \begin_layout Itemize
+Crescente utilizzo di provider PaaS
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
 Architettura a Micro Servizi su Cloud
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 Scalabilità in caso di necessità
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
 Indipendenza nello sviluppo
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
 Indipendenza nel deployment
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
 Indipendenza dall'hardware
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-Crescente 
+Database centralizzato
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
 \end_layout
 
-\begin_layout Itemize
-Database centralizzato
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -1854,16 +2036,76 @@ begin{textblock}{50}(5,20)
 \end_layout
 
 \begin_layout Itemize
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+2-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+2-
+\end_layout
+
+\end_inset
+
 Broker di messaggi centralizzato a code Pub/Sub:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+2-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+3-
+\end_layout
+
+\end_inset
+
 Possibile singolo punto di rottura, ma casi reali dimostrano la solidità
  dell'approccio
 \end_layout
 
 \begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+4-
+\end_layout
+
+\end_inset
+
+Comunicazione asincrona
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+5-
+\end_layout
+
+\end_inset
+
 Possibilità di sfruttarlo per fare load balancing tra le diverse istanze
  dei componenti, anche 
 \begin_inset Quotes eld
@@ -1874,10 +2116,6 @@ per versione
 \end_inset
 
 
-\end_layout
-
-\begin_layout Itemize
-comunicazione asincrona
 \end_layout
 
 \end_deeper
@@ -1973,32 +2211,105 @@ begin{textblock}{45}(0,20)
 \end_layout
 
 \begin_layout Itemize
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+1-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+1-
+\end_layout
+
+\end_inset
+
 PowerStation: sistema di acquisizione dati
 \end_layout
 
 \begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+2-
+\end_layout
+
+\end_inset
+
 Automobile: sistema di gestione dell'auto
 \end_layout
 
 \begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+3-
+\end_layout
+
+\end_inset
+
 Clients:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+4-
+\end_layout
+
+\end_inset
+
 Mobile App
 \end_layout
 
 \begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+5-
+\end_layout
+
+\end_inset
+
 Web App
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+6-
+\end_layout
+
+\end_inset
+
 Schema DBMS
 \end_layout
 
 \begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+7-
+\end_layout
+
+\end_inset
+
 Microservizi
 \end_layout
 
@@ -2060,6 +2371,104 @@ end{textblock}
 \end_inset
 
 
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Altro
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Nel design document abbiamo poi ulteriormente approfondito:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+interazioni tra componenti → sequence diagram
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+interarfaccia utente → UX diagram
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+struttura del database → ER diagram
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+algoritmi: ottimizzazione posizionamento delle auto con MoneySavingOption
 \end_layout
 
 \end_deeper
