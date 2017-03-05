@@ -1561,7 +1561,7 @@ end{textblock}
 status open
 
 \begin_layout Plain Layout
-Le componenti del Server
+I componenti del Server
 \end_layout
 
 \end_inset
@@ -1778,7 +1778,7 @@ end{textblock}
 status open
 
 \begin_layout Plain Layout
-Come e dove?
+Come e dove mettere i componenti?
 \end_layout
 
 \end_inset
@@ -1788,6 +1788,18 @@ Come e dove?
 
 \begin_deeper
 \begin_layout ColumnsCenterAligned
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -1801,6 +1813,23 @@ status open
 .55
 \backslash
 textwidth
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Crescente utilizzo di provider PaaS
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
 \end_layout
 
 \end_inset
@@ -1896,23 +1925,6 @@ pause
 
 \end_deeper
 \begin_layout Itemize
-Crescente utilizzo di provider PaaS
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-pause
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
 Database centralizzato
 \begin_inset ERT
 status open
@@ -2004,7 +2016,7 @@ begin{textblock}{50}(5,20)
 status open
 
 \begin_layout Plain Layout
-1-
+2-
 \end_layout
 
 \end_inset
@@ -2014,7 +2026,7 @@ status open
 status open
 
 \begin_layout Plain Layout
-1-
+2-
 \end_layout
 
 \end_inset
@@ -2038,7 +2050,7 @@ status open
 status open
 
 \begin_layout Plain Layout
-2-
+3-
 \end_layout
 
 \end_inset
@@ -2052,7 +2064,20 @@ Possibile singolo punto di rottura, ma casi reali dimostrano la solidità
 status open
 
 \begin_layout Plain Layout
-3-
+4-
+\end_layout
+
+\end_inset
+
+Comunicazione asincrona
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+5-
 \end_layout
 
 \end_inset
@@ -2067,19 +2092,6 @@ per versione
 \end_inset
 
 
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Argument item:2
-status open
-
-\begin_layout Plain Layout
-4-
-\end_layout
-
-\end_inset
-
-comunicazione asincrona
 \end_layout
 
 \end_deeper
@@ -2335,6 +2347,104 @@ end{textblock}
 \end_inset
 
 
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Altro
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Nel design document abbiamo poi ulteriormente approfondito:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+interazioni tra componenti -> sequence diagram
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+interarfaccia utente -> UX diagram
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+struttura del database -> ER diagram
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+algoritmi: ottimizzazione posizionamento delle auto con MoneySavingOption
 \end_layout
 
 \end_deeper
