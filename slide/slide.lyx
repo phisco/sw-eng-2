@@ -161,6 +161,30 @@ PoliMi
 6 Marzo 2017
 \end_layout
 
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Indice
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Section
 Introduzione
 \end_layout
@@ -1008,7 +1032,7 @@ Alloy
 \series default
  questa parte del nostro 
 \series bold
-mondo
+sistema
 \series default
 .
 \end_layout
