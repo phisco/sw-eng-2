@@ -1406,25 +1406,80 @@ begin{textblock}{50}(5,20)
 \end_layout
 
 \begin_layout Itemize
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+1-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+1-
+\end_layout
+
+\end_inset
+
 Approccio misto Top-down/Bottom-up
 \end_layout
 
 \begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+2-
+\end_layout
+
+\end_inset
+
 Architettura 3 Tier Client-Server con Thin Client:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+3-
+\end_layout
+
+\end_inset
+
 possibilità di gestire diversi client
 \end_layout
 
 \begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+4-
+\end_layout
+
+\end_inset
+
 nessuna limitazione sull'hardware dei client
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-Interazioni con l'esterno
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+5-
+\end_layout
+
+\end_inset
+
+Interazioni con componenti esterne
 \end_layout
 
 \begin_layout Standard
@@ -1755,32 +1810,123 @@ textwidth
 
 \begin_layout Itemize
 Architettura a Micro Servizi su Cloud
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 Scalabilità in caso di necessità
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
 Indipendenza nello sviluppo
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
 Indipendenza nel deployment
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
 Indipendenza dall'hardware
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-Crescente 
+Crescente utilizzo di provider PaaS
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
 Database centralizzato
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -1854,16 +2000,63 @@ begin{textblock}{50}(5,20)
 \end_layout
 
 \begin_layout Itemize
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+1-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+1-
+\end_layout
+
+\end_inset
+
 Broker di messaggi centralizzato a code Pub/Sub:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+2-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+2-
+\end_layout
+
+\end_inset
+
 Possibile singolo punto di rottura, ma casi reali dimostrano la solidità
  dell'approccio
 \end_layout
 
 \begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+3-
+\end_layout
+
+\end_inset
+
 Possibilità di sfruttarlo per fare load balancing tra le diverse istanze
  dei componenti, anche 
 \begin_inset Quotes eld
@@ -1877,6 +2070,15 @@ per versione
 \end_layout
 
 \begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+4-
+\end_layout
+
+\end_inset
+
 comunicazione asincrona
 \end_layout
 
@@ -1973,32 +2175,105 @@ begin{textblock}{45}(0,20)
 \end_layout
 
 \begin_layout Itemize
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+1-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+1-
+\end_layout
+
+\end_inset
+
 PowerStation: sistema di acquisizione dati
 \end_layout
 
 \begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+2-
+\end_layout
+
+\end_inset
+
 Automobile: sistema di gestione dell'auto
 \end_layout
 
 \begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+3-
+\end_layout
+
+\end_inset
+
 Clients:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+4-
+\end_layout
+
+\end_inset
+
 Mobile App
 \end_layout
 
 \begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+5-
+\end_layout
+
+\end_inset
+
 Web App
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+6-
+\end_layout
+
+\end_inset
+
 Schema DBMS
 \end_layout
 
 \begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+7-
+\end_layout
+
+\end_inset
+
 Microservizi
 \end_layout
 
